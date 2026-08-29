@@ -1,0 +1,538 @@
+{
+  "_meta": {
+    "rule": "The catalog is sixteen designs, all public domain [D3]. Sets are bundles of the sixteen, never new designs. Prices are working figures for discussion until Ben's cost sheet confirms them [D9]. A human verifies every source before status may read digital_ready — that is house rule one.",
+    "tiers": {
+      "digital": "Instant download, sized for home printing at 8.5 x 11, 11 x 17, and 18 x 24. Near-zero cost, 88% margin. The doorway.",
+      "print": "18 x 24 on 100 lb cream cover, printed on our press in Austin, shipped rolled in a tube. Documents also at 24 x 36. The margin engine.",
+      "edition": "Numbered of 250, dated, cotton paper, embossed maker's mark. Framed through a local framer. The flagship and the gift."
+    },
+    "stripe_note": "stripe_link fields hold Stripe Payment Link URLs once created (docs/COMMERCE.md). Empty string renders as an inquiry button, so the store works before Stripe is wired."
+  },
+  "designs": [
+    {
+      "no": 1,
+      "slug": "declaration-of-independence",
+      "sku": "TB-DOC-DECL",
+      "line": "documents",
+      "room": "both",
+      "flagship": true,
+      "title": "The Declaration of Independence",
+      "kicker": "IN CONGRESS, JULY 4, 1776.",
+      "display_heading": "The unanimous <em>Declaration</em> of the thirteen united States of America,",
+      "date_label": "1776 · DUNLAP SETTING",
+      "one_line": "Set in Caslon, the type of the broadside John Dunlap ran on the night of July 4, 1776. Every line from the National Archives.",
+      "excerpt_style": "columns",
+      "excerpt": "When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.",
+      "label": {
+        "source": "National Archives, engrossed copy",
+        "typeface": "Caslon, as in 1776",
+        "paper": "100 lb cream cover, 18 x 24 · also 24 x 36",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["NATIONAL ARCHIVES", "SET IN CASLON"],
+      "provenance": "On the night of July 4, 1776, the printer John Dunlap set the Declaration in Caslon and ran roughly two hundred broadsides before dawn. This sheet follows the Dunlap setting; every line is taken from the National Archives transcription of the engrossed copy. Printed on our own press in Austin, Texas.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 46, "stripe_link": "" },
+        "edition": { "price": 175, "stripe_link": "" }
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
+    },
+    {
+      "no": 2,
+      "slug": "preamble-to-the-constitution",
+      "sku": "TB-DOC-PREA",
+      "line": "documents",
+      "room": "both",
+      "title": "Preamble to the Constitution",
+      "kicker": "THE CONSTITUTION OF THE UNITED STATES, 1787",
+      "display_heading": "We the People",
+      "date_label": "1787 · PHILADELPHIA",
+      "one_line": "Fifty-two words and one sentence, set the way the engrossers meant it to be read.",
+      "excerpt_style": "center",
+      "excerpt": "We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.",
+      "label": {
+        "source": "National Archives, engrossed copy",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["NATIONAL ARCHIVES", "SET IN CASLON"],
+      "provenance": "The Preamble is fifty-two words and one sentence. We set it that way on purpose: one measure, one thought, the great opening words display-sized as the engrossing clerk wrote them. Text from the National Archives transcription.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 44, "stripe_link": "" },
+        "edition": { "price": 165, "stripe_link": "" }
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
+    },
+    {
+      "no": 3,
+      "slug": "bill-of-rights",
+      "sku": "TB-DOC-BILL",
+      "line": "documents",
+      "room": "both",
+      "title": "The Bill of Rights",
+      "kicker": "CONGRESS OF THE UNITED STATES, 1789",
+      "display_heading": "The Bill of Rights",
+      "date_label": "1791 · AMENDMENTS I TO X",
+      "one_line": "The ten amendments ratified in 1791, set in two columns like the session laws they were.",
+      "excerpt_style": "amendments",
+      "excerpt": "AMENDMENT I. Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.\nAMENDMENT II. A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.\nAMENDMENT III. No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.",
+      "label": {
+        "source": "National Archives, ratified 1791",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24 · also 24 x 36",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["NATIONAL ARCHIVES", "RATIFIED 1791"],
+      "provenance": "All ten amendments ratified December 15, 1791, from the National Archives transcription, set in two columns in Caslon. The full sheet carries Amendments I through X; the excerpt above shows the first three.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 46, "stripe_link": "" },
+        "edition": { "price": 175, "stripe_link": "" }
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
+    },
+    {
+      "no": 4,
+      "slug": "washingtons-farewell-address",
+      "sku": "TB-DOC-FARE",
+      "line": "documents",
+      "room": "heritage",
+      "title": "Washington's Farewell Address",
+      "kicker": "GEORGE WASHINGTON",
+      "display_heading": "Observe good faith and justice towards all Nations.",
+      "date_label": "1796 · EXCERPT",
+      "one_line": "The counsel of the first President on his way out the door, 1796.",
+      "excerpt_style": "quote",
+      "excerpt": "Observe good faith and justice towards all Nations; cultivate peace and harmony with all.",
+      "attribution": "Farewell Address, 1796",
+      "label": {
+        "source": "Farewell Address, September 1796 · Library of Congress",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["EVERY QUOTE CITED", "SET IN CASLON"],
+      "provenance": "An excerpt from the Farewell Address as published September 19, 1796, verified against the Library of Congress text. Source, date, and document are set on the sheet itself — every quote cited.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 44, "stripe_link": "" },
+        "edition": { "price": 165, "stripe_link": "" }
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against loc.gov before launch [house rule: cited]"
+    },
+    {
+      "no": 5,
+      "slug": "gettysburg-address",
+      "sku": "TB-DOC-GETT",
+      "line": "documents",
+      "room": "both",
+      "title": "The Gettysburg Address",
+      "kicker": "GETTYSBURG, NOVEMBER 19, 1863",
+      "display_heading": "Four score and seven years ago",
+      "date_label": "1863 · BLISS COPY",
+      "one_line": "The Bliss copy, the only draft Lincoln signed, in two hundred and seventy-two words.",
+      "excerpt_style": "columns",
+      "excerpt": "Four score and seven years ago our fathers brought forth on this continent, a new nation, conceived in Liberty, and dedicated to the proposition that all men are created equal. Now we are engaged in a great civil war, testing whether that nation, or any nation so conceived and so dedicated, can long endure.",
+      "label": {
+        "source": "Library of Congress, Bliss copy",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["LIBRARY OF CONGRESS", "BLISS COPY"],
+      "provenance": "The Bliss copy — the fifth and final manuscript, the only one Lincoln signed and dated — from the Library of Congress. The full sheet carries all two hundred seventy-two words.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 44, "stripe_link": "" },
+        "edition": { "price": 165, "stripe_link": "" }
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against loc.gov Bliss facsimile before launch [house rule: cited]"
+    },
+    {
+      "no": 6,
+      "slug": "george-washington-after-stuart",
+      "sku": "TB-FDR-WASH",
+      "line": "founders",
+      "room": "heritage",
+      "title": "George Washington",
+      "kicker": "AFTER GILBERT STUART, 1796",
+      "display_heading": "George Washington",
+      "date_label": "1732 TO 1799",
+      "one_line": "After Gilbert Stuart, 1796. Portrait art from National Gallery of Art open access.",
+      "excerpt_style": "portrait",
+      "excerpt": "Portrait after Gilbert Stuart, 1796. Final art placed from National Gallery of Art open access before the first press run.",
+      "label": {
+        "source": "National Gallery of Art, open access · after Gilbert Stuart, 1796",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["NATIONAL GALLERY OF ART", "1732 TO 1799"],
+      "provenance": "After the Gilbert Stuart portrait of 1796, reproduced from National Gallery of Art open-access imagery, with the sitter's dates and the painter's credit set on the sheet.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 42, "stripe_link": "" },
+        "edition": { "price": 145, "stripe_link": "" }
+      },
+      "status": "art_pending",
+      "source_verified_by": "PENDING · pull open-access file + rights note from nga.gov [house rule: cited]"
+    },
+    {
+      "no": 7,
+      "slug": "benjamin-franklin-after-duplessis",
+      "sku": "TB-FDR-FRAN",
+      "line": "founders",
+      "room": "heritage",
+      "title": "Benjamin Franklin",
+      "kicker": "AFTER JOSEPH DUPLESSIS, 1778",
+      "display_heading": "Benjamin Franklin",
+      "date_label": "1706 TO 1790",
+      "one_line": "After Joseph Duplessis, 1778. The printer among the founders.",
+      "excerpt_style": "portrait",
+      "excerpt": "Portrait after Joseph Duplessis, 1778. Final art placed from National Gallery of Art open access before the first press run.",
+      "label": {
+        "source": "National Gallery of Art, open access · after Joseph Duplessis, 1778",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["NATIONAL GALLERY OF ART", "1706 TO 1790"],
+      "provenance": "After the Duplessis portrait of 1778, reproduced from National Gallery of Art open-access imagery. Franklin was a printer by trade; this shop keeps his line over the press.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 42, "stripe_link": "" },
+        "edition": { "price": 145, "stripe_link": "" }
+      },
+      "status": "art_pending",
+      "source_verified_by": "PENDING · pull open-access file + rights note from nga.gov [house rule: cited]"
+    },
+    {
+      "no": 8,
+      "slug": "thomas-jefferson-after-peale",
+      "sku": "TB-FDR-JEFF",
+      "line": "founders",
+      "room": "heritage",
+      "title": "Thomas Jefferson",
+      "kicker": "AFTER REMBRANDT PEALE, 1800",
+      "display_heading": "Thomas Jefferson",
+      "date_label": "1743 TO 1826",
+      "one_line": "After Rembrandt Peale, 1800.",
+      "excerpt_style": "portrait",
+      "excerpt": "Portrait after Rembrandt Peale, 1800. Final art placed from open-access imagery before the first press run.",
+      "label": {
+        "source": "Open-access museum imagery · after Rembrandt Peale, 1800",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["OPEN ACCESS", "1743 TO 1826"],
+      "provenance": "After the Rembrandt Peale portrait of 1800, from open-access museum imagery, credited on the sheet.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 42, "stripe_link": "" },
+        "edition": { "price": 145, "stripe_link": "" }
+      },
+      "status": "art_pending",
+      "source_verified_by": "PENDING · confirm holding institution + open-access terms for the 1800 Peale [house rule: cited]"
+    },
+    {
+      "no": 9,
+      "slug": "john-adams-after-stuart",
+      "sku": "TB-FDR-ADAM",
+      "line": "founders",
+      "room": "heritage",
+      "title": "John Adams",
+      "kicker": "AFTER GILBERT STUART, C. 1800",
+      "display_heading": "John Adams",
+      "date_label": "1735 TO 1826",
+      "one_line": "After Gilbert Stuart, circa 1800.",
+      "excerpt_style": "portrait",
+      "excerpt": "Portrait after Gilbert Stuart, c. 1800. Final art placed from National Gallery of Art open access before the first press run.",
+      "label": {
+        "source": "National Gallery of Art, open access · after Gilbert Stuart, c. 1800",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["NATIONAL GALLERY OF ART", "1735 TO 1826"],
+      "provenance": "After the Gilbert Stuart portrait of circa 1800, reproduced from National Gallery of Art open-access imagery.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 42, "stripe_link": "" },
+        "edition": { "price": 145, "stripe_link": "" }
+      },
+      "status": "art_pending",
+      "source_verified_by": "PENDING · pull open-access file + rights note from nga.gov [house rule: cited]"
+    },
+    {
+      "no": 10,
+      "slug": "well-done-is-better-than-well-said",
+      "sku": "TB-QTE-WELL",
+      "line": "quotes",
+      "room": "heritage",
+      "title": "Well done is better than well said.",
+      "kicker": "BENJAMIN FRANKLIN",
+      "display_heading": "Well done is better than well said.",
+      "date_label": "FRANKLIN · POOR RICHARD'S, 1737",
+      "one_line": "A printer wrote the shop's creed in 1737. The first copy off the press hangs over our machine, not in the store.",
+      "excerpt_style": "quote",
+      "excerpt": "Well done is better than well said.",
+      "attribution": "Poor Richard's Almanack, 1737",
+      "label": {
+        "source": "Poor Richard's Almanack, 1737",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": ["EVERY QUOTE CITED", "SET IN CASLON"],
+      "provenance": "From Poor Richard's Almanack for 1737, by Benjamin Franklin, printer, Philadelphia. Source, date, and document set on the sheet. No spurious Franklin either.",
+      "tiers": {
+        "digital": { "price": 7, "stripe_link": "" },
+        "print": { "price": 38, "stripe_link": "" },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against a 1737 Poor Richard's facsimile [house rule: cited]"
+    },
+    {
+      "no": 11,
+      "slug": "facts-are-stubborn-things",
+      "sku": "TB-QTE-FACT",
+      "line": "quotes",
+      "room": "heritage",
+      "title": "Facts are stubborn things.",
+      "kicker": "JOHN ADAMS",
+      "display_heading": "Facts are stubborn things.",
+      "date_label": "ADAMS · BOSTON, 1770",
+      "one_line": "Adams, defending the least popular clients in Boston, 1770.",
+      "excerpt_style": "quote",
+      "excerpt": "Facts are stubborn things; and whatever may be our wishes, our inclinations, or the dictates of our passions, they cannot alter the state of facts and evidence.",
+      "attribution": "Argument in defense of the soldiers, Boston, 1770",
+      "label": {
+        "source": "Argument in defense of the British soldiers, December 1770",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": ["EVERY QUOTE CITED", "SET IN CASLON"],
+      "provenance": "From John Adams's argument in defense of the British soldiers tried for the Boston Massacre, December 1770. The sheet sets the full sentence, not the shortened meme.",
+      "tiers": {
+        "digital": { "price": 7, "stripe_link": "" },
+        "print": { "price": 38, "stripe_link": "" },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against the Adams Papers / Legal Papers of John Adams [house rule: cited]"
+    },
+    {
+      "no": 12,
+      "slug": "the-thirteen-colonies-1776",
+      "sku": "TB-MAP-COLO",
+      "line": "maps",
+      "room": "heritage",
+      "title": "The Thirteen Colonies",
+      "kicker": "1776 · AFTER A PERIOD MAP",
+      "display_heading": "The Thirteen Colonies, 1776",
+      "date_label": "1776 · AFTER A PERIOD MAP",
+      "one_line": "After a period map, Library of Congress.",
+      "excerpt_style": "map",
+      "excerpt": "After a period map of the thirteen colonies, from the Library of Congress geography and map division. Final art placed before the first press run.",
+      "label": {
+        "source": "Library of Congress, public domain",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["LIBRARY OF CONGRESS", "PUBLIC DOMAIN"],
+      "provenance": "After a period map of the colonies at independence, reproduced from Library of Congress public-domain holdings, with the original cartographer credited on the sheet once the plate is chosen.",
+      "tiers": {
+        "digital": { "price": 12, "stripe_link": "" },
+        "print": { "price": 48, "stripe_link": "" },
+        "edition": { "price": 175, "stripe_link": "" }
+      },
+      "status": "art_pending",
+      "source_verified_by": "PENDING · choose plate at loc.gov and record call number [house rule: cited]"
+    },
+    {
+      "no": 13,
+      "slug": "plan-of-the-city-of-washington",
+      "sku": "TB-MAP-WASH",
+      "line": "maps",
+      "room": "heritage",
+      "title": "Plan of the City of Washington",
+      "kicker": "1792 · ELLICOTT, AFTER L'ENFANT",
+      "display_heading": "Plan of the City of Washington, 1792",
+      "date_label": "1792 · ELLICOTT, AFTER L'ENFANT",
+      "one_line": "Ellicott's engraving of the L'Enfant plan — the capital on paper before it existed on land.",
+      "excerpt_style": "map",
+      "excerpt": "Andrew Ellicott's 1792 engraving after Pierre L'Enfant's plan, from the Library of Congress geography and map division. Final art placed before the first press run.",
+      "label": {
+        "source": "Library of Congress, public domain",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["LIBRARY OF CONGRESS", "PUBLIC DOMAIN"],
+      "provenance": "Ellicott, after L'Enfant, 1792, from Library of Congress public-domain holdings. A city that existed in print before it existed at all — a very print-shop kind of founding.",
+      "tiers": {
+        "digital": { "price": 12, "stripe_link": "" },
+        "print": { "price": 48, "stripe_link": "" },
+        "edition": { "price": 175, "stripe_link": "" }
+      },
+      "status": "art_pending",
+      "source_verified_by": "PENDING · choose plate at loc.gov and record call number [house rule: cited]"
+    },
+    {
+      "no": 14,
+      "slug": "texas-declaration-of-independence",
+      "sku": "TB-TEX-DECL",
+      "line": "texas",
+      "room": "both",
+      "title": "The Texas Declaration of Independence",
+      "kicker": "WASHINGTON-ON-THE-BRAZOS, MARCH 2, 1836",
+      "display_heading": "The Texas Declaration of Independence",
+      "date_label": "1836",
+      "one_line": "Signed at Washington-on-the-Brazos, March 2, 1836. The home market's founding sheet.",
+      "excerpt_style": "columns",
+      "excerpt": "When a government has ceased to protect the lives, liberty and property of the people, from whom its legitimate powers are derived, and for the advancement of whose happiness it was instituted, and so far from being a guarantee for the enjoyment of those inestimable and inalienable rights, becomes an instrument in the hands of evil rulers for their oppression.",
+      "label": {
+        "source": "Texas State Library and Archives",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["TEXAS STATE LIBRARY", "SET IN CASLON"],
+      "provenance": "From the Texas State Library and Archives transcription of the declaration adopted at Washington-on-the-Brazos, March 2, 1836. Printed an hour up the road from where we print.",
+      "tiers": {
+        "digital": { "price": 9, "stripe_link": "" },
+        "print": { "price": 46, "stripe_link": "" },
+        "edition": { "price": 175, "stripe_link": "" }
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against tsl.texas.gov transcription [house rule: cited]"
+    },
+    {
+      "no": 15,
+      "slug": "the-republic-of-texas-after-emory",
+      "sku": "TB-TEX-EMOR",
+      "line": "texas",
+      "room": "heritage",
+      "title": "The Republic of Texas",
+      "kicker": "1844 · AFTER EMORY",
+      "display_heading": "The Republic of Texas, 1844",
+      "date_label": "1844 · AFTER EMORY",
+      "one_line": "After Emory, 1844 — the Republic mapped in its last year before statehood.",
+      "excerpt_style": "map",
+      "excerpt": "After William H. Emory's 1844 map of Texas, from Library of Congress public-domain holdings. Final art placed before the first press run.",
+      "label": {
+        "source": "Library of Congress, public domain",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": ["LIBRARY OF CONGRESS", "PUBLIC DOMAIN"],
+      "provenance": "After Emory, 1844, from Library of Congress public-domain holdings, with the call number recorded on the product page once the plate is chosen.",
+      "tiers": {
+        "digital": { "price": 12, "stripe_link": "" },
+        "print": { "price": 48, "stripe_link": "" },
+        "edition": { "price": 175, "stripe_link": "" }
+      },
+      "status": "art_pending",
+      "source_verified_by": "PENDING · choose plate at loc.gov and record call number [house rule: cited]"
+    },
+    {
+      "no": 16,
+      "slug": "the-revolution-1765-to-1789",
+      "sku": "TB-CLS-TIME",
+      "line": "classroom",
+      "room": "classroom",
+      "title": "The Revolution, 1765 to 1789",
+      "kicker": "FOR THE CLASSROOM",
+      "display_heading": "The Revolution, 1765 to 1789",
+      "date_label": "TIMELINE · CLASSROOM",
+      "one_line": "Ten dates from the Stamp Act to the first inauguration, sized for the wall and priced for a teacher.",
+      "excerpt_style": "timeline",
+      "excerpt": "1765\tThe Stamp Act\n1770\tThe Boston Massacre\n1773\tThe Boston Tea Party\n1775\tLexington and Concord\n1776\tThe Declaration of Independence\n1777\tSaratoga\n1781\tYorktown\n1783\tThe Treaty of Paris\n1787\tThe Constitution\n1789\tWashington inaugurated",
+      "label": {
+        "source": "Dates verified against National Archives and Library of Congress",
+        "typeface": "Caslon with Plex Mono figures",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": ["CLASSROOM SERIES", "18 X 24"],
+      "provenance": "Ten dates, each verified against National Archives and Library of Congress chronologies. Built to anchor the Founding Documents Set on a classroom wall.",
+      "tiers": {
+        "digital": { "price": 12, "stripe_link": "" },
+        "print": { "price": 44, "stripe_link": "" },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Jacob E. Thomas · dates cross-checked · 2026-08"
+    }
+  ],
+  "sets": [
+    {
+      "slug": "founding-documents-set",
+      "sku": "TB-SET-FOUND",
+      "title": "The Founding Documents Set",
+      "strap": "Six documents. One wall.",
+      "one_line": "The five documents and the timeline of the Revolution, sourced, dated, and sized for the room. A download you print tonight, or six sheets from our press in one tube.",
+      "includes": ["declaration-of-independence", "preamble-to-the-constitution", "bill-of-rights", "washingtons-farewell-address", "gettysburg-address", "the-revolution-1765-to-1789"],
+      "tiers": {
+        "digital": { "price": 24, "stripe_link": "" },
+        "print": { "price": 150, "stripe_link": "" }
+      },
+      "audience": "Homeschool families, co-ops, private and charter schools, civics teachers. A repeat purchase every August."
+    },
+    {
+      "slug": "the-founders-set",
+      "sku": "TB-SET-FNDR",
+      "title": "The Founders Set",
+      "strap": "Four portraits, one shelf of history.",
+      "one_line": "Washington, Franklin, Jefferson, and Adams, after Stuart, Duplessis, and Peale, with dates and painters credited on every sheet.",
+      "includes": ["george-washington-after-stuart", "benjamin-franklin-after-duplessis", "thomas-jefferson-after-peale", "john-adams-after-stuart"],
+      "tiers": {
+        "digital": { "price": 18, "stripe_link": "" },
+        "print": { "price": 125, "stripe_link": "" }
+      },
+      "audience": "Presidents' Day classrooms, law offices, gift buyers."
+    },
+    {
+      "slug": "the-texas-set",
+      "sku": "TB-SET-TEXA",
+      "title": "The Texas Set",
+      "strap": "The Republic, declared and mapped.",
+      "one_line": "The Texas Declaration of Independence and the Republic of Texas after Emory, printed an hour from where both belong.",
+      "includes": ["texas-declaration-of-independence", "the-republic-of-texas-after-emory"],
+      "tiers": {
+        "digital": { "price": 15, "stripe_link": "" },
+        "print": { "price": 85, "stripe_link": "" }
+      },
+      "audience": "Texans, Texas Independence Day, the home market."
+    }
+  ]
+}

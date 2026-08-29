@@ -1,0 +1,32 @@
+{
+  "_meta": {
+    "rule": "One entry per anniversary, roughly twice a month (proposal §V, §VII). Each entry is also the pin set, the email, and the reason to reprint. Machines draft; Jacob signs before status becomes published [D9]. Letter voice, no hype, no AI-speak [D1].",
+    "statuses": ["draft", "scheduled", "published"]
+  },
+  "entries": [
+    {
+      "slug": "constitution-day",
+      "date": "2026-09-17",
+      "title": "Constitution Day, and why the Preamble is set in one sentence",
+      "status": "scheduled",
+      "signed": "J.E.T.",
+      "body": "The Preamble is fifty-two words and one sentence. We set it that way on purpose.\n\nMost printings break it into lines like verse, which makes it sound like a hymn. It isn't a hymn. It's a working sentence — the longest to-do list ever ratified — and the engrossing clerk, Jacob Shallus, wrote it as one continuous breath with the first three words display-sized. Our sheet keeps his proportions: WE THE PEOPLE large, because that's the subject; everything after in one measure, because that's the predicate, and the country is the object.\n\nThe store opens today, on the anniversary of the signing. Digital first: every sheet in the catalog can be downloaded tonight and printed at home for less than the cost of a movie ticket. The press runs next month.\n\nIt's a fitting day to open a print shop's store. The Constitution was itself a print job — the Committee of Style sent it to the printers Dunlap and Claypoole, who kept it secret and got it out. We aim to keep only the second half of that tradition."
+    },
+    {
+      "slug": "the-night-run",
+      "date": "2026-10-15",
+      "title": "The night run: how the Declaration got printed",
+      "status": "draft",
+      "signed": "J.E.T.",
+      "body": "On the evening of July 4, 1776, Congress ordered the Declaration \"authenticated and printed.\" John Dunlap, an Irish immigrant with a shop on Market Street, set the whole document in Caslon that night and ran roughly two hundred broadsides before dawn. Horses carried them to the colonies; one went to Washington, who had it read aloud to the army in New York on July 9.\n\nThe parchment everyone pictures — the one with the signatures — came later. The first Declaration anyone actually read was a broadside. A print job, run overnight, proofed by candlelight, shipped by morning.\n\nThis week our press ran its first batch of the same document, set in the same typeface, on heavier paper than Dunlap could get. It took us less than a night, and nobody was committing treason. The bar, however, remains the bar: set it clean, run it deep, ship it before you sleep.\n\nOur first run and what we learned about heavy stock, below."
+    },
+    {
+      "slug": "bill-of-rights-day",
+      "date": "2026-12-15",
+      "title": "Bill of Rights Day: ten amendments, two columns",
+      "status": "draft",
+      "signed": "J.E.T.",
+      "body": "How we chose the measure, the leading, and the paper for the longest sheet we print.\n\nThe ten amendments ratified on December 15, 1791 were session laws — working text, numbered, meant to be consulted. So the sheet is set like the lawbooks of the period: two columns, amendment numbers in small caps out front, and no decoration except the one red rule under the title. The type does the arguing.\n\nTwo columns also solved a very physical problem: Amendment I is fifty-five words and Amendment X is twenty-eight, and a single column turns that into a ragged staircase. Columns let the ten sit together like the compromise they were.\n\nIt's the season's gift sheet, framed or in the tube. Ordered by December 18, it ships from Austin in time."
+    }
+  ]
+}

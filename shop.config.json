@@ -1,0 +1,50 @@
+{
+  "name": "Thomas Broadside Co.",
+  "legal": "A venture of Thomas Graphics Inc., Austin, Texas",
+  "working_name": true,
+  "tagline": "Founding documents, portraits, and maps, printed on our own press since 2026.",
+  "motto": "BUILD SOMETHING THAT LASTS",
+  "domain": "thomasbroadside.co",
+  "site_url": "https://thomasbroadside.co",
+  "shop_email": "press@thomasbroadside.co",
+  "city_line": "Austin: Printed by Thomas Graphics Inc.",
+  "house_rules": {
+    "cited": "Every quote carries its source, date, and document, on the product page and on the sheet. If we cannot cite it, we do not print it.",
+    "pre_partisan": "The store belongs to the founding era, not to a party. The shop's political work stays out of it.",
+    "printed_here": "Every physical print comes off our press in Austin and says so. Not print on demand, not a fulfillment warehouse."
+  },
+  "people": {
+    "jacob": { "name": "Jacob E. Thomas, PhD", "role": "Information side. Conducts the clerks, signs the store, checks the quotes." },
+    "ben": { "name": "Ben Thomas", "role": "Operations and logistics. Stock, fulfillment, the trade network, the mailhouse. Holds the hands rule [D6]." },
+    "david": { "name": "David Olivo", "role": "Craft. Museum-grade production. Holds the veto [D6]." }
+  },
+  "press": {
+    "line": "Printed on our own press in Austin, Texas",
+    "paper_print": "100 lb cream cover",
+    "paper_edition": "Cotton paper, embossed maker's mark",
+    "inks": ["black", "red"],
+    "sizes": ["18 x 24", "24 x 36 (documents)"],
+    "honest_sentence": "The information side of this shop — the catalog, the letters, the ledger — is kept by machines that read; every sheet, every price, and every claim of “cited” is approved by a human being."
+  },
+  "gate": {
+    "date": "2027-01-31",
+    "orders": 150,
+    "revenue_usd": 5000,
+    "below": "The store stays a passive digital catalog with no further press runs.",
+    "above": "Run the full catalog, open wholesale, build the classroom line for August."
+  },
+  "launch": { "soft": "2026-09-17", "first_press_run": "2026-10-15" },
+  "shipping": { "free_us_over_usd": 75, "method": "Rolled in a tube from Austin. Sets ship in one tube." },
+  "reprint_trigger_sheets": 50,
+  "cloudflare": {
+    "pages_project": "thomas-broadside-co",
+    "kv_binding": "SHOPKV",
+    "kv_namespace_id": "SET_AFTER_CREATE"
+  },
+  "llm": {
+    "endpoint": "/api/llm",
+    "model_env": "LLM_MODEL",
+    "note": "Model is pinned by the LLM_MODEL environment variable in Cloudflare, never hardcoded. Pick the current Sonnet-class model from docs.claude.com and revisit quarterly."
+  },
+  "decisions": "docs/FOUNDING_DIALOGUE.md"
+}

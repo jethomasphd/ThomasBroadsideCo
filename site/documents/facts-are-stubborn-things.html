@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Facts are stubborn things. — Thomas Broadside Co.</title>
+<meta name="description" content="Adams, defending the least popular clients in Boston, 1770.">
+<link rel="stylesheet" href="/css/broadside.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23211c12'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23f2ecdd' font-family='Georgia'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="topbar">Printed on our own press in Austin, Texas <span class="sep">·</span> Every quote cited <span class="sep">·</span> Free U.S. shipping on prints over $75</div>
+
+<header class="masthead">
+  <a class="brand" href="/"><span class="star">★</span>Thomas Broadside Co.</a>
+  <nav>
+    <a href="/#documents">Documents</a>
+    <a href="/#founders">Founders</a>
+    <a href="/#maps-texas">Maps &amp; Texas</a>
+    <a href="/classroom.html">Classroom</a>
+    <a href="/press.html">The Press</a>
+    <a href="/journal/">Journal</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="band">
+  <div class="wrap grid grid--2" style="gap:4rem;align-items:start;">
+    <div class="frame">
+      <div class="sheet"><div class="sheet__inner">
+        <p class="sheet__kicker">JOHN ADAMS</p>
+        <p class="sheet__title">Facts are stubborn things.</p>
+        <hr class="sheet__rule">
+        <p class="sheet__text--quote">Facts are stubborn things; and whatever may be our wishes, our inclinations, or the dictates of our passions, they cannot alter the state of facts and evidence.</p><p class="sheet__attr">Argument in defense of the soldiers, Boston, 1770</p>
+        <div class="sheet__footer"><span>EVERY QUOTE CITED</span><span>SET IN CASLON</span></div>
+      </div></div>
+    </div>
+    <div>
+      <p class="kicker">ADAMS · BOSTON, 1770</p>
+      <h1 style="font-size:clamp(1.8rem,3.6vw,2.6rem);">Facts are stubborn things.</h1>
+      <p class="lede">Adams, defending the least popular clients in Boston, 1770.</p>
+
+      <div class="buys" style="margin:2rem 0;">
+        <div class="buy"><span class="buy__tier">digital</span><span class="buy__price">$7</span><span class="buy__note">Instant download · 8.5×11, 11×17 &amp; 18×24 · print it tonight</span><button class="btn" data-reserve="TB-QTE-FACT:digital:1">Reserve</button></div>
+        <div class="buy"><span class="buy__tier">print</span><span class="buy__price">$38</span><span class="buy__note">18 × 24 on 100 lb cream cover · off our press · in a tube</span><button class="btn" data-reserve="TB-QTE-FACT:print:1">Reserve</button></div>
+      </div>
+
+      <table class="label-table">
+        <tr><th>source</th><td>Argument in defense of the British soldiers, December 1770</td></tr>
+        <tr><th>typeface</th><td>Caslon</td></tr>
+        <tr><th>paper</th><td>100 lb cream cover, 18 x 24</td></tr>
+        <tr><th>press</th><td>Thomas Graphics, Austin, Texas</td></tr>
+        <tr><th>edition</th><td>—</td></tr>
+      </table>
+
+      <p class="prose" style="margin-top:1.6rem;">From John Adams&#x27;s argument in defense of the British soldiers tried for the Boston Massacre, December 1770. The sheet sets the full sentence, not the shortened meme.</p>
+      <p class="form-note">Rolled in a tube from Austin. Free U.S. shipping on prints over $75.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--deep" id="reserve" hidden>
+  <div class="wrap">
+    <h2>Reserve at the counter</h2>
+    <p class="lede">Leave your details and the shop desk will reply within two working days with a payment link and the ship date. Nothing is charged here.</p>
+    <form class="counter-form" data-counter data-kind="order" data-items="">
+      <label>Your name <input name="name" required maxlength="120"></label>
+      <label>Email <input name="email" type="email" required maxlength="160"></label>
+      <label>Shipping address (for prints and editions) <textarea name="address" rows="3" maxlength="400"></textarea></label>
+      <label>Note to the shop <textarea name="message" rows="3" maxlength="1200"></textarea></label>
+      <div><button class="btn btn--solid" type="submit">Reserve — the desk will reply</button></div>
+      <p class="form-note" data-counter-result></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <p class="motto">Build something that lasts</p>
+    <p class="fine">Austin: Printed by Thomas Graphics Inc. · Set in Libre Caslon and IBM Plex Mono. Working prices, for discussion.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.querySelectorAll('[data-reserve]').forEach(function (b) {
+    b.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      var section = document.getElementById('reserve');
+      var form = section.querySelector('form');
+      form.setAttribute('data-items', b.getAttribute('data-reserve'));
+      section.hidden = false;
+      section.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+<script src="/js/bell.js" defer></script>
+<script src="/js/counter.js" defer></script>
+</body>
+</html>

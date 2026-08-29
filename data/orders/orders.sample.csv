@@ -1,0 +1,7 @@
+id,ts,status,kind,name,email,items,amount_usd,source,address,note
+TB-20260917-A1B2,2026-09-17T14:22:05Z,CONFIRMED,order,Sam Sample,sam@example.com,TB-DOC-PREA:digital:1,9,stripe,,launch-day download
+TB-20260917-C3D4,2026-09-17T16:40:11Z,CONFIRMED,order,Rita Reader,rita@example.com,TB-SET-FOUND:digital:1,24,stripe,,homeschool co-op
+TB-20260918-E5F6,2026-09-18T03:12:44Z,NEW,order,Tom Testcase,tom@example.com,TB-DOC-DECL:print:1,0,site,"100 Example St, Austin TX 78701",asked about framing
+TB-20260919-G7H8,2026-09-19T19:05:32Z,QUEUED,order,Dana Demo,dana@example.com,TB-DOC-BILL:print:1|TB-QTE-FACT:print:1,84,stripe,"22 Placeholder Ave, Dallas TX 75201",gift — ship together
+TB-20260920-J9K1,2026-09-20T21:47:19Z,CONFIRMED,order,Lex Lorem,lex@example.com,TB-DOC-DECL:edition:1,175,stripe,"5 Specimen Rd, Houston TX 77002",edition — David inspects
+TB-20260921-M2N3,2026-09-21T15:30:00Z,NEW,wholesale,Ipsum & Dolor LLP,office@example.com,TB-SET-FOUND:print:4,0,site,"800 Mockingbird Ln, Fort Worth TX 76102",law firm — four framed sets quoted
