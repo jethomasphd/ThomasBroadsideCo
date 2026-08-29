@@ -1,0 +1,33 @@
+{
+  "_meta": {
+    "rule": "The book of sheets. The Foreman keeps this file from Ben's counts; the Ledger reads it for the fifth number [D7]. Offset wants batches: reprint is flagged when sheets_on_hand falls below reprint_trigger_sheets in shop.config.json (50). Counts come from a human hand — Ben texts or tells the Foreman, the Foreman writes it down. Machines never invent inventory [D9].",
+    "updated": "2026-08-29",
+    "updated_by": "initial — no press runs yet; first run planned 2026-10-15"
+  },
+  "press_runs": [],
+  "sheets": {
+    "TB-DOC-DECL": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-DOC-PREA": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-DOC-BILL": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-DOC-FARE": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-DOC-GETT": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-FDR-WASH": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-FDR-FRAN": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-FDR-JEFF": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-FDR-ADAM": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-QTE-WELL": { "sheets_on_hand": 0, "editions_remaining": 0, "editions_numbered_through": 0 },
+    "TB-QTE-FACT": { "sheets_on_hand": 0, "editions_remaining": 0, "editions_numbered_through": 0 },
+    "TB-MAP-COLO": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-MAP-WASH": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-TEX-DECL": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-TEX-EMOR": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
+    "TB-CLS-TIME": { "sheets_on_hand": 0, "editions_remaining": 0, "editions_numbered_through": 0 }
+  },
+  "supplies": {
+    "tubes_on_hand": 0,
+    "cream_cover_sheets": 0,
+    "cotton_sheets": 0,
+    "labels": 0,
+    "note": "Ben counts before the first run. A late tube costs more than a sale (proposal §X, Hands)."
+  }
+}

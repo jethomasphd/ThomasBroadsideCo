@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pressroom — Thomas Broadside Co.</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="stylesheet" href="/css/broadside.css">
+</head>
+<body class="workroom">
+
+<div class="topbar">The pressroom <span class="sep">·</span> Queued, on press, shipped <span class="sep">·</span> Nothing ships without David's eye</div>
+
+<header class="masthead">
+  <a class="brand" href="/pressroom.html"><span class="star">★</span>Pressroom</a>
+  <nav><a href="/" target="_blank">The store</a></nav>
+  <button class="desk btn btn--quiet" id="refresh">Refresh</button>
+</header>
+
+<main class="wrap" style="padding-top:2.5rem;padding-bottom:4rem;">
+  <p class="kicker">The spike</p>
+  <h1 style="font-size:2rem;">Today's queue</h1>
+  <p class="form-note" id="word">Loading the spike…</p>
+  <div id="queue"></div>
+  <hr class="rule">
+  <h2 style="font-size:1.3rem;">Shipped this week</h2>
+  <div id="done"></div>
+</main>
+
+<script>
+(function () {
+  var TOKEN_KEY = 'tb_press_token';
+  function token() {
+    var t = localStorage.getItem(TOKEN_KEY);
+    if (!t) {
+      t = prompt('Shop token (on the card in the supply cabinet):') || '';
+      if (t) localStorage.setItem(TOKEN_KEY, t.trim());
+    }
+    return (t || '').trim();
+  }
+  function api(method, body, qs) {
+    return fetch('/api/spike' + (qs || ''), {
+      method: method,
+      headers: { authorization: 'Bearer ' + token(), 'content-type': 'application/json' },
+      body: body ? JSON.stringify(body) : undefined,
+    }).then(function (r) {
+      if (r.status === 401) { localStorage.removeItem(TOKEN_KEY); throw new Error('That token was not right. Refresh and try again.'); }
+      return r.json();
+    });
+  }
+  function esc(s) { var d = document.createElement('div'); d.textContent = s == null ? '' : String(s); return d.innerHTML; }
+
+  function card(o) {
+    var isEdition = (o.items || '').indexOf(':edition:') > -1;
+    var div = document.createElement('div');
+    div.className = 'order-card' + (isEdition ? ' is-edition' : '');
+    var days = Math.floor((Date.now() - new Date(o.ts).getTime()) / 86400000);
+    div.innerHTML =
+      '<div><span class="oid">' + esc(o.id) + '</span> &nbsp; <span class="ostatus">' + esc(o.status) + (isEdition ? ' · EDITION — NUMBER & INSPECT' : '') + '</span></div>' +
+      '<div class="oitems">' + esc((o.items || '').split('|').join('  +  ')) + '</div>' +
+      (o.address ? '<div class="oaddr">' + esc(o.name) + '\n' + esc(o.address) + '</div>' : '<div class="oaddr">' + esc(o.name) + ' · digital</div>') +
+      (o.note ? '<div class="form-note">' + esc(o.note) + '</div>' : '') +
+      '<div class="form-note">' + days + ' day' + (days === 1 ? '' : 's') + ' on the spike</div>';
+
+    var btns = document.createElement('div');
+    btns.className = 'obtns';
+    function btn(label, cls, fn) {
+      var b = document.createElement('button');
+      b.className = 'btn ' + cls; b.textContent = label;
+      b.addEventListener('click', fn); btns.appendChild(b); return b;
+    }
+    if (o.status === 'CONFIRMED' || o.status === 'QUEUED' || o.status === 'HOLD') {
+      btn('Start press', 'btn--solid', function () { move(o.id, 'ON_PRESS'); });
+    }
+    if (o.status === 'ON_PRESS') {
+      var input = document.createElement('input');
+      input.className = 'tracking'; input.placeholder = 'tracking number';
+      btns.appendChild(input);
+      btn('Shipped', 'btn--solid', function () {
+        if (!input.value || input.value.trim().length < 6) { alert('Type the tracking number first — the customer gets it.'); return; }
+        move(o.id, 'SHIPPED', { tracking: input.value.trim() });
+      });
+    }
+    if (o.status !== 'SHIPPED' && o.status !== 'CANCELED') {
+      btn('Hold', 'btn--quiet', function () {
+        var why = prompt('One line — what does it need?');
+        if (why) move(o.id, 'HOLD', { note: why });
+      });
+    }
+    div.appendChild(btns);
+    return div;
+  }
+
+  function move(id, status, extra) {
+    var body = Object.assign({ id: id, status: status, by: 'hand' }, extra || {});
+    api('POST', body).then(load).catch(function (e) { alert(e.message); });
+  }
+
+  function load() {
+    document.getElementById('word').textContent = 'Loading the spike…';
+    api('GET').then(function (res) {
+      var queue = document.getElementById('queue');
+      var done = document.getElementById('done');
+      queue.innerHTML = ''; done.innerHTML = '';
+      var open = 0;
+      (res.orders || []).forEach(function (o) {
+        var physical = (o.items || '').indexOf(':print:') > -1 || (o.items || '').indexOf(':edition:') > -1 || o.kind === 'wholesale';
+        if (o.status === 'SHIPPED') {
+          if (Date.now() - new Date(o.ts).getTime() < 7 * 86400000) done.appendChild(card(o));
+        } else if (o.status !== 'CANCELED' && o.status !== 'NEW' && physical) {
+          queue.appendChild(card(o)); open++;
+        }
+      });
+      document.getElementById('word').textContent = open
+        ? open + ' order' + (open === 1 ? '' : 's') + ' waiting. Oldest first is honest work.'
+        : 'The spike is clear. Well done is better than well said.';
+    }).catch(function (e) { document.getElementById('word').textContent = e.message; });
+  }
+
+  document.getElementById('refresh').addEventListener('click', load);
+  load();
+})();
+</script>
+</body>
+</html>

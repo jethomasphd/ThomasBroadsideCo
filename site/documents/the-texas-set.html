@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Texas Set — Thomas Broadside Co.</title>
+<meta name="description" content="The Texas Declaration of Independence and the Republic of Texas after Emory, printed an hour from where both belong.">
+<link rel="stylesheet" href="/css/broadside.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23211c12'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23f2ecdd' font-family='Georgia'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<div class="topbar">Printed on our own press in Austin, Texas <span class="sep">·</span> Every quote cited <span class="sep">·</span> Free U.S. shipping on prints over $75</div>
+
+<header class="masthead">
+  <a class="brand" href="/"><span class="star">★</span>Thomas Broadside Co.</a>
+  <nav>
+    <a href="/#documents">Documents</a>
+    <a href="/#founders">Founders</a>
+    <a href="/#maps-texas">Maps &amp; Texas</a>
+    <a href="/classroom.html">Classroom</a>
+    <a href="/press.html">The Press</a>
+    <a href="/journal/">Journal</a>
+  </nav>
+</header>
+
+<main>
+
+<section class="band">
+  <div class="wrap grid grid--2" style="gap:4rem;align-items:start;">
+    <div class="frame">
+      <div class="sheet"><div class="sheet__inner">
+        <p class="sheet__kicker">THE SETS · BUNDLES OF THE SIXTEEN</p>
+        <p class="sheet__title">The Republic, declared and mapped.</p>
+        <hr class="sheet__rule">
+        <p class="sheet__text sheet__text--center">The Texas Declaration of Independence and the Republic of Texas after Emory, printed an hour from where both belong.</p><ul class="sheet__timeline" style="margin-top:.8rem;"><li>The Texas Declaration of Independence — 1836</li><li>The Republic of Texas — 1844 · AFTER EMORY</li></ul>
+        <div class="sheet__footer"><span>ONE TUBE</span><span>SOURCED &amp; DATED</span></div>
+      </div></div>
+    </div>
+    <div>
+      <p class="kicker">THE SETS</p>
+      <h1 style="font-size:clamp(1.8rem,3.6vw,2.6rem);">The Texas Set</h1>
+      <p class="lede">Texans, Texas Independence Day, the home market.</p>
+
+      <div class="buys" style="margin:2rem 0;">
+        <div class="buy"><span class="buy__tier">digital</span><span class="buy__price">$15</span><span class="buy__note">Instant download · every sheet, all sizes</span><button class="btn" data-reserve="TB-SET-TEXA:digital:1">Reserve</button></div>
+        <div class="buy"><span class="buy__tier">print</span><span class="buy__price">$85</span><span class="buy__note">Off our press · ships in one tube</span><button class="btn" data-reserve="TB-SET-TEXA:print:1">Reserve</button></div>
+      </div>
+
+      <table class="label-table">
+        <tr><th>includes</th><td>2 sheets, each sourced and dated</td></tr>
+        <tr><th>press</th><td>Thomas Graphics, Austin, Texas</td></tr>
+      </table>
+
+      <p class="prose" style="margin-top:1.6rem;">Sets are bundles of the sixteen designs, never new designs, so every set sells through the same press runs.</p>
+      <p class="form-note">Rolled in a tube from Austin. Free U.S. shipping on prints over $75.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band band--deep" id="reserve" hidden>
+  <div class="wrap">
+    <h2>Reserve at the counter</h2>
+    <p class="lede">Leave your details and the shop desk will reply within two working days with a payment link and the ship date. Nothing is charged here.</p>
+    <form class="counter-form" data-counter data-kind="order" data-items="">
+      <label>Your name <input name="name" required maxlength="120"></label>
+      <label>Email <input name="email" type="email" required maxlength="160"></label>
+      <label>Shipping address (for prints and editions) <textarea name="address" rows="3" maxlength="400"></textarea></label>
+      <label>Note to the shop <textarea name="message" rows="3" maxlength="1200"></textarea></label>
+      <div><button class="btn btn--solid" type="submit">Reserve — the desk will reply</button></div>
+      <p class="form-note" data-counter-result></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <div class="wrap">
+    <p class="motto">Build something that lasts</p>
+    <p class="fine">Austin: Printed by Thomas Graphics Inc. · Set in Libre Caslon and IBM Plex Mono. Working prices, for discussion.</p>
+  </div>
+</footer>
+
+<script>
+(function () {
+  document.querySelectorAll('[data-reserve]').forEach(function (b) {
+    b.addEventListener('click', function (ev) {
+      ev.preventDefault();
+      var section = document.getElementById('reserve');
+      var form = section.querySelector('form');
+      form.setAttribute('data-items', b.getAttribute('data-reserve'));
+      section.hidden = false;
+      section.scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+})();
+</script>
+<script src="/js/bell.js" defer></script>
+<script src="/js/counter.js" defer></script>
+</body>
+</html>

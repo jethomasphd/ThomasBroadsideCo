@@ -1,0 +1,10 @@
+# Thomas Broadside Co. — Cloudflare Pages configuration [D2]
+# Deploy: docs/DEPLOY.md. Secrets live in the Pages dashboard, never here.
+
+name = "thomas-broadside-co"
+compatibility_date = "2026-08-01"
+pages_build_output_dir = "site"
+
+[[kv_namespaces]]
+binding = "SHOPKV"
+id = "SET_AFTER_CREATE"   # wrangler kv namespace create SHOPKV → paste id (docs/DEPLOY.md §2)
