@@ -39,7 +39,7 @@
   "cloudflare": {
     "pages_project": "thomas-broadside-co",
     "kv_binding": "SHOPKV",
-    "kv_namespace_id": "SET_AFTER_CREATE"
+    "kv_namespace_id": "6264fb5f10a441babf2a03d6267a923c"
   },
   "llm": {
     "endpoint": "/api/llm",
