@@ -3,6 +3,8 @@
 **For Ben and David. Plain words, big type, printable.**
 One page a morning, three buttons, and nothing here ever requires
 remembering a password before coffee.
+New to the store? Read **`docs/HOW_THE_SHOP_WORKS.md`** first — the
+two-page tour of the whole operation. This page is just the buttons.
 
 ---
 

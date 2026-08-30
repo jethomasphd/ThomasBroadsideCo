@@ -98,6 +98,7 @@ def check_estate():
         "wrangler.toml", "CLAUDE.md", "README.md",
         "docs/FOUNDING_DIALOGUE.md", "docs/DEPLOY.md", "docs/COMMERCE.md",
         "docs/PRESSROOM_RUNBOOK.md", "docs/AFTER_THE_GATE.md",
+        "docs/HOW_THE_SHOP_WORKS.md",
         "agents/00-ORIENTATION.md", "agents/REGISTRAR.md", "agents/TYPOGRAPHER.md",
         "agents/SHOPKEEPER.md", "agents/HERALD.md", "agents/FOREMAN.md",
         "agents/CHRONICLER.md", "agents/KEEPER.md",
