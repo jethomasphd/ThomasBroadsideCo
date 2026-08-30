@@ -473,6 +473,30 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
     replace_gen(SITE / "classroom.html", "CLASSROOM_SETS", all_sets)
 
 
+def stamp_assets() -> None:
+    """Cache-bust every stylesheet/script URL so a browser can never pair
+    fresh markup with a stale broadside.css (seen in the wild, 2026-08-30).
+    The stamp is a CRC of the assets themselves: unchanged assets keep
+    their stamp, changed assets force a refetch."""
+    import zlib
+    stamp = 0
+    for rel in ("css/broadside.css", "js/bell.js", "js/cart.js",
+                "js/counter.js", "js/catalog-data.js"):
+        p = SITE / rel
+        if p.exists():
+            stamp = zlib.crc32(p.read_bytes(), stamp)
+    v = format(stamp & 0xFFFFFFFF, "x")
+    pat = re.compile(r'((?:href|src)="/(?:css|js)/[^"?]+)(?:\?v=[0-9a-f]+)?"')
+    n = 0
+    for page in SITE.rglob("*.html"):
+        text = page.read_text(encoding="utf-8")
+        new = pat.sub(lambda m: f'{m.group(1)}?v={v}"', text)
+        if new != text:
+            page.write_text(new, encoding="utf-8")
+            n += 1
+    print(f"assets stamped ?v={v} across {n} page(s)")
+
+
 def main() -> None:
     catalog = load("data/catalog/catalog.json")
     journal = load("data/journal/entries.json")
@@ -480,6 +504,7 @@ def main() -> None:
     build_catalog_data(catalog)
     n_journal = build_journal(journal)
     build_index_sections(catalog, journal)
+    stamp_assets()
     print(f"built {n_products} exhibit pages, {n_journal} journal entries, "
           f"catalog data + checkout prices, index + classroom refreshed")
 

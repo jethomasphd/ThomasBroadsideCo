@@ -273,6 +273,9 @@ section.band--ink a { text-decoration-color: rgba(241,236,224,.4); }
 }
 .card .sheet__rule { margin-bottom: .55rem; }
 .card .sheet__text { font-size: .61rem; line-height: 1.55; }
+/* Narrow card sheets read in one column; two-column stays for the big
+   sheets on hero and exhibit pages, where the measure can afford it. */
+.card .sheet__text--columns { column-count: 1; font-size: .66rem; text-align: left; hyphens: none; }
 .card .sheet__text--quote { font-size: 1.02rem; line-height: 1.35; margin: .5rem 0; }
 .card .sheet__attr { font-size: .64rem; }
 .card .sheet__amend { font-size: .58rem; line-height: 1.5; }

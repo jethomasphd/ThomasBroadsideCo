@@ -6,22 +6,86 @@
   },
   "press_runs": [],
   "sheets": {
-    "TB-DOC-DECL": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-DOC-PREA": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-DOC-BILL": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-DOC-FARE": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-DOC-GETT": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-FDR-WASH": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-FDR-FRAN": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-FDR-JEFF": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-FDR-ADAM": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-QTE-WELL": { "sheets_on_hand": 0, "editions_remaining": 0, "editions_numbered_through": 0 },
-    "TB-QTE-FACT": { "sheets_on_hand": 0, "editions_remaining": 0, "editions_numbered_through": 0 },
-    "TB-MAP-COLO": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-MAP-WASH": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-TEX-DECL": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-TEX-EMOR": { "sheets_on_hand": 0, "editions_remaining": 250, "editions_numbered_through": 0 },
-    "TB-CLS-TIME": { "sheets_on_hand": 0, "editions_remaining": 0, "editions_numbered_through": 0 }
+    "TB-DOC-DECL": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-DOC-PREA": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-DOC-BILL": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-DOC-FARE": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-DOC-GETT": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-FDR-WASH": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-FDR-FRAN": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-FDR-JEFF": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-QTE-WELL": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 0,
+      "editions_numbered_through": 0
+    },
+    "TB-QTE-FACT": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 0,
+      "editions_numbered_through": 0
+    },
+    "TB-MAP-COLO": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-MAP-WASH": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-TEX-DECL": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-TEX-EMOR": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    },
+    "TB-CLS-TIME": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 0,
+      "editions_numbered_through": 0
+    },
+    "TB-FDR-HAML": {
+      "sheets_on_hand": 0,
+      "editions_remaining": 250,
+      "editions_numbered_through": 0
+    }
   },
   "supplies": {
     "tubes_on_hand": 0,
