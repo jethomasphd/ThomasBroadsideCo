@@ -230,15 +230,56 @@ section.band--ink a { text-decoration-color: rgba(241,236,224,.4); }
   transition: transform .28s var(--lift), box-shadow .28s var(--lift);
 }
 .exhibit__mat { background: var(--mat); padding: clamp(.9rem, 1.8vw, 1.5rem); }
-.sheet { background: var(--paper); border: 1px solid var(--rule-faint); }
+.sheet { background: var(--paper); border: 1px solid var(--rule-faint); display: flex; }
 .sheet__inner {
   border: 1px solid var(--rule-faint);
   margin: .45rem;
   padding: 1.7rem 1.5rem 1.2rem;
   display: flex;
   flex-direction: column;
-  min-height: 100%;
+  flex: 1;
+  min-width: 0;
 }
+/* Every framed sheet holds the shop's own proportion: 18 × 24, i.e. 3:4.
+   Overflowing text crops behind a fade, the way a mat window crops a print. */
+.card .sheet, .hero .sheet, .exhibit-page__art .sheet { aspect-ratio: 3 / 4; }
+.sheet__body {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.sheet__body:not(.sheet__body--art) {
+  -webkit-mask-image: linear-gradient(#000 84%, transparent 99%);
+  mask-image: linear-gradient(#000 84%, transparent 99%);
+}
+.sheet__body--art { align-items: center; justify-content: center; }
+.sheet__img { flex: 1; min-height: 0; width: 100%; object-fit: contain; }
+
+/* At card scale the sheet is small: the chrome shrinks so the 3:4 paper
+   always wins. Nothing may spill past the sheet's edge. */
+.sheet { overflow: hidden; }
+.card .sheet__inner { padding: 1.05rem 1rem .8rem; margin: .35rem; }
+.card .sheet__kicker { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; margin-bottom: .55rem; }
+.card .sheet__title {
+  font-size: 1.02rem;
+  line-height: 1.2;
+  margin-bottom: .55rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.card .sheet__rule { margin-bottom: .55rem; }
+.card .sheet__text { font-size: .61rem; line-height: 1.55; }
+.card .sheet__text--quote { font-size: 1.02rem; line-height: 1.35; margin: .5rem 0; }
+.card .sheet__attr { font-size: .64rem; }
+.card .sheet__amend { font-size: .58rem; line-height: 1.5; }
+.card .sheet__timeline { font-size: .66rem; margin: .2rem 0; }
+.card .sheet__timeline .yr { font-size: .58rem; }
+.card .sheet__timeline li { padding: .18rem 0; }
+.card .sheet__footer { padding-top: .55rem; font-size: .5rem; }
 .sheet__kicker {
   font-family: var(--mono);
   font-size: .56rem;
@@ -312,11 +353,6 @@ section.band--ink a { text-decoration-color: rgba(241,236,224,.4); }
 /* ── the placard: the wall label beneath each exhibit ──────────────── */
 
 .card { display: flex; flex-direction: column; gap: 1.1rem; text-decoration: none; }
-/* the paper fills the frame: equal-height rows never show bare walnut */
-.card .exhibit { display: flex; }
-.card .exhibit__mat { flex: 1; display: flex; }
-.card .exhibit__mat > .sheet { flex: 1; display: flex; }
-.card .sheet__inner { flex: 1; }
 .card:hover .exhibit, .card:focus-visible .exhibit {
   transform: translateY(-5px);
   box-shadow:

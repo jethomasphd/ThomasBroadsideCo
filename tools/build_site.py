@@ -56,10 +56,21 @@ def money(n) -> str:
 
 # ── excerpt rendering: the typeset sheet inside the frame ────────────────
 
-def excerpt_block(d: dict) -> str:
+def truncate_words(text: str, n: int) -> str:
+    words = text.split()
+    return text if len(words) <= n else " ".join(words[:n]) + " …"
+
+
+def excerpt_block(d: dict, for_card: bool = False) -> str:
+    art = d.get("art")
+    if art:
+        return (f'<img class="sheet__img" src="{esc(art["src"])}" '
+                f'alt="{esc(art.get("alt", d.get("title", "")))}" loading="lazy">')
     style = d.get("excerpt_style", "columns")
     text = d.get("excerpt", "")
     if style == "columns":
+        if for_card:
+            text = truncate_words(text, 44)
         return f'<p class="sheet__text sheet__text--columns">{esc(text)}</p>'
     if style == "center":
         return f'<p class="sheet__text sheet__text--center">{esc(text)}</p>'
@@ -71,7 +82,10 @@ def excerpt_block(d: dict) -> str:
         return out
     if style == "amendments":
         paras = []
-        for line in text.split("\n"):
+        lines = text.split("\n")
+        if for_card:
+            lines = lines[:1] + ["Amendments II through X follow, set in two columns."]
+        for line in lines:
             line = line.strip()
             if not line:
                 continue
@@ -83,7 +97,10 @@ def excerpt_block(d: dict) -> str:
         return "\n".join(paras)
     if style == "timeline":
         items = []
-        for line in text.split("\n"):
+        rows = text.split("\n")
+        if for_card:
+            rows = rows[:6] + ["\u2026\tthrough Washington's inauguration, 1789"]
+        for line in rows:
             if "\t" in line:
                 yr, ev = line.split("\t", 1)
                 items.append(f'<li><span class="yr">{esc(yr)}</span><span>{esc(ev)}</span></li>')
@@ -160,7 +177,7 @@ def card(d: dict) -> str:
   <div class="exhibit"><div class="exhibit__mat">
     <div class="sheet"><div class="sheet__inner">
       <p class="sheet__kicker">{esc(d.get('kicker', ''))}</p>
-      {title_block}{excerpt_block(d)}
+      {title_block}<div class="sheet__body{' sheet__body--art' if d.get('art') else ''}">{excerpt_block(d, for_card=True)}</div>
       <div class="sheet__footer"><span>{esc(foot[0])}</span><span>{esc(foot[1])}</span></div>
     </div></div>
   </div></div>
@@ -246,6 +263,7 @@ def build_products(catalog: dict) -> int:
             display_heading="" if d.get("excerpt_style") == "quote"
             else d.get("display_heading", esc(d["title"])),
             excerpt_block=excerpt_block(d),
+            body_mod=" sheet__body--art" if d.get("art") else "",
             footer_left=esc(foot[0]),
             footer_right=esc(foot[1]),
             date_label=esc(d.get("date_label", "")),
@@ -275,6 +293,7 @@ def build_products(catalog: dict) -> int:
             display_heading=esc(s.get("strap", s["title"])),
             excerpt_block=(f'<p class="sheet__text sheet__text--center">{esc(s.get("one_line", ""))}</p>'
                            f'<ul class="sheet__timeline" style="margin-top:.8rem;">{listing}</ul>'),
+            body_mod="",
             footer_left="ONE TUBE",
             footer_right="SOURCED &amp; DATED",
             date_label="THE SETS",

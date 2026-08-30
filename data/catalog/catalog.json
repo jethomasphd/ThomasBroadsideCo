@@ -30,12 +30,24 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["NATIONAL ARCHIVES", "SET IN CASLON"],
+      "card_footer": [
+        "NATIONAL ARCHIVES",
+        "SET IN CASLON"
+      ],
       "provenance": "On the night of July 4, 1776, the printer John Dunlap set the Declaration in Caslon and ran roughly two hundred broadsides before dawn. This sheet follows the Dunlap setting; every line is taken from the National Archives transcription of the engrossed copy. Printed on our own press in Austin, Texas.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 46, "stripe_link": "" },
-        "edition": { "price": 175, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 46,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 175,
+          "stripe_link": ""
+        }
       },
       "status": "digital_ready",
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
@@ -60,12 +72,24 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["NATIONAL ARCHIVES", "SET IN CASLON"],
+      "card_footer": [
+        "NATIONAL ARCHIVES",
+        "SET IN CASLON"
+      ],
       "provenance": "The Preamble is fifty-two words and one sentence. We set it that way on purpose: one measure, one thought, the great opening words display-sized as the engrossing clerk wrote them. Text from the National Archives transcription.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 44, "stripe_link": "" },
-        "edition": { "price": 165, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 44,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 165,
+          "stripe_link": ""
+        }
       },
       "status": "digital_ready",
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
@@ -90,12 +114,24 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["NATIONAL ARCHIVES", "RATIFIED 1791"],
+      "card_footer": [
+        "NATIONAL ARCHIVES",
+        "RATIFIED 1791"
+      ],
       "provenance": "All ten amendments ratified December 15, 1791, from the National Archives transcription, set in two columns in Caslon. The full sheet carries Amendments I through X; the excerpt above shows the first three.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 46, "stripe_link": "" },
-        "edition": { "price": 175, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 46,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 175,
+          "stripe_link": ""
+        }
       },
       "status": "digital_ready",
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
@@ -121,12 +157,24 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["EVERY QUOTE CITED", "SET IN CASLON"],
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
       "provenance": "An excerpt from the Farewell Address as published September 19, 1796, verified against the Library of Congress text. Source, date, and document are set on the sheet itself — every quote cited.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 44, "stripe_link": "" },
-        "edition": { "price": 165, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 44,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 165,
+          "stripe_link": ""
+        }
       },
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against loc.gov before launch [house rule: cited]"
@@ -151,12 +199,24 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["LIBRARY OF CONGRESS", "BLISS COPY"],
+      "card_footer": [
+        "LIBRARY OF CONGRESS",
+        "BLISS COPY"
+      ],
       "provenance": "The Bliss copy — the fifth and final manuscript, the only one Lincoln signed and dated — from the Library of Congress. The full sheet carries all two hundred seventy-two words.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 44, "stripe_link": "" },
-        "edition": { "price": 165, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 44,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 165,
+          "stripe_link": ""
+        }
       },
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against loc.gov Bliss facsimile before launch [house rule: cited]"
@@ -168,28 +228,46 @@
       "line": "founders",
       "room": "heritage",
       "title": "George Washington",
-      "kicker": "AFTER GILBERT STUART, 1796",
+      "kicker": "AFTER GILBERT STUART, BEGUN 1795",
       "display_heading": "George Washington",
       "date_label": "1732 TO 1799",
-      "one_line": "After Gilbert Stuart, 1796. Portrait art from National Gallery of Art open access.",
+      "one_line": "After Gilbert Stuart, begun 1795 — the Gibbs-Channing-Avery portrait, from The Met, open access.",
       "excerpt_style": "portrait",
       "excerpt": "Portrait after Gilbert Stuart, 1796. Final art placed from National Gallery of Art open access before the first press run.",
       "label": {
-        "source": "National Gallery of Art, open access · after Gilbert Stuart, 1796",
+        "source": "The Metropolitan Museum of Art, open access (CC0) · Gilbert Stuart, begun 1795",
         "typeface": "Caslon captions",
         "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["NATIONAL GALLERY OF ART", "1732 TO 1799"],
-      "provenance": "After the Gilbert Stuart portrait of 1796, reproduced from National Gallery of Art open-access imagery, with the sitter's dates and the painter's credit set on the sheet.",
+      "card_footer": [
+        "THE MET · OPEN ACCESS",
+        "1732 TO 1799"
+      ],
+      "provenance": "After the Gilbert Stuart portrait begun in 1795 (the Gibbs-Channing-Avery type), reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 16584, Rogers Fund, 1907. The sitter’s dates and the painter’s credit are set on the sheet.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 42, "stripe_link": "" },
-        "edition": { "price": 145, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
       },
-      "status": "art_pending",
-      "source_verified_by": "PENDING · pull open-access file + rights note from nga.gov [house rule: cited]"
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from metmuseum.org object 16584 (CC0) · 2026-08-30 · VERIFY: Jacob confirms object and the label change 1796 → begun 1795 [D9]",
+      "art": {
+        "src": "/art/george-washington-after-stuart.jpg",
+        "alt": "Portrait of George Washington by Gilbert Stuart, begun 1795",
+        "credit": "The Metropolitan Museum of Art · Rogers Fund, 1907 · public domain (CC0) · object 16584",
+        "master_url": "https://images.metmuseum.org/CRDImages/ad/original/DT62.jpg"
+      }
     },
     {
       "no": 7,
@@ -205,21 +283,39 @@
       "excerpt_style": "portrait",
       "excerpt": "Portrait after Joseph Duplessis, 1778. Final art placed from National Gallery of Art open access before the first press run.",
       "label": {
-        "source": "National Gallery of Art, open access · after Joseph Duplessis, 1778",
+        "source": "The Metropolitan Museum of Art, open access (CC0) · Joseph Siffred Duplessis, 1778",
         "typeface": "Caslon captions",
         "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["NATIONAL GALLERY OF ART", "1706 TO 1790"],
-      "provenance": "After the Duplessis portrait of 1778, reproduced from National Gallery of Art open-access imagery. Franklin was a printer by trade; this shop keeps his line over the press.",
+      "card_footer": [
+        "THE MET · OPEN ACCESS",
+        "1706 TO 1790"
+      ],
+      "provenance": "After the Duplessis portrait of 1778 — the fur-collared “VIR” portrait — reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 436236, The Friedsam Collection. Franklin was a printer by trade; this shop keeps his line over the press.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 42, "stripe_link": "" },
-        "edition": { "price": 145, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
       },
-      "status": "art_pending",
-      "source_verified_by": "PENDING · pull open-access file + rights note from nga.gov [house rule: cited]"
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from metmuseum.org object 436236 (CC0) · 2026-08-30 · VERIFY: Jacob confirms object [D9]",
+      "art": {
+        "src": "/art/benjamin-franklin-after-duplessis.jpg",
+        "alt": "Portrait of Benjamin Franklin by Joseph Siffred Duplessis, 1778",
+        "credit": "The Metropolitan Museum of Art · The Friedsam Collection, Bequest of Michael Friedsam, 1931 · public domain (CC0) · object 436236",
+        "master_url": "https://images.metmuseum.org/CRDImages/ep/original/DP312881.jpg"
+      }
     },
     {
       "no": 8,
@@ -228,28 +324,47 @@
       "line": "founders",
       "room": "heritage",
       "title": "Thomas Jefferson",
-      "kicker": "AFTER REMBRANDT PEALE, 1800",
+      "kicker": "ENGRAVED AFTER REMBRANDT PEALE, 1800",
       "display_heading": "Thomas Jefferson",
       "date_label": "1743 TO 1826",
-      "one_line": "After Rembrandt Peale, 1800.",
+      "one_line": "A period stipple engraving after Peale’s 1800 portrait — Jefferson as the print shops of his own day sold him.",
       "excerpt_style": "portrait",
       "excerpt": "Portrait after Rembrandt Peale, 1800. Final art placed from open-access imagery before the first press run.",
       "label": {
-        "source": "Open-access museum imagery · after Rembrandt Peale, 1800",
+        "source": "Library of Congress P&P · Desnoyers after Rembrandt Peale, engraved by Dequevauviller, 1800 · item 2020632445",
         "typeface": "Caslon captions",
         "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["OPEN ACCESS", "1743 TO 1826"],
-      "provenance": "After the Rembrandt Peale portrait of 1800, from open-access museum imagery, credited on the sheet.",
+      "card_footer": [
+        "LIBRARY OF CONGRESS",
+        "1743 TO 1826"
+      ],
+      "provenance": "“Jefferson, Dédié au Général Lafayette” — drawn by Desnoyers and engraved by Dequevauviller after Rembrandt Peale’s 1800 portrait, from the Library of Congress Prints and Photographs Division. We sell Jefferson the way his own era’s print shops did: as an engraving.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 42, "stripe_link": "" },
-        "edition": { "price": 145, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
       },
       "status": "art_pending",
-      "source_verified_by": "PENDING · confirm holding institution + open-access terms for the 1800 Peale [house rule: cited]"
+      "source_verified_by": "Clerk-fetched from loc.gov item 2020632445 · 2026-08-30 · VERIFY: Jacob approves the switch from painting to period engraving, and the print-master gap stands [D9]",
+      "art": {
+        "src": "/art/thomas-jefferson-after-peale.jpg",
+        "alt": "Stipple engraving of Thomas Jefferson after Rembrandt Peale, 1800",
+        "credit": "Library of Congress, Prints & Photographs Division · item 2020632445 · public domain",
+        "master_url": "https://tile.loc.gov/storage-services/service/pnp/ds/13900/13991v.jpg",
+        "master_note": "Web-resolution scan only (1024 px). Print master still to be sourced (LOC hi-res request, WHHA, or N-YHS) before this sheet goes on press."
+      }
     },
     {
       "no": 9,
@@ -258,28 +373,47 @@
       "line": "founders",
       "room": "heritage",
       "title": "John Adams",
-      "kicker": "AFTER GILBERT STUART, C. 1800",
+      "kicker": "AFTER GILBERT STUART, C. 1800/1815",
       "display_heading": "John Adams",
       "date_label": "1735 TO 1826",
-      "one_line": "After Gilbert Stuart, circa 1800.",
+      "one_line": "After Gilbert Stuart, c. 1800/1815, from the National Gallery of Art, open access.",
       "excerpt_style": "portrait",
       "excerpt": "Portrait after Gilbert Stuart, c. 1800. Final art placed from National Gallery of Art open access before the first press run.",
       "label": {
-        "source": "National Gallery of Art, open access · after Gilbert Stuart, c. 1800",
+        "source": "National Gallery of Art, open access · Gilbert Stuart, c. 1800/1815 (1954.7.1)",
         "typeface": "Caslon captions",
         "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["NATIONAL GALLERY OF ART", "1735 TO 1826"],
-      "provenance": "After the Gilbert Stuart portrait of circa 1800, reproduced from National Gallery of Art open-access imagery.",
+      "card_footer": [
+        "NATIONAL GALLERY OF ART",
+        "1735 TO 1826"
+      ],
+      "provenance": "After the Gilbert Stuart portrait of c. 1800/1815 in the National Gallery of Art (accession 1954.7.1), reproduced from NGA open-access imagery at full resolution.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 42, "stripe_link": "" },
-        "edition": { "price": 145, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
       },
-      "status": "art_pending",
-      "source_verified_by": "PENDING · pull open-access file + rights note from nga.gov [house rule: cited]"
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from NGA opendata object 42933 · 2026-08-30 · VERIFY: Jacob confirms object and c. 1800 → c. 1800/1815 [D9]",
+      "art": {
+        "src": "/art/john-adams-after-stuart.jpg",
+        "alt": "Portrait of John Adams by Gilbert Stuart, c. 1800/1815",
+        "credit": "National Gallery of Art · open access · object 42933, accession 1954.7.1",
+        "master_url": "https://api.nga.gov/iiif/6689f0bd-101a-4310-86cd-022ef4b9da1e/full/full/0/default.jpg",
+        "master_note": "Native scan 6811×8259 px — true print-grade master."
+      }
     },
     {
       "no": 10,
@@ -302,11 +436,20 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "—"
       },
-      "card_footer": ["EVERY QUOTE CITED", "SET IN CASLON"],
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
       "provenance": "From Poor Richard's Almanack for 1737, by Benjamin Franklin, printer, Philadelphia. Source, date, and document set on the sheet. No spurious Franklin either.",
       "tiers": {
-        "digital": { "price": 7, "stripe_link": "" },
-        "print": { "price": 38, "stripe_link": "" },
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
         "edition": null
       },
       "status": "digital_ready",
@@ -333,11 +476,20 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "—"
       },
-      "card_footer": ["EVERY QUOTE CITED", "SET IN CASLON"],
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
       "provenance": "From John Adams's argument in defense of the British soldiers tried for the Boston Massacre, December 1770. The sheet sets the full sentence, not the shortened meme.",
       "tiers": {
-        "digital": { "price": 7, "stripe_link": "" },
-        "print": { "price": 38, "stripe_link": "" },
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
         "edition": null
       },
       "status": "digital_ready",
@@ -350,28 +502,46 @@
       "line": "maps",
       "room": "heritage",
       "title": "The Thirteen Colonies",
-      "kicker": "1776 · AFTER A PERIOD MAP",
+      "kicker": "1776 · SAYER & BENNETT, LONDON",
       "display_heading": "The Thirteen Colonies, 1776",
       "date_label": "1776 · AFTER A PERIOD MAP",
-      "one_line": "After a period map, Library of Congress.",
+      "one_line": "The Theatre of War in North America, 1776 — half map, half letterpress. A period broadside in the truest sense.",
       "excerpt_style": "map",
       "excerpt": "After a period map of the thirteen colonies, from the Library of Congress geography and map division. Final art placed before the first press run.",
       "label": {
-        "source": "Library of Congress, public domain",
+        "source": "Library of Congress, Geography & Map Division · Sayer & Bennett, 1776 · item 74693102",
         "typeface": "Caslon captions",
         "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["LIBRARY OF CONGRESS", "PUBLIC DOMAIN"],
-      "provenance": "After a period map of the colonies at independence, reproduced from Library of Congress public-domain holdings, with the original cartographer credited on the sheet once the plate is chosen.",
+      "card_footer": [
+        "LIBRARY OF CONGRESS",
+        "PUBLIC DOMAIN"
+      ],
+      "provenance": "“The Theatre of War in North America, with the roads and a table of the distances,” published by Sayer & Bennett, London, 1776, from Library of Congress public-domain holdings. The plate carries the colonies above and a compendious letterpress account below — a map that is itself a broadside, which is why it hangs in this catalog.",
       "tiers": {
-        "digital": { "price": 12, "stripe_link": "" },
-        "print": { "price": 48, "stripe_link": "" },
-        "edition": { "price": 175, "stripe_link": "" }
+        "digital": {
+          "price": 12,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 48,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 175,
+          "stripe_link": ""
+        }
       },
-      "status": "art_pending",
-      "source_verified_by": "PENDING · choose plate at loc.gov and record call number [house rule: cited]"
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from loc.gov item 74693102 · 2026-08-30 · VERIFY: Jacob confirms plate choice [D9]",
+      "art": {
+        "src": "/art/the-thirteen-colonies-1776.jpg",
+        "alt": "The Theatre of War in North America, map with letterpress text, 1776",
+        "credit": "Library of Congress, Geography and Map Division · item 74693102 · public domain",
+        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ar014400/full/pct:100/0/default.jpg"
+      }
     },
     {
       "no": 13,
@@ -387,21 +557,39 @@
       "excerpt_style": "map",
       "excerpt": "Andrew Ellicott's 1792 engraving after Pierre L'Enfant's plan, from the Library of Congress geography and map division. Final art placed before the first press run.",
       "label": {
-        "source": "Library of Congress, public domain",
+        "source": "Library of Congress, Geography & Map Division · Ellicott, 1792 · item 98689552",
         "typeface": "Caslon captions",
         "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["LIBRARY OF CONGRESS", "PUBLIC DOMAIN"],
-      "provenance": "Ellicott, after L'Enfant, 1792, from Library of Congress public-domain holdings. A city that existed in print before it existed at all — a very print-shop kind of founding.",
+      "card_footer": [
+        "LIBRARY OF CONGRESS",
+        "PUBLIC DOMAIN"
+      ],
+      "provenance": "Andrew Ellicott’s 1792 plan, engraved after L’Enfant, from Library of Congress public-domain holdings, item 98689552. A city that existed in print before it existed at all — a very print-shop kind of founding.",
       "tiers": {
-        "digital": { "price": 12, "stripe_link": "" },
-        "print": { "price": 48, "stripe_link": "" },
-        "edition": { "price": 175, "stripe_link": "" }
+        "digital": {
+          "price": 12,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 48,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 175,
+          "stripe_link": ""
+        }
       },
-      "status": "art_pending",
-      "source_verified_by": "PENDING · choose plate at loc.gov and record call number [house rule: cited]"
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from loc.gov item 98689552 · 2026-08-30 · VERIFY: Jacob confirms plate [D9]",
+      "art": {
+        "src": "/art/plan-of-the-city-of-washington.jpg",
+        "alt": "Plan of the City of Washington, Ellicott after L’Enfant, 1792",
+        "credit": "Library of Congress, Geography and Map Division · item 98689552 · public domain",
+        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd385:g3850:g3850:ct004179/full/pct:100/0/default.jpg"
+      }
     },
     {
       "no": 14,
@@ -423,12 +611,24 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["TEXAS STATE LIBRARY", "SET IN CASLON"],
+      "card_footer": [
+        "TEXAS STATE LIBRARY",
+        "SET IN CASLON"
+      ],
       "provenance": "From the Texas State Library and Archives transcription of the declaration adopted at Washington-on-the-Brazos, March 2, 1836. Printed an hour up the road from where we print.",
       "tiers": {
-        "digital": { "price": 9, "stripe_link": "" },
-        "print": { "price": 46, "stripe_link": "" },
-        "edition": { "price": 175, "stripe_link": "" }
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 46,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 175,
+          "stripe_link": ""
+        }
       },
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against tsl.texas.gov transcription [house rule: cited]"
@@ -447,21 +647,39 @@
       "excerpt_style": "map",
       "excerpt": "After William H. Emory's 1844 map of Texas, from Library of Congress public-domain holdings. Final art placed before the first press run.",
       "label": {
-        "source": "Library of Congress, public domain",
+        "source": "Library of Congress, Geography & Map Division · Emory, 1844 · item 2003627046",
         "typeface": "Caslon captions",
         "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
-      "card_footer": ["LIBRARY OF CONGRESS", "PUBLIC DOMAIN"],
-      "provenance": "After Emory, 1844, from Library of Congress public-domain holdings, with the call number recorded on the product page once the plate is chosen.",
+      "card_footer": [
+        "LIBRARY OF CONGRESS",
+        "PUBLIC DOMAIN"
+      ],
+      "provenance": "William H. Emory’s 1844 “Map of Texas and the countries adjacent,” engraved by William J. Stone — the same engraver who cut the official 1823 facsimile of the Declaration of Independence — from Library of Congress public-domain holdings, item 2003627046.",
       "tiers": {
-        "digital": { "price": 12, "stripe_link": "" },
-        "print": { "price": 48, "stripe_link": "" },
-        "edition": { "price": 175, "stripe_link": "" }
+        "digital": {
+          "price": 12,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 48,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 175,
+          "stripe_link": ""
+        }
       },
-      "status": "art_pending",
-      "source_verified_by": "PENDING · choose plate at loc.gov and record call number [house rule: cited]"
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from loc.gov item 2003627046 · 2026-08-30 · VERIFY: Jacob confirms plate; note the W.J. Stone connection for the journal [D9]",
+      "art": {
+        "src": "/art/the-republic-of-texas-after-emory.jpg",
+        "alt": "Map of Texas and the countries adjacent, Emory, 1844",
+        "credit": "Library of Congress, Geography and Map Division · item 2003627046 · public domain",
+        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd403:g4030:g4030:ct001066/full/pct:100/0/default.jpg"
+      }
     },
     {
       "no": 16,
@@ -483,11 +701,20 @@
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "—"
       },
-      "card_footer": ["CLASSROOM SERIES", "18 X 24"],
+      "card_footer": [
+        "CLASSROOM SERIES",
+        "18 X 24"
+      ],
       "provenance": "Ten dates, each verified against National Archives and Library of Congress chronologies. Built to anchor the Founding Documents Set on a classroom wall.",
       "tiers": {
-        "digital": { "price": 12, "stripe_link": "" },
-        "print": { "price": 44, "stripe_link": "" },
+        "digital": {
+          "price": 12,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 44,
+          "stripe_link": ""
+        },
         "edition": null
       },
       "status": "digital_ready",
@@ -501,10 +728,23 @@
       "title": "The Founding Documents Set",
       "strap": "Six documents. One wall.",
       "one_line": "The five documents and the timeline of the Revolution, sourced, dated, and sized for the room. A download you print tonight, or six sheets from our press in one tube.",
-      "includes": ["declaration-of-independence", "preamble-to-the-constitution", "bill-of-rights", "washingtons-farewell-address", "gettysburg-address", "the-revolution-1765-to-1789"],
+      "includes": [
+        "declaration-of-independence",
+        "preamble-to-the-constitution",
+        "bill-of-rights",
+        "washingtons-farewell-address",
+        "gettysburg-address",
+        "the-revolution-1765-to-1789"
+      ],
       "tiers": {
-        "digital": { "price": 24, "stripe_link": "" },
-        "print": { "price": 150, "stripe_link": "" }
+        "digital": {
+          "price": 24,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 150,
+          "stripe_link": ""
+        }
       },
       "audience": "Homeschool families, co-ops, private and charter schools, civics teachers. A repeat purchase every August."
     },
@@ -514,10 +754,21 @@
       "title": "The Founders Set",
       "strap": "Four portraits, one shelf of history.",
       "one_line": "Washington, Franklin, Jefferson, and Adams, after Stuart, Duplessis, and Peale, with dates and painters credited on every sheet.",
-      "includes": ["george-washington-after-stuart", "benjamin-franklin-after-duplessis", "thomas-jefferson-after-peale", "john-adams-after-stuart"],
+      "includes": [
+        "george-washington-after-stuart",
+        "benjamin-franklin-after-duplessis",
+        "thomas-jefferson-after-peale",
+        "john-adams-after-stuart"
+      ],
       "tiers": {
-        "digital": { "price": 18, "stripe_link": "" },
-        "print": { "price": 125, "stripe_link": "" }
+        "digital": {
+          "price": 18,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 125,
+          "stripe_link": ""
+        }
       },
       "audience": "Presidents' Day classrooms, law offices, gift buyers."
     },
@@ -527,10 +778,19 @@
       "title": "The Texas Set",
       "strap": "The Republic, declared and mapped.",
       "one_line": "The Texas Declaration of Independence and the Republic of Texas after Emory, printed an hour from where both belong.",
-      "includes": ["texas-declaration-of-independence", "the-republic-of-texas-after-emory"],
+      "includes": [
+        "texas-declaration-of-independence",
+        "the-republic-of-texas-after-emory"
+      ],
       "tiers": {
-        "digital": { "price": 15, "stripe_link": "" },
-        "print": { "price": 85, "stripe_link": "" }
+        "digital": {
+          "price": 15,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 85,
+          "stripe_link": ""
+        }
       },
       "audience": "Texans, Texas Independence Day, the home market."
     }
