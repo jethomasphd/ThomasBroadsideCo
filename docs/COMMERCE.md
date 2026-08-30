@@ -1,57 +1,63 @@
-# Commerce — Three Buys, No Cart
+# Commerce — Three Buys, One Cart, One Secret
 
-The proposal's storefront rule: **digital, print, and edition on one
-page. Nobody leaves because the price was wrong** (§V). The store rents
-exactly one thing — the payment rail — and owns everything else [D2].
-No cart at launch: each buy is a Stripe Payment Link; wholesale is
-invoiced, not carted (§III). A cart earns its way in only via
-`docs/AFTER_THE_GATE.md`.
+The proposal's storefront rule stands: **digital, print, and edition on
+one page. Nobody leaves because the price was wrong** (§V). The store
+rents exactly one thing — the payment rail — and owns everything else
+[D2]. Every tier has an **Add to cart**; the cart checks out through one
+worker that creates a Stripe Checkout Session server-side, priced from
+the catalog. No per-SKU payment links to hand-make, no cart platform to
+rent: one secret wires the whole register. Wholesale stays invoiced,
+never carted (§III).
 
 ## The flow
 
 ```
-product page ──[Buy digital $9]──► Stripe Payment Link (Stripe-hosted checkout)
-                                        │ payment succeeds
-                                        ▼
-                          functions/api/stripe-webhook.js
-                          verifies signature, writes order:<id> to KV
-                          status CONFIRMED · parcel token for digital
-                                        │
-             ┌──────────────────────────┴───────────────────────────┐
-             ▼ digital                                              ▼ physical
-  email w/ download link (Resend, if set;               Foreman's morning tickets →
-  else Shopkeeper letters it by hand)                   pressroom → Ben & David [D5]
-  /api/parcel?o=<id>&t=<token> → 302 to the PDF
+product page ──[Add to cart]──► cart.html (localStorage; display prices only)
+                                     │ [Check out]
+                                     ▼
+                        functions/api/checkout.js
+                        re-prices every line from the catalog (GEN:PRICES),
+                        computes tube shipping (free ≥ $75), creates a
+                        Stripe Checkout Session ──► Stripe-hosted payment page
+                                     │ payment succeeds (Apple/Google Pay included)
+                                     ▼
+                        functions/api/stripe-webhook.js
+                        verifies signature, writes order:<id> to KV
+                        status CONFIRMED · parcel token if any digital
+                                     │
+        ┌────────────────────────────┴───────────────────────────┐
+        ▼ digital items                                          ▼ physical items
+  email w/ one download link per sheet                 Foreman's morning tickets →
+  (Resend, if set; else the Shopkeeper                 pressroom → Ben & David [D5]
+  letters it) /api/parcel?o=&t=&sku= → 302
 ```
 
-If Stripe isn't wired yet (or a link field is empty), the page shows an
-**inquiry button** instead: it posts to `/api/counter`, lands as a `NEW`
-order, and the Shopkeeper letters the customer a payment link by hand.
-The store therefore works on day one regardless [D12].
+If `STRIPE_SECRET_KEY` isn't set yet, checkout answers 503 and the cart
+opens the **desk fallback**: the customer leaves name, email, and
+address, the order lands as `NEW`, and the Shopkeeper replies with a
+payment link by hand. The store therefore sells on day one regardless
+[D12].
 
-## Setting up Stripe (Jacob, ~an hour)
+## Setting up Stripe (Jacob, ~15 minutes)
 
-1. Create the Stripe account under Thomas Graphics Inc.; enable Stripe
-   Tax (Texas origin; it handles the sales-tax question the right way —
-   confirm specifics with the accountant).
-2. For each design tier to sell at launch, create a **Product** and a
-   **Payment Link**:
-   - Name them exactly `<Title> — <Tier>` (e.g. `Preamble to the
-     Constitution — Print, 18x24`).
-   - Physical tiers: enable shipping address collection (US at launch),
-     and set shipping: flat $8 tube, **free over $75** via a shipping
-     rate condition (matches `shop.config.json`).
-   - **Metadata on the Payment Link: `sku` and `tier`** (e.g.
-     `sku=TB-DOC-PREA`, `tier=print`) — the webhook reads these to write
-     the order book. Do not skip the metadata.
-3. Paste each link URL into `data/catalog/catalog.json →
-   tiers.<tier>.stripe_link`, run `python3 tools/build_site.py`, commit.
-4. Add a webhook endpoint: `https://thomasbroadside.co/api/stripe-webhook`,
+1. Create the Stripe account under Thomas Graphics Inc.
+2. Developers → API keys → copy the **secret key** into the Pages secret
+   `STRIPE_SECRET_KEY`. That alone turns the register on.
+3. Add a webhook endpoint: `https://thomasbroadside.co/api/stripe-webhook`,
    event `checkout.session.completed`. Put its signing secret in the
    `STRIPE_WEBHOOK_SECRET` Pages secret.
+4. Optional: enable **Stripe Tax** in the dashboard (set the Austin
+   origin address), then set Pages variable `STRIPE_TAX=1` so sessions
+   request automatic tax. Confirm specifics with the accountant.
 5. Test with one real $9 purchase, then refund yourself from the Stripe
    dashboard. Confirm the order appeared in KV (`/api/spike` or
    `pull_ledger.py`) and the parcel link resolved.
+
+Prices live only in `data/catalog/catalog.json`; `tools/build_site.py`
+copies them into the checkout worker's `GEN:PRICES` block and the cart's
+`catalog-data.js`, so the browser can never invent a price and a price
+change is still one reviewed commit [D9]. (The catalog's old
+`stripe_link` fields remain harmless; the cart supersedes them.)
 
 ## Digital delivery
 

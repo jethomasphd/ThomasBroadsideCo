@@ -49,7 +49,9 @@ rehearsal data kept apart).
 | `LLM_MODEL` | for `/api/llm` | The pinned model id. Choose the current Sonnet-class model from the models page at docs.claude.com; the Keeper reviews quarterly. Never hardcoded in the repo. |
 | `RESEND_API_KEY` | optional | Enables order emails (confirmation + shipped notes) via Resend. Without it, the Shopkeeper letters by hand from the order book. |
 | `MAIL_FROM` | with Resend | e.g. `Thomas Broadside Co. <press@thomasbroadside.co>` (domain verified in Resend). |
+| `STRIPE_SECRET_KEY` | for checkout | The one secret that turns the register on: `/api/checkout` creates Stripe Checkout Sessions with it. Without it the cart falls back to the shop desk. |
 | `STRIPE_WEBHOOK_SECRET` | with Stripe | From the webhook endpoint you create in Stripe (docs/COMMERCE.md). |
+| `STRIPE_TAX` | optional | Set to `1` after enabling Stripe Tax in the dashboard; sessions then request automatic tax. |
 | `PARCEL_BASE_URL` | for digital delivery | Base URL where the print-ready PDFs live (an R2 bucket with an unguessable prefix works: `https://<bucket-host>/<random-prefix>`). `/api/parcel` 302s paid customers to `<base>/<sku>.pdf`. |
 
 ## 4. Custom domain
@@ -95,8 +97,8 @@ python3 -m http.server -d site    # static-only preview, zero installs
 - [ ] Pages project live on the custom domain, HTTPS green
 - [ ] KV bound; `POST /api/bell` returns 204 from the homepage
 - [ ] `PRESS_TOKEN` set; `/pressroom` behind Access; tablet logged in
-- [ ] Stripe payment links pasted into `catalog.json` for `digital_ready`
-      designs; test purchase of the $9 Preamble end-to-end (COMMERCE.md)
+- [ ] `STRIPE_SECRET_KEY` set; test cart purchase of the $9 Preamble
+      end-to-end (COMMERCE.md)
 - [ ] Webhook endpoint verified (Stripe CLI or a live $9 test), order
       appears in KV and in `pull_ledger.py`'s CSV
 - [ ] `PARCEL_BASE_URL` serving the launch PDFs; parcel link tested

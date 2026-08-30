@@ -1,4 +1,4 @@
-# ☀ RUN SHEET — 2026-08-29
+# ☀ RUN SHEET — 2026-08-30
 
 **2 physical order(s) on the spike.** Oldest first. Editions marked ★ wait for David.
 *(rehearsal from orders.sample.csv — not live orders)*

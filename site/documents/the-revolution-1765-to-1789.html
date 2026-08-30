@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/css/broadside.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23211c12'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23f2ecdd' font-family='Georgia'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
 </head>
-<body>
+<body class="has-acquirebar">
 
 <div class="topbar">Printed on our own press in Austin, Texas <span class="sep">·</span> Every quote cited <span class="sep">·</span> Free U.S. shipping on prints over $75</div>
 
@@ -16,67 +16,123 @@
   <a class="brand" href="/"><span class="star">★</span>Thomas Broadside Co.</a>
   <nav>
     <a href="/#documents">Documents</a>
+    <a href="/#quotes">Quotes</a>
     <a href="/#founders">Founders</a>
-    <a href="/#maps-texas">Maps &amp; Texas</a>
     <a href="/classroom.html">Classroom</a>
     <a href="/press.html">The Press</a>
     <a href="/journal/">Journal</a>
   </nav>
+  <span class="desk"><a class="cartlink" href="/cart.html">Cart<b data-cart-count></b></a></span>
 </header>
 
 <main>
 
-<section class="band">
-  <div class="wrap grid grid--2" style="gap:4rem;align-items:start;">
-    <div class="frame">
-      <div class="sheet"><div class="sheet__inner">
-        <p class="sheet__kicker">FOR THE CLASSROOM</p>
-        <p class="sheet__title">The Revolution, 1765 to 1789</p>
-        <hr class="sheet__rule">
-        <ul class="sheet__timeline"><li><span class="yr">1765</span><span>The Stamp Act</span></li><li><span class="yr">1770</span><span>The Boston Massacre</span></li><li><span class="yr">1773</span><span>The Boston Tea Party</span></li><li><span class="yr">1775</span><span>Lexington and Concord</span></li><li><span class="yr">1776</span><span>The Declaration of Independence</span></li><li><span class="yr">1777</span><span>Saratoga</span></li><li><span class="yr">1781</span><span>Yorktown</span></li><li><span class="yr">1783</span><span>The Treaty of Paris</span></li><li><span class="yr">1787</span><span>The Constitution</span></li><li><span class="yr">1789</span><span>Washington inaugurated</span></li></ul>
-        <div class="sheet__footer"><span>CLASSROOM SERIES</span><span>18 X 24</span></div>
-      </div></div>
-    </div>
-    <div>
-      <p class="kicker">TIMELINE · CLASSROOM</p>
-      <h1 style="font-size:clamp(1.8rem,3.6vw,2.6rem);">The Revolution, 1765 to 1789</h1>
-      <p class="lede">Ten dates from the Stamp Act to the first inauguration, sized for the wall and priced for a teacher.</p>
-
-      <div class="buys" style="margin:2rem 0;">
-        <div class="buy"><span class="buy__tier">digital</span><span class="buy__price">$12</span><span class="buy__note">Instant download · 8.5×11, 11×17 &amp; 18×24 · print it tonight</span><button class="btn" data-reserve="TB-CLS-TIME:digital:1">Reserve</button></div>
-        <div class="buy"><span class="buy__tier">print</span><span class="buy__price">$44</span><span class="buy__note">18 × 24 on 100 lb cream cover · off our press · in a tube</span><button class="btn" data-reserve="TB-CLS-TIME:print:1">Reserve</button></div>
+<section class="band" style="padding-top:3rem;">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">The Collection</a><span class="sep">·</span><a href="/classroom.html">The Classroom Room</a><span class="sep">·</span>The Revolution, 1765 to 1789</p>
+    <div class="exhibit-page">
+      <div class="exhibit-page__art">
+        <div class="exhibit"><div class="exhibit__mat">
+          <div class="sheet"><div class="sheet__inner">
+            <p class="sheet__kicker">FOR THE CLASSROOM</p>
+            <p class="sheet__title">The Revolution, 1765 to 1789</p>
+            <hr class="sheet__rule">
+            <ul class="sheet__timeline"><li><span class="yr">1765</span><span>The Stamp Act</span></li><li><span class="yr">1770</span><span>The Boston Massacre</span></li><li><span class="yr">1773</span><span>The Boston Tea Party</span></li><li><span class="yr">1775</span><span>Lexington and Concord</span></li><li><span class="yr">1776</span><span>The Declaration of Independence</span></li><li><span class="yr">1777</span><span>Saratoga</span></li><li><span class="yr">1781</span><span>Yorktown</span></li><li><span class="yr">1783</span><span>The Treaty of Paris</span></li><li><span class="yr">1787</span><span>The Constitution</span></li><li><span class="yr">1789</span><span>Washington inaugurated</span></li></ul>
+            <div class="sheet__footer"><span>CLASSROOM SERIES</span><span>18 X 24</span></div>
+          </div></div>
+        </div></div>
       </div>
+      <div>
+        <p class="kicker">TIMELINE · CLASSROOM</p>
+        <h1 style="font-size:clamp(1.9rem,3.8vw,2.7rem);">The Revolution, 1765 to 1789</h1>
+        <p class="lede">Ten dates from the Stamp Act to the first inauguration, sized for the wall and priced for a teacher.</p>
 
-      <table class="label-table">
+        <div class="buys" id="acquire" style="margin:2.2rem 0;">
+        <div class="buy"><span class="buy__tier">digital</span><span class="buy__price">$12</span><span class="buy__note">Instant download · 8.5×11, 11×17 &amp; 18×24 · print it tonight</span><button class="btn btn--solid" data-add="TB-CLS-TIME:digital">Add to cart</button></div>
+        <div class="buy"><span class="buy__tier">print</span><span class="buy__price">$44</span><span class="buy__note">18 × 24 on 100 lb cream cover · off our press · in a tube</span><button class="btn btn--solid" data-add="TB-CLS-TIME:print">Add to cart</button></div>
+        </div>
+
+        <table class="label-table">
         <tr><th>source</th><td>Dates verified against National Archives and Library of Congress</td></tr>
         <tr><th>typeface</th><td>Caslon with Plex Mono figures</td></tr>
         <tr><th>paper</th><td>100 lb cream cover, 18 x 24</td></tr>
         <tr><th>press</th><td>Thomas Graphics, Austin, Texas</td></tr>
         <tr><th>edition</th><td>—</td></tr>
-      </table>
+        </table>
 
-      <p class="prose" style="margin-top:1.6rem;">Ten dates, each verified against National Archives and Library of Congress chronologies. Built to anchor the Founding Documents Set on a classroom wall.</p>
-      <p class="form-note">Rolled in a tube from Austin. Free U.S. shipping on prints over $75.</p>
+        <p class="prose" style="margin-top:1.8rem;">Ten dates, each verified against National Archives and Library of Congress chronologies. Built to anchor the Founding Documents Set on a classroom wall.</p>
+        <p class="form-note">Rolled in a tube from Austin. Free U.S. shipping on prints over $75. Every sheet inspected by hand before it leaves the shop.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="band band--deep" id="reserve" hidden>
+<section class="band band--deep">
   <div class="wrap">
-    <h2>Reserve at the counter</h2>
-    <p class="lede">Leave your details and the shop desk will reply within two working days with a payment link and the ship date. Nothing is charged here.</p>
-    <form class="counter-form" data-counter data-kind="order" data-items="">
-      <label>Your name <input name="name" required maxlength="120"></label>
-      <label>Email <input name="email" type="email" required maxlength="160"></label>
-      <label>Shipping address (for prints and editions) <textarea name="address" rows="3" maxlength="400"></textarea></label>
-      <label>Note to the shop <textarea name="message" rows="3" maxlength="1200"></textarea></label>
-      <div><button class="btn btn--solid" type="submit">Reserve — the desk will reply</button></div>
-      <p class="form-note" data-counter-result></p>
-    </form>
+    <div class="room-head" style="margin-bottom:2.5rem;">
+      <p class="room-no">In the same room</p>
+    </div>
+    <div class="wall wall--3">
+<a class="card" href="/documents/declaration-of-independence.html">
+  <div class="exhibit"><div class="exhibit__mat">
+    <div class="sheet"><div class="sheet__inner">
+      <p class="sheet__kicker">IN CONGRESS, JULY 4, 1776.</p>
+      <p class="sheet__title">The unanimous <em>Declaration</em> of the thirteen united States of America,</p>
+      <hr class="sheet__rule">
+      <p class="sheet__text sheet__text--columns">When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature&#x27;s God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.</p>
+      <div class="sheet__footer"><span>NATIONAL ARCHIVES</span><span>SET IN CASLON</span></div>
+    </div></div>
+  </div></div>
+  <span class="placard">
+    <span class="placard__title" style="display:block;">The Declaration of Independence</span>
+    <span class="placard__meta" style="display:block;">1776 · DUNLAP SETTING</span>
+    <span class="placard__prices" style="display:block;">Digital <b>$9</b><span class="dot">·</span>Print <b>$46</b><span class="dot">·</span>Edition <b>$175</b></span>
+  </span>
+</a>
+<a class="card" href="/documents/preamble-to-the-constitution.html">
+  <div class="exhibit"><div class="exhibit__mat">
+    <div class="sheet"><div class="sheet__inner">
+      <p class="sheet__kicker">THE CONSTITUTION OF THE UNITED STATES, 1787</p>
+      <p class="sheet__title">We the People</p>
+      <hr class="sheet__rule">
+      <p class="sheet__text sheet__text--center">We the People of the United States, in Order to form a more perfect Union, establish Justice, insure domestic Tranquility, provide for the common defence, promote the general Welfare, and secure the Blessings of Liberty to ourselves and our Posterity, do ordain and establish this Constitution for the United States of America.</p>
+      <div class="sheet__footer"><span>NATIONAL ARCHIVES</span><span>SET IN CASLON</span></div>
+    </div></div>
+  </div></div>
+  <span class="placard">
+    <span class="placard__title" style="display:block;">Preamble to the Constitution</span>
+    <span class="placard__meta" style="display:block;">1787 · PHILADELPHIA</span>
+    <span class="placard__prices" style="display:block;">Digital <b>$9</b><span class="dot">·</span>Print <b>$44</b><span class="dot">·</span>Edition <b>$165</b></span>
+  </span>
+</a>
+<a class="card" href="/documents/bill-of-rights.html">
+  <div class="exhibit"><div class="exhibit__mat">
+    <div class="sheet"><div class="sheet__inner">
+      <p class="sheet__kicker">CONGRESS OF THE UNITED STATES, 1789</p>
+      <p class="sheet__title">The Bill of Rights</p>
+      <hr class="sheet__rule">
+      <p class="sheet__amend"><b>AMENDMENT I.</b> Congress shall make no law respecting an establishment of religion, or prohibiting the free exercise thereof; or abridging the freedom of speech, or of the press; or the right of the people peaceably to assemble, and to petition the Government for a redress of grievances.</p>
+<p class="sheet__amend"><b>AMENDMENT II.</b> A well regulated Militia, being necessary to the security of a free State, the right of the people to keep and bear Arms, shall not be infringed.</p>
+<p class="sheet__amend"><b>AMENDMENT III.</b> No Soldier shall, in time of peace be quartered in any house, without the consent of the Owner, nor in time of war, but in a manner to be prescribed by law.</p>
+      <div class="sheet__footer"><span>NATIONAL ARCHIVES</span><span>RATIFIED 1791</span></div>
+    </div></div>
+  </div></div>
+  <span class="placard">
+    <span class="placard__title" style="display:block;">The Bill of Rights</span>
+    <span class="placard__meta" style="display:block;">1791 · AMENDMENTS I TO X</span>
+    <span class="placard__prices" style="display:block;">Digital <b>$9</b><span class="dot">·</span>Print <b>$46</b><span class="dot">·</span>Edition <b>$175</b></span>
+  </span>
+</a>
+    </div>
   </div>
 </section>
 
 </main>
+
+<div class="acquirebar">
+  <span class="from">The Revolution, 1765 to 1789 · from $12</span>
+  <a class="btn" href="#acquire">Acquire</a>
+</div>
 
 <footer class="colophon">
   <div class="wrap">
@@ -85,21 +141,9 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  document.querySelectorAll('[data-reserve]').forEach(function (b) {
-    b.addEventListener('click', function (ev) {
-      ev.preventDefault();
-      var section = document.getElementById('reserve');
-      var form = section.querySelector('form');
-      form.setAttribute('data-items', b.getAttribute('data-reserve'));
-      section.hidden = false;
-      section.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-})();
-</script>
+<div class="toast" data-toast></div>
+<script src="/js/catalog-data.js" defer></script>
+<script src="/js/cart.js" defer></script>
 <script src="/js/bell.js" defer></script>
-<script src="/js/counter.js" defer></script>
 </body>
 </html>

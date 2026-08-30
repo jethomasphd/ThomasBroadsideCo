@@ -48,10 +48,12 @@ export async function onRequestPost(context) {
 
   const s = event.data.object;
   const meta = s.metadata || {};
-  const sku = String(meta.sku || 'UNKNOWN').slice(0, 24);
-  const tier = String(meta.tier || 'unknown').slice(0, 12);
-  const qty = 1; // payment links carry quantity in line items; default 1, Shopkeeper reconciles weekly
-  const physical = tier !== 'digital';
+  // Cart checkouts carry metadata.items = "SKU:tier:qty|..."; legacy payment
+  // links carry metadata.sku + metadata.tier. Either becomes the order book's
+  // items string.
+  const items = String(meta.items || `${meta.sku || 'UNKNOWN'}:${meta.tier || 'unknown'}:1`).slice(0, 480);
+  const physical = items.includes(':print:') || items.includes(':edition:');
+  const anyDigital = items.includes(':digital:');
 
   const addr = s.shipping_details || s.customer_details || {};
   const a = addr.address || {};
@@ -66,29 +68,35 @@ export async function onRequestPost(context) {
     status: 'CONFIRMED', kind: 'order',
     name: (s.customer_details && s.customer_details.name) || 'Stripe customer',
     email: (s.customer_details && s.customer_details.email) || '',
-    items: `${sku}:${tier}:${qty}`,
+    items,
     amount_usd: Math.round((s.amount_total || 0) / 100),
     source: 'stripe',
     address: addressLine,
     note: `stripe session ${String(s.id || '').slice(0, 40)}`,
     history: [{ ts: new Date().toISOString(), to: 'CONFIRMED', by: 'stripe' }],
   };
-  if (!physical) {
+  if (anyDigital) {
     order.parcel_token = crypto.randomUUID();
     order.downloads = 0;
   }
   await env.SHOPKV.put(`order:${id}`, JSON.stringify(order));
 
   // Digital fulfillment letter, if the mail rail is configured.
-  if (!physical && order.email && env.RESEND_API_KEY && env.MAIL_FROM && env.PARCEL_BASE_URL) {
+  if (anyDigital && order.email && env.RESEND_API_KEY && env.MAIL_FROM && env.PARCEL_BASE_URL) {
     const site = new URL(request.url).origin;
+    const digitalSkus = items.split('|')
+      .filter((i) => i.includes(':digital:'))
+      .map((i) => i.split(':')[0]);
+    const links = digitalSkus
+      .map((sku) => `${site}/api/parcel?o=${id}&t=${order.parcel_token}&sku=${sku}`)
+      .join('\n');
     await fetch('https://api.resend.com/emails', {
       method: 'POST',
       headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
       body: JSON.stringify({
         from: env.MAIL_FROM, to: [order.email],
         subject: `Your download — ${order.id}`,
-        text: `Thank you. Your file is ready, sized for home printing at 8.5 x 11, 11 x 17, and 18 x 24:\n\n${site}/api/parcel?o=${id}&t=${order.parcel_token}\n\nThe link is yours and allows five downloads. Print it tonight; the source and citation are set on the sheet, as on everything we print.\n\nThe Shop Desk\nThomas Broadside Co.\nAustin: Printed by Thomas Graphics`,
+        text: `Thank you. Your file${digitalSkus.length > 1 ? 's are' : ' is'} ready, sized for home printing at 8.5 x 11, 11 x 17, and 18 x 24:\n\n${links}\n\nEach link is yours and allows five downloads. Print it tonight; the source and citation are set on the sheet, as on everything we print.${physical ? '\n\nThe printed sheets in your order go on our press queue and ship in a tube from Austin — a separate note follows with tracking.' : ''}\n\nThe Shop Desk\nThomas Broadside Co.\nAustin: Printed by Thomas Graphics`,
       }),
     }).catch(() => {});
   }

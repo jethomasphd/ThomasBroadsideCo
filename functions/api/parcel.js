@@ -24,8 +24,16 @@ export async function onRequestGet(context) {
     return plain('Digital delivery is being stocked. Write the shop desk and we will send the file by hand.', 503);
   }
 
-  const sku = String(order.items || '').split(':')[0].replace(/[^A-Z0-9-]/g, '');
-  if (!sku) return plain('This order carries no digital item. Write the shop desk.', 400);
+  // A cart order can carry several digital sheets: ?sku= picks one; without
+  // it the first digital item in the order is served.
+  const digitalSkus = String(order.items || '').split('|')
+    .filter((i) => i.includes(':digital:'))
+    .map((i) => i.split(':')[0]);
+  const asked = String(url.searchParams.get('sku') || '').replace(/[^A-Z0-9-]/g, '');
+  const sku = asked || digitalSkus[0] || '';
+  if (!sku || (asked && !digitalSkus.includes(asked))) {
+    return plain('This order carries no such digital item. Write the shop desk.', 400);
+  }
 
   order.downloads = (order.downloads || 0) + 1;
   await env.SHOPKV.put(`order:${id}`, JSON.stringify(order));

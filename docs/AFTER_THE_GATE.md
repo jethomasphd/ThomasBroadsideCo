@@ -22,8 +22,8 @@ here; that is the file doing its job.
 
 ## Parked — store
 
-- Search, accounts, and a cart. Three buys and payment links carried launch;
-  add a cart only when the order book proves multi-item friction is real.
+- Search and customer accounts. (The cart left this list in September 2026 —
+  it shipped with the museum redesign, checking out through our own worker.)
 - A wholesale portal. Wholesale is invoiced, not carted (proposal §III);
   Ben's relationships carry it in year one.
 - Gift wrap / gift notes as a paid option.
