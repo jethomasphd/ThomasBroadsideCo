@@ -240,9 +240,14 @@ section.band--ink a { text-decoration-color: rgba(241,236,224,.4); }
   flex: 1;
   min-width: 0;
 }
-/* Every framed sheet holds the shop's own proportion: 18 × 24, i.e. 3:4.
-   Overflowing text crops behind a fade, the way a mat window crops a print. */
-.card .sheet, .hero .sheet, .exhibit-page__art .sheet { aspect-ratio: 3 / 4; }
+/* Each sheet hangs in its own format, decided by the work — a salon wall,
+   not a grid of clones: 18×24 portraits, 24×36 session laws, 24×18
+   landscape quotes and plates. Overflowing text crops behind a fade, the
+   way a mat window crops a print. */
+.sheet--p34 { aspect-ratio: 3 / 4; }
+.sheet--p23 { aspect-ratio: 2 / 3; }
+.sheet--l43 { aspect-ratio: 4 / 3; }
+.sheet--l32 { aspect-ratio: 3 / 2; }
 .sheet__body {
   flex: 1;
   min-height: 0;
@@ -283,6 +288,11 @@ section.band--ink a { text-decoration-color: rgba(241,236,224,.4); }
 .card .sheet__timeline .yr { font-size: .58rem; }
 .card .sheet__timeline li { padding: .18rem 0; }
 .card .sheet__footer { padding-top: .55rem; font-size: .5rem; }
+/* landscape sheets breathe sideways: center the matter, widen the measure */
+.card .sheet--l43 .sheet__body:not(.sheet__body--art),
+.card .sheet--l32 .sheet__body:not(.sheet__body--art) { justify-content: center; }
+.card .sheet--l43 .sheet__text--quote { font-size: 1.22rem; }
+.card .sheet--l43 .sheet__inner, .card .sheet--l32 .sheet__inner { padding: 1.05rem 1.6rem .8rem; }
 .sheet__kicker {
   font-family: var(--mono);
   font-size: .56rem;
@@ -385,13 +395,16 @@ section.band--ink a { text-decoration-color: rgba(241,236,224,.4); }
 @media (max-width: 1020px) { .grid--4, .grid--3 { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 620px) { .grid--4, .grid--3, .grid--2 { grid-template-columns: 1fr; } .grid { gap: 2.8rem; } }
 
-/* A wall of exhibits: wrapped rows hang centered, the way a curator would. */
-.wall { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.6rem 2.2rem; }
+/* A wall of exhibits: wrapped rows hang centered, tops aligned, heights
+   varying with each work's format — the way a curator hangs a salon wall. */
+.wall { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 2.6rem 2.2rem; }
 .wall > .card { flex: 1 1 0; }
 .wall--4 > .card { flex-basis: calc(25% - 1.65rem); min-width: 15rem; max-width: 21rem; }
 .wall--3 > .card { flex-basis: calc(33.34% - 1.5rem); min-width: 16rem; max-width: 24rem; }
 .wall--2 > .card { flex-basis: calc(50% - 1.1rem); min-width: 17rem; max-width: 30rem; }
-@media (max-width: 620px) { .wall > .card { flex-basis: 100% !important; max-width: 26rem; } .wall { gap: 2.8rem; } }
+/* landscape works take a double bay */
+.wall > .card--wide { flex-basis: calc(50% - 1.1rem); min-width: 20rem; max-width: 34rem; }
+@media (max-width: 620px) { .wall > .card { flex-basis: 100% !important; max-width: 26rem; } .wall > .card--wide { max-width: 30rem; } .wall { gap: 2.8rem; } }
 
 /* ── hero: the entry wall ──────────────────────────────────────────── */
 

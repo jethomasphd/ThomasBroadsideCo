@@ -70,7 +70,7 @@ def excerpt_block(d: dict, for_card: bool = False) -> str:
     text = d.get("excerpt", "")
     if style == "columns":
         if for_card:
-            text = truncate_words(text, 44)
+            text = truncate_words(text, 70 if d.get("format") == "p23" else 44)
         return f'<p class="sheet__text sheet__text--columns">{esc(text)}</p>'
     if style == "center":
         return f'<p class="sheet__text sheet__text--center">{esc(text)}</p>'
@@ -173,9 +173,11 @@ def card(d: dict) -> str:
         f"""<p class="sheet__title">{d.get('display_heading', esc(d.get('title', '')))}</p>
       <hr class="sheet__rule">
       """)
-    return f"""<a class="card" href="/documents/{esc(d['slug'])}.html">
+    fmt = d.get("format", "p34")
+    span = " card--wide" if fmt in ("l43", "l32") else ""
+    return f"""<a class="card{span}" href="/documents/{esc(d['slug'])}.html">
   <div class="exhibit"><div class="exhibit__mat">
-    <div class="sheet"><div class="sheet__inner">
+    <div class="sheet sheet--{fmt}"><div class="sheet__inner">
       <p class="sheet__kicker">{esc(d.get('kicker', ''))}</p>
       {title_block}<div class="sheet__body{' sheet__body--art' if d.get('art') else ''}">{excerpt_block(d, for_card=True)}</div>
       <div class="sheet__footer"><span>{esc(foot[0])}</span><span>{esc(foot[1])}</span></div>
@@ -274,6 +276,7 @@ def build_products(catalog: dict) -> int:
             room_label=esc(room_label),
             room_href=room_href,
             from_price=from_price(d),
+            sheet_format=d.get("format", "p34"),
             related_block=related_block(d, designs),
         )
         (outdir / f"{d['slug']}.html").write_text(page, encoding="utf-8")
@@ -307,6 +310,7 @@ def build_products(catalog: dict) -> int:
             room_label="The Classroom Room",
             room_href="/classroom.html",
             from_price=from_price(s),
+            sheet_format="p34",
             related_block="\n".join(card(x) for x in picks),
         )
         (outdir / f"{s['slug']}.html").write_text(page, encoding="utf-8")
