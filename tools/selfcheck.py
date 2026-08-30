@@ -64,6 +64,11 @@ def check_catalog():
         blob = json.dumps(d)
         if restricted.search(blob) and "restricted" not in blob.lower():
             warn(f"{d['slug']} mentions a restricted-marks term — Registrar eyes required (proposal §X)")
+        # every design is a rendered flat file: sheet on the site, master for the press
+        if not (ROOT / "site" / "art" / f"{d['slug']}.jpg").exists():
+            problem(f"{d['slug']}: no flat sheet at site/art/{d['slug']}.jpg — run typeset.py + render_art.py")
+        if not (ROOT / "print" / f"{d['slug']}.pdf").exists():
+            problem(f"{d['slug']}: no print master at print/{d['slug']}.pdf — run render_art.py")
     for s in cat.get("sets", []):
         for inc in s.get("includes", []):
             if inc not in slugs:

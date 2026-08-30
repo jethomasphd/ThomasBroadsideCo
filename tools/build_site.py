@@ -166,22 +166,33 @@ def price_line(item: dict) -> str:
     return '<span class="dot">·</span>'.join(parts)
 
 
-def card(d: dict) -> str:
+def sheet_div(d: dict, for_card: bool) -> str:
+    """The framed sheet. Designs with a flat file show the file itself —
+    the complete work, nothing painted on by the browser."""
+    fmt = d.get("format", "p34")
+    art = d.get("art")
+    if art:
+        return (f'<div class="sheet sheet--{fmt} sheet--flat">'
+                f'<img class="sheet__img" src="{esc(art["src"])}" '
+                f'alt="{esc(art.get("alt", d.get("title", "")))}" loading="lazy"></div>')
     foot = d.get("card_footer", ["", ""])
-    # a quote sheet's excerpt IS its heading; printing both says it twice
     title_block = "" if d.get("excerpt_style") == "quote" else (
         f"""<p class="sheet__title">{d.get('display_heading', esc(d.get('title', '')))}</p>
       <hr class="sheet__rule">
       """)
+    return f"""<div class="sheet sheet--{fmt}"><div class="sheet__inner">
+      <p class="sheet__kicker">{esc(d.get('kicker', ''))}</p>
+      {title_block}<div class="sheet__body">{excerpt_block(d, for_card=for_card)}</div>
+      <div class="sheet__footer"><span>{esc(foot[0])}</span><span>{esc(foot[1])}</span></div>
+    </div></div>"""
+
+
+def card(d: dict) -> str:
     fmt = d.get("format", "p34")
     span = " card--wide" if fmt in ("l43", "l32") else ""
     return f"""<a class="card{span}" href="/documents/{esc(d['slug'])}.html">
   <div class="exhibit"><div class="exhibit__mat">
-    <div class="sheet sheet--{fmt}"><div class="sheet__inner">
-      <p class="sheet__kicker">{esc(d.get('kicker', ''))}</p>
-      {title_block}<div class="sheet__body{' sheet__body--art' if d.get('art') else ''}">{excerpt_block(d, for_card=True)}</div>
-      <div class="sheet__footer"><span>{esc(foot[0])}</span><span>{esc(foot[1])}</span></div>
-    </div></div>
+    {sheet_div(d, for_card=True)}
   </div></div>
   <span class="placard">
     <span class="placard__title" style="display:block;">{esc(d.get('title', ''))}</span>
@@ -206,12 +217,11 @@ def set_band(s: dict, designs_by_slug: dict) -> str:
     for slug in s.get("includes", [])[:4]:
         d = designs_by_slug.get(slug)
         if d:
+            art = d.get("art") or {}
             minis.append(
-                f'<div class="sheet" style="border:1px solid var(--rule-faint);">'
-                f'<div class="sheet__inner" style="min-height:8rem;">'
-                f'<p class="sheet__kicker">{esc(d.get("date_label", ""))}</p>'
-                f'<p class="sheet__title" style="font-size:1rem;">{d.get("display_heading", esc(d["title"]))}</p>'
-                f"</div></div>"
+                f'<div class="sheet sheet--flat" style="border:1px solid var(--rule-faint);aspect-ratio:3/4;">'
+                f'<img class="sheet__img" src="{esc(art.get("src", ""))}" alt="{esc(d["title"])}" loading="lazy">'
+                f"</div>"
             )
     return f"""<div class="grid grid--2" style="align-items:center;gap:3.5rem;">
   <div>
@@ -261,13 +271,7 @@ def build_products(catalog: dict) -> int:
         page = tpl.substitute(
             title=esc(d["title"]),
             meta_description=esc(d.get("one_line", "")),
-            kicker=esc(d.get("kicker", "")),
-            display_heading="" if d.get("excerpt_style") == "quote"
-            else d.get("display_heading", esc(d["title"])),
-            excerpt_block=excerpt_block(d),
-            body_mod=" sheet__body--art" if d.get("art") else "",
-            footer_left=esc(foot[0]),
-            footer_right=esc(foot[1]),
+            sheet_html=sheet_div(d, for_card=False),
             date_label=esc(d.get("date_label", "")),
             one_line=esc(d.get("one_line", "")),
             buys_block=buys_block(d, TIER_NOTES),
@@ -292,13 +296,15 @@ def build_products(catalog: dict) -> int:
         page = tpl.substitute(
             title=esc(s["title"]),
             meta_description=esc(s.get("one_line", "")),
-            kicker="THE SETS · BUNDLES OF THE SIXTEEN",
-            display_heading=esc(s.get("strap", s["title"])),
-            excerpt_block=(f'<p class="sheet__text sheet__text--center">{esc(s.get("one_line", ""))}</p>'
-                           f'<ul class="sheet__timeline" style="margin-top:.8rem;">{listing}</ul>'),
-            body_mod="",
-            footer_left="ONE TUBE",
-            footer_right="SOURCED &amp; DATED",
+            sheet_html=(f'<div class="sheet sheet--p34"><div class="sheet__inner">'
+                        f'<p class="sheet__kicker">THE SETS · BUNDLES OF THE SIXTEEN</p>'
+                        f'<p class="sheet__title">{esc(s.get("strap", s["title"]))}</p>'
+                        f'<hr class="sheet__rule">'
+                        f'<div class="sheet__body">'
+                        f'<p class="sheet__text sheet__text--center">{esc(s.get("one_line", ""))}</p>'
+                        f'<ul class="sheet__timeline" style="margin-top:.8rem;">{listing}</ul></div>'
+                        f'<div class="sheet__footer"><span>ONE TUBE</span><span>SOURCED &amp; DATED</span></div>'
+                        f"</div></div>"),
             date_label="THE SETS",
             one_line=esc(s.get("audience", "")),
             buys_block=buys_block(s, SET_TIER_NOTES),
