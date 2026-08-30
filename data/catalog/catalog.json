@@ -293,7 +293,7 @@
         "THE MET · OPEN ACCESS",
         "1706 TO 1790"
       ],
-      "provenance": "After the Duplessis portrait of 1778 — the fur-collared “VIR” portrait — reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 436236, The Friedsam Collection. Franklin was a printer by trade; this shop keeps his line over the press.",
+      "provenance": "After the Duplessis portrait of 1778 — the fur-collared “VIR” portrait — shown as a detail of the painted oval, reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 436236, The Friedsam Collection. Franklin was a printer by trade; this shop keeps his line over the press.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -312,75 +312,26 @@
       "source_verified_by": "Clerk-fetched from metmuseum.org object 436236 (CC0) · 2026-08-30 · VERIFY: Jacob confirms object [D9]",
       "art": {
         "src": "/art/benjamin-franklin-after-duplessis.jpg",
-        "alt": "Portrait of Benjamin Franklin by Joseph Siffred Duplessis, 1778",
-        "credit": "The Metropolitan Museum of Art · The Friedsam Collection, Bequest of Michael Friedsam, 1931 · public domain (CC0) · object 436236",
+        "alt": "Benjamin Franklin by Joseph Siffred Duplessis, 1778 (detail)",
+        "credit": "The Metropolitan Museum of Art · The Friedsam Collection, Bequest of Michael Friedsam, 1931 · public domain (CC0) · object 436236 · shown as a detail of the oval",
         "master_url": "https://images.metmuseum.org/CRDImages/ep/original/DP312881.jpg"
       }
     },
     {
       "no": 8,
-      "slug": "thomas-jefferson-after-peale",
+      "slug": "thomas-jefferson-after-stuart",
       "sku": "TB-FDR-JEFF",
       "line": "founders",
       "room": "heritage",
       "title": "Thomas Jefferson",
-      "kicker": "ENGRAVED AFTER REMBRANDT PEALE, 1800",
+      "kicker": "AFTER GILBERT STUART, C. 1821",
       "display_heading": "Thomas Jefferson",
       "date_label": "1743 TO 1826",
-      "one_line": "A period stipple engraving after Peale’s 1800 portrait — Jefferson as the print shops of his own day sold him.",
+      "one_line": "After Gilbert Stuart, c. 1821, from the National Gallery of Art, open access.",
       "excerpt_style": "portrait",
-      "excerpt": "Portrait after Rembrandt Peale, 1800. Final art placed from open-access imagery before the first press run.",
+      "excerpt": "Portrait after Gilbert Stuart, c. 1821, National Gallery of Art open access.",
       "label": {
-        "source": "Library of Congress P&P · Desnoyers after Rembrandt Peale, engraved by Dequevauviller, 1800 · item 2020632445",
-        "typeface": "Caslon captions",
-        "paper": "100 lb cream cover, 18 x 24",
-        "press": "Thomas Graphics, Austin, Texas",
-        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
-      },
-      "card_footer": [
-        "LIBRARY OF CONGRESS",
-        "1743 TO 1826"
-      ],
-      "provenance": "“Jefferson, Dédié au Général Lafayette” — drawn by Desnoyers and engraved by Dequevauviller after Rembrandt Peale’s 1800 portrait, from the Library of Congress Prints and Photographs Division. We sell Jefferson the way his own era’s print shops did: as an engraving.",
-      "tiers": {
-        "digital": {
-          "price": 9,
-          "stripe_link": ""
-        },
-        "print": {
-          "price": 42,
-          "stripe_link": ""
-        },
-        "edition": {
-          "price": 145,
-          "stripe_link": ""
-        }
-      },
-      "status": "art_pending",
-      "source_verified_by": "Clerk-fetched from loc.gov item 2020632445 · 2026-08-30 · VERIFY: Jacob approves the switch from painting to period engraving, and the print-master gap stands [D9]",
-      "art": {
-        "src": "/art/thomas-jefferson-after-peale.jpg",
-        "alt": "Stipple engraving of Thomas Jefferson after Rembrandt Peale, 1800",
-        "credit": "Library of Congress, Prints & Photographs Division · item 2020632445 · public domain",
-        "master_url": "https://tile.loc.gov/storage-services/service/pnp/ds/13900/13991v.jpg",
-        "master_note": "Web-resolution scan only (1024 px). Print master still to be sourced (LOC hi-res request, WHHA, or N-YHS) before this sheet goes on press."
-      }
-    },
-    {
-      "no": 9,
-      "slug": "john-adams-after-stuart",
-      "sku": "TB-FDR-ADAM",
-      "line": "founders",
-      "room": "heritage",
-      "title": "John Adams",
-      "kicker": "AFTER GILBERT STUART, C. 1800/1815",
-      "display_heading": "John Adams",
-      "date_label": "1735 TO 1826",
-      "one_line": "After Gilbert Stuart, c. 1800/1815, from the National Gallery of Art, open access.",
-      "excerpt_style": "portrait",
-      "excerpt": "Portrait after Gilbert Stuart, c. 1800. Final art placed from National Gallery of Art open access before the first press run.",
-      "label": {
-        "source": "National Gallery of Art, open access · Gilbert Stuart, c. 1800/1815 (1954.7.1)",
+        "source": "National Gallery of Art, open access · Gilbert Stuart, c. 1821 (1986.71.1)",
         "typeface": "Caslon captions",
         "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
@@ -388,9 +339,9 @@
       },
       "card_footer": [
         "NATIONAL GALLERY OF ART",
-        "1735 TO 1826"
+        "1743 TO 1826"
       ],
-      "provenance": "After the Gilbert Stuart portrait of c. 1800/1815 in the National Gallery of Art (accession 1954.7.1), reproduced from NGA open-access imagery at full resolution.",
+      "provenance": "After the Gilbert Stuart portrait of c. 1821 in the National Gallery of Art (accession 1986.71.1), reproduced from NGA open-access imagery. The Gallery’s scan runs 14,826 by 18,162 pixels — finer than any press will ever ask of it.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -406,13 +357,62 @@
         }
       },
       "status": "art_placed",
-      "source_verified_by": "Clerk-fetched from NGA opendata object 42933 · 2026-08-30 · VERIFY: Jacob confirms object and c. 1800 → c. 1800/1815 [D9]",
+      "source_verified_by": "Clerk-fetched from NGA opendata object 69391 · 2026-08-30 · VERIFY: Jacob approves the change of painter — Peale 1800 engraving out, painted Stuart c. 1821 in — per his direction for a painted portrait [D9]",
       "art": {
-        "src": "/art/john-adams-after-stuart.jpg",
-        "alt": "Portrait of John Adams by Gilbert Stuart, c. 1800/1815",
-        "credit": "National Gallery of Art · open access · object 42933, accession 1954.7.1",
-        "master_url": "https://api.nga.gov/iiif/6689f0bd-101a-4310-86cd-022ef4b9da1e/full/full/0/default.jpg",
-        "master_note": "Native scan 6811×8259 px — true print-grade master."
+        "src": "/art/thomas-jefferson-after-stuart.jpg",
+        "alt": "Portrait of Thomas Jefferson by Gilbert Stuart, c. 1821",
+        "credit": "National Gallery of Art · open access · object 69391, accession 1986.71.1",
+        "master_url": "https://api.nga.gov/iiif/3a14fb6b-82a0-4e1b-beb3-7e6ac89ef686/full/full/0/default.jpg",
+        "master_note": "Native scan 14826×18162 px — print-grade far beyond an 18×24 sheet."
+      }
+    },
+    {
+      "no": 9,
+      "slug": "alexander-hamilton-after-trumbull",
+      "sku": "TB-FDR-HAML",
+      "line": "founders",
+      "room": "heritage",
+      "title": "Alexander Hamilton",
+      "kicker": "AFTER JOHN TRUMBULL, C. 1806",
+      "display_heading": "Alexander Hamilton",
+      "date_label": "1757 TO 1804",
+      "one_line": "After John Trumbull, c. 1806 — the portrait the ten-dollar bill descends from. National Gallery of Art, open access.",
+      "excerpt_style": "portrait",
+      "excerpt": "Portrait after John Trumbull, c. 1806, National Gallery of Art open access.",
+      "label": {
+        "source": "National Gallery of Art, open access · John Trumbull, c. 1806 (1940.1.8)",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": [
+        "NATIONAL GALLERY OF ART",
+        "1757 TO 1804"
+      ],
+      "provenance": "After the John Trumbull portrait of c. 1806 in the National Gallery of Art (accession 1940.1.8), reproduced from NGA open-access imagery. The first Secretary of the Treasury, painted by the painter of the Revolution.",
+      "tiers": {
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
+      },
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from NGA opendata object 567 · 2026-08-30 · VERIFY: Jacob confirms object, and the birth year on the sheet — 1757 is conventional but 1755 is argued; the Registrar settles it before press [D9]",
+      "art": {
+        "src": "/art/alexander-hamilton-after-trumbull.jpg",
+        "alt": "Portrait of Alexander Hamilton by John Trumbull, c. 1806",
+        "credit": "National Gallery of Art · open access · object 567, accession 1940.1.8",
+        "master_url": "https://api.nga.gov/iiif/71ca4cb0-3149-4152-abca-6485ee178cb2/full/full/0/default.jpg",
+        "master_note": "Native scan 7577×9474 px — print-grade."
       }
     },
     {
@@ -753,12 +753,12 @@
       "sku": "TB-SET-FNDR",
       "title": "The Founders Set",
       "strap": "Four portraits, one shelf of history.",
-      "one_line": "Washington, Franklin, Jefferson, and Adams, after Stuart, Duplessis, and Peale, with dates and painters credited on every sheet.",
+      "one_line": "Washington, Franklin, Jefferson, and Hamilton — after Stuart, Duplessis, and Trumbull — with dates and painters credited on every sheet.",
       "includes": [
         "george-washington-after-stuart",
         "benjamin-franklin-after-duplessis",
-        "thomas-jefferson-after-peale",
-        "john-adams-after-stuart"
+        "thomas-jefferson-after-stuart",
+        "alexander-hamilton-after-trumbull"
       ],
       "tiers": {
         "digital": {

@@ -104,24 +104,6 @@ window.TB_CATALOG = {
     },
     "title": "Preamble to the Constitution"
   },
-  "TB-FDR-ADAM": {
-    "slug": "john-adams-after-stuart",
-    "tiers": {
-      "digital": {
-        "physical": false,
-        "price": 9
-      },
-      "edition": {
-        "physical": true,
-        "price": 145
-      },
-      "print": {
-        "physical": true,
-        "price": 42
-      }
-    },
-    "title": "John Adams"
-  },
   "TB-FDR-FRAN": {
     "slug": "benjamin-franklin-after-duplessis",
     "tiers": {
@@ -140,8 +122,26 @@ window.TB_CATALOG = {
     },
     "title": "Benjamin Franklin"
   },
+  "TB-FDR-HAML": {
+    "slug": "alexander-hamilton-after-trumbull",
+    "tiers": {
+      "digital": {
+        "physical": false,
+        "price": 9
+      },
+      "edition": {
+        "physical": true,
+        "price": 145
+      },
+      "print": {
+        "physical": true,
+        "price": 42
+      }
+    },
+    "title": "Alexander Hamilton"
+  },
   "TB-FDR-JEFF": {
-    "slug": "thomas-jefferson-after-peale",
+    "slug": "thomas-jefferson-after-stuart",
     "tiers": {
       "digital": {
         "physical": false,

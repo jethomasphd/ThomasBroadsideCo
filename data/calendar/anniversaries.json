@@ -4,22 +4,150 @@
     "fixed_peaks": "Every July 4 (the edition) and every August (the classroom) are the two fixed revenue peaks."
   },
   "dates": [
-    { "date": "2026-09-17", "kind": "launch", "name": "Constitution Day — soft launch", "designs": ["preamble-to-the-constitution", "bill-of-rights"], "actions": "Store live, digital catalog only. Sixty pins banked, first five videos posted, business mailing to law firms. Journal: constitution-day." },
-    { "date": "2026-10-15", "kind": "milestone", "name": "First press run", "designs": [], "actions": "Print the top four sellers from the demand test. Printed catalog mails. Stock ledger opens." },
-    { "date": "2026-11-11", "kind": "anniversary", "name": "Veterans Day", "designs": ["washingtons-farewell-address", "gettysburg-address"], "actions": "Journal entry, email in letter voice, pin set. Veterans' posts on the business list." },
-    { "date": "2026-12-15", "kind": "anniversary", "name": "Bill of Rights Day", "designs": ["bill-of-rights"], "actions": "Holiday postcard through the mailhouse, framed editions push, gift messaging. Journal: bill-of-rights-day." },
-    { "date": "2027-01-31", "kind": "gate", "name": "THE GATE", "designs": [], "actions": "150 orders or $5,000, decided from data/orders/orders.csv, or the press does not run again [D11]. The Chronicler prepares the gate report the week prior; Jacob, Ben, and David decide together." },
-    { "date": "2027-02-15", "kind": "anniversary", "name": "Presidents' Day", "designs": ["george-washington-after-stuart", "john-adams-after-stuart", "thomas-jefferson-after-peale", "benjamin-franklin-after-duplessis"], "actions": "The Founders series and set." },
-    { "date": "2027-03-02", "kind": "anniversary", "name": "Texas Independence Day", "designs": ["texas-declaration-of-independence", "the-republic-of-texas-after-emory"], "actions": "The Texas line and the home market. Austin press coverage attempt." },
-    { "date": "2027-07-04", "kind": "anniversary", "name": "Independence Day", "designs": ["declaration-of-independence"], "actions": "The Declaration edition — the flagship's day [D4]. The year's largest email and mailing." },
-    { "date": "2027-08-15", "kind": "season", "name": "Back to school", "designs": ["founding-documents-set", "the-revolution-1765-to-1789"], "actions": "Classroom sets, wholesale to co-ops and schools. The August peak." },
-    { "date": "2027-09-17", "kind": "anniversary", "name": "Constitution Day", "designs": ["preamble-to-the-constitution"], "actions": "Anniversary of the store itself. Year-one retrospective in the journal." },
-    { "date": "2027-10-17", "kind": "anniversary", "name": "Saratoga at 250", "designs": [], "actions": "The battle that brought France into the war. New map candidate — goes through the D3 replacement question or waits for the second sixteen." },
-    { "date": "2027-12-19", "kind": "anniversary", "name": "Valley Forge at 250", "designs": [], "actions": "Journal and email. Candidate sheet for the second sixteen." },
-    { "date": "2028-06-28", "kind": "anniversary", "name": "Monmouth at 250", "designs": [], "actions": "Journal and email." },
-    { "date": "2029-09-23", "kind": "anniversary", "name": "Bonhomme Richard at 250", "designs": [], "actions": "Journal and email." },
-    { "date": "2031-10-19", "kind": "anniversary", "name": "Yorktown at 250", "designs": [], "actions": "Major date. Plan a year ahead." },
-    { "date": "2033-09-03", "kind": "anniversary", "name": "Treaty of Paris at 250", "designs": [], "actions": "Journal and email." },
-    { "date": "2037-09-17", "kind": "anniversary", "name": "The Constitution at 250", "designs": ["preamble-to-the-constitution", "bill-of-rights"], "actions": "The decade's summit. If the shop keeps its appointments, this is the year it has been building toward." }
+    {
+      "date": "2026-09-17",
+      "kind": "launch",
+      "name": "Constitution Day — soft launch",
+      "designs": [
+        "preamble-to-the-constitution",
+        "bill-of-rights"
+      ],
+      "actions": "Store live, digital catalog only. Sixty pins banked, first five videos posted, business mailing to law firms. Journal: constitution-day."
+    },
+    {
+      "date": "2026-10-15",
+      "kind": "milestone",
+      "name": "First press run",
+      "designs": [],
+      "actions": "Print the top four sellers from the demand test. Printed catalog mails. Stock ledger opens."
+    },
+    {
+      "date": "2026-11-11",
+      "kind": "anniversary",
+      "name": "Veterans Day",
+      "designs": [
+        "washingtons-farewell-address",
+        "gettysburg-address"
+      ],
+      "actions": "Journal entry, email in letter voice, pin set. Veterans' posts on the business list."
+    },
+    {
+      "date": "2026-12-15",
+      "kind": "anniversary",
+      "name": "Bill of Rights Day",
+      "designs": [
+        "bill-of-rights"
+      ],
+      "actions": "Holiday postcard through the mailhouse, framed editions push, gift messaging. Journal: bill-of-rights-day."
+    },
+    {
+      "date": "2027-01-31",
+      "kind": "gate",
+      "name": "THE GATE",
+      "designs": [],
+      "actions": "150 orders or $5,000, decided from data/orders/orders.csv, or the press does not run again [D11]. The Chronicler prepares the gate report the week prior; Jacob, Ben, and David decide together."
+    },
+    {
+      "date": "2027-02-15",
+      "kind": "anniversary",
+      "name": "Presidents' Day",
+      "designs": [
+        "george-washington-after-stuart",
+        "alexander-hamilton-after-trumbull",
+        "thomas-jefferson-after-stuart",
+        "benjamin-franklin-after-duplessis"
+      ],
+      "actions": "The Founders series and set."
+    },
+    {
+      "date": "2027-03-02",
+      "kind": "anniversary",
+      "name": "Texas Independence Day",
+      "designs": [
+        "texas-declaration-of-independence",
+        "the-republic-of-texas-after-emory"
+      ],
+      "actions": "The Texas line and the home market. Austin press coverage attempt."
+    },
+    {
+      "date": "2027-07-04",
+      "kind": "anniversary",
+      "name": "Independence Day",
+      "designs": [
+        "declaration-of-independence"
+      ],
+      "actions": "The Declaration edition — the flagship's day [D4]. The year's largest email and mailing."
+    },
+    {
+      "date": "2027-08-15",
+      "kind": "season",
+      "name": "Back to school",
+      "designs": [
+        "founding-documents-set",
+        "the-revolution-1765-to-1789"
+      ],
+      "actions": "Classroom sets, wholesale to co-ops and schools. The August peak."
+    },
+    {
+      "date": "2027-09-17",
+      "kind": "anniversary",
+      "name": "Constitution Day",
+      "designs": [
+        "preamble-to-the-constitution"
+      ],
+      "actions": "Anniversary of the store itself. Year-one retrospective in the journal."
+    },
+    {
+      "date": "2027-10-17",
+      "kind": "anniversary",
+      "name": "Saratoga at 250",
+      "designs": [],
+      "actions": "The battle that brought France into the war. New map candidate — goes through the D3 replacement question or waits for the second sixteen."
+    },
+    {
+      "date": "2027-12-19",
+      "kind": "anniversary",
+      "name": "Valley Forge at 250",
+      "designs": [],
+      "actions": "Journal and email. Candidate sheet for the second sixteen."
+    },
+    {
+      "date": "2028-06-28",
+      "kind": "anniversary",
+      "name": "Monmouth at 250",
+      "designs": [],
+      "actions": "Journal and email."
+    },
+    {
+      "date": "2029-09-23",
+      "kind": "anniversary",
+      "name": "Bonhomme Richard at 250",
+      "designs": [],
+      "actions": "Journal and email."
+    },
+    {
+      "date": "2031-10-19",
+      "kind": "anniversary",
+      "name": "Yorktown at 250",
+      "designs": [],
+      "actions": "Major date. Plan a year ahead."
+    },
+    {
+      "date": "2033-09-03",
+      "kind": "anniversary",
+      "name": "Treaty of Paris at 250",
+      "designs": [],
+      "actions": "Journal and email."
+    },
+    {
+      "date": "2037-09-17",
+      "kind": "anniversary",
+      "name": "The Constitution at 250",
+      "designs": [
+        "preamble-to-the-constitution",
+        "bill-of-rights"
+      ],
+      "actions": "The decade's summit. If the shop keeps its appointments, this is the year it has been building toward."
+    }
   ]
 }
