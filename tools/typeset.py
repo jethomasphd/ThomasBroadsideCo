@@ -3,9 +3,16 @@
 complete, print-ready flat file. The site displays these files; the press
 prints them; the digital tier sells them.
 
-  data/texts/<slug>.txt  +  site/art masters   ──►  art_src/<slug>.svg   (design source, committed)
-  tools/render_art.py (chromium)               ──►  print/<slug>.pdf     (true sheet size, vector)
-                                               ──►  site/art/<slug>.jpg  (what the store hangs)
+  data/texts/<slug>.txt  +  art_masters/raw   ──►  art_src/<slug>.svg   (design source, committed)
+  tools/render_art.py (chromium)              ──►  print/<slug>.pdf     (true sheet size, vector)
+                                              ──►  site/art/<slug>.jpg  (what the store hangs)
+
+The house style is the two inks of the early press: black carries the
+words, red carries the structure — kickers, heads, numbers, and the short
+rules. Rubrication, the way the first printers used it. Documents are set
+as broadside posters: the monumental passage large, not the whole act in
+agate. The full transcriptions stay in data/texts/ as the book of record;
+every word on a sheet is pulled verbatim from its file.
 
 Sheets carry ONLY what belongs on the printed work: the document, its own
 kicker/attribution lines, and the printer's imprint. Marketing badges live
@@ -16,7 +23,7 @@ dependency-free [D2]): pip install pillow fonttools brotli
 """
 import base64
 import json
-import re
+from itertools import combinations
 from pathlib import Path
 
 from PIL import Image, ImageFont
@@ -85,6 +92,24 @@ def wrap(text: str, face: str, size: float, measure: float) -> list:
     return lines
 
 
+def balance(text: str, face: str, size: float, measure: float, max_lines: int = 3) -> list:
+    """Centered display lines read best balanced — near-equal widths, no
+    orphan word — so pick the split that minimizes the widest line."""
+    words = text.split()
+    need = len(wrap(text, face, size, measure))
+    n = max(need, 1)
+    if n == 1 or n > max_lines or len(words) > 24:
+        return wrap(text, face, size, measure)
+    best, best_w = None, float("inf")
+    for cuts in combinations(range(1, len(words)), n - 1):
+        bounds = (0,) + cuts + (len(words),)
+        lines = [" ".join(words[a:b]) for a, b in zip(bounds, bounds[1:])]
+        widest = max(width_of(l, face, size) for l in lines)
+        if widest <= measure and widest < best_w:
+            best, best_w = lines, widest
+    return best or wrap(text, face, size, measure)
+
+
 def esc(s: str) -> str:
     return s.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
@@ -109,6 +134,10 @@ class Sheet:
     def rule(self, x1, y, x2, stroke=INK, w=1.0):
         self.parts.append(f'<line x1="{x1:.1f}" y1="{y:.1f}" x2="{x2:.1f}" y2="{y:.1f}" stroke="{stroke}" stroke-width="{w}"/>')
 
+    def crule(self, y, half=60, w=1.2):
+        """The short red center rule — the sheet's rubric mark."""
+        self.rule(self.w / 2 - half, y, self.w / 2 + half, stroke=RED, w=w)
+
     def image(self, x, y, w, h, jpg_path: Path):
         b64 = base64.b64encode(jpg_path.read_bytes()).decode()
         self.parts.append(
@@ -117,19 +146,22 @@ class Sheet:
 
     # ── composites ──
     def para(self, y, text, face, size, leading, measure, x=None, justify=True):
-        """Justified paragraph; returns y after the paragraph."""
+        """Paragraph; a line is only stretched when it nearly fills the
+        measure — stretching short lines opens ugly word-gaps."""
         x = (self.w - measure) / 2 if x is None else x
         lines = wrap(text, face, size, measure)
         for i, line in enumerate(lines):
             last = i == len(lines) - 1
-            tl = None if (last or not justify) else measure
+            natural = width_of(line, face, size)
+            tl = measure if (justify and not last and natural >= measure * 0.88) else None
             self.text(x, y, line, face, size, text_length=tl)
             y += leading
         return y
 
-    def centered_block(self, y, text, face, size, leading, measure):
-        for line in wrap(text, face, size, measure):
-            self.text(self.w / 2, y, line, face, size, anchor="middle")
+    def centered_block(self, y, text, face, size, leading, measure, fill=INK, balanced=False):
+        lines = (balance if balanced else wrap)(text, face, size, measure)
+        for line in lines:
+            self.text(self.w / 2, y, line, face, size, fill=fill, anchor="middle")
             y += leading
         return y
 
@@ -142,21 +174,19 @@ class Sheet:
         return min_size
 
     def border(self, inset=34):
+        """Outer black rule, inner red hairline — both inks on every sheet."""
         self.parts.append(
             f'<rect x="{inset}" y="{inset}" width="{self.w - 2*inset}" height="{self.h - 2*inset}" '
             f'fill="none" stroke="{INK}" stroke-width="1.6"/>')
         self.parts.append(
             f'<rect x="{inset+8}" y="{inset+8}" width="{self.w - 2*inset - 16}" height="{self.h - 2*inset - 16}" '
-            f'fill="none" stroke="{INK}" stroke-width="0.5" opacity="0.55"/>')
+            f'fill="none" stroke="{RED}" stroke-width="0.8" opacity="0.85"/>')
 
     def imprint(self):
         self.text(self.w / 2, self.h - 58, IMPRINT, "mono", 9.5, fill=SOFT,
                   anchor="middle", tracking=2.4)
 
     def svg(self) -> str:
-        css = []
-        for face in ("text", "italic", "bold"):
-            pass
         defs = []
         for fam, wof, weight, style in (
             ("LCT", FACES["text"], 400, "normal"),
@@ -172,7 +202,7 @@ class Sheet:
         return (
             f'<svg xmlns="http://www.w3.org/2000/svg" width="{self.w}" height="{self.h}" '
             f'viewBox="0 0 {self.w} {self.h}">'
-            f"<style>{''.join(defs)}</style>"
+            f"<style>{''.join(defs)}text{{text-rendering:geometricPrecision}}</style>"
             f'<rect width="{self.w}" height="{self.h}" fill="{PAPER}"/>'
             + "".join(self.parts) + "</svg>")
 
@@ -181,64 +211,92 @@ def blocks(slug: str) -> list:
     return [b.strip() for b in (TEXTS / f"{slug}.txt").read_text(encoding="utf-8").split("===")]
 
 
+def passage(slug: str, start: str, end: str) -> str:
+    """A verbatim passage from the book of record — the sheet never carries
+    words the transcription file doesn't."""
+    body = blocks(slug)[2]
+    i = body.find(start)
+    j = body.find(end, i)
+    if i < 0 or j < 0:
+        raise SystemExit(f"{slug}: passage '{start[:30]}…{end[-20:]}' not in data/texts — the record is the source")
+    return " ".join(body[i:j + len(end)].split())
+
+
 # ── composers ───────────────────────────────────────────────────────────
 
-def two_column_document(slug, fmt="p34", body_size=13.0, leading=16.6):
-    kicker, title, body, close = blocks(slug)
-    s = Sheet(fmt)
+def declaration_poster():
+    """The Preamble treatment: the truths held self-evident, monumental."""
+    kicker, title, _, close = blocks("declaration-of-independence")
+    truths = passage("declaration-of-independence",
+                     "We hold these truths", "pursuit of Happiness.")
+    monumental = "We hold these truths to be self-evident,"
+    rest = truths[len(monumental):].strip()
+    s = Sheet("p34")
     s.border()
-    margin, gutter = 108, 44
-    col_w = (s.w - 2 * margin - gutter) / 2
-    y = 168
+    y = 200
     s.text(s.w / 2, y, kicker.upper(), "mono", 15, fill=RED, anchor="middle", tracking=6)
-    y += 54
-    dsize = s.fit_display(title, s.w - 2 * margin, 52, max_lines=3)
-    for line in wrap(title, "display", dsize, s.w - 2 * margin):
-        s.text(s.w / 2, y, line, "display", dsize, anchor="middle")
-        y += dsize * 1.14
-    y += 6
-    s.rule(s.w / 2 - 60, y, s.w / 2 + 60, w=1.2)
-    y0 = y + 44
+    y += 76
+    for line in balance(title, "display", 41, s.w - 300, max_lines=2):
+        s.text(s.w / 2, y, line, "display", 41, anchor="middle")
+        y += 56
+    y += 4
+    s.crule(y, half=70)
 
-    # two-pass balanced columns: measure everything, split at half height,
-    # then draw — columns end together, whitespace sits evenly at the foot
-    paras = [p.strip() for p in body.split("\n\n") if p.strip()]
-    units = []  # (kind, text) — kind: 'line' advances leading, 'gap' advances less
-    for p in paras:
-        lines = wrap(p, "text", body_size, col_w)
-        for i, line in enumerate(lines):
-            units.append(("line", line, i < len(lines) - 1))  # justify unless last of para
-        units.append(("gap", "", False))
-    if units and units[-1][0] == "gap":
-        units.pop()
+    y += 196
+    for line in ("We hold these", "truths to be", "self-evident,"):
+        s.text(s.w / 2, y, line, "display", 138, anchor="middle")
+        y += 170
+    y += 40
+    y = s.centered_block(y, rest, "text", 26.5, 43, s.w - 2 * 150)
+    y += 26
+    s.crule(y, half=52, w=1.0)
 
-    def height_of(us):
-        return sum(leading if u[0] == "line" else leading * 0.55 for u in us)
-
-    total = height_of(units)
-    split, acc = len(units), 0.0
-    for i, u in enumerate(units):
-        acc += leading if u[0] == "line" else leading * 0.55
-        if acc >= total / 2:
-            split = i + 1
-            break
-    while split < len(units) and units[split][0] == "gap":
-        split += 1
-    for col, chunk in ((0, units[:split]), (1, units[split:])):
-        x = margin + col * (col_w + gutter)
-        y = y0
-        for kind, line, justify in chunk:
-            if kind == "gap":
-                y += leading * 0.55
-                continue
-            natural = width_of(line, "text", body_size)
-            tl = col_w if (justify and natural >= col_w * 0.84) else None
-            s.text(x, y, line, "text", body_size, text_length=tl)
-            y += leading
-    yc = s.h - 118
+    yc = s.h - 148
     for line in close.split("\n"):
-        s.text(s.w / 2, yc, line.strip(), "italic", 12.5, anchor="middle")
-        yc += 18
+        s.text(s.w / 2, yc, line.strip(), "italic", 13.5, anchor="middle")
+        yc += 22
+    s.imprint()
+    return s
+
+
+def texas_poster():
+    """The same concept an hour up the road: the resolve, then the republic."""
+    _, sub, _, close = blocks("texas-declaration-of-independence")
+    resolve = passage("texas-declaration-of-independence",
+                      "We, therefore, the delegates", "do now constitute")
+    passage("texas-declaration-of-independence",  # the monumental line, verified in the record
+            "a free, Sovereign, and independent republic",
+            "a free, Sovereign, and independent republic")
+    conscious = passage("texas-declaration-of-independence",
+                        "conscious of the rectitude", "destinies of nations.")
+    made_by = sub.split(", at the Town")[0]
+    made_by = made_by[0].upper() + made_by[1:]
+    s = Sheet("p34")
+    s.border()
+    y = 208
+    s.text(s.w / 2, y, "WASHINGTON-ON-THE-BRAZOS · MARCH 2, 1836", "mono", 15,
+           fill=RED, anchor="middle", tracking=6)
+    y += 78
+    for line in balance("The Texas Declaration of Independence", "display", 46, s.w - 260, max_lines=2):
+        s.text(s.w / 2, y, line, "display", 46, anchor="middle")
+        y += 62
+    y = s.centered_block(y + 10, made_by, "italic", 15.5, 24, s.w - 320)
+    y += 4
+    s.crule(y, half=70)
+
+    y = s.centered_block(y + 110, resolve + " —", "text", 22.5, 36.5, s.w - 2 * 168)
+    y += 80
+    for line in ("a free, Sovereign, and", "independent republic"):
+        s.text(s.w / 2, y, line, "display", 96, anchor="middle")
+        y += 128
+    y += 30
+    y = s.centered_block(y, conscious[0].upper() + conscious[1:],
+                         "italic", 18.5, 31, s.w - 2 * 200)
+    y += 28
+    s.crule(y, half=52, w=1.0)
+
+    s.text(s.w / 2, s.h - 132, close.replace(" · ", "   ·   "), "mono", 10.5,
+           fill=SOFT, anchor="middle", tracking=3)
     s.imprint()
     return s
 
@@ -256,25 +314,36 @@ def bill_of_rights():
     y = s.centered_block(y + 40, k2, "italic", 17, 25, s.w - 2 * margin - 120) + 14
     s.text(s.w / 2, y + 78, title, "display", 100, anchor="middle")
     y += 116
-    s.rule(s.w / 2 - 80, y, s.w / 2 + 80, w=1.3)
-    y = s.para(y + 56, preamble, "italic", 17.5, 25, s.w - 2 * margin - 150) + 40
+    s.crule(y, half=80, w=1.3)
+    y = s.para(y + 56, preamble, "italic", 17.5, 26, s.w - 2 * margin - 150) + 44
 
-    items = [a.strip() for a in amendments.split("\n\n") if a.strip()]
-    y0, bottom = y, s.h - 180
-    x = margin
-    for item in items:
+    # balance the two columns: split the ten near half the total height so
+    # both feet land together instead of the right column hanging short
+    items = []
+    for item in [a.strip() for a in amendments.split("\n\n") if a.strip()]:
         head, text = item.split("\n", 1)
-        lines = wrap(text.strip(), "text", 19.5, col_w)
-        need = 38 + len(lines) * 27 + 32
-        if y + need > bottom and x == margin:
-            x, y = margin + col_w + gutter, y0
-        s.text(x, y, head.upper(), "mono", 15, fill=RED, tracking=3.5)
-        y += 34
-        for i, line in enumerate(lines):
-            s.text(x, y, line, "text", 19.5,
-                   text_length=col_w if i < len(lines) - 1 else None)
-            y += 27
-        y += 32
+        lines = wrap(text.strip(), "text", 20, col_w)
+        items.append((head, lines, 36 + len(lines) * 28.5 + 36))
+    total = sum(h for _, _, h in items)
+    split, acc = len(items), 0.0
+    for i, (_, _, h) in enumerate(items):
+        acc += h
+        if acc >= total / 2:
+            split = i + 1
+            break
+    y0 = y
+    for col, chunk in ((0, items[:split]), (1, items[split:])):
+        x = margin + col * (col_w + gutter)
+        y = y0
+        for head, lines, _ in chunk:
+            s.text(x, y, head.upper(), "mono", 15.5, fill=RED, tracking=3.5)
+            y += 36
+            for i, line in enumerate(lines):
+                natural = width_of(line, "text", 20)
+                tl = col_w if (i < len(lines) - 1 and natural >= col_w * 0.88) else None
+                s.text(x, y, line, "text", 20, text_length=tl)
+                y += 28.5
+            y += 36
     s.text(s.w / 2, s.h - 128, "Ratified December 15, 1791", "italic", 15, anchor="middle")
     s.imprint()
     return s
@@ -289,7 +358,7 @@ def preamble_sheet():
     s.text(s.w / 2, y + 230, "We the", "display", 168, anchor="middle")
     s.text(s.w / 2, y + 420, "People", "display", 168, anchor="middle")
     yy = y + 500
-    s.rule(s.w / 2 - 76, yy, s.w / 2 + 76, w=1.2)
+    s.crule(yy, half=76)
     yy = s.para(yy + 82, body, "text", 23.5, 38, s.w - 2 * 180)
     s.text(s.w / 2, s.h - 138, close, "mono", 11.5, fill=SOFT, anchor="middle", tracking=4.5)
     s.imprint()
@@ -302,15 +371,15 @@ def gettysburg():
     s.border()
     y = 196
     s.text(s.w / 2, y, kicker.upper(), "mono", 14.5, fill=RED, anchor="middle", tracking=6)
-    y = s.centered_block(y + 64, title, "display", 46, 58, s.w - 240) + 10
-    s.rule(s.w / 2 - 60, y, s.w / 2 + 60, w=1.2)
-    y += 74
-    measure = s.w - 2 * 168
+    y = s.centered_block(y + 64, title, "display", 46, 58, s.w - 240, balanced=True) + 10
+    s.crule(y)
+    y += 96
+    measure = s.w - 2 * 148
     for p in [p.strip() for p in body.split("\n\n") if p.strip()]:
-        y = s.para(y, p, "text", 20, 31.5, measure) + 20
-    y += 14
-    s.rule(s.w / 2 - 46, y, s.w / 2 + 46, w=1.0)
-    s.text(s.w / 2, y + 38, close, "italic", 16, anchor="middle")
+        y = s.para(y, p, "text", 24, 37.5, measure) + 26
+    y += 16
+    s.crule(y, half=46, w=1.0)
+    s.text(s.w / 2, y + 44, close, "italic", 16.5, anchor="middle")
     s.imprint()
     return s
 
@@ -319,18 +388,18 @@ def quote_sheet(slug):
     kicker, quote, attr = blocks(slug)
     s = Sheet("l43")
     s.border()
-    s.text(s.w / 2, 168, kicker.upper(), "mono", 15, fill=RED, anchor="middle", tracking=8)
-    measure = s.w - 2 * 190
-    size = s.fit_display(quote, measure, 96, min_size=40, max_lines=4)
-    lines = wrap(quote, "display", size, measure)
+    s.text(s.w / 2, 172, kicker.upper(), "mono", 15.5, fill=RED, anchor="middle", tracking=8)
+    measure = s.w - 2 * 180
+    size = s.fit_display(quote, measure, 98, min_size=40, max_lines=4)
+    lines = balance(quote, "display", size, measure, max_lines=4)
     lh = size * 1.26
-    block = len(lines) * lh + 66
-    y = (s.h - block) / 2 + size * 0.68
+    block = len(lines) * lh + 70
+    y = (s.h - block) / 2 + size * 0.72
     for line in lines:
         s.text(s.w / 2, y, line, "display", size, anchor="middle")
         y += lh
-    s.rule(s.w / 2 - 50, y + 8, s.w / 2 + 50, w=1.1)
-    s.text(s.w / 2, y + 46, attr, "italic", 16.5, anchor="middle")
+    s.crule(y + 8, half=50, w=1.1)
+    s.text(s.w / 2, y + 50, attr, "italic", 17.5, anchor="middle")
     s.imprint()
     return s
 
@@ -343,15 +412,15 @@ def timeline():
     s.text(s.w / 2, y, kicker.upper(), "mono", 19, fill=RED, anchor="middle", tracking=10)
     s.text(s.w / 2, y + 120, span, "display", 104, anchor="middle")
     y += 186
-    s.rule(s.w / 2 - 90, y, s.w / 2 + 90, w=1.3)
-    y += 130
-    left, right = 230, s.w - 230
+    s.crule(y, half=90, w=1.3)
+    y += 148
+    left, right = 220, s.w - 220
     for row in [r for r in rows.split("\n") if "\t" in r]:
         yr, event = row.split("\t", 1)
-        s.text(left, y, yr, "mono", 34, fill=RED, tracking=2)
-        s.text(left + 200, y, event, "text", 36)
-        s.rule(left, y + 34, right, stroke=SOFT, w=0.6)
-        y += 118
+        s.text(left, y, yr, "mono", 38, fill=RED, tracking=2)
+        s.text(left + 220, y, event, "text", 41)
+        s.rule(left, y + 42, right, stroke=SOFT, w=0.6)
+        y += 152
     s.text(s.w / 2, s.h - 132, close.title(), "mono", 11, fill=SOFT, anchor="middle", tracking=3.5)
     s.imprint()
     return s
@@ -386,8 +455,8 @@ def image_sheet(d, master: Path):
 # ── main ────────────────────────────────────────────────────────────────
 
 TYPESET = {
-    "declaration-of-independence": lambda d: two_column_document("declaration-of-independence", body_size=12.8, leading=16.2),
-    "texas-declaration-of-independence": lambda d: two_column_document("texas-declaration-of-independence", body_size=12.6, leading=16.2),
+    "declaration-of-independence": lambda d: declaration_poster(),
+    "texas-declaration-of-independence": lambda d: texas_poster(),
     "bill-of-rights": lambda d: bill_of_rights(),
     "preamble-to-the-constitution": lambda d: preamble_sheet(),
     "gettysburg-address": lambda d: gettysburg(),

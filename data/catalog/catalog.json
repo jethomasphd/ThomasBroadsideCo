@@ -22,7 +22,7 @@
       "kicker": "IN CONGRESS, JULY 4, 1776.",
       "display_heading": "The unanimous <em>Declaration</em> of the thirteen united States of America,",
       "date_label": "1776 · DUNLAP SETTING",
-      "one_line": "Set in Caslon, the type of the broadside John Dunlap ran on the night of July 4, 1776. Every line from the National Archives.",
+      "one_line": "Set in Caslon, the type of the broadside John Dunlap ran on the night of July 4, 1776. The truths held self-evident, monumental — every word from the National Archives.",
       "excerpt_style": "columns",
       "excerpt": "When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.",
       "label": {
@@ -36,7 +36,7 @@
         "NATIONAL ARCHIVES",
         "SET IN CASLON"
       ],
-      "provenance": "On the night of July 4, 1776, the printer John Dunlap set the Declaration in Caslon and ran roughly two hundred broadsides before dawn. This sheet follows the Dunlap setting; every line is taken from the National Archives transcription of the engrossed copy. Printed on our own press in Austin, Texas.",
+      "provenance": "On the night of July 4, 1776, the printer John Dunlap set the Declaration in Caslon and ran roughly two hundred broadsides before dawn. This sheet sets the truths the nation was founded on — monumental, in two inks, after the Dunlap setting — every word from the National Archives transcription of the engrossed copy. Printed on our own press in Austin, Texas.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -55,7 +55,7 @@
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
       "format": "p34",
       "art": {
-        "alt": "The Declaration of Independence — typeset broadside",
+        "alt": "The Declaration of Independence — 'We hold these truths to be self-evident' set monumental in Caslon, black and red",
         "credit": "Typeset and printed by the shop · text: National Archives, engrossed copy",
         "src": "/art/declaration-of-independence.jpg",
         "print_master": "print/declaration-of-independence.pdf",
@@ -677,7 +677,7 @@
       "kicker": "WASHINGTON-ON-THE-BRAZOS, MARCH 2, 1836",
       "display_heading": "The Texas Declaration of Independence",
       "date_label": "1836",
-      "one_line": "Signed at Washington-on-the-Brazos, March 2, 1836. The home market's founding sheet.",
+      "one_line": "Signed at Washington-on-the-Brazos, March 2, 1836. The resolve and the republic, monumental — the home market's founding sheet.",
       "excerpt_style": "columns",
       "excerpt": "When a government has ceased to protect the lives, liberty and property of the people, from whom its legitimate powers are derived, and for the advancement of whose happiness it was instituted, and so far from being a guarantee for the enjoyment of those inestimable and inalienable rights, becomes an instrument in the hands of evil rulers for their oppression.",
       "label": {
@@ -710,7 +710,7 @@
       "source_verified_by": "PENDING · verify against tsl.texas.gov transcription [house rule: cited]",
       "format": "p34",
       "art": {
-        "alt": "The Texas Declaration of Independence — typeset broadside",
+        "alt": "The Texas Declaration of Independence — 'a free, Sovereign, and independent republic' set monumental in Caslon, black and red",
         "credit": "Typeset and printed by the shop · text: Texas State Library and Archives",
         "src": "/art/texas-declaration-of-independence.jpg",
         "print_master": "print/texas-declaration-of-independence.pdf",
