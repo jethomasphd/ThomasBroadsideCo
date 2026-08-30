@@ -158,6 +158,24 @@ window.TB_CATALOG = {
     },
     "title": "Thomas Jefferson"
   },
+  "TB-FDR-LINC": {
+    "slug": "abraham-lincoln-after-healy",
+    "tiers": {
+      "digital": {
+        "physical": false,
+        "price": 9
+      },
+      "edition": {
+        "physical": true,
+        "price": 145
+      },
+      "print": {
+        "physical": true,
+        "price": 42
+      }
+    },
+    "title": "Abraham Lincoln"
+  },
   "TB-FDR-WASH": {
     "slug": "george-washington-after-stuart",
     "tiers": {
@@ -225,6 +243,34 @@ window.TB_CATALOG = {
       }
     },
     "title": "Facts are stubborn things."
+  },
+  "TB-QTE-HOUS": {
+    "slug": "a-house-divided",
+    "tiers": {
+      "digital": {
+        "physical": false,
+        "price": 7
+      },
+      "print": {
+        "physical": true,
+        "price": 38
+      }
+    },
+    "title": "A house divided against itself cannot stand."
+  },
+  "TB-QTE-MALC": {
+    "slug": "with-malice-toward-none",
+    "tiers": {
+      "digital": {
+        "physical": false,
+        "price": 7
+      },
+      "print": {
+        "physical": true,
+        "price": 38
+      }
+    },
+    "title": "With malice toward none; with charity for all."
   },
   "TB-QTE-WELL": {
     "slug": "well-done-is-better-than-well-said",

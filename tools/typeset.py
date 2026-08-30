@@ -41,7 +41,7 @@ SIZES = {  # points at 72/in
     "l43": (1728, 1296),   # 24 x 18
     "l32": (1728, 1152),   # 24 x 16
 }
-IMPRINT = "AUSTIN · PRINTED BY THOMAS GRAPHICS · MMXXVI"
+IMPRINT = "AUSTIN, TX · PRINTED BY THE THOMAS BROADSIDE CO. · MMXXVI"
 
 FACES = {
     "text": "LibreCaslonText-400.woff2",
@@ -463,6 +463,8 @@ TYPESET = {
     "washingtons-farewell-address": lambda d: quote_sheet("washingtons-farewell-address"),
     "well-done-is-better-than-well-said": lambda d: quote_sheet("well-done-is-better-than-well-said"),
     "facts-are-stubborn-things": lambda d: quote_sheet("facts-are-stubborn-things"),
+    "with-malice-toward-none": lambda d: quote_sheet("with-malice-toward-none"),
+    "a-house-divided": lambda d: quote_sheet("a-house-divided"),
     "the-revolution-1765-to-1789": lambda d: timeline(),
 }
 

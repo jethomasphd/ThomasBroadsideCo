@@ -40,8 +40,8 @@ def check_config():
 def check_catalog():
     cat = json.loads((ROOT / "data" / "catalog" / "catalog.json").read_text(encoding="utf-8"))
     designs = cat.get("designs", [])
-    if len(designs) != 16:
-        problem(f"the catalog is sixteen [D3] — found {len(designs)}")
+    if len(designs) != 19:
+        problem(f"the catalog is nineteen [D3, amended by Jacob 2026-08-30] — found {len(designs)}")
     slugs, skus = set(), set()
     restricted = re.compile(r"official seal|military insignia|park service|arrowhead|america\s*250", re.I)
     for d in designs:
@@ -64,15 +64,18 @@ def check_catalog():
         blob = json.dumps(d)
         if restricted.search(blob) and "restricted" not in blob.lower():
             warn(f"{d['slug']} mentions a restricted-marks term — Registrar eyes required (proposal §X)")
-        # every design is a rendered flat file: sheet on the site, master for the press
+        # every design is a rendered flat file: sheet on the site (full +
+        # card renditions), master for the press
         if not (ROOT / "site" / "art" / f"{d['slug']}.jpg").exists():
             problem(f"{d['slug']}: no flat sheet at site/art/{d['slug']}.jpg — run typeset.py + render_art.py")
+        if not (ROOT / "site" / "art" / f"{d['slug']}-card.jpg").exists():
+            problem(f"{d['slug']}: no card rendition at site/art/{d['slug']}-card.jpg — run render_art.py")
         if not (ROOT / "print" / f"{d['slug']}.pdf").exists():
             problem(f"{d['slug']}: no print master at print/{d['slug']}.pdf — run render_art.py")
     for s in cat.get("sets", []):
         for inc in s.get("includes", []):
             if inc not in slugs:
-                problem(f"set {s['slug']} includes unknown design '{inc}' — sets are bundles of the sixteen [D3]")
+                problem(f"set {s['slug']} includes unknown design '{inc}' — sets are bundles of the nineteen [D3]")
     return cat
 
 

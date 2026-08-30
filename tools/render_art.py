@@ -46,12 +46,14 @@ def main() -> None:
         slug = svg.stem
         if only and slug not in only:
             continue
-        m = re.search(r'width="(\d+)" height="(\d+)"', svg.read_text(encoding="utf-8")[:300])
+        text = svg.read_text(encoding="utf-8")
+        m = re.search(r'width="(\d+)" height="(\d+)"', text[:300])
         w, h = int(m.group(1)), int(m.group(2))
         # screenshot at the exact display scale — no resample afterwards
         # (a LANCZOS pass softens type) — and save with full chroma so red
-        # ink and fine serifs stay crisp
-        scale = 2600 / max(w, h)
+        # ink and fine serifs stay crisp; plates carry paintings, so they
+        # get more pixels than pure type needs
+        scale = (3200 if "<image" in text else 2600) / max(w, h)
         with tempfile.TemporaryDirectory() as td:
             png = Path(td) / "shot.png"
             run("node", str(ROOT / "tools" / "render_art.js"),
@@ -59,6 +61,13 @@ def main() -> None:
             im = Image.open(png).convert("RGB")
             im.save(JPG / f"{slug}.jpg", "JPEG", quality=90, subsampling=0,
                     progressive=True, optimize=True)
+            # the card rendition: what the gallery walls load; the full
+            # file above is what the hero, exhibit pages, and the
+            # inspection view serve
+            card = im.copy()
+            card.thumbnail((1000, 1000), Image.LANCZOS)
+            card.save(JPG / f"{slug}-card.jpg", "JPEG", quality=84,
+                      progressive=True, optimize=True)
 
             wrapper = Path(td) / "page.html"
             wrapper.write_text(
