@@ -48,13 +48,17 @@ def main() -> None:
             continue
         m = re.search(r'width="(\d+)" height="(\d+)"', svg.read_text(encoding="utf-8")[:300])
         w, h = int(m.group(1)), int(m.group(2))
+        # screenshot at the exact display scale — no resample afterwards
+        # (a LANCZOS pass softens type) — and save with full chroma so red
+        # ink and fine serifs stay crisp
+        scale = 2600 / max(w, h)
         with tempfile.TemporaryDirectory() as td:
             png = Path(td) / "shot.png"
             run("node", str(ROOT / "tools" / "render_art.js"),
-                str(svg.resolve()), str(png), str(w), str(h), "2")
+                str(svg.resolve()), str(png), str(w), str(h), f"{scale:.4f}")
             im = Image.open(png).convert("RGB")
-            im.thumbnail((2200, 2200), Image.LANCZOS)
-            im.save(JPG / f"{slug}.jpg", "JPEG", quality=86, progressive=True, optimize=True)
+            im.save(JPG / f"{slug}.jpg", "JPEG", quality=90, subsampling=0,
+                    progressive=True, optimize=True)
 
             wrapper = Path(td) / "page.html"
             wrapper.write_text(
