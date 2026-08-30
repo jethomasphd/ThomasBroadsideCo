@@ -52,14 +52,15 @@ approved by Jacob, done, kind.
 
 ## Commerce mechanics (details in docs/COMMERCE.md)
 
-- Each tier of each design carries a Stripe Payment Link in
-  `catalog.json`. You request links from Jacob (who creates them in
-  Stripe), paste them into the catalog, and rebuild. Empty link = the page
-  shows an inquiry button and the store still works — launch does not wait
-  on Stripe [D12].
+- Every tier has **Add to cart**; the cart checks out through
+  `/api/checkout`, which re-prices each line from the catalog server-side.
+  Prices live only in `catalog.json` — a price change is a reviewed commit
+  and a rebuild, nothing else [D9]. With `STRIPE_SECRET_KEY` unset, carts
+  fall back to the desk as `NEW` orders and you reply with a payment link
+  by hand — the store sells either way [D12].
 - Paid checkouts land via `functions/api/stripe-webhook.js` as `CONFIRMED`
-  orders. Digital orders get a parcel token; the parcel link goes in the
-  confirmation letter.
+  orders. Digital items get parcel links (one per sheet); physical items
+  wait for the Foreman's tickets.
 - Wholesale (`kind=wholesale`) is never carted: you draft the quote
   (`/api/llm` task `wholesale_letter`), Ben prices the labor, Jacob signs,
   invoice goes out. Volume from year two, relationships from day one.

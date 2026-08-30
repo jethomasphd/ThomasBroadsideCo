@@ -99,9 +99,12 @@ def check_estate():
         "functions/api/bell.js", "functions/api/counter.js", "functions/api/spike.js",
         "functions/api/ledger.js", "functions/api/llm.js",
         "functions/api/stripe-webhook.js", "functions/api/parcel.js",
+        "functions/api/checkout.js",
         "site/index.html", "site/press.html", "site/classroom.html",
         "site/pressroom.html", "site/404.html", "site/robots.txt",
+        "site/cart.html", "site/thanks.html",
         "site/css/broadside.css", "site/js/bell.js", "site/js/counter.js",
+        "site/js/cart.js", "site/js/catalog-data.js",
         "site/fonts/LibreCaslonText-400.woff2",
     ]
     for rel in required:

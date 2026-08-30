@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="/css/broadside.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23211c12'/%3E%3Ctext x='50' y='68' font-size='52' text-anchor='middle' fill='%23f2ecdd' font-family='Georgia'%3E%E2%98%85%3C/text%3E%3C/svg%3E">
 </head>
-<body>
+<body class="has-acquirebar">
 
 <div class="topbar">Printed on our own press in Austin, Texas <span class="sep">·</span> Every quote cited <span class="sep">·</span> Free U.S. shipping on prints over $75</div>
 
@@ -16,64 +16,102 @@
   <a class="brand" href="/"><span class="star">★</span>Thomas Broadside Co.</a>
   <nav>
     <a href="/#documents">Documents</a>
+    <a href="/#quotes">Quotes</a>
     <a href="/#founders">Founders</a>
-    <a href="/#maps-texas">Maps &amp; Texas</a>
     <a href="/classroom.html">Classroom</a>
     <a href="/press.html">The Press</a>
     <a href="/journal/">Journal</a>
   </nav>
+  <span class="desk"><a class="cartlink" href="/cart.html">Cart<b data-cart-count></b></a></span>
 </header>
 
 <main>
 
-<section class="band">
-  <div class="wrap grid grid--2" style="gap:4rem;align-items:start;">
-    <div class="frame">
-      <div class="sheet"><div class="sheet__inner">
-        <p class="sheet__kicker">THE SETS · BUNDLES OF THE SIXTEEN</p>
-        <p class="sheet__title">The Republic, declared and mapped.</p>
-        <hr class="sheet__rule">
-        <p class="sheet__text sheet__text--center">The Texas Declaration of Independence and the Republic of Texas after Emory, printed an hour from where both belong.</p><ul class="sheet__timeline" style="margin-top:.8rem;"><li>The Texas Declaration of Independence — 1836</li><li>The Republic of Texas — 1844 · AFTER EMORY</li></ul>
-        <div class="sheet__footer"><span>ONE TUBE</span><span>SOURCED &amp; DATED</span></div>
-      </div></div>
-    </div>
-    <div>
-      <p class="kicker">THE SETS</p>
-      <h1 style="font-size:clamp(1.8rem,3.6vw,2.6rem);">The Texas Set</h1>
-      <p class="lede">Texans, Texas Independence Day, the home market.</p>
-
-      <div class="buys" style="margin:2rem 0;">
-        <div class="buy"><span class="buy__tier">digital</span><span class="buy__price">$15</span><span class="buy__note">Instant download · every sheet, all sizes</span><button class="btn" data-reserve="TB-SET-TEXA:digital:1">Reserve</button></div>
-        <div class="buy"><span class="buy__tier">print</span><span class="buy__price">$85</span><span class="buy__note">Off our press · ships in one tube</span><button class="btn" data-reserve="TB-SET-TEXA:print:1">Reserve</button></div>
+<section class="band" style="padding-top:3rem;">
+  <div class="wrap">
+    <p class="crumbs"><a href="/">The Collection</a><span class="sep">·</span><a href="/classroom.html">The Classroom Room</a><span class="sep">·</span>The Texas Set</p>
+    <div class="exhibit-page">
+      <div class="exhibit-page__art">
+        <div class="exhibit"><div class="exhibit__mat">
+          <div class="sheet"><div class="sheet__inner">
+            <p class="sheet__kicker">THE SETS · BUNDLES OF THE SIXTEEN</p>
+            <p class="sheet__title">The Republic, declared and mapped.</p>
+            <hr class="sheet__rule">
+            <p class="sheet__text sheet__text--center">The Texas Declaration of Independence and the Republic of Texas after Emory, printed an hour from where both belong.</p><ul class="sheet__timeline" style="margin-top:.8rem;"><li><span class='yr'>·</span><span>The Texas Declaration of Independence</span></li><li><span class='yr'>·</span><span>The Republic of Texas</span></li></ul>
+            <div class="sheet__footer"><span>ONE TUBE</span><span>SOURCED &amp; DATED</span></div>
+          </div></div>
+        </div></div>
       </div>
+      <div>
+        <p class="kicker">THE SETS</p>
+        <h1 style="font-size:clamp(1.9rem,3.8vw,2.7rem);">The Texas Set</h1>
+        <p class="lede">Texans, Texas Independence Day, the home market.</p>
 
-      <table class="label-table">
+        <div class="buys" id="acquire" style="margin:2.2rem 0;">
+        <div class="buy"><span class="buy__tier">digital</span><span class="buy__price">$15</span><span class="buy__note">Instant download · every sheet, all sizes</span><button class="btn btn--solid" data-add="TB-SET-TEXA:digital">Add to cart</button></div>
+        <div class="buy"><span class="buy__tier">print</span><span class="buy__price">$85</span><span class="buy__note">Off our press · ships in one tube</span><button class="btn btn--solid" data-add="TB-SET-TEXA:print">Add to cart</button></div>
+        </div>
+
+        <table class="label-table">
         <tr><th>includes</th><td>2 sheets, each sourced and dated</td></tr>
         <tr><th>press</th><td>Thomas Graphics, Austin, Texas</td></tr>
-      </table>
+        </table>
 
-      <p class="prose" style="margin-top:1.6rem;">Sets are bundles of the sixteen designs, never new designs, so every set sells through the same press runs.</p>
-      <p class="form-note">Rolled in a tube from Austin. Free U.S. shipping on prints over $75.</p>
+        <p class="prose" style="margin-top:1.8rem;">Sets are bundles of the sixteen designs, never new designs, so every set sells through the same press runs.</p>
+        <p class="form-note">Rolled in a tube from Austin. Free U.S. shipping on prints over $75. Every sheet inspected by hand before it leaves the shop.</p>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="band band--deep" id="reserve" hidden>
+<section class="band band--deep">
   <div class="wrap">
-    <h2>Reserve at the counter</h2>
-    <p class="lede">Leave your details and the shop desk will reply within two working days with a payment link and the ship date. Nothing is charged here.</p>
-    <form class="counter-form" data-counter data-kind="order" data-items="">
-      <label>Your name <input name="name" required maxlength="120"></label>
-      <label>Email <input name="email" type="email" required maxlength="160"></label>
-      <label>Shipping address (for prints and editions) <textarea name="address" rows="3" maxlength="400"></textarea></label>
-      <label>Note to the shop <textarea name="message" rows="3" maxlength="1200"></textarea></label>
-      <div><button class="btn btn--solid" type="submit">Reserve — the desk will reply</button></div>
-      <p class="form-note" data-counter-result></p>
-    </form>
+    <div class="room-head" style="margin-bottom:2.5rem;">
+      <p class="room-no">In the same room</p>
+    </div>
+    <div class="wall wall--3">
+<a class="card" href="/documents/texas-declaration-of-independence.html">
+  <div class="exhibit"><div class="exhibit__mat">
+    <div class="sheet"><div class="sheet__inner">
+      <p class="sheet__kicker">WASHINGTON-ON-THE-BRAZOS, MARCH 2, 1836</p>
+      <p class="sheet__title">The Texas Declaration of Independence</p>
+      <hr class="sheet__rule">
+      <p class="sheet__text sheet__text--columns">When a government has ceased to protect the lives, liberty and property of the people, from whom its legitimate powers are derived, and for the advancement of whose happiness it was instituted, and so far from being a guarantee for the enjoyment of those inestimable and inalienable rights, becomes an instrument in the hands of evil rulers for their oppression.</p>
+      <div class="sheet__footer"><span>TEXAS STATE LIBRARY</span><span>SET IN CASLON</span></div>
+    </div></div>
+  </div></div>
+  <span class="placard">
+    <span class="placard__title" style="display:block;">The Texas Declaration of Independence</span>
+    <span class="placard__meta" style="display:block;">1836</span>
+    <span class="placard__prices" style="display:block;">Digital <b>$9</b><span class="dot">·</span>Print <b>$46</b><span class="dot">·</span>Edition <b>$175</b></span>
+  </span>
+</a>
+<a class="card" href="/documents/the-republic-of-texas-after-emory.html">
+  <div class="exhibit"><div class="exhibit__mat">
+    <div class="sheet"><div class="sheet__inner">
+      <p class="sheet__kicker">1844 · AFTER EMORY</p>
+      <p class="sheet__title">The Republic of Texas, 1844</p>
+      <hr class="sheet__rule">
+      <div class="sheet__placeholder"><div class="sheet__oval">1844</div><p class="sheet__attr">1844 · AFTER EMORY</p><p class="sheet__pending">Final art, from open-access holdings, is placed before the first press run.</p></div>
+      <div class="sheet__footer"><span>LIBRARY OF CONGRESS</span><span>PUBLIC DOMAIN</span></div>
+    </div></div>
+  </div></div>
+  <span class="placard">
+    <span class="placard__title" style="display:block;">The Republic of Texas</span>
+    <span class="placard__meta" style="display:block;">1844 · AFTER EMORY</span>
+    <span class="placard__prices" style="display:block;">Digital <b>$12</b><span class="dot">·</span>Print <b>$48</b><span class="dot">·</span>Edition <b>$175</b></span>
+  </span>
+</a>
+    </div>
   </div>
 </section>
 
 </main>
+
+<div class="acquirebar">
+  <span class="from">The Texas Set · from $15</span>
+  <a class="btn" href="#acquire">Acquire</a>
+</div>
 
 <footer class="colophon">
   <div class="wrap">
@@ -82,21 +120,9 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  document.querySelectorAll('[data-reserve]').forEach(function (b) {
-    b.addEventListener('click', function (ev) {
-      ev.preventDefault();
-      var section = document.getElementById('reserve');
-      var form = section.querySelector('form');
-      form.setAttribute('data-items', b.getAttribute('data-reserve'));
-      section.hidden = false;
-      section.scrollIntoView({ behavior: 'smooth' });
-    });
-  });
-})();
-</script>
+<div class="toast" data-toast></div>
+<script src="/js/catalog-data.js" defer></script>
+<script src="/js/cart.js" defer></script>
 <script src="/js/bell.js" defer></script>
-<script src="/js/counter.js" defer></script>
 </body>
 </html>
