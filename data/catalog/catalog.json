@@ -6,7 +6,8 @@
       "print": "18 x 24 on 100 lb cream cover, printed on our press in Austin, shipped rolled in a tube. Documents also at 24 x 36. The margin engine.",
       "edition": "Numbered of 250, dated, cotton paper, embossed maker's mark. Framed through a local framer. The flagship and the gift."
     },
-    "stripe_note": "stripe_link fields hold Stripe Payment Link URLs once created (docs/COMMERCE.md). Empty string renders as an inquiry button, so the store works before Stripe is wired."
+    "stripe_note": "stripe_link fields hold Stripe Payment Link URLs once created (docs/COMMERCE.md). Empty string renders as an inquiry button, so the store works before Stripe is wired.",
+    "formats": "Each design hangs in its own format, decided by the work: p34 = 18x24 portrait, p23 = 24x36 tall, l43 = 24x18 landscape, l32 = 24x16 wide. Physical sheet sizes on the labels follow the format — Ben confirms trim sizes against the press before the first run [D9]."
   },
   "designs": [
     {
@@ -50,7 +51,8 @@
         }
       },
       "status": "digital_ready",
-      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
+      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
+      "format": "p34"
     },
     {
       "no": 2,
@@ -92,7 +94,8 @@
         }
       },
       "status": "digital_ready",
-      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
+      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
+      "format": "p34"
     },
     {
       "no": 3,
@@ -110,7 +113,7 @@
       "label": {
         "source": "National Archives, ratified 1791",
         "typeface": "Caslon",
-        "paper": "100 lb cream cover, 18 x 24 · also 24 x 36",
+        "paper": "100 lb cream cover, 24 x 36 · also 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
@@ -134,7 +137,8 @@
         }
       },
       "status": "digital_ready",
-      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08"
+      "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
+      "format": "p23"
     },
     {
       "no": 4,
@@ -153,7 +157,7 @@
       "label": {
         "source": "Farewell Address, September 1796 · Library of Congress",
         "typeface": "Caslon",
-        "paper": "100 lb cream cover, 18 x 24",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
@@ -177,7 +181,8 @@
         }
       },
       "status": "digital_ready",
-      "source_verified_by": "PENDING · verify against loc.gov before launch [house rule: cited]"
+      "source_verified_by": "PENDING · verify against loc.gov before launch [house rule: cited]",
+      "format": "l43"
     },
     {
       "no": 5,
@@ -219,7 +224,8 @@
         }
       },
       "status": "digital_ready",
-      "source_verified_by": "PENDING · verify against loc.gov Bliss facsimile before launch [house rule: cited]"
+      "source_verified_by": "PENDING · verify against loc.gov Bliss facsimile before launch [house rule: cited]",
+      "format": "p34"
     },
     {
       "no": 6,
@@ -267,7 +273,8 @@
         "alt": "Portrait of George Washington by Gilbert Stuart, begun 1795",
         "credit": "The Metropolitan Museum of Art · Rogers Fund, 1907 · public domain (CC0) · object 16584",
         "master_url": "https://images.metmuseum.org/CRDImages/ad/original/DT62.jpg"
-      }
+      },
+      "format": "p34"
     },
     {
       "no": 7,
@@ -315,7 +322,8 @@
         "alt": "Benjamin Franklin by Joseph Siffred Duplessis, 1778 (detail)",
         "credit": "The Metropolitan Museum of Art · The Friedsam Collection, Bequest of Michael Friedsam, 1931 · public domain (CC0) · object 436236 · shown as a detail of the oval",
         "master_url": "https://images.metmuseum.org/CRDImages/ep/original/DP312881.jpg"
-      }
+      },
+      "format": "p34"
     },
     {
       "no": 8,
@@ -364,7 +372,8 @@
         "credit": "National Gallery of Art · open access · object 69391, accession 1986.71.1",
         "master_url": "https://api.nga.gov/iiif/3a14fb6b-82a0-4e1b-beb3-7e6ac89ef686/full/full/0/default.jpg",
         "master_note": "Native scan 14826×18162 px — print-grade far beyond an 18×24 sheet."
-      }
+      },
+      "format": "p34"
     },
     {
       "no": 9,
@@ -413,7 +422,8 @@
         "credit": "National Gallery of Art · open access · object 567, accession 1940.1.8",
         "master_url": "https://api.nga.gov/iiif/71ca4cb0-3149-4152-abca-6485ee178cb2/full/full/0/default.jpg",
         "master_note": "Native scan 7577×9474 px — print-grade."
-      }
+      },
+      "format": "p34"
     },
     {
       "no": 10,
@@ -432,7 +442,7 @@
       "label": {
         "source": "Poor Richard's Almanack, 1737",
         "typeface": "Caslon",
-        "paper": "100 lb cream cover, 18 x 24",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "—"
       },
@@ -453,7 +463,8 @@
         "edition": null
       },
       "status": "digital_ready",
-      "source_verified_by": "PENDING · verify against a 1737 Poor Richard's facsimile [house rule: cited]"
+      "source_verified_by": "PENDING · verify against a 1737 Poor Richard's facsimile [house rule: cited]",
+      "format": "l43"
     },
     {
       "no": 11,
@@ -472,7 +483,7 @@
       "label": {
         "source": "Argument in defense of the British soldiers, December 1770",
         "typeface": "Caslon",
-        "paper": "100 lb cream cover, 18 x 24",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "—"
       },
@@ -493,7 +504,8 @@
         "edition": null
       },
       "status": "digital_ready",
-      "source_verified_by": "PENDING · verify against the Adams Papers / Legal Papers of John Adams [house rule: cited]"
+      "source_verified_by": "PENDING · verify against the Adams Papers / Legal Papers of John Adams [house rule: cited]",
+      "format": "l43"
     },
     {
       "no": 12,
@@ -511,7 +523,7 @@
       "label": {
         "source": "Library of Congress, Geography & Map Division · Sayer & Bennett, 1776 · item 74693102",
         "typeface": "Caslon captions",
-        "paper": "100 lb cream cover, 18 x 24",
+        "paper": "100 lb cream cover, 24 x 36 · sized to the plate",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
@@ -541,7 +553,8 @@
         "alt": "The Theatre of War in North America, map with letterpress text, 1776",
         "credit": "Library of Congress, Geography and Map Division · item 74693102 · public domain",
         "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ar014400/full/pct:100/0/default.jpg"
-      }
+      },
+      "format": "p23"
     },
     {
       "no": 13,
@@ -559,7 +572,7 @@
       "label": {
         "source": "Library of Congress, Geography & Map Division · Ellicott, 1792 · item 98689552",
         "typeface": "Caslon captions",
-        "paper": "100 lb cream cover, 18 x 24",
+        "paper": "100 lb cream cover, 24 x 18 (landscape) · sized to the plate",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
@@ -589,7 +602,8 @@
         "alt": "Plan of the City of Washington, Ellicott after L’Enfant, 1792",
         "credit": "Library of Congress, Geography and Map Division · item 98689552 · public domain",
         "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd385:g3850:g3850:ct004179/full/pct:100/0/default.jpg"
-      }
+      },
+      "format": "l43"
     },
     {
       "no": 14,
@@ -631,7 +645,8 @@
         }
       },
       "status": "digital_ready",
-      "source_verified_by": "PENDING · verify against tsl.texas.gov transcription [house rule: cited]"
+      "source_verified_by": "PENDING · verify against tsl.texas.gov transcription [house rule: cited]",
+      "format": "p34"
     },
     {
       "no": 15,
@@ -649,7 +664,7 @@
       "label": {
         "source": "Library of Congress, Geography & Map Division · Emory, 1844 · item 2003627046",
         "typeface": "Caslon captions",
-        "paper": "100 lb cream cover, 18 x 24",
+        "paper": "100 lb cream cover, 24 x 16 (landscape) · sized to the plate",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
@@ -679,7 +694,8 @@
         "alt": "Map of Texas and the countries adjacent, Emory, 1844",
         "credit": "Library of Congress, Geography and Map Division · item 2003627046 · public domain",
         "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd403:g4030:g4030:ct001066/full/pct:100/0/default.jpg"
-      }
+      },
+      "format": "l32"
     },
     {
       "no": 16,
@@ -697,7 +713,7 @@
       "label": {
         "source": "Dates verified against National Archives and Library of Congress",
         "typeface": "Caslon with Plex Mono figures",
-        "paper": "100 lb cream cover, 18 x 24",
+        "paper": "100 lb cream cover, 24 x 36 · also 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "—"
       },
@@ -718,7 +734,8 @@
         "edition": null
       },
       "status": "digital_ready",
-      "source_verified_by": "Jacob E. Thomas · dates cross-checked · 2026-08"
+      "source_verified_by": "Jacob E. Thomas · dates cross-checked · 2026-08",
+      "format": "p23"
     }
   ],
   "sets": [
