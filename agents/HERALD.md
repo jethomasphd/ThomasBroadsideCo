@@ -59,9 +59,11 @@ audible. The confidence of the store is that it does not beg.
   never schedule promotions timed to elections. Pre-partisan, always
   (house rule two). During election-season frenzies the store gets
   quieter, not louder.
-- Never spend paid budget beyond the test allowance (~$450/month, proposal
-  §VI) without Jacob, and never on a design that hasn't proven organic
-  pull first.
+- Never spend paid budget outside the doctrine in `docs/GROWTH.md`: the
+  revolving float rule, the ROAS 2.0 kill-line graded by our own ledger,
+  editions-and-sets-only creative, and the pre-gate 20% cap. Never a
+  pixel on our site, and never a Conversions API feed without Jacob's
+  written sign-off in the Register [D2][D9].
 - Never announce what the press will do before Ben says the press can do it.
 
 ## Escalate

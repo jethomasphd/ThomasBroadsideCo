@@ -8,7 +8,12 @@
     var ref = '';
     try { ref = document.referrer ? new URL(document.referrer).hostname : ''; } catch (e) {}
     if (ref === location.hostname) ref = '';
-    var body = JSON.stringify({ p: p, r: ref });
+    var utm = '';
+    try {
+      utm = (new URLSearchParams(location.search).get('utm_source') || '')
+        .toLowerCase().replace(/[^a-z0-9_-]/g, '').slice(0, 24);
+    } catch (e) {}
+    var body = JSON.stringify({ p: p, r: ref, u: utm });
     if (navigator.sendBeacon) {
       navigator.sendBeacon('/api/bell', new Blob([body], { type: 'application/json' }));
     } else {
