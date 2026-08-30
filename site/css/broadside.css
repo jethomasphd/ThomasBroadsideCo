@@ -262,6 +262,10 @@ section.band--ink a { text-decoration-color: rgba(241,236,224,.4); }
 .sheet__body--art { align-items: center; justify-content: center; }
 .sheet__img { flex: 1; min-height: 0; width: 100%; object-fit: contain; }
 
+/* A flat sheet IS the artwork file — the frame's window shows it whole. */
+.sheet--flat { display: block; }
+.sheet--flat .sheet__img { display: block; width: 100%; height: 100%; object-fit: cover; }
+
 /* At card scale the sheet is small: the chrome shrinks so the 3:4 paper
    always wins. Nothing may spill past the sheet's edge. */
 .sheet { overflow: hidden; }

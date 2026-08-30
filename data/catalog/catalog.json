@@ -7,7 +7,8 @@
       "edition": "Numbered of 250, dated, cotton paper, embossed maker's mark. Framed through a local framer. The flagship and the gift."
     },
     "stripe_note": "stripe_link fields hold Stripe Payment Link URLs once created (docs/COMMERCE.md). Empty string renders as an inquiry button, so the store works before Stripe is wired.",
-    "formats": "Each design hangs in its own format, decided by the work: p34 = 18x24 portrait, p23 = 24x36 tall, l43 = 24x18 landscape, l32 = 24x16 wide. Physical sheet sizes on the labels follow the format — Ben confirms trim sizes against the press before the first run [D9]."
+    "formats": "Each design hangs in its own format, decided by the work: p34 = 18x24 portrait, p23 = 24x36 tall, l43 = 24x18 landscape, l32 = 24x16 wide. Physical sheet sizes on the labels follow the format — Ben confirms trim sizes against the press before the first run [D9].",
+    "flat_files": "Every design is rendered to a complete flat file by tools/typeset.py + tools/render_art.py: art_src/<slug>.svg is the design source, print/<slug>.pdf the true-size print master (also the digital-tier product), site/art/<slug>.jpg what the store hangs. The site never typesets a sheet in the browser."
   },
   "designs": [
     {
@@ -52,7 +53,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
-      "format": "p34"
+      "format": "p34",
+      "art": {
+        "alt": "The Declaration of Independence — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: National Archives, engrossed copy",
+        "src": "/art/declaration-of-independence.jpg",
+        "print_master": "print/declaration-of-independence.pdf",
+        "design_source": "art_src/declaration-of-independence.svg"
+      }
     },
     {
       "no": 2,
@@ -95,7 +103,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
-      "format": "p34"
+      "format": "p34",
+      "art": {
+        "alt": "Preamble to the Constitution — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: National Archives, engrossed copy",
+        "src": "/art/preamble-to-the-constitution.jpg",
+        "print_master": "print/preamble-to-the-constitution.pdf",
+        "design_source": "art_src/preamble-to-the-constitution.svg"
+      }
     },
     {
       "no": 3,
@@ -138,7 +153,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
-      "format": "p23"
+      "format": "p23",
+      "art": {
+        "alt": "The Bill of Rights — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: National Archives, ratified 1791",
+        "src": "/art/bill-of-rights.jpg",
+        "print_master": "print/bill-of-rights.pdf",
+        "design_source": "art_src/bill-of-rights.svg"
+      }
     },
     {
       "no": 4,
@@ -182,7 +204,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against loc.gov before launch [house rule: cited]",
-      "format": "l43"
+      "format": "l43",
+      "art": {
+        "alt": "Washington's Farewell Address — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Farewell Address, September 1796 · Library of Congress",
+        "src": "/art/washingtons-farewell-address.jpg",
+        "print_master": "print/washingtons-farewell-address.pdf",
+        "design_source": "art_src/washingtons-farewell-address.svg"
+      }
     },
     {
       "no": 5,
@@ -225,7 +254,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against loc.gov Bliss facsimile before launch [house rule: cited]",
-      "format": "p34"
+      "format": "p34",
+      "art": {
+        "alt": "The Gettysburg Address — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Library of Congress, Bliss copy",
+        "src": "/art/gettysburg-address.jpg",
+        "print_master": "print/gettysburg-address.pdf",
+        "design_source": "art_src/gettysburg-address.svg"
+      }
     },
     {
       "no": 6,
@@ -272,7 +308,9 @@
         "src": "/art/george-washington-after-stuart.jpg",
         "alt": "Portrait of George Washington by Gilbert Stuart, begun 1795",
         "credit": "The Metropolitan Museum of Art · Rogers Fund, 1907 · public domain (CC0) · object 16584",
-        "master_url": "https://images.metmuseum.org/CRDImages/ad/original/DT62.jpg"
+        "master_url": "https://images.metmuseum.org/CRDImages/ad/original/DT62.jpg",
+        "print_master": "print/george-washington-after-stuart.pdf",
+        "design_source": "art_src/george-washington-after-stuart.svg"
       },
       "format": "p34"
     },
@@ -321,7 +359,9 @@
         "src": "/art/benjamin-franklin-after-duplessis.jpg",
         "alt": "Benjamin Franklin by Joseph Siffred Duplessis, 1778 (detail)",
         "credit": "The Metropolitan Museum of Art · The Friedsam Collection, Bequest of Michael Friedsam, 1931 · public domain (CC0) · object 436236 · shown as a detail of the oval",
-        "master_url": "https://images.metmuseum.org/CRDImages/ep/original/DP312881.jpg"
+        "master_url": "https://images.metmuseum.org/CRDImages/ep/original/DP312881.jpg",
+        "print_master": "print/benjamin-franklin-after-duplessis.pdf",
+        "design_source": "art_src/benjamin-franklin-after-duplessis.svg"
       },
       "format": "p34"
     },
@@ -371,7 +411,9 @@
         "alt": "Portrait of Thomas Jefferson by Gilbert Stuart, c. 1821",
         "credit": "National Gallery of Art · open access · object 69391, accession 1986.71.1",
         "master_url": "https://api.nga.gov/iiif/3a14fb6b-82a0-4e1b-beb3-7e6ac89ef686/full/full/0/default.jpg",
-        "master_note": "Native scan 14826×18162 px — print-grade far beyond an 18×24 sheet."
+        "master_note": "Native scan 14826×18162 px — print-grade far beyond an 18×24 sheet.",
+        "print_master": "print/thomas-jefferson-after-stuart.pdf",
+        "design_source": "art_src/thomas-jefferson-after-stuart.svg"
       },
       "format": "p34"
     },
@@ -421,7 +463,9 @@
         "alt": "Portrait of Alexander Hamilton by John Trumbull, c. 1806",
         "credit": "National Gallery of Art · open access · object 567, accession 1940.1.8",
         "master_url": "https://api.nga.gov/iiif/71ca4cb0-3149-4152-abca-6485ee178cb2/full/full/0/default.jpg",
-        "master_note": "Native scan 7577×9474 px — print-grade."
+        "master_note": "Native scan 7577×9474 px — print-grade.",
+        "print_master": "print/alexander-hamilton-after-trumbull.pdf",
+        "design_source": "art_src/alexander-hamilton-after-trumbull.svg"
       },
       "format": "p34"
     },
@@ -464,7 +508,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against a 1737 Poor Richard's facsimile [house rule: cited]",
-      "format": "l43"
+      "format": "l43",
+      "art": {
+        "alt": "Well done is better than well said. — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Poor Richard's Almanack, 1737",
+        "src": "/art/well-done-is-better-than-well-said.jpg",
+        "print_master": "print/well-done-is-better-than-well-said.pdf",
+        "design_source": "art_src/well-done-is-better-than-well-said.svg"
+      }
     },
     {
       "no": 11,
@@ -505,7 +556,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against the Adams Papers / Legal Papers of John Adams [house rule: cited]",
-      "format": "l43"
+      "format": "l43",
+      "art": {
+        "alt": "Facts are stubborn things. — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Argument in defense of the British soldiers, December 1770",
+        "src": "/art/facts-are-stubborn-things.jpg",
+        "print_master": "print/facts-are-stubborn-things.pdf",
+        "design_source": "art_src/facts-are-stubborn-things.svg"
+      }
     },
     {
       "no": 12,
@@ -552,7 +610,9 @@
         "src": "/art/the-thirteen-colonies-1776.jpg",
         "alt": "The Theatre of War in North America, map with letterpress text, 1776",
         "credit": "Library of Congress, Geography and Map Division · item 74693102 · public domain",
-        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ar014400/full/pct:100/0/default.jpg"
+        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd3:g3300:g3300:ar014400/full/pct:100/0/default.jpg",
+        "print_master": "print/the-thirteen-colonies-1776.pdf",
+        "design_source": "art_src/the-thirteen-colonies-1776.svg"
       },
       "format": "p23"
     },
@@ -601,7 +661,9 @@
         "src": "/art/plan-of-the-city-of-washington.jpg",
         "alt": "Plan of the City of Washington, Ellicott after L’Enfant, 1792",
         "credit": "Library of Congress, Geography and Map Division · item 98689552 · public domain",
-        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd385:g3850:g3850:ct004179/full/pct:100/0/default.jpg"
+        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd385:g3850:g3850:ct004179/full/pct:100/0/default.jpg",
+        "print_master": "print/plan-of-the-city-of-washington.pdf",
+        "design_source": "art_src/plan-of-the-city-of-washington.svg"
       },
       "format": "l43"
     },
@@ -646,7 +708,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against tsl.texas.gov transcription [house rule: cited]",
-      "format": "p34"
+      "format": "p34",
+      "art": {
+        "alt": "The Texas Declaration of Independence — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Texas State Library and Archives",
+        "src": "/art/texas-declaration-of-independence.jpg",
+        "print_master": "print/texas-declaration-of-independence.pdf",
+        "design_source": "art_src/texas-declaration-of-independence.svg"
+      }
     },
     {
       "no": 15,
@@ -693,7 +762,9 @@
         "src": "/art/the-republic-of-texas-after-emory.jpg",
         "alt": "Map of Texas and the countries adjacent, Emory, 1844",
         "credit": "Library of Congress, Geography and Map Division · item 2003627046 · public domain",
-        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd403:g4030:g4030:ct001066/full/pct:100/0/default.jpg"
+        "master_url": "https://tile.loc.gov/image-services/iiif/service:gmd:gmd403:g4030:g4030:ct001066/full/pct:100/0/default.jpg",
+        "print_master": "print/the-republic-of-texas-after-emory.pdf",
+        "design_source": "art_src/the-republic-of-texas-after-emory.svg"
       },
       "format": "l32"
     },
@@ -735,7 +806,14 @@
       },
       "status": "digital_ready",
       "source_verified_by": "Jacob E. Thomas · dates cross-checked · 2026-08",
-      "format": "p23"
+      "format": "p23",
+      "art": {
+        "alt": "The Revolution, 1765 to 1789 — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Dates verified against National Archives and Library of Congress",
+        "src": "/art/the-revolution-1765-to-1789.jpg",
+        "print_master": "print/the-revolution-1765-to-1789.pdf",
+        "design_source": "art_src/the-revolution-1765-to-1789.svg"
+      }
     }
   ],
   "sets": [
