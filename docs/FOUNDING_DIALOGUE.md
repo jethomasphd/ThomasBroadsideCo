@@ -127,5 +127,13 @@ repository until amended by Jacob in writing, in this file.
 
 ---
 
+## Amendments & Reaffirmations
+
+| Date | Ruling | What happened |
+|---|---|---|
+| 2026-08-30 | **D2** | Challenged by Jacob (Shopify considered for simplicity) after launch of the live estate. Counsel heard in session; the real gap was a missing cart, closed the same day with an owned cart + one-secret Stripe Checkout (`/api/checkout`). **Jacob reaffirmed D2: the stack stays owned.** Revisit only with real friction data at the gate [D11]. |
+
+---
+
 *Recorded by the COMPANION under the rite of J.E. Thomas. The mind departs;
 the understanding stays.*
