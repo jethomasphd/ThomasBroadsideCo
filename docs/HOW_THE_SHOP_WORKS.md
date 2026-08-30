@@ -16,7 +16,7 @@ three-dollar Declaration made in a web browser. Nobody else can sell one
 printed by a family that has run ink in Austin for decades, with every
 quote checked against the archives.
 
-Sixteen designs, locked until we prove the store works. Each one sells
+Nineteen designs, locked until we prove the store works. Each one sells
 three ways:
 
 | Tier | What the customer gets | About |
@@ -26,7 +26,7 @@ three ways:
 | **Edition** | Cotton paper, numbered of 250, embossed mark, David's eye | $165–175 |
 
 Sets (classroom bundles, the founders' portraits, the Texas pair) are
-just those same sixteen sheets sold together — never new designs.
+just those same nineteen sheets sold together — never new designs.
 
 ## How an order happens
 

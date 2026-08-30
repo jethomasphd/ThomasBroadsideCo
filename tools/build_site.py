@@ -24,7 +24,7 @@ TPL = Path(__file__).resolve().parent / "templates"
 ROOMS = {
     "documents": ("Room I · The Documents", "/#documents"),
     "quotes": ("Room II · The Cited Quotes", "/#quotes"),
-    "founders": ("Room III · The Founders", "/#founders"),
+    "founders": ("Room III · The Portraits", "/#founders"),
     "maps": ("Room III · Maps", "/#founders"),
     "texas": ("Room III · Texas", "/#founders"),
     "classroom": ("The Classroom Room", "/classroom.html"),
@@ -166,14 +166,21 @@ def price_line(item: dict) -> str:
     return '<span class="dot">·</span>'.join(parts)
 
 
+def card_src(src: str) -> str:
+    """Gallery walls load the light card rendition; the hero, exhibit
+    pages, and the inspection view load the full file."""
+    return src.replace(".jpg", "-card.jpg")
+
+
 def sheet_div(d: dict, for_card: bool) -> str:
     """The framed sheet. Designs with a flat file show the file itself —
     the complete work, nothing painted on by the browser."""
     fmt = d.get("format", "p34")
     art = d.get("art")
     if art:
+        src = card_src(art["src"]) if for_card else art["src"]
         return (f'<div class="sheet sheet--{fmt} sheet--flat">'
-                f'<img class="sheet__img" src="{esc(art["src"])}" '
+                f'<img class="sheet__img" src="{esc(src)}" '
                 f'alt="{esc(art.get("alt", d.get("title", "")))}" loading="lazy"></div>')
     foot = d.get("card_footer", ["", ""])
     title_block = "" if d.get("excerpt_style") == "quote" else (
@@ -210,19 +217,32 @@ def room_head(no: str, title: str, curator: str) -> str:
 </div>"""
 
 
-def set_band(s: dict, designs_by_slug: dict) -> str:
-    dig = (s.get("tiers") or {}).get("digital") or {}
-    prt = (s.get("tiers") or {}).get("print") or {}
+NUMBER_WORDS = {2: "Two", 3: "Three", 4: "Four", 5: "Five", 6: "Six", 7: "Seven", 8: "Eight"}
+
+
+def set_shelf(s: dict, designs_by_slug: dict, skip_first: bool = False) -> str:
+    """The rest of a set, side by side on a shelf — each sheet its own
+    small frame, never a grid crammed into one mat."""
     minis = []
-    for slug in s.get("includes", [])[:4]:
+    for slug in s.get("includes", [])[1 if skip_first else 0:]:
         d = designs_by_slug.get(slug)
         if d:
             art = d.get("art") or {}
             minis.append(
-                f'<div class="sheet sheet--flat" style="border:1px solid var(--rule-faint);aspect-ratio:3/4;">'
-                f'<img class="sheet__img" src="{esc(art.get("src", ""))}" alt="{esc(d["title"])}" loading="lazy">'
-                f"</div>"
+                f'<a class="set-shelf__item" href="/documents/{esc(slug)}.html" title="{esc(d["title"])}">'
+                f'<img src="{esc(card_src(art.get("src", "")))}" alt="{esc(d["title"])}" loading="lazy"></a>'
             )
+    return f'<div class="set-shelf">{"".join(minis)}</div>'
+
+
+def set_band(s: dict, designs_by_slug: dict) -> str:
+    dig = (s.get("tiers") or {}).get("digital") or {}
+    prt = (s.get("tiers") or {}).get("print") or {}
+    flag = designs_by_slug.get((s.get("includes") or [""])[0]) or {}
+    art = flag.get("art") or {}
+    fmt = flag.get("format", "p34")
+    count = len(s.get("includes", []))
+    count_word = NUMBER_WORDS.get(count, str(count))
     return f"""<div class="grid grid--2" style="align-items:center;gap:3.5rem;">
   <div>
     <p class="kicker">For the classroom</p>
@@ -233,10 +253,14 @@ def set_band(s: dict, designs_by_slug: dict) -> str:
       <a class="btn btn--solid" href="/documents/{esc(s['slug'])}.html">See the set</a>
       <a class="btn" href="/classroom.html#coops">Teachers and co-ops</a>
     </p>
+    {set_shelf(s, designs_by_slug, skip_first=True)}
   </div>
-  <div class="exhibit"><div class="exhibit__mat"><div class="grid grid--2" style="gap:1rem;">
-    {''.join(minis)}
-  </div></div></div>
+  <a class="card" href="/documents/{esc(s['slug'])}.html">
+    <div class="exhibit"><div class="exhibit__mat">
+      <div class="sheet sheet--{fmt} sheet--flat"><img class="sheet__img" src="{esc(card_src(art.get('src', '')))}" alt="{esc(flag.get('title', ''))}" loading="lazy"></div>
+    </div></div>
+    <span class="placard"><span class="placard__meta" style="display:block;text-align:center;">{count_word.upper()} SHEETS · ONE TUBE · EACH SOURCED &amp; DATED</span></span>
+  </a>
 </div>"""
 
 
@@ -268,10 +292,14 @@ def build_products(catalog: dict) -> int:
     for d in designs:
         foot = d.get("card_footer", ["", ""])
         room_label, room_href = ROOMS.get(d.get("line", ""), ("The Collection", "/"))
+        art_col = (f'<div class="exhibit" data-inspect-open><div class="exhibit__mat">\n'
+                   f'          {sheet_div(d, for_card=False)}\n'
+                   f'        </div></div>\n'
+                   f'        <p class="inspect-hint">Click the sheet to inspect it up close</p>')
         page = tpl.substitute(
             title=esc(d["title"]),
             meta_description=esc(d.get("one_line", "")),
-            sheet_html=sheet_div(d, for_card=False),
+            art_column=art_col,
             date_label=esc(d.get("date_label", "")),
             one_line=esc(d.get("one_line", "")),
             buys_block=buys_block(d, TIER_NOTES),
@@ -288,30 +316,23 @@ def build_products(catalog: dict) -> int:
 
     by_slug = {x["slug"]: x for x in designs}
     for s in catalog.get("sets", []):
-        listing = "".join(
-            f"<li><span class='yr'>·</span><span>{esc(by_slug[slug]['title'])}</span></li>"
-            for slug in s.get("includes", []) if slug in by_slug
-        )
         picks = [by_slug[slug] for slug in s.get("includes", [])[:3] if slug in by_slug]
+        flag = by_slug.get((s.get("includes") or [""])[0]) or {}
         page = tpl.substitute(
             title=esc(s["title"]),
             meta_description=esc(s.get("one_line", "")),
-            sheet_html=(f'<div class="sheet sheet--p34"><div class="sheet__inner">'
-                        f'<p class="sheet__kicker">THE SETS · BUNDLES OF THE SIXTEEN</p>'
-                        f'<p class="sheet__title">{esc(s.get("strap", s["title"]))}</p>'
-                        f'<hr class="sheet__rule">'
-                        f'<div class="sheet__body">'
-                        f'<p class="sheet__text sheet__text--center">{esc(s.get("one_line", ""))}</p>'
-                        f'<ul class="sheet__timeline" style="margin-top:.8rem;">{listing}</ul></div>'
-                        f'<div class="sheet__footer"><span>ONE TUBE</span><span>SOURCED &amp; DATED</span></div>'
-                        f"</div></div>"),
+            art_column=(f'<div class="exhibit" data-inspect-open><div class="exhibit__mat">\n'
+                        f'          {sheet_div(flag, for_card=False)}\n'
+                        f'        </div></div>\n'
+                        f'        <p class="inspect-hint">Every sheet in the set, on the shelf below</p>\n'
+                        f'        {set_shelf(s, by_slug)}'),
             date_label="THE SETS",
             one_line=esc(s.get("audience", "")),
             buys_block=buys_block(s, SET_TIER_NOTES),
             label_rows=(f"        <tr><th>includes</th><td>{len(s.get('includes', []))} sheets, "
                         f"each sourced and dated</td></tr>\n"
                         f"        <tr><th>press</th><td>Thomas Graphics, Austin, Texas</td></tr>"),
-            provenance=esc("Sets are bundles of the sixteen designs, never new designs, so every "
+            provenance=esc("Sets are bundles of the nineteen designs, never new designs, so every "
                            "set sells through the same press runs."),
             room_label="The Classroom Room",
             room_href="/classroom.html",
@@ -392,7 +413,7 @@ def build_journal(journal: dict) -> int:
   <nav>
     <a href="/#documents">Documents</a>
     <a href="/#quotes">Quotes</a>
-    <a href="/#founders">Founders</a>
+    <a href="/#founders">Portraits</a>
     <a href="/classroom.html">Classroom</a>
     <a href="/press.html">The Press</a>
     <a href="/journal/">Journal</a>
@@ -441,16 +462,17 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
     )
     quotes_html = (
         room_head("Room II", "No spurious Jefferson.",
-                  "Half the founder quotes on the internet were never said. Every line we "
-                  "print carries its source, date, and document — on the page and on the "
-                  "sheet. If we cannot cite it, we do not print it.")
+                  "Half the famous American quotes on the internet were never said — and "
+                  "Lincoln is misquoted most of all. Every line we print carries its source, "
+                  "date, and document — on the page and on the sheet. If we cannot cite it, "
+                  "we do not print it.")
         + '\n<div class="wall wall--2">\n' + "\n".join(card(d) for d in quotes) + "\n</div>"
     )
     rest_html = (
-        room_head("Room III", "Founders, Maps & Texas",
-                  "The signers sat for history and the painters knew it. A country drawn on "
-                  "paper before it existed on land — and the Republic next door, printed an "
-                  "hour from where it was declared.")
+        room_head("Room III", "Portraits, Maps & Texas",
+                  "Washington to Lincoln — they sat for history and the painters knew it. A "
+                  "country drawn on paper before it existed on land — and the Republic next "
+                  "door, printed an hour from where it was declared.")
         + '\n<div class="wall wall--3">\n' + "\n".join(card(d) for d in rest) + "\n</div>"
     )
 
@@ -473,7 +495,7 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
     index = SITE / "index.html"
     replace_gen(index, "DOCUMENTS", docs_html)
     replace_gen(index, "QUOTES", quotes_html)
-    replace_gen(index, "SIXTEEN", rest_html)
+    replace_gen(index, "ROOM3", rest_html)
     replace_gen(index, "SETS", sets_html)
     replace_gen(index, "JOURNAL", journal_html)
 
@@ -491,20 +513,33 @@ def stamp_assets() -> None:
     import zlib
     stamp = 0
     for rel in ("css/broadside.css", "js/bell.js", "js/cart.js",
-                "js/counter.js", "js/catalog-data.js"):
+                "js/counter.js", "js/catalog-data.js", "js/inspect.js"):
         p = SITE / rel
         if p.exists():
             stamp = zlib.crc32(p.read_bytes(), stamp)
     v = format(stamp & 0xFFFFFFFF, "x")
     pat = re.compile(r'((?:href|src)="/(?:css|js)/[^"?]+)(?:\?v=[0-9a-f]+)?"')
+
+    # art files are stamped per-file: a re-rendered sheet must never be
+    # served from a stale browser or edge cache (same filename, new art)
+    art_crc: dict = {}
+
+    def art_v(name: str) -> str:
+        if name not in art_crc:
+            p = SITE / "art" / name
+            art_crc[name] = format(zlib.crc32(p.read_bytes()) & 0xFFFFFFFF, "x") if p.exists() else "0"
+        return art_crc[name]
+
+    art_pat = re.compile(r'(src="/art/([^"?]+))(?:\?v=[0-9a-f]+)?"')
     n = 0
     for page in SITE.rglob("*.html"):
         text = page.read_text(encoding="utf-8")
         new = pat.sub(lambda m: f'{m.group(1)}?v={v}"', text)
+        new = art_pat.sub(lambda m: f'{m.group(1)}?v={art_v(m.group(2))}"', new)
         if new != text:
             page.write_text(new, encoding="utf-8")
             n += 1
-    print(f"assets stamped ?v={v} across {n} page(s)")
+    print(f"assets stamped ?v={v} (+per-file art stamps) across {n} page(s)")
 
 
 def main() -> None:

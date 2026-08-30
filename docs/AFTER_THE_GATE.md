@@ -1,9 +1,12 @@
 # After the Gate
 
-Everything cut to make September 17, and every seventeenth design, waits
-here [D12][D3]. Nothing on this list is worked before **2027-01-31** unless
-Jacob moves it above the line in writing. Most of it will deserve to die
-here; that is the file doing its job.
+Everything cut to make September 17, and every design beyond the
+nineteen, waits here [D12][D3]. Nothing on this list is worked before
+**2027-01-31** unless Jacob moves it above the line in writing. Most of
+it will deserve to die here; that is the file doing its job.
+Longer-form brainstorming — the Modern America series, rights notes on
+MLK and JFK, matched pairs — lives in **`docs/IDEAS.md`**, under the
+same discipline.
 
 ## Parked — product
 

@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "rule": "The catalog is sixteen designs, all public domain [D3]. Sets are bundles of the sixteen, never new designs. Prices are working figures for discussion until Ben's cost sheet confirms them [D9]. A human verifies every source before status may read digital_ready — that is house rule one.",
+    "rule": "The catalog is nineteen designs, all public domain [D3, amended by Jacob 2026-08-30: sixteen to nineteen — the Lincoln portrait and two Lincoln quotes].  Sets are bundles of the nineteen, never new designs. Prices are working figures for discussion until Ben's cost sheet confirms them [D9]. A human verifies every source before status may read digital_ready — that is house rule one.",
     "tiers": {
       "digital": "Instant download, sized for home printing at 8.5 x 11, 11 x 17, and 18 x 24. Near-zero cost, 88% margin. The doorway.",
       "print": "18 x 24 on 100 lb cream cover, printed on our press in Austin, shipped rolled in a tube. Documents also at 24 x 36. The margin engine.",
@@ -470,6 +470,57 @@
       "format": "p34"
     },
     {
+      "no": 17,
+      "slug": "abraham-lincoln-after-healy",
+      "sku": "TB-FDR-LINC",
+      "line": "founders",
+      "room": "heritage",
+      "title": "Abraham Lincoln",
+      "kicker": "AFTER GEORGE P. A. HEALY, 1860",
+      "display_heading": "Abraham Lincoln",
+      "date_label": "1809 TO 1865",
+      "one_line": "After George P. A. Healy, painted from life in Springfield, 1860 — from the National Gallery of Art, open access.",
+      "excerpt_style": "portrait",
+      "excerpt": "Portrait after George P. A. Healy, 1860. Art from National Gallery of Art open access.",
+      "label": {
+        "source": "National Gallery of Art, open access · George P. A. Healy, 1860",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": [
+        "NGA · OPEN ACCESS",
+        "1809 TO 1865"
+      ],
+      "provenance": "After the George Peter Alexander Healy portrait painted from life in Springfield in 1860, weeks after the election and before the beard. Reproduced from National Gallery of Art open-access imagery, object 166453. The sitter's dates and the painter's credit are set on the sheet.",
+      "tiers": {
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
+      },
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from NGA open data, object 166453 (Healy, 1860) · 2026-08-30 · VERIFY: Jacob confirms the object, the 1860 from-life sitting, and the dates 1809–1865 [D9]",
+      "art": {
+        "src": "/art/abraham-lincoln-after-healy.jpg",
+        "alt": "Portrait of Abraham Lincoln by George P. A. Healy, painted from life in 1860",
+        "credit": "National Gallery of Art · open access · object 166453",
+        "master_url": "https://api.nga.gov/iiif/9573ae89-ce7b-4500-b999-990c83b830fe/full/4200,/0/default.jpg",
+        "print_master": "print/abraham-lincoln-after-healy.pdf",
+        "design_source": "art_src/abraham-lincoln-after-healy.svg"
+      },
+      "format": "p34"
+    },
+    {
       "no": 10,
       "slug": "well-done-is-better-than-well-said",
       "sku": "TB-QTE-WELL",
@@ -564,6 +615,102 @@
         "print_master": "print/facts-are-stubborn-things.pdf",
         "design_source": "art_src/facts-are-stubborn-things.svg"
       }
+    },
+    {
+      "no": 18,
+      "slug": "with-malice-toward-none",
+      "sku": "TB-QTE-MALC",
+      "line": "quotes",
+      "room": "heritage",
+      "title": "With malice toward none; with charity for all.",
+      "kicker": "ABRAHAM LINCOLN",
+      "display_heading": "With malice toward none; with charity for all.",
+      "date_label": "LINCOLN · MARCH 4, 1865",
+      "one_line": "Lincoln, forty-one days before his death, binding up the nation's wounds. Second Inaugural, 1865.",
+      "excerpt_style": "quote",
+      "excerpt": "With malice toward none; with charity for all; with firmness in the right, as God gives us to see the right, let us strive on to finish the work we are in; to bind up the nation's wounds.",
+      "attribution": "Second Inaugural Address · March 4, 1865",
+      "label": {
+        "source": "Second Inaugural Address, March 4, 1865",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "From the Second Inaugural Address, delivered at the Capitol on March 4, 1865. The sheet sets the closing charge with its original semicolons, trimmed at 'the nation's wounds'; the sentence continues to the widow and the orphan.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against the Library of Congress / National Archives text of the Second Inaugural; the sheet trims the sentence at 'the nation's wounds' [house rule: cited]",
+      "art": {
+        "alt": "With malice toward none; with charity for all. — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Second Inaugural Address, March 4, 1865",
+        "src": "/art/with-malice-toward-none.jpg",
+        "print_master": "print/with-malice-toward-none.pdf",
+        "design_source": "art_src/with-malice-toward-none.svg"
+      },
+      "format": "l43"
+    },
+    {
+      "no": 19,
+      "slug": "a-house-divided",
+      "sku": "TB-QTE-HOUS",
+      "line": "quotes",
+      "room": "heritage",
+      "title": "A house divided against itself cannot stand.",
+      "kicker": "ABRAHAM LINCOLN",
+      "display_heading": "A house divided against itself cannot stand.",
+      "date_label": "LINCOLN · SPRINGFIELD, 1858",
+      "one_line": "Lincoln accepting the Senate nomination, Springfield, June 16, 1858 — quoting the Gospel back to a divided country.",
+      "excerpt_style": "quote",
+      "excerpt": "A house divided against itself cannot stand.",
+      "attribution": "House Divided speech · Springfield, June 16, 1858",
+      "label": {
+        "source": "Speech at the Illinois Republican state convention, June 16, 1858",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "From the speech accepting the Illinois Republican nomination for the United States Senate, Springfield, June 16, 1858. Lincoln is quoting Mark 3:25, and the sheet credits the speech, not the scripture.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against the Collected Works of Abraham Lincoln (Basler), volume 2 [house rule: cited]",
+      "art": {
+        "alt": "A house divided against itself cannot stand. — typeset broadside",
+        "credit": "Typeset and printed by the shop · text: House Divided speech, June 16, 1858",
+        "src": "/art/a-house-divided.jpg",
+        "print_master": "print/a-house-divided.pdf",
+        "design_source": "art_src/a-house-divided.svg"
+      },
+      "format": "l43"
     },
     {
       "no": 12,

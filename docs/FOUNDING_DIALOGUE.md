@@ -132,6 +132,7 @@ repository until amended by Jacob in writing, in this file.
 | Date | Ruling | What happened |
 |---|---|---|
 | 2026-08-30 | **D2** | Challenged by Jacob (Shopify considered for simplicity) after launch of the live estate. Counsel heard in session; the real gap was a missing cart, closed the same day with an owned cart + one-secret Stripe Checkout (`/api/checkout`). **Jacob reaffirmed D2: the stack stays owned.** Revisit only with real friction data at the gate [D11]. |
+| 2026-08-30 | **D3** | **Amended by Jacob in writing: the catalog grows sixteen → nineteen.** His instruction: *"Add an Abraham Lincoln portrait and some signature quotes because we already include the Gettysburg address. This will require you to update the count of original cataloged units throughout."* Added: the Lincoln portrait after Healy, 1860 (NGA open access, object 166453) and two cited Lincoln quotes — the Second Inaugural's closing charge and the House Divided line. All three enter with VERIFY/PENDING lines for the Registrar [house rule: cited]. The gate itself is unchanged [D11]; sets remain bundles, never new designs. |
 
 ---
 

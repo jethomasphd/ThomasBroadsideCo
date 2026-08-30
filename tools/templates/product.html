@@ -17,7 +17,7 @@
   <nav>
     <a href="/#documents">Documents</a>
     <a href="/#quotes">Quotes</a>
-    <a href="/#founders">Founders</a>
+    <a href="/#founders">Portraits</a>
     <a href="/classroom.html">Classroom</a>
     <a href="/press.html">The Press</a>
     <a href="/journal/">Journal</a>
@@ -32,9 +32,7 @@
     <p class="crumbs"><a href="/">The Collection</a><span class="sep">·</span><a href="$room_href">$room_label</a><span class="sep">·</span>$title</p>
     <div class="exhibit-page">
       <div class="exhibit-page__art">
-        <div class="exhibit"><div class="exhibit__mat">
-          $sheet_html
-        </div></div>
+        $art_column
       </div>
       <div>
         <p class="kicker">$date_label</p>
@@ -81,9 +79,18 @@ $related_block
   </div>
 </footer>
 
+<div class="inspect" data-inspect hidden>
+  <button class="inspect__close" data-inspect-close aria-label="Close the inspection view">✕</button>
+  <div class="inspect__scroll" data-inspect-scroll>
+    <img class="inspect__img" data-inspect-img src="" alt="">
+  </div>
+  <p class="inspect__hint">Click the sheet to zoom · drag or scroll to pan · esc to close</p>
+</div>
+
 <div class="toast" data-toast></div>
 <script src="/js/catalog-data.js" defer></script>
 <script src="/js/cart.js" defer></script>
 <script src="/js/bell.js" defer></script>
+<script src="/js/inspect.js" defer></script>
 </body>
 </html>
