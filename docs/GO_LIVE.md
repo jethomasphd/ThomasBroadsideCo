@@ -40,12 +40,13 @@ after any change, redeploy):
    account for payouts, and a statement descriptor customers will
    recognize — `THOMASBROADSIDE`.
 2. **Live secret key:** Stripe → Developers → API keys → reveal the
-   **Secret key** (`sk_live_…`). Paste it into the Pages env as
-   `STRIPE_SECRET_KEY`. Never into the repo, ever.
+   **Secret key** (it starts with `sk` + `live`). Paste it into the
+   Pages env as `STRIPE_SECRET_KEY`. Never into the repo, ever — the
+   bench scans for it and goes red on sight.
 3. **Webhook:** Stripe → Developers → Webhooks → Add endpoint:
    - URL: `https://thomasbroadside.co/api/stripe-webhook`
    - Events: exactly one — `checkout.session.completed`
-   - Copy the signing secret (`whsec_…`) into the Pages env as
+   - Copy the endpoint's **signing secret** into the Pages env as
      `STRIPE_WEBHOOK_SECRET`.
 4. **Sales tax (Texas is not optional):** physical goods ship from
    Austin, so Texas sales tax applies. Get the Texas Comptroller sales
