@@ -1,5 +1,10 @@
 # Deploying the Store
 
+> **SUPERSEDED — 2026-09-05.** The storefront moved to Shopify
+> (Register, D2 amendment); `docs/SHOPIFY_RUNBOOK.md` is the operating
+> doc. This page describes deploying the retired owned store and is kept
+> for the record until Demolition Day.
+
 The whole estate is: **Cloudflare Pages** (serving `site/` + the workers
 in `functions/`), **one KV namespace**, **a handful of env vars**, and
 **DNS on our own domain** [D2]. Owner: the Keeper; hands: Jacob.

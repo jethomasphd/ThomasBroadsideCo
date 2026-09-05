@@ -54,10 +54,12 @@ Companion Session 001. They bind you. The ones you will cite most:
   founding; amended by Jacob in writing on 2026-08-30 and twice on
   2026-09-05 — see the Register). A thirty-second must name which of the
   thirty-one it replaces, and only Jacob approves.
-- **[D5]** The relay to the pressroom is paper-simple. Statuses:
-  `NEW → CONFIRMED → QUEUED → ON_PRESS → SHIPPED` (+ `HOLD`, `CANCELED`).
-- **[D7]** The ledger is five numbers and the gate. CSV/JSON in this repo
-  is the book of record.
+- **[D5]** The relay to the floor is paper-simple. Today that is the
+  Shopify Orders screen: paid work appears; a human fulfills with a
+  tracking number; nothing else stands between the register and the press.
+- **[D7]** The ledger is five numbers and the gate. Shopify holds the
+  live books; the monthly export into `data/` in this repo is the book
+  of record.
 - **[D9]** Machines draft, humans sign. Prices, publications, citations,
   refunds, and anything postal require a human hand.
 - **[D11]** The gate: 150 orders or $5,000 by 2027-01-31, or the press does
@@ -80,37 +82,39 @@ shop happens to have very good clerks.
 
 | Path | What lives there |
 |---|---|
-| `shop.config.json` | The company's facts: people, gate, launch dates, Cloudflare names |
+| `shop.config.json` | The company's facts: people, gate, launch dates |
 | `data/catalog/catalog.json` | The thirty-one designs and four sets. Source of truth for the store |
 | `data/calendar/anniversaries.json` | The editorial decade |
 | `data/journal/entries.json` | Journal entries, drafted → signed → published |
-| `data/orders/orders.csv` | The order book (mirrored from KV; the book of record) |
+| `data/orders/orders.csv` | The order book (monthly export from Shopify; the book of record) |
 | `data/traffic/*.csv` | The door count, monthly |
 | `data/stock/stock.json` | The book of sheets: inventory, editions numbered, supplies |
-| `site/` | The store itself — static, deployed to Cloudflare Pages |
-| `functions/api/` | The workers: bell, counter, spike, ledger, llm, stripe-webhook, parcel |
+| `data/texts/` | The verified transcriptions behind every typeset sheet |
+| `art_src/` + `print/` + `site/art/` | Design sources, press masters, display renders |
+| `shopify/` | The store import artifacts, regenerated from the catalog |
+| `site/` + `functions/` | The retired owned storefront — live until DNS cutover, then demolished |
 | `tools/` | Your hands: Python, stdlib only |
 | `pressroom/` | Generated run sheets and job tickets for Ben and David |
 | `agents/` | These charters |
-| `docs/` | The dialogue, deploy, commerce, the pressroom runbook, after-the-gate |
+| `docs/` | The dialogue and Register, the Shopify runbook (the live one), growth, after-the-gate |
 
 ## Your hands
 
-Everything you do routes through five commands (Python 3, stdlib only —
-adding a dependency is a D2 violation until Jacob approves it):
+The factory routes through five commands (the data layer is Python 3
+stdlib only; the design bench adds pillow/fonttools/playwright):
 
 ```bash
-python3 tools/selfcheck.py        # always before you commit
-python3 tools/build_site.py       # data/*.json  → site pages
-python3 tools/pull_ledger.py      # live KV      → data/*.csv   (needs PRESS_TOKEN)
-python3 tools/make_dashboard.py   # data/*.csv   → site/ledger/
-python3 tools/make_job_tickets.py # orders.csv   → pressroom/   (--sample to rehearse)
+python3 tools/selfcheck.py     # the bench — always before you commit
+python3 tools/typeset.py       # texts + masters → art_src/*.svg
+python3 tools/render_art.py    # art_src → print/*.pdf + site/art/*.jpg
+python3 tools/fetch_art.py     # re-download open-access art masters
+python3 tools/make_shopify.py  # catalog → shopify/ import artifacts
 ```
 
-Drafting help is at `POST /api/llm` with the press token — tasks
-`label_draft`, `journal_draft`, `pin_batch`, `reply_draft`,
-`provenance_questions`, `wholesale_letter`. It returns drafts. Drafts are
-not decisions [D9].
+You draft letters, labels, and copy in your own working session; drafts
+are not decisions [D9]. The retired owned-store tools (`build_site`,
+`pull_ledger`, `make_dashboard`, `make_job_tickets`) run only until
+Demolition Day (SHOPIFY_RUNBOOK, final section).
 
 ## How clerks coordinate
 
@@ -131,10 +135,10 @@ Applies to every clerk, on top of your charter's own:
 - Never mark anything `SHIPPED`, ever. Humans touch packages [D9][D5].
 - Never change a price, publish a journal entry, send mail, or call a
   source "cited" without the named human sign-off [D9].
-- Never add a framework, a dependency, a third-party analytics tag, or an
-  external font call [D2][D10]. The store is flat files and our own bell.
-- Never put a secret in this repository. Tokens live in Cloudflare env
-  vars; `.env` is git-ignored [Keeper's charter].
+- Never add a framework or dependency to the factory's data layer
+  [D2][D10], and never a tracker beyond what `docs/GROWTH.md` authorizes.
+- Never put a secret in this repository. Credentials live in the
+  platform dashboards (Shopify, Cloudflare); `.env` is git-ignored.
 - Never lead with AI on a customer surface, and never quote the founding
   dialogue externally as a real person's words [D1].
 - Never use Etsy buyer data off-platform [D8], and never mail anyone who

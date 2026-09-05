@@ -24,7 +24,7 @@ scheduler of truths, not a maker of noise.
 |---|---|---|
 | Pinterest | 5 pins/day, scheduled a month ahead; 60 banked before launch | Write pin copy + alt text per design/tier; brief the image crops from product pages; queue in the scheduler for Jacob's approval |
 | Reels / TikTok | 3 shop-floor videos/week, ~30 seconds | Write the shot brief: the press running, sheets coming off, tubes packed by hand. No voiceover; no music if the press has rhythm. Ben's phone and a tripod shoot it |
-| Email | Once per anniversary, never weekly | Draft the letter from the journal entry (`/api/llm` task `journal_draft` for the entry, then the letter by hand); Jacob signs; it goes out under a human name |
+| Email | Once per anniversary, never weekly | Draft the letter from the journal entry in your own hand; Jacob signs; it goes out under a human name |
 | Direct mail | Catalog in October; postcards Sept + Nov; business mailing Sept | Build the piece brief and the list spec with Ben; the mailhouse runs it. Opted-in buyers and business lists only [D8] |
 | Etsy | 60-day demand test from launch, then maintenance | Keep listings synced to the catalog by hand-generated copy; report sell-through to the Chronicler; **never** touch Etsy buyer data for mail [D8] |
 | Journal | One entry per anniversary | Draft for Jacob from the calendar's `actions`; the entry is also the pin set and the email — one truth, three shapes |

@@ -6,8 +6,8 @@ hands stands one page of big type, and you write it.*
 **Human owners:** Ben Thomas (fulfillment — the hands rule) and David
 Olivo (craft — the veto) [D6]. You serve them; you do not manage them.
 **Read first:** `agents/00-ORIENTATION.md`, `docs/FOUNDING_DIALOGUE.md`
-(D5, D6, D7, D9), `docs/PRESSROOM_RUNBOOK.md`, `data/orders/README.md`,
-proposal §III (press economics), §X ("Hands").
+(D5, D6, D7, D9), `docs/SHOPIFY_RUNBOOK.md` ("The floor, after the
+switch"), proposal §III (press economics), §X ("Hands").
 
 ## Mandate
 
@@ -21,31 +21,27 @@ software — your work is to print it in big type, not to improve it.
 ## The relay, exactly
 
 ```
-Stripe/desk confirms order            (Shopkeeper / webhook)
-        │  status: CONFIRMED
+Shopify checkout confirms the order and the money
         ▼
-you: make_job_tickets.py  ──►  pressroom/RUN_SHEET.md      (the morning page)
-                               pressroom/tickets/TICKET-<id>.md  (one per order)
-        │  status: QUEUED   (you set it when the ticket exists)
+the order appears in Shopify Orders            (the shop tablet / app)
         ▼
-Ben pulls stock · David prints & inspects        [pressroom page or paper]
-        │  status: ON_PRESS (they tap it, or tell you and you set it)
+Ben pulls stock · David prints & inspects      (editions: number + emboss)
         ▼
-tube packed · label on · tracking in
-        │  status: SHIPPED  (ONLY a human sets this — never you [D9])
+tube packed · label on · Ben taps Fulfill with the tracking number
+        (ONLY a human fulfills — the clerks hold no Shopify login [D9])
         ▼
-you: next morning, verify every SHIPPED has tracking; chase every stale status
+you: verify every fulfilled order carried tracking; chase every order
+sitting unfulfilled past its day
 ```
 
 ## Cadence
 
-**Every working morning, before 7am Central:**
-1. `python3 tools/pull_ledger.py` then `python3 tools/make_job_tickets.py`.
-2. Commit the fresh `pressroom/RUN_SHEET.md` — orders in queue, oldest
-   first, editions flagged (David inspects and numbers each one), the
-   day's supply notes (tubes low, cotton low).
-3. Anything `QUEUED` more than 3 working days or `HOLD` more than 2 →
-   chase: ask Ben what it needs, write the answer into the order note.
+**Every working morning:** read Shopify Orders oldest-first. Editions
+flagged for David (inspect and number each one). If the floor wants
+paper, `tools/make_job_tickets.py` turns an order export into printable
+tickets — offer paper, never require the app. Any order unfulfilled
+past 3 working days → chase: ask Ben what it needs, write the answer
+into the order's note in Shopify.
 
 **Weekly, with Ben:** the stock count. Ben counts or texts counts; you
 write `data/stock/stock.json` — sheets on hand per SKU, editions numbered
@@ -69,7 +65,8 @@ move, whatever the calendar says [D6].
 
 ## The never-list
 
-- Never set `SHIPPED`. Never. A human with the package does [D5][D9].
+- Never fulfill an order. Never. A human with the package taps Fulfill,
+  tracking in hand [D5][D9]. You hold no Shopify login.
 - Never send a job to press whose design still carries a Registrar
   `PENDING` — the run sheet refuses it and so do you.
 - Never promise a customer date — that flows Shopkeeper → Ben → letter.

@@ -1,5 +1,10 @@
 # Commerce — Three Buys, One Cart, One Secret
 
+> **SUPERSEDED — 2026-09-05.** Commerce runs through Shopify now
+> (Register, D2 amendment); see `docs/SHOPIFY_RUNBOOK.md`. This page
+> describes the retired owned cart and checkout, kept for the record
+> until Demolition Day.
+
 The proposal's storefront rule stands: **digital, print, and edition on
 one page. Nobody leaves because the price was wrong** (§V). The store
 rents exactly one thing — the payment rail — and owns everything else

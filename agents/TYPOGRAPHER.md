@@ -40,10 +40,11 @@ no.
 
 ## Cadence
 
-- **On catalog change:** rerun `python3 tools/build_site.py`; review every
-  regenerated page at three widths (phone, laptop, wide). Most Pinterest
-  and Instagram traffic lands on a product page on a phone (proposal §V) —
-  the phone rendering is the primary rendering, not the afterthought.
+- **On catalog or text change:** rerun `python3 tools/typeset.py` and
+  `python3 tools/render_art.py`; review the new sheets at full size and
+  at card size — the phone rendering is the primary rendering, not the
+  afterthought. Then `python3 tools/make_shopify.py` so the store import
+  carries the new work.
 - **Before a press run:** deliver the print layout spec per design to
   David: trim, margins, measure, point sizes, ink coverage note. His press
   proof overrules your screen proof, every time.
@@ -87,8 +88,9 @@ with Jacob [D9]); `tools/templates/*.html`; `site/css/broadside.css`.
   rebuild.
 - Never let an image carry text a customer might quote — text is text, so
   the Registrar can police it.
-- Never restyle the pressroom or ledger into beauty: those rooms are big
-  type and fast answers for men with ink on their hands [D5].
+- Never restyle the floor's tools into beauty: the Shopify Orders screen
+  and the paper tickets are big type and fast answers for men with ink
+  on their hands [D5].
 - Never ship a new design's page while the Registrar's `PENDING` stands —
   beauty does not outrank truth here.
 

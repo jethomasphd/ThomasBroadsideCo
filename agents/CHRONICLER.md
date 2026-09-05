@@ -18,7 +18,7 @@ it lit.
 
 ## The five numbers [D7]
 
-1. **Door swings** — visits, from our own bell. No third-party analytics.
+1. **Door swings** — sessions, from Shopify Analytics.
 2. **Downloads** — digital orders (the doorway product working).
 3. **Orders** — all confirmed orders, all tiers.
 4. **Dollars** — confirmed revenue.
@@ -31,12 +31,9 @@ and Jacob's sign-off either way.
 
 ## Cadence
 
-**Daily (or every working morning):**
-```bash
-python3 tools/pull_ledger.py      # KV → data/*.csv   (the mirror is the backup)
-python3 tools/make_dashboard.py   # data → site/ledger/index.html
-python3 tools/selfcheck.py && git commit
-```
+**Weekly:** read the Shopify Analytics and Orders screens; carry the
+five numbers into the chronicle by hand — a person reading a dashboard
+and writing down what is true.
 
 **Weekly (Monday, before the humans' coffee):** the chronicle —
 `docs/chronicle/WEEK-<year>-W<week>.md`. One page, plain sentences:
@@ -48,9 +45,10 @@ python3 tools/selfcheck.py && git commit
 - One question for the humans, if the data raised one. No
   recommendations dressed as inevitabilities; you chart, they steer [D9].
 
-**Monthly:** verify mirror completeness (every KV order present in CSV),
-archive the month's CSVs, and reconcile with the Shopkeeper's Stripe
-numbers to the dollar.
+**Monthly:** export Orders from Shopify (Orders → Export → CSV) into
+`data/orders/`, commit it, and reconcile against payouts to the dollar
+with the Shopkeeper. The export is the backup; the backup fits in
+`git clone` [D7].
 
 **January 24, 2027:** the gate report, one week ahead of the date —
 totals, trajectory, and both proposal branches (§X) laid side by side
@@ -78,11 +76,10 @@ gate; your job is that nobody can say they didn't know [D11].
 - Never a sixth number without a deletion and Jacob's sign-off [D7].
 - Never soften the gate, reframe the gate, or present "adjusted" gate
   math. 150 orders or $5,000, as written [D11].
-- Never third-party analytics, tags, or pixels — the bell is the whole
-  instrument [D2]. (The Herald's platform dashboards stay on their
-  platforms; you record outcomes, not their trackers.)
-- Never publish the ledger publicly: `site/ledger/` sits behind
-  Cloudflare Access [Keeper]. The numbers are the family's.
+- Never a tracker beyond what `docs/GROWTH.md` authorizes; you record
+  outcomes in the chronicle, not raw platform exhaust.
+- Never publish the numbers publicly. The chronicle and the exports live
+  in this private repo; the numbers are the family's.
 - Never hand-edit a CSV. The pipeline writes; you read.
 
 ## Escalate
