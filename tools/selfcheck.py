@@ -40,8 +40,8 @@ def check_config():
 def check_catalog():
     cat = json.loads((ROOT / "data" / "catalog" / "catalog.json").read_text(encoding="utf-8"))
     designs = cat.get("designs", [])
-    if len(designs) != 19:
-        problem(f"the catalog is nineteen [D3, amended by Jacob 2026-08-30] — found {len(designs)}")
+    if len(designs) != 24:
+        problem(f"the catalog is twenty-four [D3, amended by Jacob 2026-08-30 and 2026-09-05] — found {len(designs)}")
     slugs, skus = set(), set()
     restricted = re.compile(r"official seal|military insignia|park service|arrowhead|america\s*250", re.I)
     for d in designs:
@@ -59,7 +59,7 @@ def check_catalog():
             price = t.get("price")
             if not isinstance(price, (int, float)) or not (1 <= price <= 2000):
                 problem(f"{d['slug']} {tier} price {price!r} fails sanity")
-        if d.get("status") == "digital_ready" and str(d.get("source_verified_by", "")).upper().startswith("PENDING"):
+        if d.get("status") == "digital_ready" and "PENDING" in str(d.get("source_verified_by", "")).upper():
             warn(f"{d['slug']} is digital_ready with PENDING verification — Registrar must clear before launch [house rule: cited]")
         blob = json.dumps(d)
         if restricted.search(blob) and "restricted" not in blob.lower():
@@ -75,7 +75,7 @@ def check_catalog():
     for s in cat.get("sets", []):
         for inc in s.get("includes", []):
             if inc not in slugs:
-                problem(f"set {s['slug']} includes unknown design '{inc}' — sets are bundles of the nineteen [D3]")
+                problem(f"set {s['slug']} includes unknown design '{inc}' — sets are bundles of the twenty-four [D3]")
     return cat
 
 

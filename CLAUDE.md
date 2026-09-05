@@ -22,10 +22,10 @@ npx wrangler pages dev site         # local dev with functions + KV
 
 - Machines draft, humans sign: prices, publications, citations, refunds,
   outbound mail, and anything marked `SHIPPED` require a named human [D9].
-- The catalog is nineteen designs until the 2027-01-31 gate (sixteen at
-  founding; Jacob amended D3 on 2026-08-30 to add the Lincoln portrait
-  and two Lincoln quotes — see the Register); sets are bundles, never
-  new designs [D3][D11].
+- The catalog is twenty-four designs until the 2027-01-31 gate (sixteen
+  at founding; Jacob amended D3 on 2026-08-30 for Lincoln and on
+  2026-09-05 for Room IV, the Western Canon — see the Register); sets
+  are bundles, never new designs [D3][D11].
 - No frameworks, no dependencies, no third-party analytics, no external
   font/script calls. Static HTML + CSS + vanilla JS; Python stdlib only;
   flat JSON/CSV in `data/` is the book of record [D2][D10].
