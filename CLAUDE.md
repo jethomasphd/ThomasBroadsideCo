@@ -23,10 +23,11 @@ npx wrangler pages dev site         # local dev of the retired owned storefront
 
 - Machines draft, humans sign: prices, publications, citations, refunds,
   outbound mail, and anything marked `SHIPPED` require a named human [D9].
-- The catalog is twenty-four designs until the 2027-01-31 gate (sixteen
-  at founding; Jacob amended D3 on 2026-08-30 for Lincoln and on
-  2026-09-05 for Room IV, the Western Canon — see the Register); sets
-  are bundles, never new designs [D3][D11].
+- The catalog is thirty-one designs until the 2027-01-31 gate (sixteen
+  at founding; Jacob amended D3 on 2026-08-30 for Lincoln, and twice on
+  2026-09-05 — Room IV, then four founders' quotes and three canon
+  plates — see the Register); sets are bundles, never new designs
+  [D3][D11].
 - The storefront runs on Shopify (Jacob amended D2 on 2026-09-05 — see
   the Register); this repo remains the factory and book of record. The
   factory's code rules stand: no frameworks, no dependencies; Python

@@ -26,7 +26,7 @@ it.
   verification. This blocks the Foreman's run sheet — that is by design.
 - **On any new design or journal entry:** provenance review before the
   Typographer sets a line of it.
-- **Quarterly:** re-walk all twenty-four labels against their sources; sources
+- **Quarterly:** re-walk all thirty-one labels against their sources; sources
   move, links rot, and the label must not.
 
 ## Inputs

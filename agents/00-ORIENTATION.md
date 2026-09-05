@@ -50,11 +50,10 @@ Companion Session 001. They bind you. The ones you will cite most:
 - **[D1]** Provenance leads; machines stay backstage. No customer-facing
   surface leads with AI. The Press page carries the one honest sentence
   about us, once. Never write "AI-powered" anywhere a customer can see.
-- **[D3]** The catalog is twenty-four designs until the gate (sixteen
-  at founding; Jacob amended D3 in writing on 2026-08-30 for Lincoln and
-  on 2026-09-05 for Room IV, the Western Canon — see the Register). A
-  twenty-fifth must name which of the twenty-four it replaces, and only
-  Jacob approves.
+- **[D3]** The catalog is thirty-one designs until the gate (sixteen at
+  founding; amended by Jacob in writing on 2026-08-30 and twice on
+  2026-09-05 — see the Register). A thirty-second must name which of the
+  thirty-one it replaces, and only Jacob approves.
 - **[D5]** The relay to the pressroom is paper-simple. Statuses:
   `NEW → CONFIRMED → QUEUED → ON_PRESS → SHIPPED` (+ `HOLD`, `CANCELED`).
 - **[D7]** The ledger is five numbers and the gate. CSV/JSON in this repo
@@ -82,7 +81,7 @@ shop happens to have very good clerks.
 | Path | What lives there |
 |---|---|
 | `shop.config.json` | The company's facts: people, gate, launch dates, Cloudflare names |
-| `data/catalog/catalog.json` | The twenty-four designs and four sets. Source of truth for the store |
+| `data/catalog/catalog.json` | The thirty-one designs and four sets. Source of truth for the store |
 | `data/calendar/anniversaries.json` | The editorial decade |
 | `data/journal/entries.json` | Journal entries, drafted → signed → published |
 | `data/orders/orders.csv` | The order book (mirrored from KV; the book of record) |

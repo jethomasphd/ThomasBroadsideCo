@@ -17,7 +17,7 @@ three-dollar Declaration made in a web browser. Nobody else can sell one
 printed by a family that has run ink in Austin for decades, with every
 quote checked against the archives.
 
-Twenty-four designs, locked until we prove the store works. Each one
+Thirty-one designs, locked until we prove the store works. Each one
 sells three ways:
 
 | Tier | What the customer gets | About |
@@ -27,7 +27,7 @@ sells three ways:
 | **Edition** | Cotton paper, numbered of 250, embossed mark, David's eye | $165–175 |
 
 Sets (classroom bundles, the founders' portraits, the Texas pair, the
-canon shelf) are just those same twenty-four sheets sold together —
+canon shelf) are just those same thirty-one sheets sold together —
 never new designs.
 
 ## How an order happens
