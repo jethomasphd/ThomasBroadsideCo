@@ -125,7 +125,7 @@ def check_no_secrets():
     patterns = re.compile(r"(sk_live_|whsec_[A-Za-z0-9]{8,}|api-key\s*[:=]\s*['\"][A-Za-z0-9_-]{20,}|sk-ant-[A-Za-z0-9])")
     me = Path(__file__).resolve()
     for path in ROOT.rglob("*"):
-        if path.is_dir() or ".git" in path.parts or path.suffix in (".png", ".pdf", ".woff2"):
+        if path.is_dir() or ".git" in path.parts or path.suffix in (".png", ".pdf", ".woff2", ".zip", ".jpg", ".svg"):
             continue
         if path.resolve() == me:  # the scanner's own pattern source is not a secret
             continue

@@ -1,5 +1,10 @@
 # The Pressroom Runbook
 
+> **SUPERSEDED — 2026-09-05.** The store moved to Shopify: the floor
+> now works from the **Shopify Orders screen / mobile app** — see
+> `docs/SHOPIFY_RUNBOOK.md`, "The floor, after the switch." This page
+> describes the retired owned-store relay, kept for the record.
+
 **For Ben and David. Plain words, big type, printable.**
 One page a morning, three buttons, and nothing here ever requires
 remembering a password before coffee.
