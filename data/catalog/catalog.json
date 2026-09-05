@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "rule": "The catalog is twenty-four designs, all public domain [D3, amended by Jacob 2026-08-30 (sixteen to nineteen: Lincoln) and 2026-09-05 (nineteen to twenty-four: Room IV, the Western Canon)].  Sets are bundles of the twenty-four, never new designs. Prices are working figures for discussion until Ben's cost sheet confirms them [D9]. A human verifies every source before status may read digital_ready — that is house rule one.",
+    "rule": "The catalog is thirty-one designs, all public domain [D3, amended by Jacob 2026-08-30 (Lincoln), 2026-09-05 (Room IV, the Western Canon), and 2026-09-05 again (four founders’ quotes and three canon plates)].  Sets are bundles of the thirty-one, never new designs. Prices are working figures for discussion until Ben's cost sheet confirms them [D9]. A human verifies every source before status may read digital_ready — that is house rule one.",
     "tiers": {
       "digital": "Instant download, sized for home printing at 8.5 x 11, 11 x 17, and 18 x 24. Near-zero cost, 88% margin. The doorway.",
       "print": "18 x 24 on 100 lb cream cover, printed on our press in Austin, shipped rolled in a tube. Documents also at 24 x 36. The margin engine.",
@@ -171,15 +171,15 @@
       "title": "Washington's Farewell Address",
       "kicker": "GEORGE WASHINGTON",
       "display_heading": "Observe good faith and justice towards all Nations.",
-      "date_label": "1796 · EXCERPT",
-      "one_line": "The counsel of the first President on his way out the door, 1796.",
+      "date_label": "1796 · THE COUNSELS",
+      "one_line": "The good-faith counsel entire, and 'steer clear of permanent alliances' set monumental — the first President's parting advice, verbatim from 1796.",
       "excerpt_style": "quote",
       "excerpt": "Observe good faith and justice towards all Nations; cultivate peace and harmony with all.",
       "attribution": "Farewell Address, 1796",
       "label": {
-        "source": "Farewell Address, September 1796 · Library of Congress",
+        "source": "The Farewell Address, September 19, 1796 (Avalon Project transcription)",
         "typeface": "Caslon",
-        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "paper": "100 lb cream cover, 18 x 24",
         "press": "Thomas Graphics, Austin, Texas",
         "edition": "Numbered of 250, cotton paper, embossed maker's mark"
       },
@@ -187,7 +187,7 @@
         "EVERY QUOTE CITED",
         "SET IN CASLON"
       ],
-      "provenance": "An excerpt from the Farewell Address as published September 19, 1796, verified against the Library of Congress text. Source, date, and document are set on the sheet itself — every quote cited.",
+      "provenance": "From the Farewell Address, published September 19, 1796. The sheet carries the good-faith-and-justice counsel in full and the alliances sentence split large — every word verbatim; nothing paraphrased. Washington never delivered it as a speech: it went straight to the printer, which makes it ours by trade.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -203,10 +203,10 @@
         }
       },
       "status": "digital_ready",
-      "source_verified_by": "PENDING · verify against loc.gov before launch [house rule: cited]",
-      "format": "l43",
+      "source_verified_by": "Clerk-set from the Avalon Project transcription · 2026-09-05 · PENDING: Jacob verifies both passages against the 1796 text [house rule: cited]",
+      "format": "p34",
       "art": {
-        "alt": "Washington's Farewell Address — typeset broadside",
+        "alt": "Washington's Farewell Address — the counsels typeset in black and red, 'steer clear of permanent alliances' monumental",
         "credit": "Typeset and printed by the shop · text: Farewell Address, September 1796 · Library of Congress",
         "src": "/art/washingtons-farewell-address.jpg",
         "print_master": "print/washingtons-farewell-address.pdf",
@@ -713,6 +713,198 @@
       "format": "l43"
     },
     {
+      "no": 25,
+      "slug": "a-republic-if-you-can-keep-it",
+      "sku": "TB-QTE-REPB",
+      "line": "quotes",
+      "room": "heritage",
+      "title": "A republic, if you can keep it.",
+      "kicker": "BENJAMIN FRANKLIN",
+      "display_heading": "A republic, if you can keep it.",
+      "date_label": "FRANKLIN · SEPTEMBER 17, 1787",
+      "one_line": "Franklin's answer as the Convention closed, recorded in James McHenry's journal — the founding's shortest job description.",
+      "excerpt_style": "quote",
+      "excerpt": "A republic, if you can keep it.",
+      "attribution": "Reply as the Convention closed · recorded in James McHenry's journal, September 17, 1787",
+      "label": {
+        "source": "James McHenry's journal of the Constitutional Convention, September 17, 1787",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "As the Constitutional Convention closed on September 17, 1787, a lady asked Franklin what the delegates had made — a republic or a monarchy. His answer was recorded that day in the journal of James McHenry, delegate from Maryland. The sheet credits the journal, because that is where the words actually live.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against McHenry's journal (Farrand's Records, vol. 3) [house rule: cited]",
+      "art": {
+        "alt": "A republic, if you can keep it. — Franklin, typeset broadside",
+        "credit": "Typeset and printed by the shop · text: McHenry's journal, September 17, 1787",
+        "src": "/art/a-republic-if-you-can-keep-it.jpg",
+        "print_master": "print/a-republic-if-you-can-keep-it.pdf",
+        "design_source": "art_src/a-republic-if-you-can-keep-it.svg"
+      },
+      "format": "l43"
+    },
+    {
+      "no": 26,
+      "slug": "give-me-liberty",
+      "sku": "TB-QTE-LIBR",
+      "line": "quotes",
+      "room": "heritage",
+      "title": "Give me liberty or give me death!",
+      "kicker": "PATRICK HENRY",
+      "display_heading": "Give me liberty or give me death!",
+      "date_label": "HENRY · RICHMOND, 1775",
+      "one_line": "The closing of Patrick Henry's speech at St. John's Church, as reconstructed by William Wirt — and the sheet says so, because that is the honest citation.",
+      "excerpt_style": "quote",
+      "excerpt": "Is life so dear, or peace so sweet, as to be purchased at the price of chains and slavery? Forbid it, Almighty God! I know not what course others may take; but as for me, give me liberty or give me death!",
+      "attribution": "Richmond, March 23, 1775 · as reconstructed by William Wirt, 1817",
+      "label": {
+        "source": "Speech at St. John's Church, March 23, 1775, as reconstructed by William Wirt, 1817",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "No stenographer sat in St. John's Church on March 23, 1775. The text the nation knows was reconstructed from witnesses by William Wirt for his 1817 biography — and the sheet prints that fact in the attribution line. Citing the reconstruction honestly is the difference between history and a meme.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against Wirt's Sketches of the Life of Patrick Henry, 1817 [house rule: cited]",
+      "art": {
+        "alt": "Give me liberty or give me death! — Patrick Henry, typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Wirt's reconstruction, 1817",
+        "src": "/art/give-me-liberty.jpg",
+        "print_master": "print/give-me-liberty.pdf",
+        "design_source": "art_src/give-me-liberty.svg"
+      },
+      "format": "l43"
+    },
+    {
+      "no": 27,
+      "slug": "times-that-try-mens-souls",
+      "sku": "TB-QTE-PAIN",
+      "line": "quotes",
+      "room": "heritage",
+      "title": "These are the times that try men's souls.",
+      "kicker": "THOMAS PAINE",
+      "display_heading": "These are the times that try men's souls.",
+      "date_label": "PAINE · DECEMBER 19, 1776",
+      "one_line": "The opening of The American Crisis, written on the retreat and read to the army before Trenton — the summer soldier and the sunshine patriot, entire.",
+      "excerpt_style": "quote",
+      "excerpt": "These are the times that try men's souls. The summer soldier and the sunshine patriot will, in this crisis, shrink from the service of their country; but he that stands it now, deserves the love and thanks of man and woman.",
+      "attribution": "The American Crisis, Number I · December 19, 1776",
+      "label": {
+        "source": "The American Crisis, Number I, December 19, 1776",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "The first two sentences of The American Crisis, Number I, published December 19, 1776 and read aloud to Washington's army before the crossing to Trenton. A pamphlet — a printer's product — that helped save the Revolution. The original sets the first word in capitals; the sheet normalizes it and says so here.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Clerk-set from Project Gutenberg eText 3741 · 2026-09-05 · PENDING: Jacob verifies against the 1776 printing; first word normalized from THESE [house rule: cited]",
+      "art": {
+        "alt": "These are the times that try men's souls. — Paine, typeset broadside",
+        "credit": "Typeset and printed by the shop · text: The American Crisis, No. I, 1776",
+        "src": "/art/times-that-try-mens-souls.jpg",
+        "print_master": "print/times-that-try-mens-souls.pdf",
+        "design_source": "art_src/times-that-try-mens-souls.svg"
+      },
+      "format": "l43"
+    },
+    {
+      "no": 28,
+      "slug": "sworn-upon-the-altar",
+      "sku": "TB-QTE-ALTR",
+      "line": "quotes",
+      "room": "heritage",
+      "title": "Eternal hostility against every form of tyranny",
+      "kicker": "THOMAS JEFFERSON",
+      "display_heading": "I have sworn upon the altar of god…",
+      "date_label": "JEFFERSON · 1800",
+      "one_line": "Jefferson's oath from the letter to Benjamin Rush, 1800 — set from the manuscript, lowercase and all.",
+      "excerpt_style": "quote",
+      "excerpt": "I have sworn upon the altar of god, eternal hostility against every form of tyranny over the mind of man.",
+      "attribution": "Letter to Benjamin Rush · September 23, 1800",
+      "label": {
+        "source": "Letter to Benjamin Rush, September 23, 1800 (Founders Online transcription)",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "From Jefferson's letter to Benjamin Rush of September 23, 1800 — the line carved into his memorial in Washington. The sheet follows the manuscript transcription, which spells 'god' lowercase; we print what he wrote, not what the marble tidied.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "PENDING · verify against Founders Online, Jefferson to Rush, 23 Sept 1800; lowercase 'god' is the manuscript's [house rule: cited]",
+      "art": {
+        "alt": "I have sworn upon the altar of god, eternal hostility against every form of tyranny over the mind of man. — Jefferson, typeset broadside",
+        "credit": "Typeset and printed by the shop · text: letter to Benjamin Rush, 1800",
+        "src": "/art/sworn-upon-the-altar.jpg",
+        "print_master": "print/sworn-upon-the-altar.pdf",
+        "design_source": "art_src/sworn-upon-the-altar.svg"
+      },
+      "format": "l43"
+    },
+    {
       "no": 12,
       "slug": "the-thirteen-colonies-1776",
       "sku": "TB-MAP-COLO",
@@ -1203,6 +1395,159 @@
         "src": "/art/midway-upon-the-journey.jpg",
         "print_master": "print/midway-upon-the-journey.pdf",
         "design_source": "art_src/midway-upon-the-journey.svg"
+      },
+      "format": "l43"
+    },
+    {
+      "no": 29,
+      "slug": "christ-preaching-hundred-guilder",
+      "sku": "TB-CAN-GUIL",
+      "line": "canon",
+      "room": "canon",
+      "title": "Christ Preaching",
+      "kicker": "REMBRANDT · THE HUNDRED GUILDER PRINT, C. 1649",
+      "display_heading": "Christ Preaching",
+      "date_label": "REMBRANDT · C. 1649",
+      "one_line": "The Hundred Guilder Print — Rembrandt's etching of the ministry, the sick and the doubters gathered in the dark, from the National Gallery of Art, open access.",
+      "excerpt_style": "portrait",
+      "excerpt": "Rembrandt's Christ Preaching, c. 1649.",
+      "label": {
+        "source": "National Gallery of Art, open access · Rembrandt van Rijn, c. 1649",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": [
+        "NGA · OPEN ACCESS",
+        "C. 1649"
+      ],
+      "provenance": "Rembrandt's Christ Preaching, called the Hundred Guilder Print for the price it commanded in his own lifetime — the ministry of Matthew 19 gathered into one plate: the sick carried in, the rich young man weighing the cost, the children brought forward. Reproduced from National Gallery of Art open-access imagery, object 9969. Hang it beside the Beatitudes.",
+      "tiers": {
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
+      },
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from NGA open data, object 9969 · 2026-09-05 · VERIFY: Jacob confirms the object and the c. 1649 dating [D9]",
+      "art": {
+        "src": "/art/christ-preaching-hundred-guilder.jpg",
+        "alt": "Christ Preaching (The Hundred Guilder Print) — Rembrandt etching, c. 1649",
+        "credit": "National Gallery of Art · open access · object 9969",
+        "master_url": "https://api.nga.gov/iiif/ada0c051-b5f0-4259-bf5e-679a7a9ba7de/full/4200,/0/default.jpg",
+        "print_master": "print/christ-preaching-hundred-guilder.pdf",
+        "design_source": "art_src/christ-preaching-hundred-guilder.svg"
+      },
+      "format": "l43"
+    },
+    {
+      "no": 30,
+      "slug": "aristotle-with-a-bust-of-homer",
+      "sku": "TB-CAN-ARIS",
+      "line": "canon",
+      "room": "canon",
+      "title": "Aristotle with a Bust of Homer",
+      "kicker": "REMBRANDT · 1653",
+      "display_heading": "Aristotle with a Bust of Homer",
+      "date_label": "REMBRANDT · 1653",
+      "one_line": "The philosopher's hand on the poet's head — Rembrandt, 1653, from The Met, open access. The whole Western canon in one gesture.",
+      "excerpt_style": "portrait",
+      "excerpt": "Rembrandt's Aristotle with a Bust of Homer, 1653.",
+      "label": {
+        "source": "The Metropolitan Museum of Art, open access (CC0) · Rembrandt van Rijn, 1653",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": [
+        "THE MET · OPEN ACCESS",
+        "1653"
+      ],
+      "provenance": "Rembrandt's Aristotle with a Bust of Homer, painted in 1653: the philosopher in his gold chain resting a hand on the blind poet who started everything. Reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 437394. One canon touching another — the picture this room is about.",
+      "tiers": {
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
+      },
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from metmuseum.org object 437394 (CC0) · 2026-09-05 · VERIFY: Jacob confirms the object [D9]",
+      "art": {
+        "src": "/art/aristotle-with-a-bust-of-homer.jpg",
+        "alt": "Aristotle with a Bust of Homer — Rembrandt, 1653",
+        "credit": "The Metropolitan Museum of Art · public domain (CC0) · object 437394",
+        "master_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-30758-001.jpg",
+        "print_master": "print/aristotle-with-a-bust-of-homer.pdf",
+        "design_source": "art_src/aristotle-with-a-bust-of-homer.svg"
+      },
+      "format": "p34"
+    },
+    {
+      "no": 31,
+      "slug": "the-circle-of-the-lustful",
+      "sku": "TB-CAN-BLAK",
+      "line": "canon",
+      "room": "canon",
+      "title": "The Circle of the Lustful",
+      "kicker": "WILLIAM BLAKE · INFERNO, CANTO V · 1827",
+      "display_heading": "The Circle of the Lustful",
+      "date_label": "BLAKE · INFERNO V · 1827",
+      "one_line": "Blake's whirlwind of lovers — Paolo and Francesca from Inferno, Canto V, engraved in the last year of his life. From the National Gallery of Art, open access.",
+      "excerpt_style": "portrait",
+      "excerpt": "Blake's Circle of the Lustful, 1827.",
+      "label": {
+        "source": "National Gallery of Art, open access · William Blake, 1827",
+        "typeface": "Caslon captions",
+        "paper": "100 lb cream cover",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": [
+        "NGA · OPEN ACCESS",
+        "1827"
+      ],
+      "provenance": "William Blake's engraving of Inferno, Canto V — the whirlwind of lovers, Paolo and Francesca swept past the poets — made in 1827, the last year of Blake's life, for his unfinished Dante series. Reproduced from National Gallery of Art open-access imagery, object 797. Hang it beside the dark wood it answers.",
+      "tiers": {
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 42,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 145,
+          "stripe_link": ""
+        }
+      },
+      "status": "art_placed",
+      "source_verified_by": "Clerk-fetched from NGA open data, object 797 · 2026-09-05 · VERIFY: Jacob confirms the object and the Canto V subject [D9]",
+      "art": {
+        "src": "/art/the-circle-of-the-lustful.jpg",
+        "alt": "The Circle of the Lustful: Paolo and Francesca — William Blake engraving for Dante's Inferno, 1827",
+        "credit": "National Gallery of Art · open access · object 797",
+        "master_url": "https://api.nga.gov/iiif/686eae54-6bba-4899-8448-a1789391560e/full/4200,/0/default.jpg",
+        "print_master": "print/the-circle-of-the-lustful.pdf",
+        "design_source": "art_src/the-circle-of-the-lustful.svg"
       },
       "format": "l43"
     }

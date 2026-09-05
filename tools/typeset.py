@@ -23,6 +23,7 @@ dependency-free [D2]): pip install pillow fonttools brotli
 """
 import base64
 import json
+import re
 from itertools import combinations
 from pathlib import Path
 
@@ -411,6 +412,34 @@ def quote_sheet(slug):
     return s
 
 
+def farewell_poster():
+    """Room I density for the Farewell: the good-faith counsel entire,
+    then the alliances sentence split Texas-style — lead-in, monumental
+    phrase, italic continuation — all of it verbatim."""
+    kicker, title, p1, lead, monumental, tail, close = blocks("washingtons-farewell-address")
+    s = Sheet("p34")
+    s.border()
+    y = 200
+    s.text(s.w / 2, y, kicker.upper(), "mono", 15, fill=RED, anchor="middle", tracking=6)
+    s.text(s.w / 2, y + 94, title, "display", 66, anchor="middle")
+    y += 134
+    s.crule(y, half=70)
+    y = s.centered_block(y + 150, p1, "text", 22, 34.5, s.w - 2 * 158, balanced=True)
+    y += 96
+    y = s.centered_block(y, lead, "text", 23.5, 36, s.w - 2 * 168)
+    y += 40
+    for line in balance(monumental, "display", 96, s.w - 2 * 130, max_lines=2):
+        s.text(s.w / 2, y + 60, line, "display", 96, anchor="middle")
+        y += 122
+    y += 42
+    y = s.centered_block(y, tail, "italic", 19, 31, s.w - 2 * 200)
+    y += 32
+    s.crule(y, half=52, w=1.0)
+    s.text(s.w / 2, s.h - 138, close, "italic", 15.5, anchor="middle")
+    s.imprint()
+    return s
+
+
 def beatitudes():
     """Ten verses, rubricated the way scripture always was: the verse
     numbers in red, the words in black, chapter and verse on the sheet."""
@@ -509,7 +538,10 @@ def image_sheet(d, master: Path):
         sub = sub.replace(a, b)
     sub = sub[0].upper() + sub[1:] if sub else sub
     dates = d.get("date_label", "").replace(" TO ", "–").replace(" · ", " · ")
-    s.text(s.w / 2, cy + 34, f"{sub} · {dates}", "italic", 13.5, anchor="middle")
+    # when the date label only repeats the credit line, print the credit once
+    toks = lambda s_: set(re.findall(r"[A-Z0-9]+", s_.upper()))
+    caption = sub if toks(dates) <= toks(sub) else f"{sub} · {dates}"
+    s.text(s.w / 2, cy + 34, caption, "italic", 13.5, anchor="middle")
     s.imprint()
     return s
 
@@ -522,7 +554,11 @@ TYPESET = {
     "bill-of-rights": lambda d: bill_of_rights(),
     "preamble-to-the-constitution": lambda d: preamble_sheet(),
     "gettysburg-address": lambda d: gettysburg(),
-    "washingtons-farewell-address": lambda d: quote_sheet("washingtons-farewell-address"),
+    "washingtons-farewell-address": lambda d: farewell_poster(),
+    "a-republic-if-you-can-keep-it": lambda d: quote_sheet("a-republic-if-you-can-keep-it"),
+    "give-me-liberty": lambda d: quote_sheet("give-me-liberty"),
+    "times-that-try-mens-souls": lambda d: quote_sheet("times-that-try-mens-souls"),
+    "sworn-upon-the-altar": lambda d: quote_sheet("sworn-upon-the-altar"),
     "well-done-is-better-than-well-said": lambda d: quote_sheet("well-done-is-better-than-well-said"),
     "facts-are-stubborn-things": lambda d: quote_sheet("facts-are-stubborn-things"),
     "with-malice-toward-none": lambda d: quote_sheet("with-malice-toward-none"),

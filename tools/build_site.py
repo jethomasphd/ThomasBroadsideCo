@@ -333,7 +333,7 @@ def build_products(catalog: dict) -> int:
             label_rows=(f"        <tr><th>includes</th><td>{len(s.get('includes', []))} sheets, "
                         f"each sourced and dated</td></tr>\n"
                         f"        <tr><th>press</th><td>Thomas Graphics, Austin, Texas</td></tr>"),
-            provenance=esc("Sets are bundles of the twenty-four designs, never new designs, so "
+            provenance=esc("Sets are bundles of the thirty-one designs, never new designs, so "
                            "every set sells through the same press runs."),
             room_label="The Classroom Room",
             room_href="/classroom.html",
@@ -463,11 +463,13 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
         + '\n<div class="wall wall--4">\n' + "\n".join(card(d) for d in docs) + "\n</div>"
     )
     quotes_html = (
-        room_head("Room II", "No spurious Jefferson.",
-                  "Half the famous American quotes on the internet were never said — and "
-                  "Lincoln is misquoted most of all. Every line we print carries its source, "
-                  "date, and document — on the page and on the sheet. If we cannot cite it, "
-                  "we do not print it.")
+        room_head("Room II", "Words they actually said.",
+                  "The most famous lines in American history, typeset as broadside art for "
+                  "your wall — Franklin, Adams, Henry, Paine, Jefferson, Lincoln — each one "
+                  "checked against the letter, speech, or journal it actually comes from, "
+                  "with the source printed on the sheet itself. Half the founder quotes "
+                  "online were never said; every one of these was. Hang the words, keep "
+                  "the receipt.")
         + '\n<div class="wall wall--2">\n' + "\n".join(card(d) for d in quotes) + "\n</div>"
     )
     rest_html = (
