@@ -77,6 +77,27 @@ Modern material is a minefield, and the Registrar walks it first:
 - **A "Moderns" room** on the site (Room IV), gated exactly like
   everything else: it appears only when Jacob promotes the first design.
 
+### The Canon, extended (Jacob asked "are there other western canon?" — 2026-09-05)
+
+Room IV opened with Homer, the Beatitudes, Augustine, and Dante. The
+shelf behind them, every one with a clean public-domain path, waiting on
+the D3 question:
+
+| Candidate | The sheet | Rights path |
+|---|---|---|
+| **Marcus Aurelius** | "The impediment to action advances action…" is a paraphrase — the real Meditations lines are stronger. Book II's morning passage | George Long's translation (1862), PD |
+| **Plato / Socrates** | "The unexamined life is not worth living" — the Apology, at trial | Jowett's translation (1871), PD |
+| **Magna Carta, 1215** | Clause 39: "No free man shall be seized or imprisoned…" — the taproot of the Bill of Rights | PD translations of the Latin |
+| **Shakespeare** | "This above all: to thine own self be true" (Hamlet I.3) or the St Crispin's Day speech | First Folio, PD |
+| **Milton** | "Give me the liberty to know, to utter, and to argue freely according to conscience, above all liberties" — Areopagitica, 1644, a printer's-freedom text that belongs to this shop by trade | PD |
+| **Paul at Corinth** | 1 Corinthians 13, entire — "the greatest of these is charity" — the wedding-gift sheet | Authorized Version, PD |
+| **The Nicene Creed, 325** | The West's oldest shared document after scripture | PD translations; choose ecumenically, non-sectarian framing |
+| **Cicero** | "Salus populi suprema lex esto" — set bilingual, Latin over English | PD |
+
+The pre-partisan rule's sibling governs all of it: the store is
+non-sectarian — scripture sells as the founding monument of the West and
+of English prose, framed curatorially, never denominationally.
+
 ### Other veins to mine later
 
 - **Texas deepens before America widens** — the Travis letter from the

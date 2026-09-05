@@ -1,6 +1,6 @@
 {
   "_meta": {
-    "rule": "The catalog is nineteen designs, all public domain [D3, amended by Jacob 2026-08-30: sixteen to nineteen — the Lincoln portrait and two Lincoln quotes].  Sets are bundles of the nineteen, never new designs. Prices are working figures for discussion until Ben's cost sheet confirms them [D9]. A human verifies every source before status may read digital_ready — that is house rule one.",
+    "rule": "The catalog is twenty-four designs, all public domain [D3, amended by Jacob 2026-08-30 (sixteen to nineteen: Lincoln) and 2026-09-05 (nineteen to twenty-four: Room IV, the Western Canon)].  Sets are bundles of the twenty-four, never new designs. Prices are working figures for discussion until Ben's cost sheet confirms them [D9]. A human verifies every source before status may read digital_ready — that is house rule one.",
     "tiers": {
       "digital": "Instant download, sized for home printing at 8.5 x 11, 11 x 17, and 18 x 24. Near-zero cost, 88% margin. The doorway.",
       "print": "18 x 24 on 100 lb cream cover, printed on our press in Austin, shipped rolled in a tube. Documents also at 24 x 36. The margin engine.",
@@ -961,6 +961,250 @@
         "print_master": "print/the-revolution-1765-to-1789.pdf",
         "design_source": "art_src/the-revolution-1765-to-1789.svg"
       }
+    },
+    {
+      "no": 20,
+      "slug": "the-beatitudes",
+      "sku": "TB-CAN-BEAT",
+      "line": "canon",
+      "room": "canon",
+      "title": "The Beatitudes",
+      "kicker": "ST MATTHEW 5:3–12",
+      "display_heading": "The Beatitudes",
+      "date_label": "GALILEE · AUTHORIZED VERSION, 1611",
+      "one_line": "The ten verses that open the Sermon on the Mount, set from the King James Bible — chapter and verse in red, the way scripture was always rubricated.",
+      "excerpt_style": "center",
+      "excerpt": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
+      "label": {
+        "source": "The Gospel according to St Matthew 5:3–12, Authorized Version, 1611",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": [
+        "CHAPTER AND VERSE ON THE SHEET",
+        "SET IN CASLON"
+      ],
+      "provenance": "The blessings that open the Sermon on the Mount, Matthew 5:3–12 entire, set from the Authorized Version of 1611 — the King James Bible, the founding monument of English prose. Verse numbers stand in red beside the words, the way scripture has been rubricated since the scriptoria. Chapter and verse are on the sheet, because that is what citation looked like first.",
+      "tiers": {
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 44,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 165,
+          "stripe_link": ""
+        }
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Clerk-set from Project Gutenberg eText 10 (KJV) · 2026-09-05 · PENDING: Jacob verifies against a printed Authorized Version [house rule: cited]",
+      "art": {
+        "alt": "The Beatitudes — Matthew 5:3–12, Authorized Version, typeset broadside in black and red",
+        "credit": "Typeset and printed by the shop · text: Authorized Version, 1611",
+        "src": "/art/the-beatitudes.jpg",
+        "print_master": "print/the-beatitudes.pdf",
+        "design_source": "art_src/the-beatitudes.svg"
+      },
+      "format": "p34"
+    },
+    {
+      "no": 21,
+      "slug": "what-is-a-man-profited",
+      "sku": "TB-CAN-PROF",
+      "line": "canon",
+      "room": "canon",
+      "title": "What is a man profited?",
+      "kicker": "JESUS OF NAZARETH",
+      "display_heading": "What is a man profited?",
+      "date_label": "ST MATTHEW 16:26",
+      "one_line": "The audit no ledger survives: Matthew 16:26, both questions, Authorized Version of 1611.",
+      "excerpt_style": "quote",
+      "excerpt": "For what is a man profited, if he shall gain the whole world, and lose his own soul? or what shall a man give in exchange for his soul?",
+      "attribution": "The Gospel according to St Matthew 16:26 · Authorized Version, 1611",
+      "label": {
+        "source": "The Gospel according to St Matthew 16:26, Authorized Version, 1611",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "Matthew 16:26 entire — both questions, nothing trimmed — from the Authorized Version of 1611. Two thousand years old and aimed directly at the present tense.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Clerk-set from Project Gutenberg eText 10 (KJV) · 2026-09-05 · PENDING: Jacob verifies against a printed Authorized Version [house rule: cited]",
+      "art": {
+        "alt": "What is a man profited? — Matthew 16:26, typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Authorized Version, 1611",
+        "src": "/art/what-is-a-man-profited.jpg",
+        "print_master": "print/what-is-a-man-profited.pdf",
+        "design_source": "art_src/what-is-a-man-profited.svg"
+      },
+      "format": "l43"
+    },
+    {
+      "no": 22,
+      "slug": "the-odyssey",
+      "sku": "TB-CAN-ODYS",
+      "line": "canon",
+      "room": "canon",
+      "title": "The Odyssey",
+      "kicker": "HOMER · BOOK I",
+      "display_heading": "Tell me, O Muse,",
+      "date_label": "HOMER · TRANS. BUTLER, 1900",
+      "one_line": "The road-opening lines of Western literature — the invocation of the Odyssey, monumental, in Samuel Butler's public-domain prose.",
+      "excerpt_style": "center",
+      "excerpt": "Tell me, O Muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy.",
+      "label": {
+        "source": "The Odyssey, Book I, translated by Samuel Butler, 1900",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 18 x 24",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "Numbered of 250, cotton paper, embossed maker's mark"
+      },
+      "card_footer": [
+        "THE INVOCATION",
+        "TRANS. BUTLER, 1900"
+      ],
+      "provenance": "The invocation of the Odyssey — the oldest opening lines in Western literature — in Samuel Butler's 1900 translation, trimmed at 'bring his men safely home'; the sentence continues into the folly of the crew. Homer begins with a man trying to get home, and the West begins with Homer.",
+      "tiers": {
+        "digital": {
+          "price": 9,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 44,
+          "stripe_link": ""
+        },
+        "edition": {
+          "price": 165,
+          "stripe_link": ""
+        }
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Clerk-set from Project Gutenberg eText 1727 (Butler) · 2026-09-05 · PENDING: Jacob verifies the passage and the trim at 'safely home' [house rule: cited]",
+      "art": {
+        "alt": "The Odyssey — 'Tell me, O Muse,' the invocation set monumental in Caslon, black and red",
+        "credit": "Typeset and printed by the shop · text: Samuel Butler's translation, 1900",
+        "src": "/art/the-odyssey.jpg",
+        "print_master": "print/the-odyssey.pdf",
+        "design_source": "art_src/the-odyssey.svg"
+      },
+      "format": "p34"
+    },
+    {
+      "no": 23,
+      "slug": "our-heart-is-restless",
+      "sku": "TB-CAN-AUGU",
+      "line": "canon",
+      "room": "canon",
+      "title": "Our heart is restless",
+      "kicker": "AUGUSTINE OF HIPPO",
+      "display_heading": "Our heart is restless",
+      "date_label": "CONFESSIONS · C. 397",
+      "one_line": "The restless heart, named sixteen centuries before the feed — the first page of the Confessions, in Pusey's translation.",
+      "excerpt_style": "quote",
+      "excerpt": "Thou madest us for Thyself, and our heart is restless, until it repose in Thee.",
+      "attribution": "Confessions, Book I · c. 397 · translated by Edward B. Pusey",
+      "label": {
+        "source": "Confessions, Book I, c. 397 · translated by Edward B. Pusey, 1838",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "From the first page of the Confessions, written c. 397 by Augustine of Hippo, in Edward Bouverie Pusey's 1838 translation. The diagnosis of the scrolling animal, made sixteen centuries early.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Clerk-set from Project Gutenberg eText 3296 (Pusey) · 2026-09-05 · PENDING: Jacob verifies against the Pusey text [house rule: cited]",
+      "art": {
+        "alt": "Our heart is restless — Augustine, Confessions, typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Pusey's translation, 1838",
+        "src": "/art/our-heart-is-restless.jpg",
+        "print_master": "print/our-heart-is-restless.pdf",
+        "design_source": "art_src/our-heart-is-restless.svg"
+      },
+      "format": "l43"
+    },
+    {
+      "no": 24,
+      "slug": "midway-upon-the-journey",
+      "sku": "TB-CAN-DANT",
+      "line": "canon",
+      "room": "canon",
+      "title": "Midway upon the journey",
+      "kicker": "DANTE ALIGHIERI",
+      "display_heading": "Midway upon the journey of our life",
+      "date_label": "INFERNO, CANTO I · TRANS. LONGFELLOW",
+      "one_line": "The first tercet of the Divine Comedy in Longfellow's translation — the dark wood, and the honesty of admitting you are in one.",
+      "excerpt_style": "quote",
+      "excerpt": "Midway upon the journey of our life I found myself within a forest dark, for the straightforward pathway had been lost.",
+      "attribution": "Inferno, Canto I · translated by Henry W. Longfellow, 1867",
+      "label": {
+        "source": "Inferno, Canto I, lines 1–3 · translated by Henry Wadsworth Longfellow, 1867",
+        "typeface": "Caslon",
+        "paper": "100 lb cream cover, 24 x 18 (landscape)",
+        "press": "Thomas Graphics, Austin, Texas",
+        "edition": "—"
+      },
+      "card_footer": [
+        "EVERY QUOTE CITED",
+        "SET IN CASLON"
+      ],
+      "provenance": "The opening tercet of the Divine Comedy, c. 1320, in Henry Wadsworth Longfellow's 1867 translation — the first American translation of Dante, made by the poet the founders' grandchildren read. The way out of the dark wood begins with these three lines admitting it exists.",
+      "tiers": {
+        "digital": {
+          "price": 7,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 38,
+          "stripe_link": ""
+        },
+        "edition": null
+      },
+      "status": "digital_ready",
+      "source_verified_by": "Clerk-set from Project Gutenberg eText 1001 (Longfellow) · 2026-09-05 · PENDING: Jacob verifies the tercet [house rule: cited]",
+      "art": {
+        "alt": "Midway upon the journey of our life — Dante, Inferno I, typeset broadside",
+        "credit": "Typeset and printed by the shop · text: Longfellow's translation, 1867",
+        "src": "/art/midway-upon-the-journey.jpg",
+        "print_master": "print/midway-upon-the-journey.pdf",
+        "design_source": "art_src/midway-upon-the-journey.svg"
+      },
+      "format": "l43"
     }
   ],
   "sets": [
@@ -1035,6 +1279,32 @@
         }
       },
       "audience": "Texans, Texas Independence Day, the home market."
+    },
+    {
+      "slug": "the-western-canon-set",
+      "sku": "TB-SET-CANO",
+      "title": "The Western Canon Set",
+      "strap": "The founding documents of the West.",
+      "one_line": "Homer's invocation, the Beatitudes, the question from Matthew, Augustine's restless heart, and Dante's dark wood — the shelf that raised the men of 1776.",
+      "audience": "For the study, the classical classroom, and anyone building a shelf that argues.",
+      "audience_kicker": "For the shelf",
+      "includes": [
+        "the-odyssey",
+        "the-beatitudes",
+        "what-is-a-man-profited",
+        "our-heart-is-restless",
+        "midway-upon-the-journey"
+      ],
+      "tiers": {
+        "digital": {
+          "price": 26,
+          "stripe_link": ""
+        },
+        "print": {
+          "price": 150,
+          "stripe_link": ""
+        }
+      }
     }
   ]
 }

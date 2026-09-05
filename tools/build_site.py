@@ -27,6 +27,7 @@ ROOMS = {
     "founders": ("Room III · The Portraits", "/#founders"),
     "maps": ("Room III · Maps", "/#founders"),
     "texas": ("Room III · Texas", "/#founders"),
+    "canon": ("Room IV · The Western Canon", "/#canon"),
     "classroom": ("The Classroom Room", "/classroom.html"),
     "sets": ("The Classroom Room", "/classroom.html"),
 }
@@ -245,7 +246,7 @@ def set_band(s: dict, designs_by_slug: dict) -> str:
     count_word = NUMBER_WORDS.get(count, str(count))
     return f"""<div class="grid grid--2" style="align-items:center;gap:3.5rem;">
   <div>
-    <p class="kicker">For the classroom</p>
+    <p class="kicker">{esc(s.get('audience_kicker', 'For the classroom'))}</p>
     <h2>{esc(s.get('strap', s.get('title', '')))}</h2>
     <p class="lede">{esc(s.get('one_line', ''))}</p>
     <p class="placard__prices" style="margin:1.4rem 0 1.8rem;font-size:.78rem;">Digital set <b>{money(dig.get('price'))}</b> <span class="dot">·</span> Printed set <b>{money(prt.get('price'))}</b></p>
@@ -332,8 +333,8 @@ def build_products(catalog: dict) -> int:
             label_rows=(f"        <tr><th>includes</th><td>{len(s.get('includes', []))} sheets, "
                         f"each sourced and dated</td></tr>\n"
                         f"        <tr><th>press</th><td>Thomas Graphics, Austin, Texas</td></tr>"),
-            provenance=esc("Sets are bundles of the nineteen designs, never new designs, so every "
-                           "set sells through the same press runs."),
+            provenance=esc("Sets are bundles of the twenty-four designs, never new designs, so "
+                           "every set sells through the same press runs."),
             room_label="The Classroom Room",
             room_href="/classroom.html",
             from_price=from_price(s),
@@ -452,6 +453,7 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
     docs = [d for d in designs if d["line"] == "documents"]
     quotes = [d for d in designs if d["line"] == "quotes"]
     rest = [d for d in designs if d["line"] in ("founders", "maps", "texas")]
+    canon = [d for d in designs if d["line"] == "canon"]
     by_slug = {d["slug"]: d for d in designs}
 
     docs_html = (
@@ -476,6 +478,15 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
         + '\n<div class="wall wall--3">\n' + "\n".join(card(d) for d in rest) + "\n</div>"
     )
 
+    canon_html = (
+        room_head("Room IV", "The Western Canon",
+                  "America's founding documents have founding documents. Homer's opening "
+                  "lines, the Sermon on the Mount, Augustine's restless heart, Dante's dark "
+                  "wood — the shelf that raised the men of 1776, printed on the same press. "
+                  "Chapter and verse on every sheet.")
+        + '\n<div class="wall wall--3">\n' + "\n".join(card(d) for d in canon) + "\n</div>"
+    )
+
     founding_set = next((s for s in catalog.get("sets", []) if s["slug"] == "founding-documents-set"), None)
     sets_html = set_band(founding_set, by_slug) if founding_set else ""
 
@@ -496,6 +507,7 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
     replace_gen(index, "DOCUMENTS", docs_html)
     replace_gen(index, "QUOTES", quotes_html)
     replace_gen(index, "ROOM3", rest_html)
+    replace_gen(index, "CANON", canon_html)
     replace_gen(index, "SETS", sets_html)
     replace_gen(index, "JOURNAL", journal_html)
 

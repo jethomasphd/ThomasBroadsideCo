@@ -10,14 +10,15 @@ the bench. The detailed how-to for the pressroom page is
 ## What we sell
 
 Founding documents — the Declaration, the Bill of Rights, the Texas
-Declaration, the portraits, the maps — printed **on our press, in our
-building**. That last part is the whole business. Anyone can sell a
+Declaration, the portraits, the maps, and now the canon of the West
+behind them (Homer, the Beatitudes, Augustine, Dante) — printed **on
+our press, in our building**. That last part is the whole business. Anyone can sell a
 three-dollar Declaration made in a web browser. Nobody else can sell one
 printed by a family that has run ink in Austin for decades, with every
 quote checked against the archives.
 
-Nineteen designs, locked until we prove the store works. Each one sells
-three ways:
+Twenty-four designs, locked until we prove the store works. Each one
+sells three ways:
 
 | Tier | What the customer gets | About |
 |---|---|---|
@@ -25,21 +26,24 @@ three ways:
 | **Print** | A sheet off our press, rolled in a tube | $44–46 |
 | **Edition** | Cotton paper, numbered of 250, embossed mark, David's eye | $165–175 |
 
-Sets (classroom bundles, the founders' portraits, the Texas pair) are
-just those same nineteen sheets sold together — never new designs.
+Sets (classroom bundles, the founders' portraits, the Texas pair, the
+canon shelf) are just those same twenty-four sheets sold together —
+never new designs.
 
 ## How an order happens
 
-1. A customer finds **thomasbroadside.co** — a store that looks and reads
-   like a small museum. It runs on rented computers that never sleep;
-   there is no machine in our building to maintain, restart, or worry
+1. A customer finds **thomasbroadside.co** — our store, run on
+   Shopify, the company that runs half the small stores in America.
+   There is no machine in our building to maintain, restart, or worry
    about. Nothing on the floor can break the website.
-2. They pay by card through **Stripe** — the same card company half the
-   food trucks in Austin use. The money lands in the company account.
-   We never see or store card numbers; Stripe keeps that entire problem.
-3. The paid order lands on **the spike** — the pressroom page — the same
-   way a paper ticket lands on the spindle by the register. Digital
-   orders deliver themselves. Physical orders wait there for you.
+2. They pay through **Shopify's checkout** — card, Apple Pay, Shop
+   Pay, PayPal, all the buttons people already trust. The money lands
+   in the company account. We never see or store card numbers; Shopify
+   keeps that entire problem.
+3. The paid order appears in **Shopify Orders** — on the shop tablet
+   or the phone app — the same way a paper ticket lands on the spindle
+   by the register. Digital orders deliver themselves. Physical orders
+   wait there for you.
 
 ## The clerks — this is the part to actually read
 
@@ -55,9 +59,9 @@ these require a named human being, every single time:
 - **Anything published** — a page, a letter, a claim that a quote is
   cited — Jacob signs it.
 - **Refunds and outbound mail** — Jacob.
-- **SHIPPED** — *only a human hand at the pressroom page can mark an
-  order shipped, and only with a tracking number typed in.* No machine
-  can do it. The button will refuse.
+- **SHIPPED** — *only a human hand in the Shopify Orders screen can
+  fulfill an order, and only with the tracking number pasted in.* The
+  clerks have no Shopify login. A machine cannot press that button.
 
 So: if a page is live, Jacob approved it. If an order says SHIPPED, one
 of you shipped it. The machines cannot pretend work happened on this
@@ -69,12 +73,13 @@ information side is kept by machines and signed by humans.
 
 ## Ben — the floor and the mail
 
-Your whole interface is **one page**: `thomasbroadside.co/pressroom`, on
-the shop tablet or your phone (token's on the card in the supply
-cabinet; details in the runbook). The queue shows paid physical work,
-oldest first. Three buttons: **Start press**, **Shipped** (asks for the
-tracking number, then emails the customer automatically), **Hold** (one
-line about why). Prefer paper? The same queue prints as a run sheet.
+Your whole interface is the **Shopify app** on the shop tablet or your
+phone (Jacob signs you in once; it remembers). Open **Orders**: paid
+physical work, newest at top — work it oldest first. When something
+ships: open the order, tap **Fulfill items**, paste the tracking
+number, tap Fulfill — that one tap emails the customer their tracking
+automatically. If a sheet isn't right, don't fulfill; tell Jacob and
+it waits.
 
 Wholesale, schools, and co-ops write to the desk; those notes come to
 Jacob first, and he'll bring you the ones that need floor pricing. You
@@ -90,11 +95,11 @@ whole promise is that this gate exists.
 
 ## The books
 
-Everything the store does is written down where we can always reach it:
-orders and their history, daily visitor counts, money in. Jacob mirrors
-it regularly into plain files in the shop's records — the same records
-this page lives in — so even if every rented computer vanished
-tomorrow, the books survive. No customer card numbers are ever in them.
+Shopify keeps the live books — every order, every payout, every
+visitor count. Monthly, Jacob exports the orders to plain files in the
+shop's own records — the same records this page lives in — so even if
+every rented computer vanished tomorrow, the books survive. No
+customer card numbers are ever in them.
 
 ## The rules of the house
 
@@ -112,7 +117,7 @@ No new designs, no new promises, until it earns its place.
 
 | Situation | Do this |
 |---|---|
-| Question about an order | It's on the pressroom page; history and notes included |
+| Question about an order | It's in the Shopify app; history and notes included |
 | Customer note or complaint | Jacob's desk — nothing for the floor to answer |
 | The website looks wrong | Tell Jacob. Nothing on the floor caused it |
 | A refund | Jacob only |

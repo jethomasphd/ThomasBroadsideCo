@@ -1,5 +1,10 @@
 # Go Live — the switch-throwing checklist
 
+> **SUPERSEDED — 2026-09-05.** Jacob moved the storefront to Shopify
+> (Register, D2 amendment). The live checklist is now
+> **`docs/SHOPIFY_RUNBOOK.md`**. This file describes turning on the
+> owned stack and is kept for the record — do not work it.
+
 Deposited 2026-08-31, after the estate merged to main. Work the phases
 in order; each one ends with a check you can see. The store is built so
 that **Phase 1 alone makes it live and taking money** — everything after

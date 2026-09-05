@@ -91,3 +91,24 @@ The Herald runs channels by this file; the Chronicler grades them weekly
 in `docs/chronicle/`; Jacob signs any change to the kill-line, the float,
 the cap, or the CAPI question [D9]. This file amends only in writing,
 here, like the Register.
+
+---
+
+## Amendment · 2026-09-05 · signed by Jacob's ruling in session
+
+The storefront moved to Shopify (Register, D2 amendment). Two changes
+to this file's mechanics, none to its discipline:
+
+- **The no-pixel rule is lifted.** On the owned stack it was a
+  sovereignty choice; on Shopify the Meta pixel and catalog sync are
+  the standard, first-class machinery, and Jacob chose the platform for
+  exactly that machinery. Install through the Facebook & Instagram
+  channel when paid begins.
+- **Measurement moves to Shopify Analytics + the ads managers**, graded
+  against the same bar: ROAS is judged on real margins from our own
+  order data, exported monthly to `data/orders/` [D7].
+
+Standing, unchanged, and still the law of the spend: **editions and
+sets only** in paid creative · **$500 tests** · **kill-line ROAS 2.0**
+trailing 14 days · **paid ≤ 20% of orders before the gate** [D11] ·
+the float is working capital, never a budget.

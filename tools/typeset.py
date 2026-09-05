@@ -390,8 +390,15 @@ def quote_sheet(slug):
     s.border()
     s.text(s.w / 2, 172, kicker.upper(), "mono", 15.5, fill=RED, anchor="middle", tracking=8)
     measure = s.w - 2 * 180
-    size = s.fit_display(quote, measure, 98, min_size=40, max_lines=4)
-    lines = balance(quote, "display", size, measure, max_lines=4)
+    if "\n" in quote:
+        # verse keeps its own line breaks — Dante's tercet is not prose
+        lines = [l.strip() for l in quote.split("\n") if l.strip()]
+        size = 98.0
+        while size > 40 and max(width_of(l, "display", size) for l in lines) > measure:
+            size -= 2
+    else:
+        size = s.fit_display(quote, measure, 98, min_size=40, max_lines=4)
+        lines = balance(quote, "display", size, measure, max_lines=4)
     lh = size * 1.26
     block = len(lines) * lh + 70
     y = (s.h - block) / 2 + size * 0.72
@@ -400,6 +407,61 @@ def quote_sheet(slug):
         y += lh
     s.crule(y + 8, half=50, w=1.1)
     s.text(s.w / 2, y + 50, attr, "italic", 17.5, anchor="middle")
+    s.imprint()
+    return s
+
+
+def beatitudes():
+    """Ten verses, rubricated the way scripture always was: the verse
+    numbers in red, the words in black, chapter and verse on the sheet."""
+    kicker, title, body, close = blocks("the-beatitudes")
+    s = Sheet("p34")
+    s.border()
+    y = 200
+    s.text(s.w / 2, y, kicker.upper(), "mono", 15, fill=RED, anchor="middle", tracking=6)
+    s.text(s.w / 2, y + 104, title, "display", 84, anchor="middle")
+    y += 148
+    s.crule(y, half=70)
+
+    # measure the verse block first, then center it between rule and close
+    measure = s.w - 2 * 168
+    size, leading, ref_h, gap = 23.0, 33.0, 30, 26
+    verses = []
+    total = 0.0
+    for v in [v.strip() for v in body.split("\n\n") if v.strip()]:
+        ref, text = v.split("\t", 1)
+        lines = balance(text.strip(), "text", size, measure, max_lines=3)
+        verses.append((ref, text.strip()))
+        total += ref_h + len(lines) * leading + gap
+    total -= gap
+    top, bottom = y + 40, s.h - 190
+    y = top + max((bottom - top - total) / 2, 0) + 18
+    for ref, text in verses:
+        s.text(s.w / 2, y, ref, "mono", 11, fill=RED, anchor="middle", tracking=3)
+        y += ref_h
+        y = s.centered_block(y, text, "text", size, leading, measure, balanced=True)
+        y += gap
+    s.crule(s.h - 178, half=46, w=1.0)
+    s.text(s.w / 2, s.h - 136, close, "italic", 15.5, anchor="middle")
+    s.imprint()
+    return s
+
+
+def odyssey_poster():
+    """The road-opening lines of Western literature, set the way the
+    Preamble is set: the address monumental, the sentence flowing on."""
+    kicker, monumental, passage, close = blocks("the-odyssey")
+    s = Sheet("p34")
+    s.border()
+    y = 224
+    s.text(s.w / 2, y, kicker.upper(), "mono", 15.5, fill=RED, anchor="middle", tracking=7)
+    s.text(s.w / 2, y + 360, monumental, "display", 150, anchor="middle")
+    yy = y + 452
+    s.crule(yy, half=76)
+    yy = s.para(yy + 96, passage, "text", 26, 42, s.w - 2 * 164)
+    yy += 40
+    s.crule(yy, half=52, w=1.0)
+    s.text(s.w / 2, s.h - 138, close, "italic", 16.5, anchor="middle")
     s.imprint()
     return s
 
@@ -465,6 +527,11 @@ TYPESET = {
     "facts-are-stubborn-things": lambda d: quote_sheet("facts-are-stubborn-things"),
     "with-malice-toward-none": lambda d: quote_sheet("with-malice-toward-none"),
     "a-house-divided": lambda d: quote_sheet("a-house-divided"),
+    "the-beatitudes": lambda d: beatitudes(),
+    "what-is-a-man-profited": lambda d: quote_sheet("what-is-a-man-profited"),
+    "the-odyssey": lambda d: odyssey_poster(),
+    "our-heart-is-restless": lambda d: quote_sheet("our-heart-is-restless"),
+    "midway-upon-the-journey": lambda d: quote_sheet("midway-upon-the-journey"),
     "the-revolution-1765-to-1789": lambda d: timeline(),
 }
 
