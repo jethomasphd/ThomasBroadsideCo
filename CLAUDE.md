@@ -10,13 +10,16 @@ every change in this repo.
 ## Commands
 
 ```bash
+# the factory (the living commands)
 python3 tools/selfcheck.py          # run before every commit; must be green
-python3 tools/build_site.py         # data/*.json → site pages (generated files are committed)
-python3 tools/pull_ledger.py        # live KV → data/*.csv (needs PRESS_TOKEN env)
-python3 tools/make_dashboard.py     # data/*.csv → site/ledger/index.html
-python3 tools/make_job_tickets.py   # orders → pressroom/ tickets (--sample to rehearse)
+python3 tools/typeset.py            # data/texts + art masters → art_src/*.svg
+python3 tools/render_art.py         # art_src → print/*.pdf + site/art/*.jpg
+python3 tools/fetch_art.py          # re-download open-access masters (git-ignored)
 python3 tools/make_shopify.py       # catalog + print/ → shopify/ import artifacts
-npx wrangler pages dev site         # local dev of the retired owned storefront
+
+# the retired owned store (until Demolition Day — see SHOPIFY_RUNBOOK)
+python3 tools/build_site.py         # data → site pages (still the live site pre-cutover)
+python3 tools/make_job_tickets.py   # order export → paper tickets, if the floor wants paper
 ```
 
 ## Hard rules (the short list — the long list is in the orientation)

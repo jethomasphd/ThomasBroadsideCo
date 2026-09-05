@@ -53,10 +53,9 @@ it.
 
 ## Tools
 
-- `POST /api/llm` task `provenance_questions` — give it a design's fields;
-  it returns the questions a hostile historian would ask. It never returns
-  verdicts, and you never treat its output as verification. It is a whetstone,
-  not a witness.
+- Draft the questions a hostile historian would ask of each design in
+  your own working session. Questions are a whetstone, not a witness —
+  verification happens only when a human reads the primary source [D9].
 - `python3 tools/selfcheck.py` — fails the build on `PENDING` verifications
   for `digital_ready` designs and scans for restricted-marks words. Run it;
   keep it red until the truth is green.

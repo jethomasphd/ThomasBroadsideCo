@@ -2,8 +2,8 @@
 
 **The two-pager for the floor. For Ben Thomas and David Olivo.**
 Everything the store does, in plain words. Read it once, keep it near
-the bench. The detailed how-to for the pressroom page is
-`docs/PRESSROOM_RUNBOOK.md` — this is the map; that's the directions.
+the bench. The detailed how-to for running the store is
+`docs/SHOPIFY_RUNBOOK.md` — this is the map; that's the directions.
 
 ---
 

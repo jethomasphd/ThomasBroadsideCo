@@ -35,7 +35,8 @@ never topped up from press revenue to chase a losing campaign.
 video-view campaigns on press-floor footage (ThruPlays cost pennies; the
 footage is the moat — §VI), then retargeting **video viewers** with
 edition/set creative. Those audiences are built from Meta's own
-on-platform engagement signals: **no pixel on our site, ever.** A
+on-platform engagement signals: **no pixel on our site, ever** (rule
+lifted by the 2026-09-05 amendment at the end of this file). A
 server-side Conversions API feed (purchase events from the Stripe webhook
 to Meta, first-party, no browser code) would improve Meta's optimization
 at real scale — it is **not built and may not be built** without Jacob's

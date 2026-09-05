@@ -12,8 +12,8 @@ with `python3 tools/make_shopify.py`):**
 
 | File | What it is |
 |---|---|
-| `products.csv` | All 24 designs + 4 sets, tiers as variants, prices, images, museum labels |
-| `parcels.zip` | The 24 print masters named by SKU, for Digital Downloads |
+| `products.csv` | Every design and set, tiers as variants, prices, images, museum labels |
+| `parcels.zip` | The print masters named by SKU, for Digital Downloads |
 | `redirects.csv` | Old exhibit URLs → new product pages, so no link ever 404s |
 
 ---
@@ -30,8 +30,8 @@ month-to-month).
 Products → Import → choose `shopify/products.csv` → Import. Shopify
 pulls every image from the live thomasbroadside.co and copies them to
 its own CDN — which is why this must happen while the old site is still
-serving. Two minutes later you have 28 products with tiers, prices, and
-the museum label inside each description. Spot-check the Declaration:
+serving. Two minutes later you have every product with tiers, prices,
+and the museum label inside its description. Spot-check the Declaration:
 three tiers, the sheet image, the label table.
 
 **3. Turn on payments — this is the trust hardware.** Settings →
@@ -57,8 +57,8 @@ That's the full trust row at checkout.
 
 **6. Digital delivery.** Admin → Apps → search **"Digital Downloads"**
 (Shopify's own, free) → Add. Unzip `parcels.zip`. For each product's
-**Digital download** variant, attach its SKU-named PDF (24 uploads,
-~30 minutes of clicking; do the flagship five first if you're
+**Digital download** variant, attach its SKU-named PDF (one upload per
+design, ~40 minutes of clicking; do the flagship five first if you're
 impatient). For the four sets' digital variants, attach every member
 PDF to the set variant. Set downloads to send automatically on payment.
 
@@ -123,8 +123,8 @@ Shopify Analytics is on by default. When paid ads start: Apps → Facebook
 themselves. GROWTH.md's discipline still stands: editions and sets only,
 $500 tests, ROAS 2.0 kill-line, paid under the 20% pre-gate cap.
 
-**15. Launch gate — humans sign [D9].** Before announcing: the
-Registrar's twelve PENDING verifications cleared by Jacob; Ben confirms
+**15. Launch gate — humans sign [D9].** Before announcing: every
+PENDING verification on the bench's list cleared by Jacob; Ben confirms
 trim sizes, tube costs, and the shipping rate; David proofs from
 `print/`. Then Constitution Day, September 17, per D12 — the journal
 entry, the list, the network, the door.
@@ -155,3 +155,34 @@ masters (Shopify's product images come FROM here), the catalog as the
 one source of truth (`make_shopify.py` regenerates the import any
 time), the Register, the gate, and the charters. The factory is the
 company; Shopify is the register at the front of the store.
+
+---
+
+## Demolition Day — after the cutover, one clean sweep
+
+The owned storefront keeps serving thomasbroadside.co until the DNS
+step (13) completes and the Shopify store has run **one quiet week**.
+Then, on Jacob's word, the clerks retire the old building in a single
+commit — git history keeps every brick:
+
+**Leaves the working tree:** `site/` except `site/art/` and
+`site/fonts/` (the renders and the typefaces belong to the factory) ·
+`functions/` · `wrangler.toml` · `pressroom/` · the owned-store tools
+(`build_site.py`, `pull_ledger.py`, `make_dashboard.py`,
+`make_job_tickets.py` — unless the floor has adopted paper tickets) ·
+the bench's checks for the retired pages.
+
+**Stays forever:** the factory (`data/`, `tools/typeset.py`,
+`render_art.py`, `fetch_art.py`, `make_shopify.py`, `art_src/`,
+`print/`, `site/art/`, `site/fonts/`), the charters, the Register, the
+superseded docs (as the record they are), and `shopify/`.
+
+**Also that day:** delete the Cloudflare Pages project and the KV
+namespace from the dashboard; the DNS zone stays at Cloudflare.
+
+One practical note that outlives the old site: `products.csv` imports
+product images by URL from the live site. After the cutover those URLs
+are gone — for **new** designs, run `make_shopify.py`, import the CSV,
+then add the product's image by hand in the Shopify admin (drag the
+file from `site/art/`). Thirty seconds per new design, a few times a
+year.
