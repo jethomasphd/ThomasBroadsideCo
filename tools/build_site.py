@@ -403,7 +403,7 @@ def build_journal(journal: dict) -> int:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Journal — Thomas Broadside Co.</title>
+<title>Journal · Thomas Broadside Co.</title>
 <meta name="description" content="One entry per anniversary. Each entry is also the sheet we printed for it.">
 <link rel="stylesheet" href="/css/broadside.css">
 </head>
@@ -426,7 +426,7 @@ def build_journal(journal: dict) -> int:
     <div class="room-head">
       <p class="room-no">From the pressroom</p>
       <h2>Journal</h2>
-      <p class="curator">One entry per anniversary — the story behind each sheet, told from the shop floor. The anniversaries are our editorial calendar for a decade.</p>
+      <p class="curator">One entry per anniversary: the story behind each sheet, told from the shop floor. The anniversaries are our editorial calendar for a decade.</p>
     </div>
     <div class="journal-list">
 {items}
@@ -459,13 +459,13 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
     docs_html = (
         room_head("Room I", "The Documents",
                   "Five sheets that argued a nation into existence. Read them the way they "
-                  "were first read — in ink, at arm's length, on a wall.")
+                  "were first read: in ink, at arm's length, on a wall.")
         + '\n<div class="wall wall--4">\n' + "\n".join(card(d) for d in docs) + "\n</div>"
     )
     quotes_html = (
         room_head("Room II", "Words they actually said.",
                   "The most famous lines in American history, typeset as broadside art for "
-                  "your wall — Franklin, Adams, Henry, Paine, Jefferson, Lincoln — each one "
+                  "your wall. Franklin, Adams, Henry, Paine, Jefferson, Lincoln: each one "
                   "checked against the letter, speech, or journal it actually comes from, "
                   "with the source printed on the sheet itself. Half the founder quotes "
                   "online were never said; every one of these was. Hang the words, keep "
@@ -474,8 +474,8 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
     )
     rest_html = (
         room_head("Room III", "Portraits, Maps & Texas",
-                  "Washington to Lincoln — they sat for history and the painters knew it. A "
-                  "country drawn on paper before it existed on land — and the Republic next "
+                  "Washington to Lincoln: they sat for history and the painters knew it. A "
+                  "country drawn on paper before it existed on land, and the Republic next "
                   "door, printed an hour from where it was declared.")
         + '\n<div class="wall wall--3">\n' + "\n".join(card(d) for d in rest) + "\n</div>"
     )
@@ -484,7 +484,7 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
         room_head("Room IV", "The Western Canon",
                   "America's founding documents have founding documents. Homer's opening "
                   "lines, the Sermon on the Mount, Augustine's restless heart, Dante's dark "
-                  "wood — the shelf that raised the men of 1776, printed on the same press. "
+                  "wood: the shelf that raised the men of 1776, printed on the same press. "
                   "Chapter and verse on every sheet.")
         + '\n<div class="wall wall--3">\n' + "\n".join(card(d) for d in canon) + "\n</div>"
     )

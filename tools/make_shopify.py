@@ -25,7 +25,7 @@ TIER_LABEL = {"digital": "Digital download", "print": "Press print", "edition": 
 TIER_SUFFIX = {"digital": "DIG", "print": "PRT", "edition": "EDN"}
 TIER_GRAMS = {"digital": 0, "print": 700, "edition": 1100}
 TIER_NOTE = {
-    "digital": "Instant download — print-ready PDF, the same typesetting as the press run.",
+    "digital": "Instant download: print-ready PDF, the same typesetting as the press run.",
     "print": "Printed on 100 lb cream cover in Austin, shipped rolled in a tube.",
     "edition": "Cotton paper, numbered of 250, embossed maker's mark, inspected by hand.",
 }
@@ -93,7 +93,7 @@ def main() -> None:
                     "Image Src": img,
                     "Image Position": "1",
                     "Image Alt Text": art.get("alt", d["title"]),
-                    "SEO Title": f"{d['title']} — broadside, printed in Austin, TX",
+                    "SEO Title": f"{d['title']} · broadside, printed in Austin, TX",
                     "SEO Description": (d.get("one_line", "") or "")[:320],
                     "Status": "active",
                 })
@@ -132,7 +132,7 @@ def main() -> None:
                     "Image Src": img,
                     "Image Position": "1",
                     "Image Alt Text": s["title"],
-                    "SEO Title": f"{s['title']} — broadsides, printed in Austin, TX",
+                    "SEO Title": f"{s['title']} · broadsides, printed in Austin, TX",
                     "SEO Description": (s.get("one_line", "") or "")[:320],
                     "Status": "active",
                 })

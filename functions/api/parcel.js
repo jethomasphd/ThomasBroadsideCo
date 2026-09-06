@@ -42,7 +42,7 @@ export async function onRequestGet(context) {
 }
 
 function plain(text, status) {
-  return new Response(`${text}\n\n— Thomas Broadside Co.\n`, {
+  return new Response(`${text}\n\nThomas Broadside Co.\n`, {
     status, headers: { 'content-type': 'text/plain; charset=utf-8' },
   });
 }

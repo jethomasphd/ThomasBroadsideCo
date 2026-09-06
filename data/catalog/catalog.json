@@ -22,7 +22,7 @@
       "kicker": "IN CONGRESS, JULY 4, 1776.",
       "display_heading": "The unanimous <em>Declaration</em> of the thirteen united States of America,",
       "date_label": "1776 · DUNLAP SETTING",
-      "one_line": "Set in Caslon, the type of the broadside John Dunlap ran on the night of July 4, 1776. The truths held self-evident, monumental — every word from the National Archives.",
+      "one_line": "Set in Caslon, the type of the broadside John Dunlap ran on the night of July 4, 1776. The truths held self-evident, monumental, every word from the National Archives.",
       "excerpt_style": "columns",
       "excerpt": "When in the Course of human events, it becomes necessary for one people to dissolve the political bands which have connected them with another, and to assume among the powers of the earth, the separate and equal station to which the Laws of Nature and of Nature's God entitle them, a decent respect to the opinions of mankind requires that they should declare the causes which impel them to the separation.",
       "label": {
@@ -36,7 +36,7 @@
         "NATIONAL ARCHIVES",
         "SET IN CASLON"
       ],
-      "provenance": "On the night of July 4, 1776, the printer John Dunlap set the Declaration in Caslon and ran roughly two hundred broadsides before dawn. This sheet sets the truths the nation was founded on — monumental, in two inks, after the Dunlap setting — every word from the National Archives transcription of the engrossed copy. Printed on our own press in Austin, Texas.",
+      "provenance": "On the night of July 4, 1776, the printer John Dunlap set the Declaration in Caslon and ran roughly two hundred broadsides before dawn. This sheet sets the truths the nation was founded on: monumental, in two inks, after the Dunlap setting, every word from the National Archives transcription of the engrossed copy. Printed on our own press in Austin, Texas.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -55,7 +55,7 @@
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
       "format": "p34",
       "art": {
-        "alt": "The Declaration of Independence — 'We hold these truths to be self-evident' set monumental in Caslon, black and red",
+        "alt": "The Declaration of Independence. 'We hold these truths to be self-evident' set monumental in Caslon, black and red",
         "credit": "Typeset and printed by the shop · text: National Archives, engrossed copy",
         "src": "/art/declaration-of-independence.jpg",
         "print_master": "print/declaration-of-independence.pdf",
@@ -105,7 +105,7 @@
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
       "format": "p34",
       "art": {
-        "alt": "Preamble to the Constitution — typeset broadside",
+        "alt": "Preamble to the Constitution, typeset broadside",
         "credit": "Typeset and printed by the shop · text: National Archives, engrossed copy",
         "src": "/art/preamble-to-the-constitution.jpg",
         "print_master": "print/preamble-to-the-constitution.pdf",
@@ -155,7 +155,7 @@
       "source_verified_by": "Jacob E. Thomas · against archives.gov transcription · 2026-08",
       "format": "p23",
       "art": {
-        "alt": "The Bill of Rights — typeset broadside",
+        "alt": "The Bill of Rights, typeset broadside",
         "credit": "Typeset and printed by the shop · text: National Archives, ratified 1791",
         "src": "/art/bill-of-rights.jpg",
         "print_master": "print/bill-of-rights.pdf",
@@ -172,7 +172,7 @@
       "kicker": "GEORGE WASHINGTON",
       "display_heading": "Observe good faith and justice towards all Nations.",
       "date_label": "1796 · THE COUNSELS",
-      "one_line": "The good-faith counsel entire, and 'steer clear of permanent alliances' set monumental — the first President's parting advice, verbatim from 1796.",
+      "one_line": "The good-faith counsel entire, and 'steer clear of permanent alliances' set monumental: the first President's parting advice, verbatim from 1796.",
       "excerpt_style": "quote",
       "excerpt": "Observe good faith and justice towards all Nations; cultivate peace and harmony with all.",
       "attribution": "Farewell Address, 1796",
@@ -187,7 +187,7 @@
         "EVERY QUOTE CITED",
         "SET IN CASLON"
       ],
-      "provenance": "From the Farewell Address, published September 19, 1796. The sheet carries the good-faith-and-justice counsel in full and the alliances sentence split large — every word verbatim; nothing paraphrased. Washington never delivered it as a speech: it went straight to the printer, which makes it ours by trade.",
+      "provenance": "From the Farewell Address, published September 19, 1796. The sheet carries the good-faith-and-justice counsel in full and the alliances sentence split large. Every word verbatim; nothing paraphrased. Washington never delivered it as a speech: it went straight to the printer, which makes it ours by trade.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -206,7 +206,7 @@
       "source_verified_by": "Clerk-set from the Avalon Project transcription · 2026-09-05 · PENDING: Jacob verifies both passages against the 1796 text [house rule: cited]",
       "format": "p34",
       "art": {
-        "alt": "Washington's Farewell Address — the counsels typeset in black and red, 'steer clear of permanent alliances' monumental",
+        "alt": "Washington's Farewell Address. The counsels typeset in black and red, 'steer clear of permanent alliances' monumental",
         "credit": "Typeset and printed by the shop · text: Farewell Address, September 1796 · Library of Congress",
         "src": "/art/washingtons-farewell-address.jpg",
         "print_master": "print/washingtons-farewell-address.pdf",
@@ -237,7 +237,7 @@
         "LIBRARY OF CONGRESS",
         "BLISS COPY"
       ],
-      "provenance": "The Bliss copy — the fifth and final manuscript, the only one Lincoln signed and dated — from the Library of Congress. The full sheet carries all two hundred seventy-two words.",
+      "provenance": "The Bliss copy, the fifth and final manuscript and the only one Lincoln signed and dated, from the Library of Congress. The full sheet carries all two hundred seventy-two words.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -256,7 +256,7 @@
       "source_verified_by": "PENDING · verify against loc.gov Bliss facsimile before launch [house rule: cited]",
       "format": "p34",
       "art": {
-        "alt": "The Gettysburg Address — typeset broadside",
+        "alt": "The Gettysburg Address, typeset broadside",
         "credit": "Typeset and printed by the shop · text: Library of Congress, Bliss copy",
         "src": "/art/gettysburg-address.jpg",
         "print_master": "print/gettysburg-address.pdf",
@@ -273,7 +273,7 @@
       "kicker": "AFTER GILBERT STUART, BEGUN 1795",
       "display_heading": "George Washington",
       "date_label": "1732 TO 1799",
-      "one_line": "After Gilbert Stuart, begun 1795 — the Gibbs-Channing-Avery portrait, from The Met, open access.",
+      "one_line": "After Gilbert Stuart, begun 1795: the Gibbs-Channing-Avery portrait, from The Met, open access.",
       "excerpt_style": "portrait",
       "excerpt": "Portrait after Gilbert Stuart, 1796. Final art placed from National Gallery of Art open access before the first press run.",
       "label": {
@@ -338,7 +338,7 @@
         "THE MET · OPEN ACCESS",
         "1706 TO 1790"
       ],
-      "provenance": "After the Duplessis portrait of 1778 — the fur-collared “VIR” portrait — shown as a detail of the painted oval, reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 436236, The Friedsam Collection. Franklin was a printer by trade; this shop keeps his line over the press.",
+      "provenance": "After the Duplessis portrait of 1778, the fur-collared “VIR” portrait, shown as a detail of the painted oval, reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 436236, The Friedsam Collection. Franklin was a printer by trade; this shop keeps his line over the press.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -389,7 +389,7 @@
         "NATIONAL GALLERY OF ART",
         "1743 TO 1826"
       ],
-      "provenance": "After the Gilbert Stuart portrait of c. 1821 in the National Gallery of Art (accession 1986.71.1), reproduced from NGA open-access imagery. The Gallery’s scan runs 14,826 by 18,162 pixels — finer than any press will ever ask of it.",
+      "provenance": "After the Gilbert Stuart portrait of c. 1821 in the National Gallery of Art (accession 1986.71.1), reproduced from NGA open-access imagery. The Gallery’s scan runs 14,826 by 18,162 pixels, finer than any press will ever ask of it.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -427,7 +427,7 @@
       "kicker": "AFTER JOHN TRUMBULL, C. 1806",
       "display_heading": "Alexander Hamilton",
       "date_label": "1757 TO 1804",
-      "one_line": "After John Trumbull, c. 1806 — the portrait the ten-dollar bill descends from. National Gallery of Art, open access.",
+      "one_line": "After John Trumbull, c. 1806: the portrait the ten-dollar bill descends from. National Gallery of Art, open access.",
       "excerpt_style": "portrait",
       "excerpt": "Portrait after John Trumbull, c. 1806, National Gallery of Art open access.",
       "label": {
@@ -479,7 +479,7 @@
       "kicker": "AFTER GEORGE P. A. HEALY, 1860",
       "display_heading": "Abraham Lincoln",
       "date_label": "1809 TO 1865",
-      "one_line": "After George P. A. Healy, painted from life in Springfield, 1860 — from the National Gallery of Art, open access.",
+      "one_line": "After George P. A. Healy, painted from life in Springfield, 1860, from the National Gallery of Art, open access.",
       "excerpt_style": "portrait",
       "excerpt": "Portrait after George P. A. Healy, 1860. Art from National Gallery of Art open access.",
       "label": {
@@ -561,7 +561,7 @@
       "source_verified_by": "PENDING · verify against a 1737 Poor Richard's facsimile [house rule: cited]",
       "format": "l43",
       "art": {
-        "alt": "Well done is better than well said. — typeset broadside",
+        "alt": "Well done is better than well said. Typeset broadside",
         "credit": "Typeset and printed by the shop · text: Poor Richard's Almanack, 1737",
         "src": "/art/well-done-is-better-than-well-said.jpg",
         "print_master": "print/well-done-is-better-than-well-said.pdf",
@@ -609,7 +609,7 @@
       "source_verified_by": "PENDING · verify against the Adams Papers / Legal Papers of John Adams [house rule: cited]",
       "format": "l43",
       "art": {
-        "alt": "Facts are stubborn things. — typeset broadside",
+        "alt": "Facts are stubborn things. Typeset broadside",
         "credit": "Typeset and printed by the shop · text: Argument in defense of the British soldiers, December 1770",
         "src": "/art/facts-are-stubborn-things.jpg",
         "print_master": "print/facts-are-stubborn-things.pdf",
@@ -656,7 +656,7 @@
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against the Library of Congress / National Archives text of the Second Inaugural; the sheet trims the sentence at 'the nation's wounds' [house rule: cited]",
       "art": {
-        "alt": "With malice toward none; with charity for all. — typeset broadside",
+        "alt": "With malice toward none; with charity for all. Typeset broadside",
         "credit": "Typeset and printed by the shop · text: Second Inaugural Address, March 4, 1865",
         "src": "/art/with-malice-toward-none.jpg",
         "print_master": "print/with-malice-toward-none.pdf",
@@ -674,7 +674,7 @@
       "kicker": "ABRAHAM LINCOLN",
       "display_heading": "A house divided against itself cannot stand.",
       "date_label": "LINCOLN · SPRINGFIELD, 1858",
-      "one_line": "Lincoln accepting the Senate nomination, Springfield, June 16, 1858 — quoting the Gospel back to a divided country.",
+      "one_line": "Lincoln accepting the Senate nomination, Springfield, June 16, 1858, quoting the Gospel back to a divided country.",
       "excerpt_style": "quote",
       "excerpt": "A house divided against itself cannot stand.",
       "attribution": "House Divided speech · Springfield, June 16, 1858",
@@ -704,7 +704,7 @@
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against the Collected Works of Abraham Lincoln (Basler), volume 2 [house rule: cited]",
       "art": {
-        "alt": "A house divided against itself cannot stand. — typeset broadside",
+        "alt": "A house divided against itself cannot stand. Typeset broadside",
         "credit": "Typeset and printed by the shop · text: House Divided speech, June 16, 1858",
         "src": "/art/a-house-divided.jpg",
         "print_master": "print/a-house-divided.pdf",
@@ -722,7 +722,7 @@
       "kicker": "BENJAMIN FRANKLIN",
       "display_heading": "A republic, if you can keep it.",
       "date_label": "FRANKLIN · SEPTEMBER 17, 1787",
-      "one_line": "Franklin's answer as the Convention closed, recorded in James McHenry's journal — the founding's shortest job description.",
+      "one_line": "Franklin's answer as the Convention closed, recorded in James McHenry's journal: the founding's shortest job description.",
       "excerpt_style": "quote",
       "excerpt": "A republic, if you can keep it.",
       "attribution": "Reply as the Convention closed · recorded in James McHenry's journal, September 17, 1787",
@@ -737,7 +737,7 @@
         "EVERY QUOTE CITED",
         "SET IN CASLON"
       ],
-      "provenance": "As the Constitutional Convention closed on September 17, 1787, a lady asked Franklin what the delegates had made — a republic or a monarchy. His answer was recorded that day in the journal of James McHenry, delegate from Maryland. The sheet credits the journal, because that is where the words actually live.",
+      "provenance": "As the Constitutional Convention closed on September 17, 1787, a lady asked Franklin what the delegates had made, a republic or a monarchy. His answer was recorded that day in the journal of James McHenry, delegate from Maryland. The sheet credits the journal, because that is where the words actually live.",
       "tiers": {
         "digital": {
           "price": 7,
@@ -752,7 +752,7 @@
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against McHenry's journal (Farrand's Records, vol. 3) [house rule: cited]",
       "art": {
-        "alt": "A republic, if you can keep it. — Franklin, typeset broadside",
+        "alt": "A republic, if you can keep it. Franklin, typeset broadside",
         "credit": "Typeset and printed by the shop · text: McHenry's journal, September 17, 1787",
         "src": "/art/a-republic-if-you-can-keep-it.jpg",
         "print_master": "print/a-republic-if-you-can-keep-it.pdf",
@@ -770,7 +770,7 @@
       "kicker": "PATRICK HENRY",
       "display_heading": "Give me liberty or give me death!",
       "date_label": "HENRY · RICHMOND, 1775",
-      "one_line": "The closing of Patrick Henry's speech at St. John's Church, as reconstructed by William Wirt — and the sheet says so, because that is the honest citation.",
+      "one_line": "The closing of Patrick Henry's speech at St. John's Church, as reconstructed by William Wirt, and the sheet says so, because that is the honest citation.",
       "excerpt_style": "quote",
       "excerpt": "Is life so dear, or peace so sweet, as to be purchased at the price of chains and slavery? Forbid it, Almighty God! I know not what course others may take; but as for me, give me liberty or give me death!",
       "attribution": "Richmond, March 23, 1775 · as reconstructed by William Wirt, 1817",
@@ -785,7 +785,7 @@
         "EVERY QUOTE CITED",
         "SET IN CASLON"
       ],
-      "provenance": "No stenographer sat in St. John's Church on March 23, 1775. The text the nation knows was reconstructed from witnesses by William Wirt for his 1817 biography — and the sheet prints that fact in the attribution line. Citing the reconstruction honestly is the difference between history and a meme.",
+      "provenance": "No stenographer sat in St. John's Church on March 23, 1775. The text the nation knows was reconstructed from witnesses by William Wirt for his 1817 biography, and the sheet prints that fact in the attribution line. Citing the reconstruction honestly is the difference between history and a meme.",
       "tiers": {
         "digital": {
           "price": 7,
@@ -800,7 +800,7 @@
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against Wirt's Sketches of the Life of Patrick Henry, 1817 [house rule: cited]",
       "art": {
-        "alt": "Give me liberty or give me death! — Patrick Henry, typeset broadside",
+        "alt": "Give me liberty or give me death! Patrick Henry, typeset broadside",
         "credit": "Typeset and printed by the shop · text: Wirt's reconstruction, 1817",
         "src": "/art/give-me-liberty.jpg",
         "print_master": "print/give-me-liberty.pdf",
@@ -818,7 +818,7 @@
       "kicker": "THOMAS PAINE",
       "display_heading": "These are the times that try men's souls.",
       "date_label": "PAINE · DECEMBER 19, 1776",
-      "one_line": "The opening of The American Crisis, written on the retreat and read to the army before Trenton — the summer soldier and the sunshine patriot, entire.",
+      "one_line": "The opening of The American Crisis, written on the retreat and read to the army before Trenton: the summer soldier and the sunshine patriot, entire.",
       "excerpt_style": "quote",
       "excerpt": "These are the times that try men's souls. The summer soldier and the sunshine patriot will, in this crisis, shrink from the service of their country; but he that stands it now, deserves the love and thanks of man and woman.",
       "attribution": "The American Crisis, Number I · December 19, 1776",
@@ -833,7 +833,7 @@
         "EVERY QUOTE CITED",
         "SET IN CASLON"
       ],
-      "provenance": "The first two sentences of The American Crisis, Number I, published December 19, 1776 and read aloud to Washington's army before the crossing to Trenton. A pamphlet — a printer's product — that helped save the Revolution. The original sets the first word in capitals; the sheet normalizes it and says so here.",
+      "provenance": "The first two sentences of The American Crisis, Number I, published December 19, 1776 and read aloud to Washington's army before the crossing to Trenton. A pamphlet, a printer's product, that helped save the Revolution. The original sets the first word in capitals; the sheet normalizes it and says so here.",
       "tiers": {
         "digital": {
           "price": 7,
@@ -848,7 +848,7 @@
       "status": "digital_ready",
       "source_verified_by": "Clerk-set from Project Gutenberg eText 3741 · 2026-09-05 · PENDING: Jacob verifies against the 1776 printing; first word normalized from THESE [house rule: cited]",
       "art": {
-        "alt": "These are the times that try men's souls. — Paine, typeset broadside",
+        "alt": "These are the times that try men's souls. Paine, typeset broadside",
         "credit": "Typeset and printed by the shop · text: The American Crisis, No. I, 1776",
         "src": "/art/times-that-try-mens-souls.jpg",
         "print_master": "print/times-that-try-mens-souls.pdf",
@@ -866,7 +866,7 @@
       "kicker": "THOMAS JEFFERSON",
       "display_heading": "I have sworn upon the altar of god…",
       "date_label": "JEFFERSON · 1800",
-      "one_line": "Jefferson's oath from the letter to Benjamin Rush, 1800 — set from the manuscript, lowercase and all.",
+      "one_line": "Jefferson's oath from the letter to Benjamin Rush, 1800, set from the manuscript, lowercase and all.",
       "excerpt_style": "quote",
       "excerpt": "I have sworn upon the altar of god, eternal hostility against every form of tyranny over the mind of man.",
       "attribution": "Letter to Benjamin Rush · September 23, 1800",
@@ -881,7 +881,7 @@
         "EVERY QUOTE CITED",
         "SET IN CASLON"
       ],
-      "provenance": "From Jefferson's letter to Benjamin Rush of September 23, 1800 — the line carved into his memorial in Washington. The sheet follows the manuscript transcription, which spells 'god' lowercase; we print what he wrote, not what the marble tidied.",
+      "provenance": "From Jefferson's letter to Benjamin Rush of September 23, 1800: the line carved into his memorial in Washington. The sheet follows the manuscript transcription, which spells 'god' lowercase; we print what he wrote, not what the marble tidied.",
       "tiers": {
         "digital": {
           "price": 7,
@@ -896,7 +896,7 @@
       "status": "digital_ready",
       "source_verified_by": "PENDING · verify against Founders Online, Jefferson to Rush, 23 Sept 1800; lowercase 'god' is the manuscript's [house rule: cited]",
       "art": {
-        "alt": "I have sworn upon the altar of god, eternal hostility against every form of tyranny over the mind of man. — Jefferson, typeset broadside",
+        "alt": "I have sworn upon the altar of god, eternal hostility against every form of tyranny over the mind of man. Jefferson, typeset broadside",
         "credit": "Typeset and printed by the shop · text: letter to Benjamin Rush, 1800",
         "src": "/art/sworn-upon-the-altar.jpg",
         "print_master": "print/sworn-upon-the-altar.pdf",
@@ -914,7 +914,7 @@
       "kicker": "1776 · SAYER & BENNETT, LONDON",
       "display_heading": "The Thirteen Colonies, 1776",
       "date_label": "1776 · AFTER A PERIOD MAP",
-      "one_line": "The Theatre of War in North America, 1776 — half map, half letterpress. A period broadside in the truest sense.",
+      "one_line": "The Theatre of War in North America, 1776: half map, half letterpress. A period broadside in the truest sense.",
       "excerpt_style": "map",
       "excerpt": "After a period map of the thirteen colonies, from the Library of Congress geography and map division. Final art placed before the first press run.",
       "label": {
@@ -928,7 +928,7 @@
         "LIBRARY OF CONGRESS",
         "PUBLIC DOMAIN"
       ],
-      "provenance": "“The Theatre of War in North America, with the roads and a table of the distances,” published by Sayer & Bennett, London, 1776, from Library of Congress public-domain holdings. The plate carries the colonies above and a compendious letterpress account below — a map that is itself a broadside, which is why it hangs in this catalog.",
+      "provenance": "“The Theatre of War in North America, with the roads and a table of the distances,” published by Sayer & Bennett, London, 1776, from Library of Congress public-domain holdings. The plate carries the colonies above and a compendious letterpress account below: a map that is itself a broadside, which is why it hangs in this catalog.",
       "tiers": {
         "digital": {
           "price": 12,
@@ -965,7 +965,7 @@
       "kicker": "1792 · ELLICOTT, AFTER L'ENFANT",
       "display_heading": "Plan of the City of Washington, 1792",
       "date_label": "1792 · ELLICOTT, AFTER L'ENFANT",
-      "one_line": "Ellicott's engraving of the L'Enfant plan — the capital on paper before it existed on land.",
+      "one_line": "Ellicott's engraving of the L'Enfant plan: the capital on paper before it existed on land.",
       "excerpt_style": "map",
       "excerpt": "Andrew Ellicott's 1792 engraving after Pierre L'Enfant's plan, from the Library of Congress geography and map division. Final art placed before the first press run.",
       "label": {
@@ -979,7 +979,7 @@
         "LIBRARY OF CONGRESS",
         "PUBLIC DOMAIN"
       ],
-      "provenance": "Andrew Ellicott’s 1792 plan, engraved after L’Enfant, from Library of Congress public-domain holdings, item 98689552. A city that existed in print before it existed at all — a very print-shop kind of founding.",
+      "provenance": "Andrew Ellicott’s 1792 plan, engraved after L’Enfant, from Library of Congress public-domain holdings, item 98689552. A city that existed in print before it existed at all. A very print-shop kind of founding.",
       "tiers": {
         "digital": {
           "price": 12,
@@ -1016,7 +1016,7 @@
       "kicker": "WASHINGTON-ON-THE-BRAZOS, MARCH 2, 1836",
       "display_heading": "The Texas Declaration of Independence",
       "date_label": "1836",
-      "one_line": "Signed at Washington-on-the-Brazos, March 2, 1836. The resolve and the republic, monumental — the home market's founding sheet.",
+      "one_line": "Signed at Washington-on-the-Brazos, March 2, 1836. The resolve and the republic, monumental. The home market's founding sheet.",
       "excerpt_style": "columns",
       "excerpt": "When a government has ceased to protect the lives, liberty and property of the people, from whom its legitimate powers are derived, and for the advancement of whose happiness it was instituted, and so far from being a guarantee for the enjoyment of those inestimable and inalienable rights, becomes an instrument in the hands of evil rulers for their oppression.",
       "label": {
@@ -1049,7 +1049,7 @@
       "source_verified_by": "PENDING · verify against tsl.texas.gov transcription [house rule: cited]",
       "format": "p34",
       "art": {
-        "alt": "The Texas Declaration of Independence — 'a free, Sovereign, and independent republic' set monumental in Caslon, black and red",
+        "alt": "The Texas Declaration of Independence. 'a free, Sovereign, and independent republic' set monumental in Caslon, black and red",
         "credit": "Typeset and printed by the shop · text: Texas State Library and Archives",
         "src": "/art/texas-declaration-of-independence.jpg",
         "print_master": "print/texas-declaration-of-independence.pdf",
@@ -1066,7 +1066,7 @@
       "kicker": "1844 · AFTER EMORY",
       "display_heading": "The Republic of Texas, 1844",
       "date_label": "1844 · AFTER EMORY",
-      "one_line": "After Emory, 1844 — the Republic mapped in its last year before statehood.",
+      "one_line": "After Emory, 1844: the Republic mapped in its last year before statehood.",
       "excerpt_style": "map",
       "excerpt": "After William H. Emory's 1844 map of Texas, from Library of Congress public-domain holdings. Final art placed before the first press run.",
       "label": {
@@ -1080,7 +1080,7 @@
         "LIBRARY OF CONGRESS",
         "PUBLIC DOMAIN"
       ],
-      "provenance": "William H. Emory’s 1844 “Map of Texas and the countries adjacent,” engraved by William J. Stone — the same engraver who cut the official 1823 facsimile of the Declaration of Independence — from Library of Congress public-domain holdings, item 2003627046.",
+      "provenance": "William H. Emory’s 1844 “Map of Texas and the countries adjacent,” engraved by William J. Stone, the same engraver who cut the official 1823 facsimile of the Declaration of Independence, from Library of Congress public-domain holdings, item 2003627046.",
       "tiers": {
         "digital": {
           "price": 12,
@@ -1147,7 +1147,7 @@
       "source_verified_by": "Jacob E. Thomas · dates cross-checked · 2026-08",
       "format": "p23",
       "art": {
-        "alt": "The Revolution, 1765 to 1789 — typeset broadside",
+        "alt": "The Revolution, 1765 to 1789, typeset broadside",
         "credit": "Typeset and printed by the shop · text: Dates verified against National Archives and Library of Congress",
         "src": "/art/the-revolution-1765-to-1789.jpg",
         "print_master": "print/the-revolution-1765-to-1789.pdf",
@@ -1164,7 +1164,7 @@
       "kicker": "ST MATTHEW 5:3–12",
       "display_heading": "The Beatitudes",
       "date_label": "GALILEE · AUTHORIZED VERSION, 1611",
-      "one_line": "The ten verses that open the Sermon on the Mount, set from the King James Bible — chapter and verse in red, the way scripture was always rubricated.",
+      "one_line": "The ten verses that open the Sermon on the Mount, set from the King James Bible, chapter and verse in red, the way scripture was always rubricated.",
       "excerpt_style": "center",
       "excerpt": "Blessed are the poor in spirit: for theirs is the kingdom of heaven.",
       "label": {
@@ -1178,7 +1178,7 @@
         "CHAPTER AND VERSE ON THE SHEET",
         "SET IN CASLON"
       ],
-      "provenance": "The blessings that open the Sermon on the Mount, Matthew 5:3–12 entire, set from the Authorized Version of 1611 — the King James Bible, the founding monument of English prose. Verse numbers stand in red beside the words, the way scripture has been rubricated since the scriptoria. Chapter and verse are on the sheet, because that is what citation looked like first.",
+      "provenance": "The blessings that open the Sermon on the Mount, Matthew 5:3–12 entire, set from the Authorized Version of 1611, the King James Bible, the founding monument of English prose. Verse numbers stand in red beside the words, the way scripture has been rubricated since the scriptoria. Chapter and verse are on the sheet, because that is what citation looked like first.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -1196,7 +1196,7 @@
       "status": "digital_ready",
       "source_verified_by": "Clerk-set from Project Gutenberg eText 10 (KJV) · 2026-09-05 · PENDING: Jacob verifies against a printed Authorized Version [house rule: cited]",
       "art": {
-        "alt": "The Beatitudes — Matthew 5:3–12, Authorized Version, typeset broadside in black and red",
+        "alt": "The Beatitudes. Matthew 5:3–12, Authorized Version, typeset broadside in black and red",
         "credit": "Typeset and printed by the shop · text: Authorized Version, 1611",
         "src": "/art/the-beatitudes.jpg",
         "print_master": "print/the-beatitudes.pdf",
@@ -1229,7 +1229,7 @@
         "EVERY QUOTE CITED",
         "SET IN CASLON"
       ],
-      "provenance": "Matthew 16:26 entire — both questions, nothing trimmed — from the Authorized Version of 1611. Two thousand years old and aimed directly at the present tense.",
+      "provenance": "Matthew 16:26 entire, both questions, nothing trimmed, from the Authorized Version of 1611. Two thousand years old and aimed directly at the present tense.",
       "tiers": {
         "digital": {
           "price": 7,
@@ -1244,7 +1244,7 @@
       "status": "digital_ready",
       "source_verified_by": "Clerk-set from Project Gutenberg eText 10 (KJV) · 2026-09-05 · PENDING: Jacob verifies against a printed Authorized Version [house rule: cited]",
       "art": {
-        "alt": "What is a man profited? — Matthew 16:26, typeset broadside",
+        "alt": "What is a man profited? Matthew 16:26, typeset broadside",
         "credit": "Typeset and printed by the shop · text: Authorized Version, 1611",
         "src": "/art/what-is-a-man-profited.jpg",
         "print_master": "print/what-is-a-man-profited.pdf",
@@ -1262,7 +1262,7 @@
       "kicker": "HOMER · BOOK I",
       "display_heading": "Tell me, O Muse,",
       "date_label": "HOMER · TRANS. BUTLER, 1900",
-      "one_line": "The road-opening lines of Western literature — the invocation of the Odyssey, monumental, in Samuel Butler's public-domain prose.",
+      "one_line": "The road-opening lines of Western literature: the invocation of the Odyssey, monumental, in Samuel Butler's public-domain prose.",
       "excerpt_style": "center",
       "excerpt": "Tell me, O Muse, of that ingenious hero who travelled far and wide after he had sacked the famous town of Troy.",
       "label": {
@@ -1276,7 +1276,7 @@
         "THE INVOCATION",
         "TRANS. BUTLER, 1900"
       ],
-      "provenance": "The invocation of the Odyssey — the oldest opening lines in Western literature — in Samuel Butler's 1900 translation, trimmed at 'bring his men safely home'; the sentence continues into the folly of the crew. Homer begins with a man trying to get home, and the West begins with Homer.",
+      "provenance": "The invocation of the Odyssey, the oldest opening lines in Western literature, in Samuel Butler's 1900 translation, trimmed at 'bring his men safely home'; the sentence continues into the folly of the crew. Homer begins with a man trying to get home, and the West begins with Homer.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -1294,7 +1294,7 @@
       "status": "digital_ready",
       "source_verified_by": "Clerk-set from Project Gutenberg eText 1727 (Butler) · 2026-09-05 · PENDING: Jacob verifies the passage and the trim at 'safely home' [house rule: cited]",
       "art": {
-        "alt": "The Odyssey — 'Tell me, O Muse,' the invocation set monumental in Caslon, black and red",
+        "alt": "The Odyssey. 'Tell me, O Muse,' the invocation set monumental in Caslon, black and red",
         "credit": "Typeset and printed by the shop · text: Samuel Butler's translation, 1900",
         "src": "/art/the-odyssey.jpg",
         "print_master": "print/the-odyssey.pdf",
@@ -1312,7 +1312,7 @@
       "kicker": "AUGUSTINE OF HIPPO",
       "display_heading": "Our heart is restless",
       "date_label": "CONFESSIONS · C. 397",
-      "one_line": "The restless heart, named sixteen centuries before the feed — the first page of the Confessions, in Pusey's translation.",
+      "one_line": "The restless heart, named sixteen centuries before the feed. The first page of the Confessions, in Pusey's translation.",
       "excerpt_style": "quote",
       "excerpt": "Thou madest us for Thyself, and our heart is restless, until it repose in Thee.",
       "attribution": "Confessions, Book I · c. 397 · translated by Edward B. Pusey",
@@ -1342,7 +1342,7 @@
       "status": "digital_ready",
       "source_verified_by": "Clerk-set from Project Gutenberg eText 3296 (Pusey) · 2026-09-05 · PENDING: Jacob verifies against the Pusey text [house rule: cited]",
       "art": {
-        "alt": "Our heart is restless — Augustine, Confessions, typeset broadside",
+        "alt": "Our heart is restless. Augustine's Confessions, typeset broadside",
         "credit": "Typeset and printed by the shop · text: Pusey's translation, 1838",
         "src": "/art/our-heart-is-restless.jpg",
         "print_master": "print/our-heart-is-restless.pdf",
@@ -1360,7 +1360,7 @@
       "kicker": "DANTE ALIGHIERI",
       "display_heading": "Midway upon the journey of our life",
       "date_label": "INFERNO, CANTO I · TRANS. LONGFELLOW",
-      "one_line": "The first tercet of the Divine Comedy in Longfellow's translation — the dark wood, and the honesty of admitting you are in one.",
+      "one_line": "The first tercet of the Divine Comedy in Longfellow's translation: the dark wood, and the honesty of admitting you are in one.",
       "excerpt_style": "quote",
       "excerpt": "Midway upon the journey of our life I found myself within a forest dark, for the straightforward pathway had been lost.",
       "attribution": "Inferno, Canto I · translated by Henry W. Longfellow, 1867",
@@ -1375,7 +1375,7 @@
         "EVERY QUOTE CITED",
         "SET IN CASLON"
       ],
-      "provenance": "The opening tercet of the Divine Comedy, c. 1320, in Henry Wadsworth Longfellow's 1867 translation — the first American translation of Dante, made by the poet the founders' grandchildren read. The way out of the dark wood begins with these three lines admitting it exists.",
+      "provenance": "The opening tercet of the Divine Comedy, c. 1320, in Henry Wadsworth Longfellow's 1867 translation, the first American translation of Dante, made by the poet the founders' grandchildren read. The way out of the dark wood begins with these three lines admitting it exists.",
       "tiers": {
         "digital": {
           "price": 7,
@@ -1390,7 +1390,7 @@
       "status": "digital_ready",
       "source_verified_by": "Clerk-set from Project Gutenberg eText 1001 (Longfellow) · 2026-09-05 · PENDING: Jacob verifies the tercet [house rule: cited]",
       "art": {
-        "alt": "Midway upon the journey of our life — Dante, Inferno I, typeset broadside",
+        "alt": "Midway upon the journey of our life. Dante, Inferno I, typeset broadside",
         "credit": "Typeset and printed by the shop · text: Longfellow's translation, 1867",
         "src": "/art/midway-upon-the-journey.jpg",
         "print_master": "print/midway-upon-the-journey.pdf",
@@ -1408,7 +1408,7 @@
       "kicker": "REMBRANDT · THE HUNDRED GUILDER PRINT, C. 1649",
       "display_heading": "Christ Preaching",
       "date_label": "REMBRANDT · C. 1649",
-      "one_line": "The Hundred Guilder Print — Rembrandt's etching of the ministry, the sick and the doubters gathered in the dark, from the National Gallery of Art, open access.",
+      "one_line": "The Hundred Guilder Print: Rembrandt's etching of the ministry, the sick and the doubters gathered in the dark, from the National Gallery of Art, open access.",
       "excerpt_style": "portrait",
       "excerpt": "Rembrandt's Christ Preaching, c. 1649.",
       "label": {
@@ -1422,7 +1422,7 @@
         "NGA · OPEN ACCESS",
         "C. 1649"
       ],
-      "provenance": "Rembrandt's Christ Preaching, called the Hundred Guilder Print for the price it commanded in his own lifetime — the ministry of Matthew 19 gathered into one plate: the sick carried in, the rich young man weighing the cost, the children brought forward. Reproduced from National Gallery of Art open-access imagery, object 9969. Hang it beside the Beatitudes.",
+      "provenance": "Rembrandt's Christ Preaching, called the Hundred Guilder Print for the price it commanded in his own lifetime. The ministry of Matthew 19 gathered into one plate: the sick carried in, the rich young man weighing the cost, the children brought forward. Reproduced from National Gallery of Art open-access imagery, object 9969. Hang it beside the Beatitudes.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -1441,7 +1441,7 @@
       "source_verified_by": "Clerk-fetched from NGA open data, object 9969 · 2026-09-05 · VERIFY: Jacob confirms the object and the c. 1649 dating [D9]",
       "art": {
         "src": "/art/christ-preaching-hundred-guilder.jpg",
-        "alt": "Christ Preaching (The Hundred Guilder Print) — Rembrandt etching, c. 1649",
+        "alt": "Christ Preaching, the Hundred Guilder Print. Rembrandt etching, c. 1649",
         "credit": "National Gallery of Art · open access · object 9969",
         "master_url": "https://api.nga.gov/iiif/ada0c051-b5f0-4259-bf5e-679a7a9ba7de/full/4200,/0/default.jpg",
         "print_master": "print/christ-preaching-hundred-guilder.pdf",
@@ -1459,7 +1459,7 @@
       "kicker": "REMBRANDT · 1653",
       "display_heading": "Aristotle with a Bust of Homer",
       "date_label": "REMBRANDT · 1653",
-      "one_line": "The philosopher's hand on the poet's head — Rembrandt, 1653, from The Met, open access. The whole Western canon in one gesture.",
+      "one_line": "The philosopher's hand on the poet's head. Rembrandt, 1653, from The Met, open access. The whole Western canon in one gesture.",
       "excerpt_style": "portrait",
       "excerpt": "Rembrandt's Aristotle with a Bust of Homer, 1653.",
       "label": {
@@ -1473,7 +1473,7 @@
         "THE MET · OPEN ACCESS",
         "1653"
       ],
-      "provenance": "Rembrandt's Aristotle with a Bust of Homer, painted in 1653: the philosopher in his gold chain resting a hand on the blind poet who started everything. Reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 437394. One canon touching another — the picture this room is about.",
+      "provenance": "Rembrandt's Aristotle with a Bust of Homer, painted in 1653: the philosopher in his gold chain resting a hand on the blind poet who started everything. Reproduced from The Metropolitan Museum of Art open-access imagery, CC0, object 437394. One canon touching another. The picture this room is about.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -1492,7 +1492,7 @@
       "source_verified_by": "Clerk-fetched from metmuseum.org object 437394 (CC0) · 2026-09-05 · VERIFY: Jacob confirms the object [D9]",
       "art": {
         "src": "/art/aristotle-with-a-bust-of-homer.jpg",
-        "alt": "Aristotle with a Bust of Homer — Rembrandt, 1653",
+        "alt": "Aristotle with a Bust of Homer. Rembrandt, 1653",
         "credit": "The Metropolitan Museum of Art · public domain (CC0) · object 437394",
         "master_url": "https://images.metmuseum.org/CRDImages/ep/original/DP-30758-001.jpg",
         "print_master": "print/aristotle-with-a-bust-of-homer.pdf",
@@ -1510,7 +1510,7 @@
       "kicker": "WILLIAM BLAKE · INFERNO, CANTO V · 1827",
       "display_heading": "The Circle of the Lustful",
       "date_label": "BLAKE · INFERNO V · 1827",
-      "one_line": "Blake's whirlwind of lovers — Paolo and Francesca from Inferno, Canto V, engraved in the last year of his life. From the National Gallery of Art, open access.",
+      "one_line": "Blake's whirlwind of lovers: Paolo and Francesca from Inferno, Canto V, engraved in the last year of his life. From the National Gallery of Art, open access.",
       "excerpt_style": "portrait",
       "excerpt": "Blake's Circle of the Lustful, 1827.",
       "label": {
@@ -1524,7 +1524,7 @@
         "NGA · OPEN ACCESS",
         "1827"
       ],
-      "provenance": "William Blake's engraving of Inferno, Canto V — the whirlwind of lovers, Paolo and Francesca swept past the poets — made in 1827, the last year of Blake's life, for his unfinished Dante series. Reproduced from National Gallery of Art open-access imagery, object 797. Hang it beside the dark wood it answers.",
+      "provenance": "William Blake's engraving of Inferno, Canto V, the whirlwind of lovers swept past the poets, made in 1827, the last year of Blake's life, for his unfinished Dante series. Reproduced from National Gallery of Art open-access imagery, object 797. Hang it beside the dark wood it answers.",
       "tiers": {
         "digital": {
           "price": 9,
@@ -1543,7 +1543,7 @@
       "source_verified_by": "Clerk-fetched from NGA open data, object 797 · 2026-09-05 · VERIFY: Jacob confirms the object and the Canto V subject [D9]",
       "art": {
         "src": "/art/the-circle-of-the-lustful.jpg",
-        "alt": "The Circle of the Lustful: Paolo and Francesca — William Blake engraving for Dante's Inferno, 1827",
+        "alt": "The Circle of the Lustful: Paolo and Francesca. William Blake engraving for Dante's Inferno, 1827",
         "credit": "National Gallery of Art · open access · object 797",
         "master_url": "https://api.nga.gov/iiif/686eae54-6bba-4899-8448-a1789391560e/full/4200,/0/default.jpg",
         "print_master": "print/the-circle-of-the-lustful.pdf",
@@ -1584,7 +1584,7 @@
       "sku": "TB-SET-FNDR",
       "title": "The Founders Set",
       "strap": "Four portraits, one shelf of history.",
-      "one_line": "Washington, Franklin, Jefferson, and Hamilton — after Stuart, Duplessis, and Trumbull — with dates and painters credited on every sheet.",
+      "one_line": "Washington, Franklin, Jefferson, and Hamilton, after Stuart, Duplessis, and Trumbull, with dates and painters credited on every sheet.",
       "includes": [
         "george-washington-after-stuart",
         "benjamin-franklin-after-duplessis",
@@ -1630,7 +1630,7 @@
       "sku": "TB-SET-CANO",
       "title": "The Western Canon Set",
       "strap": "The founding documents of the West.",
-      "one_line": "Homer's invocation, the Beatitudes, the question from Matthew, Augustine's restless heart, and Dante's dark wood — the shelf that raised the men of 1776.",
+      "one_line": "Homer's invocation, the Beatitudes, the question from Matthew, Augustine's restless heart, and Dante's dark wood: the shelf that raised the men of 1776.",
       "audience": "For the study, the classical classroom, and anyone building a shelf that argues.",
       "audience_kicker": "For the shelf",
       "includes": [

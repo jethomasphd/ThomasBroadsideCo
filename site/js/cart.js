@@ -50,7 +50,7 @@
     var hit = items.find(function (it) { return it.sku === sku && it.tier === tier; });
     if (hit) { hit.qty = Math.min((hit.qty || 1) + 1, 25); } else { items.push({ sku: sku, tier: tier, qty: 1 }); }
     write(items);
-    toast('In the tube — <a href="/cart.html">view your cart</a>');
+    toast('In the tube · <a href="/cart.html">view your cart</a>');
   });
 
   // the cart page
@@ -79,7 +79,7 @@
       }).join('');
       root.innerHTML =
         '<div class="cart-lines">' + lines + '</div>' +
-        '<div class="cart-total"><span>Subtotal — shipping and any tax at checkout.<br>' +
+        '<div class="cart-total"><span>Subtotal · shipping and any tax at checkout.<br>' +
         '<span class="form-note">Free U.S. shipping on prints over $75. Everything ships in one tube.</span></span>' +
         '<span class="sum">$' + subtotal.toLocaleString() + '</span></div>' +
         '<p style="display:flex;gap:1rem;flex-wrap:wrap;">' +
