@@ -638,3 +638,78 @@ table.ledger-table { width: 100%; border-collapse: collapse; font-size: .92rem; 
 .howworks .step-no { font-family: var(--mono); font-size: .62rem; letter-spacing: .16em; text-transform: uppercase; color: var(--red); margin: 0 0 .55rem; }
 .howworks h3 { font-family: var(--display); font-weight: 400; font-size: 1.22rem; margin: 0 0 .45rem; }
 .howworks p { color: var(--ink-soft); font-size: .93rem; line-height: 1.55; margin: 0; }
+
+/* ── the mobile gallery: social traffic lands here ─────────────────────
+   Desktop is untouched above this line. On a phone the art leads
+   full-width, the words get shorter and larger, one button dominates,
+   and each room becomes a swipeable rail — the museum, made thumbable.
+   Same cream, same Caslon, same two inks: no hypermodern anywhere. */
+
+.lede--m { display: none; }
+
+@media (max-width: 760px) {
+  /* hero: art first, edge to edge, then a short confident pitch */
+  .hero { display: flex; flex-direction: column-reverse; gap: 1.5rem; padding-block: 0 2.4rem; text-align: center; }
+  .hero .exhibit { margin-inline: -1.25rem; padding: 1rem; box-shadow: 0 14px 30px -18px rgba(32,26,16,.55); }
+  .hero .exhibit__mat { padding: .8rem; }
+  .hero .kicker { margin-bottom: .6rem; }
+  .hero h1 { font-size: 2.55rem; line-height: 1.04; letter-spacing: -.015em; }
+  .hero .lede:not(.lede--m) { display: none; }
+  .hero .lede--m { display: block; font-size: 1.04rem; line-height: 1.6; max-width: 21rem; margin: .8rem auto 1.5rem; }
+  .hero .actions { flex-direction: column; gap: .7rem; }
+  .hero .actions .btn { width: 100%; padding: 1.15em 1em; font-size: .78rem; letter-spacing: .22em; }
+
+  /* the provenance strip tightens into a label, not a table */
+  .provenance { grid-template-columns: 1fr 1fr; }
+  .provenance div { padding: .8rem .9rem; }
+  .provenance div:nth-child(odd) { border-left: 0; }
+  .provenance .k { font-size: .52rem; }
+  .provenance .v { font-size: .8rem; line-height: 1.45; }
+
+  /* rooms become rails: swipe the wall, the next frame peeking in */
+  .room-head { margin-bottom: 2rem; }
+  .room-head h2 { font-size: 2.15rem; }
+  .room-head .curator { font-size: .98rem; }
+  .wall {
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 1.1rem;
+    overflow-x: auto;
+    margin-inline: -1.25rem;
+    padding: .3rem 1.25rem 1.4rem;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: 1.25rem;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+  .wall::-webkit-scrollbar { display: none; }
+  .wall > .card { flex: 0 0 74vw !important; max-width: 74vw !important; min-width: 0 !important; scroll-snap-align: start; }
+  .wall > .card--wide { flex: 0 0 88vw !important; max-width: 88vw !important; }
+  .card .exhibit { flex: 0 0 auto; }
+  .placard__title { font-size: 1rem; }
+
+  /* set bands: the framed flagship before the pitch */
+  .grid--2 > .card { order: -1; }
+
+  /* the buy bar earns its place */
+  .acquirebar { padding: .85rem 1.25rem calc(.85rem + env(safe-area-inset-bottom)); }
+  .acquirebar .from { font-size: .66rem; }
+  .acquirebar .btn { padding: .9em 1.7em; font-weight: 500; }
+
+  /* quieter chrome, the art louder */
+  .topbar { font-size: .56rem; padding: .55em 1em; }
+  .howworks { gap: 1.4rem; margin-top: 2.2rem; }
+  .howworks h3 { font-size: 1.1rem; }
+  .howworks p { font-size: .9rem; }
+}
+
+@media (max-width: 760px) {
+  /* the chrome shrinks so the art shows above the fold */
+  .masthead { gap: .5rem 1rem; padding: .7rem 1.25rem .55rem; }
+  .masthead .brand { font-size: .8rem; letter-spacing: .2em; }
+  .masthead .brand .star { margin-right: .4rem; }
+  .cartlink { font-size: .58rem; padding: .55em .9em; }
+  .masthead nav { gap: 1.15rem; }
+  .masthead nav a { font-size: .6rem; padding: .2em 0; }
+}
