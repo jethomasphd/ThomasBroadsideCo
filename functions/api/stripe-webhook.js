@@ -95,8 +95,8 @@ export async function onRequestPost(context) {
       headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
       body: JSON.stringify({
         from: env.MAIL_FROM, to: [order.email],
-        subject: `Your download — ${order.id}`,
-        text: `Thank you. Your file${digitalSkus.length > 1 ? 's are' : ' is'} ready, sized for home printing at 8.5 x 11, 11 x 17, and 18 x 24:\n\n${links}\n\nEach link is yours and allows five downloads. Print it tonight; the source and citation are set on the sheet, as on everything we print.${physical ? '\n\nThe printed sheets in your order go on our press queue and ship in a tube from Austin — a separate note follows with tracking.' : ''}\n\nThe Shop Desk\nThomas Broadside Co.\nAustin: Printed by Thomas Graphics`,
+        subject: `Your download · ${order.id}`,
+        text: `Thank you. Your file${digitalSkus.length > 1 ? 's are' : ' is'} ready, sized for home printing at 8.5 x 11, 11 x 17, and 18 x 24:\n\n${links}\n\nEach link is yours and allows five downloads. Print it tonight; the source and citation are set on the sheet, as on everything we print.${physical ? '\n\nThe printed sheets in your order go on our press queue and ship in a tube from Austin; a separate note follows with tracking.' : ''}\n\nThe Shop Desk\nThomas Broadside Co.\nAustin: Printed by Thomas Graphics`,
       }),
     }).catch(() => {});
   }

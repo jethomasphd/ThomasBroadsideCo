@@ -34,15 +34,15 @@ export async function onRequestPost(context) {
     const qty = Math.min(Math.max(parseInt(it.qty, 10) || 1, 1), 25);
     const entry = PRICES[sku];
     const t = entry && entry.tiers && entry.tiers[tier];
-    if (!t) return json({ error: `unknown item ${sku}:${tier} — refresh the store and try again` }, 400);
+    if (!t) return json({ error: `unknown item ${sku}:${tier}. Refresh the store and try again` }, 400);
     const cents = Math.round(t.price * 100);
     if (t.physical) { anyPhysical = true; physicalSubtotal += cents * qty; }
-    lines.push({ name: `${entry.title} — ${tier.charAt(0).toUpperCase()}${tier.slice(1)}`, cents, qty });
+    lines.push({ name: `${entry.title} · ${tier.charAt(0).toUpperCase()}${tier.slice(1)}`, cents, qty });
     itemStrings.push(`${sku}:${tier}:${qty}`);
   }
 
   if (!env.STRIPE_SECRET_KEY) {
-    return json({ error: 'checkout is not wired yet — the desk will take this order', desk: true }, 503);
+    return json({ error: 'checkout is not wired yet; the desk will take this order', desk: true }, 503);
   }
 
   const origin = new URL(request.url).origin;
@@ -62,7 +62,7 @@ export async function onRequestPost(context) {
     const ship = physicalSubtotal >= FREE_SHIP_OVER ? 0 : FLAT_SHIP;
     p.set('shipping_options[0][shipping_rate_data][type]', 'fixed_amount');
     p.set('shipping_options[0][shipping_rate_data][display_name]',
-      ship === 0 ? 'Free — rolled in a tube from Austin' : 'Rolled in a tube from Austin');
+      ship === 0 ? 'Free · rolled in a tube from Austin' : 'Rolled in a tube from Austin');
     p.set('shipping_options[0][shipping_rate_data][fixed_amount][amount]', String(ship));
     p.set('shipping_options[0][shipping_rate_data][fixed_amount][currency]', 'usd');
   }

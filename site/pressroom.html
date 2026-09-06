@@ -3,9 +3,9 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pressroom — Thomas Broadside Co.</title>
+<title>Pressroom · Thomas Broadside Co.</title>
 <meta name="robots" content="noindex, nofollow">
-<link rel="stylesheet" href="/css/broadside.css?v=54608b77">
+<link rel="stylesheet" href="/css/broadside.css?v=9781f5e4">
 </head>
 <body class="workroom">
 
@@ -56,7 +56,7 @@
     div.className = 'order-card' + (isEdition ? ' is-edition' : '');
     var days = Math.floor((Date.now() - new Date(o.ts).getTime()) / 86400000);
     div.innerHTML =
-      '<div><span class="oid">' + esc(o.id) + '</span> &nbsp; <span class="ostatus">' + esc(o.status) + (isEdition ? ' · EDITION — NUMBER & INSPECT' : '') + '</span></div>' +
+      '<div><span class="oid">' + esc(o.id) + '</span> &nbsp; <span class="ostatus">' + esc(o.status) + (isEdition ? ' · EDITION: NUMBER & INSPECT' : '') + '</span></div>' +
       '<div class="oitems">' + esc((o.items || '').split('|').join('  +  ')) + '</div>' +
       (o.address ? '<div class="oaddr">' + esc(o.name) + '\n' + esc(o.address) + '</div>' : '<div class="oaddr">' + esc(o.name) + ' · digital</div>') +
       (o.note ? '<div class="form-note">' + esc(o.note) + '</div>' : '') +
@@ -77,13 +77,13 @@
       input.className = 'tracking'; input.placeholder = 'tracking number';
       btns.appendChild(input);
       btn('Shipped', 'btn--solid', function () {
-        if (!input.value || input.value.trim().length < 6) { alert('Type the tracking number first — the customer gets it.'); return; }
+        if (!input.value || input.value.trim().length < 6) { alert('Type the tracking number first; the customer gets it.'); return; }
         move(o.id, 'SHIPPED', { tracking: input.value.trim() });
       });
     }
     if (o.status !== 'SHIPPED' && o.status !== 'CANCELED') {
       btn('Hold', 'btn--quiet', function () {
-        var why = prompt('One line — what does it need?');
+        var why = prompt('One line: what does it need?');
         if (why) move(o.id, 'HOLD', { note: why });
       });
     }

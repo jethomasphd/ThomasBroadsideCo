@@ -78,7 +78,7 @@ export async function onRequestPost(context) {
       headers: { authorization: `Bearer ${env.RESEND_API_KEY}`, 'content-type': 'application/json' },
       body: JSON.stringify({
         from: env.MAIL_FROM, to: [order.email],
-        subject: `Your tube is on its way — ${order.id}`,
+        subject: `Your tube is on its way · ${order.id}`,
         text: `It shipped today from the shop in Austin, rolled and capped by hand.\n\nTracking: ${order.tracking}\n\nHang it square.\n\nThe Shop Desk\nThomas Broadside Co.\nAustin: Printed by Thomas Graphics`,
       }),
     }).catch(() => {});

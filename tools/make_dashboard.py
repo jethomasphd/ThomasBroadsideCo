@@ -109,7 +109,7 @@ def main() -> None:
     low = [(sku, s) for sku, s in stock.get("sheets", {}).items()
            if (s.get("sheets_on_hand") or 0) < cfg.get("reprint_trigger_sheets", 50)]
     stamp = date.today().isoformat()
-    watermark = ('<p class="kicker" style="color:var(--red);">SAMPLE DATA — fabricated for rehearsal; '
+    watermark = ('<p class="kicker" style="color:var(--red);">SAMPLE DATA · fabricated for rehearsal; '
                  "the first real pull_ledger.py run replaces this</p>") if sample else ""
 
     page = f"""<!doctype html>
@@ -117,7 +117,7 @@ def main() -> None:
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>The Ledger — Thomas Broadside Co.</title>
+<title>The Ledger · Thomas Broadside Co.</title>
 <meta name="robots" content="noindex, nofollow">
 <link rel="stylesheet" href="/css/broadside.css">
 </head>
@@ -130,7 +130,7 @@ def main() -> None:
 <main class="wrap" style="padding-top:2.5rem;padding-bottom:4rem;">
 {watermark}
 <div class="gatebox">
-  <p class="k">The Gate — {gate['orders']} orders or ${gate['revenue_usd']:,} by {gate['date']} · {days_left} days remain</p>
+  <p class="k">The Gate · {gate['orders']} orders or ${gate['revenue_usd']:,} by {gate['date']} · {days_left} days remain</p>
   <div class="figures">Orders: {n_orders} of {gate['orders']}</div>
   <div class="bar"><i style="width:{o_pct}%;"></i></div>
   <div class="figures">Dollars: ${dollars:,} of ${gate['revenue_usd']:,}</div>
@@ -140,7 +140,7 @@ def main() -> None:
 
 <div class="statgrid">
   <div class="stat"><div class="k">Door swings</div><div class="v">{door_swings:,}</div><div class="d">{sparkline(spark_vals)}</div></div>
-  <div class="stat"><div class="k">Downloads</div><div class="v">{downloads:,}</div><div class="d">digital orders — the doorway</div></div>
+  <div class="stat"><div class="k">Downloads</div><div class="v">{downloads:,}</div><div class="d">digital orders, the doorway</div></div>
   <div class="stat"><div class="k">Orders</div><div class="v">{n_orders:,}</div><div class="d">confirmed, all tiers</div></div>
   <div class="stat"><div class="k">Dollars</div><div class="v">${dollars:,}</div><div class="d">confirmed revenue</div></div>
   <div class="stat"><div class="k">Sheets left</div><div class="v">{sheets_left:,}</div><div class="d">{len(low)} design(s) under reprint line</div></div>
@@ -152,7 +152,7 @@ def main() -> None:
   <div><h3>Designs ordered</h3>{table(design_counts, 'sku')}<h3 style="margin-top:1.5rem;">Order statuses</h3>{table(status_counts, 'status')}</div>
 </div>
 
-<p class="form-note" style="margin-top:3rem;">Five numbers; a sixth requires deleting one [D7]. Counted by our own bell — aggregate only, no cookies, DNT honored. The CSV mirror in <code>data/</code> is the book of record.</p>
+<p class="form-note" style="margin-top:3rem;">Five numbers; a sixth requires deleting one [D7]. Counted by our own bell: aggregate only, no cookies, DNT honored. The CSV mirror in <code>data/</code> is the book of record.</p>
 </main>
 </body>
 </html>
