@@ -1,0 +1,47 @@
+{
+  "format": "wide",
+  "duration": 65,
+  "segments": [
+    [
+      "opening",
+      0,
+      6
+    ],
+    [
+      "franklin",
+      6,
+      7
+    ],
+    [
+      "jefferson",
+      13,
+      7
+    ],
+    [
+      "dunlap",
+      20,
+      9
+    ],
+    [
+      "washington",
+      29,
+      9
+    ],
+    [
+      "hamilton",
+      38,
+      8
+    ],
+    [
+      "austin",
+      46,
+      12
+    ],
+    [
+      "closing",
+      58,
+      7
+    ]
+  ],
+  "captions_default": "off"
+}

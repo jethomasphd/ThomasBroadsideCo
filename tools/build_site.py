@@ -16,6 +16,7 @@ import json
 import re
 from pathlib import Path
 from string import Template
+from build_origin import build_origin
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
@@ -413,6 +414,7 @@ def build_journal(journal: dict) -> int:
   <a class="brand" href="/"><span class="star">★</span>Thomas Broadside Co.</a>
   <nav>
     <a href="/#documents">Documents</a>
+    <a href="/origins.html">Origin Story</a>
     <a href="/#quotes">Quotes</a>
     <a href="/#maps-texas">Portraits</a>
     <a href="/classroom.html">Classroom</a>
@@ -528,7 +530,8 @@ def stamp_assets() -> None:
     stamp = 0
     for rel in ("css/broadside.css", "js/bell.js", "js/cart.js",
                 "js/counter.js", "js/catalog-data.js", "js/inspect.js",
-                "css/living-press.css", "js/living-press.js"):
+                "css/living-press.css", "js/living-press.js",
+                "css/origin-story.css", "js/origin-story.js"):
         p = SITE / rel
         if p.exists():
             stamp = zlib.crc32(p.read_bytes(), stamp)
@@ -564,6 +567,7 @@ def main() -> None:
     build_catalog_data(catalog)
     n_journal = build_journal(journal)
     build_index_sections(catalog, journal)
+    build_origin()
     stamp_assets()
     print(f"built {n_products} exhibit pages, {n_journal} journal entries, "
           f"catalog data + checkout prices, index + classroom refreshed")

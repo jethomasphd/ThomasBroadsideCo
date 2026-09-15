@@ -1,0 +1,5 @@
+Pillow
+reportlab
+fonttools
+brotli
+imageio-ffmpeg

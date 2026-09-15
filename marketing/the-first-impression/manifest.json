@@ -1,0 +1,506 @@
+{
+  "campaign": "The First Impression",
+  "created": "2026-09-15",
+  "files": [
+    {
+      "path": "artwork/dunlap.png",
+      "bytes": 1944709,
+      "sha256": "8a76419f9b25465122418020ac905a2cf8b7f8903a3f99a8eee1f96b6e3d98e1",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "artwork/franklin.png",
+      "bytes": 1940791,
+      "sha256": "7a4ccdd964dacbf13fb9249e1aad78d16258b7ff87e0087136ac8ad72ab2b8cb",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "artwork/hamilton.png",
+      "bytes": 1723341,
+      "sha256": "d33c33e7fc5af1167051bd83c991e464c590dbe940f30bcd214cfa665c59a0e2",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "artwork/jefferson.png",
+      "bytes": 1946217,
+      "sha256": "a9fa2a72842d133601ce2664a78f8b626343689821c432c5888b330b1da5c28b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "artwork/washington.png",
+      "bytes": 2033781,
+      "sha256": "141843a02af8832f36b5d6b1a00e41cf00e2db6a5d55f503efdfec52e40a6071",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "audio/music_score.mp3",
+      "bytes": 3786227,
+      "sha256": "7bdf845c1af8960a243222a8dcf7ebe9e080e903b6516d5c26e11c5ca0c6de31"
+    },
+    {
+      "path": "audio/speech_austin.mp3",
+      "bytes": 166809,
+      "sha256": "3647a3a91cc91369d78b96ed07147cb03928f131c0b89256929416de17e867a3"
+    },
+    {
+      "path": "audio/speech_closing.mp3",
+      "bytes": 72351,
+      "sha256": "19157874dcd2cc65fc549f668aedab67b9f40430062f8d3732338044484c5d43"
+    },
+    {
+      "path": "audio/speech_dunlap.mp3",
+      "bytes": 119162,
+      "sha256": "aa0735ca7df3d09ae2b637b603e741e4da011a621d286ab4bba29217a783726c"
+    },
+    {
+      "path": "audio/speech_franklin.mp3",
+      "bytes": 77784,
+      "sha256": "feeb6616bea1c955140e96b9a148ee93f02dc8c22906efb74a98677572fbbc2d"
+    },
+    {
+      "path": "audio/speech_hamilton.mp3",
+      "bytes": 98264,
+      "sha256": "68cb5f2cc36bc96a567d63a03ab5ec6fcd324cd0d09e07f361cf51ad50cf3473"
+    },
+    {
+      "path": "audio/speech_jefferson.mp3",
+      "bytes": 81128,
+      "sha256": "93caac5a7ff5e298a1734b2b271bde300d78355abface3c0463f172a1a356430"
+    },
+    {
+      "path": "audio/speech_opening.mp3",
+      "bytes": 67335,
+      "sha256": "71f64db2de2447e2b39842d861a45ef6a0070c22057b220258ef80747e7c9728"
+    },
+    {
+      "path": "audio/speech_washington.mp3",
+      "bytes": 115400,
+      "sha256": "e3873218a62839c4f7f420a614d647f882be883d4a92872fbb1db688a95a9309"
+    },
+    {
+      "path": "CAMPAIGN.md",
+      "bytes": 9519,
+      "sha256": "6b0342144b75e0ccc0625ee9e3a9973855ab2070664e6a997856fe92d7bd2c75"
+    },
+    {
+      "path": "email/july-fourth-preview.html",
+      "bytes": 3728,
+      "sha256": "2d7b240c63c98e5b4b3cde1db62d199665b9a8bdd3e3cba6a417da49b2acf9b1"
+    },
+    {
+      "path": "email/july-fourth.eml",
+      "bytes": 170360,
+      "sha256": "7e063069d6cc2ce93f3dfc0cf7efc6b409f8cd7cae674065619319240f0c7dac"
+    },
+    {
+      "path": "email/july-fourth.html",
+      "bytes": 3751,
+      "sha256": "0046c310df89fc27f83793eeffc61dab16bfeda4cec606cba2fa47a7869c9a7a"
+    },
+    {
+      "path": "email/july-fourth.txt",
+      "bytes": 1177,
+      "sha256": "ce944d6f60e2b41c19a27c6bf66afd1b801d8a4c365c500067f7e024b8201ea5"
+    },
+    {
+      "path": "email/origin-story-preview.html",
+      "bytes": 3850,
+      "sha256": "7bf6a476c62e499713786ff3d137840894d11b531f3b545f0d9f4b5be71caffb"
+    },
+    {
+      "path": "email/origin-story.eml",
+      "bytes": 170670,
+      "sha256": "50f964e9e64bb87751ba1aefe8602451c53999912635de36e6e15f78b3933cae"
+    },
+    {
+      "path": "email/origin-story.html",
+      "bytes": 3873,
+      "sha256": "0c30013babbf015085ad348d7fc2a08b90f09cb3777ab5362233ac61a5fb60b9"
+    },
+    {
+      "path": "email/origin-story.txt",
+      "bytes": 1304,
+      "sha256": "ccc7f0bdd8434a111b77351c726068e2db3deefef2f02532f2f0e660d36ec76f"
+    },
+    {
+      "path": "email/partner-introduction-preview.html",
+      "bytes": 3825,
+      "sha256": "f3e49f7388579121642b13ebe227aa6489347b6a1be85942e3b734f2f274c09d"
+    },
+    {
+      "path": "email/partner-introduction.eml",
+      "bytes": 170569,
+      "sha256": "f2e68e9e6af99a93681bd1e47fa0a75a635546f152150ee077c2a453d9ccc9e3"
+    },
+    {
+      "path": "email/partner-introduction.html",
+      "bytes": 3848,
+      "sha256": "6962ceaaf3897a29cb325a62dd2f4ae37f49d5d0210527bf5c311273f29c009a"
+    },
+    {
+      "path": "email/partner-introduction.txt",
+      "bytes": 1273,
+      "sha256": "24e97cb931789bcf946d0009b5b76a251b8e4d8bcd7fb007362458cd525b0bd1"
+    },
+    {
+      "path": "films/the-first-impression-15s-teaser.mp4",
+      "bytes": 4429250,
+      "sha256": "29d2597efcad3481d0bf64b19a1c29f766ed1d82c44c2019bad48db9bfcbd883"
+    },
+    {
+      "path": "films/the-first-impression-65s.mp4",
+      "bytes": 28313689,
+      "sha256": "b75f3c49905c4c7581ced27c6546feec49c124fb9556c353677c2196ce980d08"
+    },
+    {
+      "path": "films/the-first-impression-65s.vtt",
+      "bytes": 979,
+      "sha256": "2f3c0230cb7d4262e9fcd3a36a06191cef2e6f5717044e4ba0ae6ab9ee410005"
+    },
+    {
+      "path": "films/the-printers-night-30s-square.mp4",
+      "bytes": 9154760,
+      "sha256": "80664b7fe5687e49a8e731aefaf22daea39874e5ded3736bae9cc040b3e62201"
+    },
+    {
+      "path": "films/the-printers-night-30s-square.vtt",
+      "bytes": 454,
+      "sha256": "561b9703d54b690dd795b6be7886d2fca7b005e20a0704136eeb9b45dff3815e"
+    },
+    {
+      "path": "films/the-printers-night-30s-vertical.mp4",
+      "bytes": 9624740,
+      "sha256": "107d7ba9cddcd89aa6db5e9bad525654d93ebc9c6bc15a36bfbd4c0d2800653c"
+    },
+    {
+      "path": "films/the-printers-night-30s-vertical.vtt",
+      "bytes": 454,
+      "sha256": "561b9703d54b690dd795b6be7886d2fca7b005e20a0704136eeb9b45dff3815e"
+    },
+    {
+      "path": "index.html",
+      "bytes": 7519,
+      "sha256": "1b7e1c943794f7dd5fee7c59c9fc242c9f20457b151b500fdd222f7161ae03fb"
+    },
+    {
+      "path": "links.json",
+      "bytes": 2498,
+      "sha256": "f01ef31d09dd16924c03bb68ec0ee4cec9a71e409572113f161a4def6bd8f8b6"
+    },
+    {
+      "path": "print/the-first-impression-field-guide.pdf",
+      "bytes": 11168397,
+      "sha256": "3c93564949a52a5966587079c2c11a53d290da1f1e30a78d3942d3477a2438cd"
+    },
+    {
+      "path": "print/the-first-impression-partner-sheet.pdf",
+      "bytes": 1067163,
+      "sha256": "e8f111d194a8e36659c96e162dc649552ca4f7299120a6f05c293f7fea9424a1"
+    },
+    {
+      "path": "print/the-first-impression-postcard-6x9.pdf",
+      "bytes": 706098,
+      "sha256": "6f0d014208ce97ca238fe4bad38457773c44d2c8f82f73d3842526183d54bc89"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 8186,
+      "sha256": "ed40953d3f20648f59cb4579f5e901b6be19854d6153103dd4cb109e12b28463"
+    },
+    {
+      "path": "QA.md",
+      "bytes": 2563,
+      "sha256": "bf7a14a16338bbbf7bdbe19cd2235f3d25a1523a5e84ec47a0d2d71c2b3293ab"
+    },
+    {
+      "path": "README.md",
+      "bytes": 6813,
+      "sha256": "d528770b02134f620436ecb9dafc9f764b5dc8db255331d132b51da89e2bf19a"
+    },
+    {
+      "path": "social/01-cover.png",
+      "bytes": 138737,
+      "sha256": "b324bf9e59d1c272d6ca33be88ef5cb32b0ff1c18bb8205832e9d9e372f08afe",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "path": "social/02-franklin.png",
+      "bytes": 148611,
+      "sha256": "cf4fca3906d70dc5446b1a2608b5264130d3b7a4c7e08a0e5426396bc1189353",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "path": "social/03-jefferson.png",
+      "bytes": 149261,
+      "sha256": "690590269f765267dfd52f969193fa2157aea7db0bb668c93d80c7f0d55abff3",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "path": "social/04-dunlap.png",
+      "bytes": 151571,
+      "sha256": "329a98c71b4b9612daca5ddcb988d03d910e1f012eb2126e574c69182cfb1142",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "path": "social/05-washington.png",
+      "bytes": 152152,
+      "sha256": "03d3dff266d50db81958fb6dd3d253c929146f3d51686d08d32276c9acb489da",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "path": "social/06-hamilton.png",
+      "bytes": 132619,
+      "sha256": "8ecb549b46da63de0eba0c618c6a8241ef13cd1b8857fd4c73896c64c713b722",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "path": "social/07-austin.png",
+      "bytes": 150942,
+      "sha256": "3582d694dec49348702d5e0510ad19ffe4cc66518333a9e9d110cdc024caf0f7",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "path": "social/08-closing.png",
+      "bytes": 65979,
+      "sha256": "32c37e73620b1965fdc8e9552b96f981e5056a58e0700d9f97bdda344aabe0a0",
+      "width": 1080,
+      "height": 1350
+    },
+    {
+      "path": "social/09-linkedin-share.png",
+      "bytes": 100763,
+      "sha256": "49ac2476032000ff4e24a96bf5a85a5ba065f004f6227d03052869d22757ca1a",
+      "width": 1200,
+      "height": 630
+    },
+    {
+      "path": "source/austin.jpg",
+      "bytes": 255209,
+      "sha256": "0e78cacbf3604857a144d5e8ab7ec65d3a893dd15ab086cf494d61db6f0657d1",
+      "width": 1672,
+      "height": 942
+    },
+    {
+      "path": "source/build_email.py",
+      "bytes": 6927,
+      "sha256": "da187c0ba7252eb168830007a0ea1332fa356aa8fd14a6ec2e4e6aaa97b77894"
+    },
+    {
+      "path": "source/build_media.py",
+      "bytes": 8456,
+      "sha256": "eaa08a492df76fd544da26e918d3df2b2419673f74c9b31a2b4403917f3ea140"
+    },
+    {
+      "path": "source/build_print.py",
+      "bytes": 11689,
+      "sha256": "0dea5f97545e6dda005d516c826280b68cb0e996384ae2a3f9f714b2d308a60d"
+    },
+    {
+      "path": "source/campaign-art.html",
+      "bytes": 7132,
+      "sha256": "70a5be2cb23b9be29b70070590af65b0df68ac6145b59a15a9fb46ac2337fbf5"
+    },
+    {
+      "path": "source/clips/austin.mp4",
+      "bytes": 950339,
+      "sha256": "17969862f37352b8a18dd05049cff20fee3e32572ba8dcb172619c8f2458096d"
+    },
+    {
+      "path": "source/clips/dunlap.mp4",
+      "bytes": 7380845,
+      "sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60"
+    },
+    {
+      "path": "source/clips/franklin.mp4",
+      "bytes": 5754136,
+      "sha256": "f757419c2041cf9965d3f6311930ca984f5e2fa09ebc1b9b29d1bae6a4c465c6"
+    },
+    {
+      "path": "source/clips/hamilton.mp4",
+      "bytes": 5557521,
+      "sha256": "09ed2429f62579938e3dbf9270329e5c7dcfce4e94f6e4d490ca509ddecbc8a0"
+    },
+    {
+      "path": "source/clips/jefferson.mp4",
+      "bytes": 6498447,
+      "sha256": "0c89028d9efeedcbb4bbe6a783ea1f06eff22774567c9947b449168ee4c95198"
+    },
+    {
+      "path": "source/clips/washington.mp4",
+      "bytes": 6336477,
+      "sha256": "f7df26bef29cf48cf25193b8d6acd0ad896a7537312fcdb8adb47dd7ff2f323f"
+    },
+    {
+      "path": "source/dunlap-original.jpg",
+      "bytes": 461760,
+      "sha256": "b4681177aa77245ef184242147ab2582b196bff491aa21032986d53eda09db29",
+      "width": 671,
+      "height": 850
+    },
+    {
+      "path": "source/endcard-square.png",
+      "bytes": 58974,
+      "sha256": "f4a5913a7f3f5d146b01a9d578ff5f326207d96ff2eca6e34b09fb6427626594",
+      "width": 1080,
+      "height": 1080
+    },
+    {
+      "path": "source/endcard-vertical.png",
+      "bytes": 93609,
+      "sha256": "ae767eabafee1c7795eaa77d0d237f7640ee0289084de5130284ae86fbc4402a",
+      "width": 1080,
+      "height": 1920
+    },
+    {
+      "path": "source/endcard-wide.png",
+      "bytes": 100589,
+      "sha256": "0ea812698266d338710dc3f1ce15e55bd6ed5f4750475826cdbef17cb5ad666e",
+      "width": 1920,
+      "height": 1080
+    },
+    {
+      "path": "source/fonts/IBMPlexMono-400.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "source/fonts/IBMPlexMono-500.woff2",
+      "bytes": 14888,
+      "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+    },
+    {
+      "path": "source/fonts/IBMPlexMono-OFL.txt",
+      "bytes": 4362,
+      "sha256": "d741e57d5f865e294df801f96b7b5161a88b211df65887e4358d271c9fc5fb4f"
+    },
+    {
+      "path": "source/fonts/LibreCaslonDisplay-400.woff2",
+      "bytes": 24236,
+      "sha256": "84267e937417f10dff37df818c5ef7f1e9f2e6a703e03c2dd286d3320af53269"
+    },
+    {
+      "path": "source/fonts/LibreCaslonDisplay-OFL.txt",
+      "bytes": 4402,
+      "sha256": "78c9f56e0d8a7ad7b9d26842a8eae728337a8671d8ddc6e889fa10645935dc7b"
+    },
+    {
+      "path": "source/fonts/LibreCaslonText-400.woff2",
+      "bytes": 24972,
+      "sha256": "29310efc1007f608549e29ff78fa5ce8dffe0c1aa82c21b082d1de9dfc7334f0"
+    },
+    {
+      "path": "source/fonts/LibreCaslonText-400i.woff2",
+      "bytes": 28020,
+      "sha256": "20eac03c053229ce982a337fce41f12e42e18d33c4e29d8e89188ef4fa970425"
+    },
+    {
+      "path": "source/fonts/LibreCaslonText-700.woff2",
+      "bytes": 25260,
+      "sha256": "2819c345e64c715cc4235a5e9c3576351d28b4c0bbbeb934fcbd50ceab0406a0"
+    },
+    {
+      "path": "source/fonts/LibreCaslonText-OFL.txt",
+      "bytes": 4403,
+      "sha256": "92483eac22aa610aeb83ee246c22a1040f8ce4bdd7e68273fd89a2b06ba04338"
+    },
+    {
+      "path": "source/generation-record.json",
+      "bytes": 6843,
+      "sha256": "f964639dc894acf11361b50779ca549cd496d642802804d95b3bc99ed7ce8b64"
+    },
+    {
+      "path": "source/image-prompts.json",
+      "bytes": 7520,
+      "sha256": "ae563a7ac4f19928eb9a41a8849f1db9027b7507d03ae983422ef5cd564ee038"
+    },
+    {
+      "path": "source/jefferson-draft.jpg",
+      "bytes": 321467,
+      "sha256": "9769e1fab97aaada3022940e7bc7f14820ba0444d2d1e03d7971e2416d455700",
+      "width": 500,
+      "height": 769
+    },
+    {
+      "path": "source/products/alexander-hamilton-after-trumbull.jpg",
+      "bytes": 1463135,
+      "sha256": "bf07a20d8f758d08684ad00a5cfc51862f679add5b011dee459e891f9fab0b9c",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "path": "source/products/benjamin-franklin-after-duplessis.jpg",
+      "bytes": 695217,
+      "sha256": "d772fa3a660b03a4338b4de92aa59564093995288db7b1a8d0fe3da34c3e2d32",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "path": "source/products/declaration-of-independence.jpg",
+      "bytes": 307005,
+      "sha256": "95035a8a68f51a330ea36b6f240aa36a65df87397cdcfbf9b486c8c8ccaa0b47",
+      "width": 1950,
+      "height": 2600
+    },
+    {
+      "path": "source/products/george-washington-after-stuart.jpg",
+      "bytes": 1460251,
+      "sha256": "c5c6f0354a499c8e2d3371e57974567a762ce31a6bf87eb2e02aba7157751bc6",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "path": "source/products/thomas-jefferson-after-stuart.jpg",
+      "bytes": 1531100,
+      "sha256": "5db9fb72626d14fc7295ba278470583850f38226975674a4697a872d826683de",
+      "width": 2400,
+      "height": 3200
+    },
+    {
+      "path": "source/requirements-design.txt",
+      "bytes": 49,
+      "sha256": "03e49f1a4e89a9523bfb4bb80636f4f6ba674dd567a7ee48a72f788a8c5c8de0"
+    },
+    {
+      "path": "source/story.json",
+      "bytes": 6770,
+      "sha256": "2f398bfe90ec4f8682b5f53b6ffd16a78cf25e0829d30497f119a9e146eb1a4e"
+    },
+    {
+      "path": "source/the-first-impression-15s-teaser-timeline.json",
+      "bytes": 235,
+      "sha256": "4e342f54ac5db11a0aaf08b987a5c19a4aeed925d30ca39d76d3b38f6c20609f"
+    },
+    {
+      "path": "source/the-first-impression-65s-timeline.json",
+      "bytes": 478,
+      "sha256": "da34a988b6c4f2a02bed820b1e135f89ee2fbd9902730f2f8c0eeb33116a0a03"
+    },
+    {
+      "path": "source/the-printers-night-30s-square-timeline.json",
+      "bytes": 285,
+      "sha256": "010ee9fdf45356b6b73e9505851b248dbbce222ada5883785d8f050c192cfe32"
+    },
+    {
+      "path": "source/the-printers-night-30s-vertical-timeline.json",
+      "bytes": 287,
+      "sha256": "24827334fc73a60560bcd6f4a1e7cfdaeb4e8d41cf8613b9dfb529ef525a4112"
+    },
+    {
+      "path": "source/video-prompts.json",
+      "bytes": 4877,
+      "sha256": "a06fe912e1f8349a98541e26647e0e61d29b87363499e8cf9d6e266083b714dc"
+    }
+  ]
+}

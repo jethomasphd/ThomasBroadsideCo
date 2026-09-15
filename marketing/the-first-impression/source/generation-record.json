@@ -1,0 +1,82 @@
+{
+  "videos": {
+    "dunlap": {
+      "task_id": "92390939-f383-4bfa-9ee6-b9d526cf4d73",
+      "prompt": "A single continuous photorealistic shot in an eighteenth-century print shop. Preserve the starting image's wooden press, printer, paper, window and candlelight. A very slow, restrained camera push toward the press. The printer's shoulders move with a quiet breath; his hand makes one small natural adjustment on the iron press bar, then rests. The candles flicker gently. The sheet stays flat on the press bed; the timber structure stays rigid. Museum-film realism, subtle physical motion, no fast mechanical cycle, no camera orbit, no talking, no new objects, no writing appearing on the paper, no text overlays. Warm candlelight and cool dawn remain consistent throughout. This is a dramatized historical reconstruction.",
+      "kind": "video"
+    },
+    "franklin": {
+      "task_id": "93750df6-b05d-48f4-a4f0-e3eb000d0771",
+      "prompt": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Benjamin Franklin quietly studies the sheet. His eyes move along the paper, he blinks once, and his head lowers almost imperceptibly. Both hands keep their same grip and shape. The candle flame has a gentle natural flicker. No speaking, no page turn, no dramatic gesture.",
+      "kind": "video"
+    },
+    "jefferson": {
+      "task_id": "6c72c420-314a-492a-88db-131b1f2d2c61",
+      "prompt": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Thomas Jefferson makes two or three short, careful strokes with the quill on his draft, pauses to think, and looks over the line. The page and desk remain rigid and coherent, the pen stays in his hand, no letters visibly materialize. Subtle breathing and a blink; no speaking. Light remains stable.",
+      "kind": "video"
+    },
+    "washington": {
+      "task_id": "b1ab183c-3637-4d4e-acac-20821ddf2bdb",
+      "prompt": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Washington quietly listens beside the officer holding the broadside. The officer's eyes follow the page, his mouth moves slightly as in a public reading, and the paper edge stirs lightly in a breeze. Washington stays attentive, with a natural blink. The nearby listeners make tiny shifts of attention. Keep every face and hand stable, no crowd growing or marching, no weapons raised. A quiet moment of shared attention.",
+      "kind": "video"
+    },
+    "hamilton": {
+      "task_id": "4d329bdf-9651-46b9-8350-60a45bdfa04e",
+      "prompt": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Alexander Hamilton writes a few short natural quill strokes, pauses, and slightly raises his eyes toward the newspaper sheet at the side of the desk. Preserve his face and the pen grip exactly. The papers stay in place; the candle flickers gently. No dialogue, no elaborate gesturing, no page turn.",
+      "kind": "video"
+    }
+  },
+  "audio": {
+    "opening": {
+      "task_id": "d3d26135-7cff-48d6-bc8b-d71a1d0ecf02",
+      "prompt": "Before it was a relic, it was news. And news needed a printer.",
+      "kind": "audio"
+    },
+    "franklin": {
+      "task_id": "f79ec1aa-4d17-4e31-9d5d-3f5f0f328fd0",
+      "prompt": "Benjamin Franklin knew the power of print long before he helped shape the Declaration.",
+      "kind": "audio"
+    },
+    "jefferson": {
+      "task_id": "e7f3eaf6-2d8e-45e0-9157-6a6884b7cfe5",
+      "prompt": "Thomas Jefferson drafted the words. His colleagues and Congress revised them.",
+      "kind": "audio"
+    },
+    "dunlap": {
+      "task_id": "daa86bf7-f81f-4629-b240-25cd6cb3be00",
+      "prompt": "On the night of July fourth, seventeen seventy-six, John Dunlap's shop set the Declaration in type.",
+      "kind": "audio"
+    },
+    "washington": {
+      "task_id": "74704d2f-15ff-41a9-b8ab-6c8ab1f25c1f",
+      "prompt": "Copies traveled. On July ninth, Washington had the Declaration read to his troops in New York.",
+      "kind": "audio"
+    },
+    "hamilton": {
+      "task_id": "54e08ea4-8606-4624-8724-2411fcc01e5b",
+      "prompt": "A decade later, Hamilton, Madison, and Jay used print to argue for the Constitution as Publius.",
+      "kind": "audio"
+    },
+    "austin": {
+      "task_id": "ec163a7b-8f16-4ff5-b79b-a1e72bec64c2",
+      "prompt": "Different hands. Different roles. One enduring idea: public words must reach the public. We carry that conviction onto our press in Austin.",
+      "kind": "audio"
+    },
+    "closing": {
+      "task_id": "36a2aaed-fe18-4d7c-bc4b-f8eec0c27ad1",
+      "prompt": "Read the words. Keep the source. Make your own first impression.",
+      "kind": "audio"
+    }
+  },
+  "music": {
+    "task_id": "70872a13-af46-4161-972e-1febaf3ae582",
+    "prompt": "Instrumental chamber-cinema score, no vocals, no lyrics. Intimate, thoughtful, quietly stirring. Solo cello, viola, a very spare chamber string ensemble and gentle plucked strings. 68 BPM, restrained natural acoustic room, no synths, no martial drums, no brass fanfare, no recognizable anthem or borrowed melody. Begin with a solitary warm cello figure and lots of air for a narrator, slowly introduce a second line and gentle harmonic lift around the middle, end with a dignified unresolved-to-resolved cadence. The feeling is human hands setting type in a candlelit print shop, then words going out into the world. Premium historical museum film, hopeful without triumphal bombast. Keep dynamics controlled for spoken narration.",
+    "kind": "audio"
+  },
+  "credits": {
+    "starting": 2250,
+    "remaining_after_generation": 1625,
+    "used": 625,
+    "note": "Generation tools reported these account balances during this campaign. No purchase or subscription change was performed."
+  }
+}
