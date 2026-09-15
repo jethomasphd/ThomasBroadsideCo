@@ -1,0 +1,27 @@
+{
+  "format": "vertical",
+  "duration": 30,
+  "segments": [
+    [
+      "opening",
+      0,
+      6
+    ],
+    [
+      "dunlap",
+      6,
+      10
+    ],
+    [
+      "washington",
+      16,
+      9
+    ],
+    [
+      "closing",
+      25,
+      5
+    ]
+  ],
+  "captions_default": "off"
+}

@@ -1,0 +1,51 @@
+{
+  "provider": "Runway",
+  "model": "gen-4.5",
+  "format": "16:9, 1080p, 10-second starting-frame clips; no generated dialogue",
+  "prompts": {
+    "dunlap": "A single continuous photorealistic shot in an eighteenth-century print shop. Preserve the starting image's wooden press, printer, paper, window and candlelight. A very slow, restrained camera push toward the press. The printer's shoulders move with a quiet breath; his hand makes one small natural adjustment on the iron press bar, then rests. The candles flicker gently. The sheet stays flat on the press bed; the timber structure stays rigid. Museum-film realism, subtle physical motion, no fast mechanical cycle, no camera orbit, no talking, no new objects, no writing appearing on the paper, no text overlays. Warm candlelight and cool dawn remain consistent throughout. This is a dramatized historical reconstruction.",
+    "franklin": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Benjamin Franklin quietly studies the sheet. His eyes move along the paper, he blinks once, and his head lowers almost imperceptibly. Both hands keep their same grip and shape. The candle flame has a gentle natural flicker. No speaking, no page turn, no dramatic gesture.",
+    "jefferson": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Thomas Jefferson makes two or three short, careful strokes with the quill on his draft, pauses to think, and looks over the line. The page and desk remain rigid and coherent, the pen stays in his hand, no letters visibly materialize. Subtle breathing and a blink; no speaking. Light remains stable.",
+    "washington": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Washington quietly listens beside the officer holding the broadside. The officer's eyes follow the page, his mouth moves slightly as in a public reading, and the paper edge stirs lightly in a breeze. Washington stays attentive, with a natural blink. The nearby listeners make tiny shifts of attention. Keep every face and hand stable, no crowd growing or marching, no weapons raised. A quiet moment of shared attention.",
+    "hamilton": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Alexander Hamilton writes a few short natural quill strokes, pauses, and slightly raises his eyes toward the newspaper sheet at the side of the desk. Preserve his face and the pen grip exactly. The papers stay in place; the candle flickers gently. No dialogue, no elaborate gesturing, no page turn."
+  },
+  "narration": {
+    "voice": "Benjamin",
+    "model": "eleven_multilingual_v2",
+    "speed": 0.94,
+    "lines": [
+      [
+        "opening",
+        "Before it was a relic, it was news. And news needed a printer."
+      ],
+      [
+        "franklin",
+        "Benjamin Franklin knew the power of print long before he helped shape the Declaration."
+      ],
+      [
+        "jefferson",
+        "Thomas Jefferson drafted the words. His colleagues and Congress revised them."
+      ],
+      [
+        "dunlap",
+        "On the night of July fourth, seventeen seventy-six, John Dunlap's shop set the Declaration in type."
+      ],
+      [
+        "washington",
+        "Copies traveled. On July ninth, Washington had the Declaration read to his troops in New York."
+      ],
+      [
+        "hamilton",
+        "A decade later, Hamilton, Madison, and Jay used print to argue for the Constitution as Publius."
+      ],
+      [
+        "austin",
+        "Different hands. Different roles. One enduring idea: public words must reach the public. We carry that conviction onto our press in Austin."
+      ],
+      [
+        "closing",
+        "Read the words. Keep the source. Make your own first impression."
+      ]
+    ]
+  }
+}

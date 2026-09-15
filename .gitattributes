@@ -5,3 +5,5 @@ marketing/history-has-a-pulse/** -text
 *.mp3 binary
 *.woff2 binary
 *.eml binary
+
+marketing/the-first-impression/** -text

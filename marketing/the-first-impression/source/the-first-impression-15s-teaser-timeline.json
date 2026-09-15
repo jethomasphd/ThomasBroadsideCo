@@ -1,0 +1,22 @@
+{
+  "format": "vertical",
+  "duration": 15,
+  "segments": [
+    [
+      "opening",
+      0,
+      6
+    ],
+    [
+      "dunlap",
+      6,
+      4
+    ],
+    [
+      "closing",
+      10,
+      5
+    ]
+  ],
+  "captions_default": "off"
+}
