@@ -6,3 +6,6 @@ __pycache__/
 node_modules/
 .DS_Store
 art_masters/
+
+# Local multimedia design bench
+/work/

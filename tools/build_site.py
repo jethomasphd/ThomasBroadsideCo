@@ -24,9 +24,9 @@ TPL = Path(__file__).resolve().parent / "templates"
 ROOMS = {
     "documents": ("Room I · The Documents", "/#documents"),
     "quotes": ("Room II · The Cited Quotes", "/#quotes"),
-    "founders": ("Room III · The Portraits", "/#founders"),
-    "maps": ("Room III · Maps", "/#founders"),
-    "texas": ("Room III · Texas", "/#founders"),
+    "founders": ("Room III · The Portraits", "/#maps-texas"),
+    "maps": ("Room III · Maps", "/#maps-texas"),
+    "texas": ("Room III · Texas", "/#maps-texas"),
     "canon": ("Room IV · The Western Canon", "/#canon"),
     "classroom": ("The Classroom Room", "/classroom.html"),
     "sets": ("The Classroom Room", "/classroom.html"),
@@ -414,7 +414,7 @@ def build_journal(journal: dict) -> int:
   <nav>
     <a href="/#documents">Documents</a>
     <a href="/#quotes">Quotes</a>
-    <a href="/#founders">Portraits</a>
+    <a href="/#maps-texas">Portraits</a>
     <a href="/classroom.html">Classroom</a>
     <a href="/press.html">The Press</a>
     <a href="/journal/">Journal</a>
@@ -527,7 +527,8 @@ def stamp_assets() -> None:
     import zlib
     stamp = 0
     for rel in ("css/broadside.css", "js/bell.js", "js/cart.js",
-                "js/counter.js", "js/catalog-data.js", "js/inspect.js"):
+                "js/counter.js", "js/catalog-data.js", "js/inspect.js",
+                "css/living-press.css", "js/living-press.js"):
         p = SITE / rel
         if p.exists():
             stamp = zlib.crc32(p.read_bytes(), stamp)
