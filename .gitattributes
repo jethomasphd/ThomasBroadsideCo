@@ -1,0 +1,7 @@
+# Campaign checksums describe exact distributable bytes, including EML newlines.
+marketing/history-has-a-pulse/** -text
+*.pdf binary
+*.mp4 binary
+*.mp3 binary
+*.woff2 binary
+*.eml binary

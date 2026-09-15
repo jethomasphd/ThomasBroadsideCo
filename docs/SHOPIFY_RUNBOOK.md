@@ -1,5 +1,7 @@
 # The Shopify Runbook — turning the store on, hand in hand
 
+> **Current status - September 15, 2026:** Jacob confirms the original site remains live. Shopify migration is deferred until the visual work is ready. The living-press implementation is in `site/`; the finished campaign is in `marketing/history-has-a-pulse/`. The Shopify section in `shopify/theme/` is a later migration package.
+
 Jacob's ruling of 2026-09-05 (Register, D2 amendment): the storefront
 moves to Shopify; this repo remains the factory and the book of record.
 Work these steps **in order** — the order matters once, at the DNS step,

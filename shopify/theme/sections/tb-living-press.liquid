@@ -1,0 +1,35 @@
+{% comment %}Portable campaign section. Install later, after the original site's visual review.{% endcomment %}
+{{ 'tb-living-press.css' | asset_url | stylesheet_tag }}
+<style>
+@font-face{font-family:'Libre Caslon Display';src:url({{ 'LibreCaslonDisplay-400.woff2' | asset_url }}) format('woff2');font-display:swap}
+@font-face{font-family:'Libre Caslon Text';src:url({{ 'LibreCaslonText-400.woff2' | asset_url }}) format('woff2');font-display:swap}
+@font-face{font-family:'IBM Plex Mono';src:url({{ 'IBMPlexMono-400.woff2' | asset_url }}) format('woff2');font-display:swap}
+#shopify-section-{{ section.id }}{--display:'Libre Caslon Display',Georgia,serif;--serif:'Libre Caslon Text',Georgia,serif;--mono:'IBM Plex Mono',monospace;--ink:#201a10;--wall:#f1ece0;--paper:#faf6ea;--red:#9e3123;font-family:var(--serif)}
+#shopify-section-{{ section.id }} *{box-sizing:border-box}
+#shopify-section-{{ section.id }} .press-actions a{text-decoration:none;font-family:var(--mono)}
+</style>
+{% liquid
+  assign wide = section.settings.wide_video.sources | where: 'format', 'mp4' | first
+  assign portrait = section.settings.portrait_video.sources | where: 'format', 'mp4' | first
+  assign film = section.settings.shop_film.sources | where: 'format', 'mp4' | first
+  assign destination = section.settings.product.url | default: routes.all_products_collection_url
+%}
+<tb-living-press>
+  <section class="press-hero" aria-labelledby="press-title-{{ section.id }}">
+    <div class="press-hero__media" aria-hidden="true">
+      {% if section.settings.poster != blank %}
+        {{ section.settings.poster | image_url: width: 1920 | image_tag: loading: 'eager', fetchpriority: 'high', alt: '' }}
+      {% else %}
+        <img src="{{ 'tb-press-poster.jpg' | asset_url }}" width="1672" height="941" alt="" fetchpriority="high">
+      {% endif %}
+      {% if wide != blank %}<video data-loop data-desktop="{{ wide.url }}" data-mobile="{{ portrait.url | default: wide.url }}" muted loop playsinline preload="none" tabindex="-1"></video>{% endif %}
+    </div><div class="press-hero__veil"></div>
+    <div class="press-hero__body"><p class="press-eyebrow"><span class="press-dot" aria-hidden="true"></span>A working press. Austin, Texas.</p><h1 id="press-title-{{ section.id }}">History has<br>a <em>pulse.</em></h1><p class="press-hero__intro">The Declaration. The founding documents. Words that still move us, printed on our own press by a family shop in Austin, Texas.</p><div class="press-actions"><a class="btn" href="{{ destination }}">Discover the Declaration ↗</a>{% if film != blank %}<button class="press-play" data-open hidden>▷ Watch the shop film · 24 sec</button>{% endif %}</div></div>
+    <div class="press-hero__foot"><a class="press-feature" href="{{ destination }}"><span><small>The first impression / No. 01</small><strong>The Declaration of Independence ↗</strong></span></a><div class="press-controls"><p>From the shop floor<br>Thomas Graphics · Austin</p>{% if wide != blank %}<button data-toggle hidden aria-label="Play press motion">▶</button>{% endif %}</div></div>
+  </section>
+  {% if film != blank %}<dialog class="press-film" aria-labelledby="film-title-{{ section.id }}"><div class="press-film__top"><span id="film-title-{{ section.id }}">HISTORY HAS A PULSE / THE SHOP FILM</span><button class="press-film__close" data-close>Close ×</button></div><video data-film data-src="{{ film.url }}" controls playsinline preload="none" aria-label="Working presses and the Declaration broadside"><track kind="captions" src="{{ 'tb-shop-film.vtt' | asset_url }}" srclang="en" label="English" default></video><div class="press-film__bottom"><p>The sights and sounds of our working shop. Press and finishing footage, followed by the Declaration design. No narration.</p><a href="{{ destination }}">Discover the Declaration ↗</a></div></dialog>{% endif %}
+</tb-living-press>
+<script src="{{ 'tb-living-press.js' | asset_url }}" defer></script>
+{% schema %}
+{"name":"Thomas / Living press","tag":"section","limit":1,"settings":[{"type":"product","id":"product","label":"Declaration product"},{"type":"image_picker","id":"poster","label":"Press poster (optional override)"},{"type":"video","id":"wide_video","label":"Wide press loop"},{"type":"video","id":"portrait_video","label":"Portrait press loop"},{"type":"video","id":"shop_film","label":"24-second shop film"}],"presets":[{"name":"Thomas / Living press"}]}
+{% endschema %}
