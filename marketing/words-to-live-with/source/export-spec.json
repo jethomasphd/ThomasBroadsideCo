@@ -1,0 +1,86 @@
+[
+  {
+    "query": "?design=cover",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/01-cover.png"
+  },
+  {
+    "query": "?design=homecoming",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/02-homecoming.png"
+  },
+  {
+    "query": "?design=mercy",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/03-mercy.png"
+  },
+  {
+    "query": "?design=soul",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/04-soul.png"
+  },
+  {
+    "query": "?design=rest",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/05-rest.png"
+  },
+  {
+    "query": "?design=way",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/06-way.png"
+  },
+  {
+    "query": "?design=christ",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/07-christ.png"
+  },
+  {
+    "query": "?design=aristotle",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/08-aristotle.png"
+  },
+  {
+    "query": "?design=blake",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/09-blake.png"
+  },
+  {
+    "query": "?design=end",
+    "width": 1080,
+    "height": 1350,
+    "output": "social/10-end.png"
+  },
+  {
+    "query": "?design=cover&format=share",
+    "width": 1200,
+    "height": 630,
+    "output": "social/11-share.png"
+  },
+  {
+    "query": "?design=end&format=wide",
+    "width": 1920,
+    "height": 1080,
+    "output": "source/endcard-wide.png"
+  },
+  {
+    "query": "?design=end&format=square",
+    "width": 1080,
+    "height": 1080,
+    "output": "source/endcard-square.png"
+  },
+  {
+    "query": "?design=end&format=vertical",
+    "width": 1080,
+    "height": 1920,
+    "output": "source/endcard-vertical.png"
+  }
+]

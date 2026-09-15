@@ -1,0 +1,22 @@
+{
+  "format": "vertical",
+  "duration": 30,
+  "segments": [
+    [
+      "room",
+      0,
+      9
+    ],
+    [
+      "sea",
+      9,
+      11
+    ],
+    [
+      "closing",
+      20,
+      10
+    ]
+  ],
+  "captions_default": "off"
+}

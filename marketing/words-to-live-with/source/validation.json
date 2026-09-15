@@ -1,0 +1,102 @@
+{
+  "media": {
+    "marketing\\words-to-live-with\\films\\make-room-30s-square.mp4": {
+      "duration": "00:00:30.00",
+      "dimensions": "1080x1080",
+      "bytes": 10336119
+    },
+    "marketing\\words-to-live-with\\films\\make-room-30s-vertical.mp4": {
+      "duration": "00:00:30.00",
+      "dimensions": "1080x1920",
+      "bytes": 11264822
+    },
+    "marketing\\words-to-live-with\\films\\words-to-live-with-15s-teaser.mp4": {
+      "duration": "00:00:15.00",
+      "dimensions": "1080x1920",
+      "bytes": 5154968
+    },
+    "marketing\\words-to-live-with\\films\\words-to-live-with-70s.mp4": {
+      "duration": "00:01:10.00",
+      "dimensions": "1920x1080",
+      "bytes": 58028156
+    },
+    "marketing\\words-to-live-with\\source\\clips\\hill.mp4": {
+      "duration": "00:00:10.04",
+      "dimensions": "1280x720",
+      "bytes": 27288948
+    },
+    "marketing\\words-to-live-with\\source\\clips\\room.mp4": {
+      "duration": "00:00:10.04",
+      "dimensions": "1280x720",
+      "bytes": 3969316
+    },
+    "marketing\\words-to-live-with\\source\\clips\\sea.mp4": {
+      "duration": "00:00:10.04",
+      "dimensions": "1280x720",
+      "bytes": 14323473
+    },
+    "marketing\\words-to-live-with\\source\\clips\\wood.mp4": {
+      "duration": "00:00:10.04",
+      "dimensions": "1280x720",
+      "bytes": 21532414
+    },
+    "site\\media\\canon\\canon-loop-portrait.mp4": {
+      "duration": "00:00:07.92",
+      "dimensions": "540x960",
+      "bytes": 500074
+    },
+    "site\\media\\canon\\canon-loop-wide.mp4": {
+      "duration": "00:00:07.92",
+      "dimensions": "1280x720",
+      "bytes": 1078393
+    },
+    "site\\media\\canon\\words-to-live-with-film.mp4": {
+      "duration": "00:01:10.02",
+      "dimensions": "1280x720",
+      "bytes": 15331734
+    }
+  },
+  "print": {
+    "words-to-live-with-partner-sheet.pdf": {
+      "pages": 1,
+      "qr": [
+        "https://thomasbroadside.co/canon.html?utm_source=partner-sheet&utm_medium=print&utm_campaign=words-to-live-with&utm_content=room"
+      ],
+      "bleed_inches": 0.125
+    },
+    "words-to-live-with-postcard.pdf": {
+      "pages": 2,
+      "qr": [
+        "https://thomasbroadside.co/canon.html?utm_source=direct-mail&utm_medium=print&utm_campaign=words-to-live-with&utm_content=postcard"
+      ],
+      "bleed_inches": 0.125
+    },
+    "words-to-live-with-reading-guide.pdf": {
+      "pages": 12,
+      "qr": [
+        "https://thomasbroadside.co/canon.html?utm_source=reading-guide&utm_medium=print&utm_campaign=words-to-live-with&utm_content=collection"
+      ],
+      "bleed_inches": 0.125
+    }
+  },
+  "email": {
+    "reading-room-partners.eml": {
+      "unsent": true,
+      "embedded_image": true,
+      "subject": "A place for lasting words."
+    },
+    "the-five-sheet-set.eml": {
+      "unsent": true,
+      "embedded_image": true,
+      "subject": "Five texts. A considered collection."
+    },
+    "words-to-live-with.eml": {
+      "unsent": true,
+      "embedded_image": true,
+      "subject": "Make room for the enduring."
+    }
+  },
+  "sources": {
+    "Matthew": "Both campaign passages matched Project Gutenberg KJV text, 2026-09-15; human catalog signature still pending."
+  }
+}
