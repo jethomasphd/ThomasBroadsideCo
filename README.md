@@ -1,6 +1,6 @@
 # Thomas Broadside Co.
 
-> **Current status - September 15, 2026:** Jacob confirms the original site remains live. Shopify migration is deferred until the visual work is ready. The living press and Origin Story are in `site/`. Finished campaign kits: [History has a pulse](marketing/history-has-a-pulse/README.md) and [The First Impression](marketing/the-first-impression/README.md). The Shopify section in `shopify/theme/` is a later migration package.
+> **Current status - September 15, 2026:** Jacob confirms the original site remains live. Shopify migration is deferred until the visual work is ready. The living press, Origin Story and Western Canon reading room are in `site/`. Finished campaign kits: [History has a pulse](marketing/history-has-a-pulse/README.md), [The First Impression](marketing/the-first-impression/README.md), and [Words to Live With](marketing/words-to-live-with/README.md). The Shopify section in `shopify/theme/` is a later migration package.
 
 **Founding documents of America and of the West, printed on our own
 press in Austin, Texas.** A venture of Thomas Graphics Inc.

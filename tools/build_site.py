@@ -17,6 +17,7 @@ import re
 from pathlib import Path
 from string import Template
 from build_origin import build_origin
+from build_canon import build_canon
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
@@ -484,10 +485,10 @@ def build_index_sections(catalog: dict, journal: dict) -> None:
 
     canon_html = (
         room_head("Room IV", "The Western Canon",
-                  "America's founding documents have founding documents. Homer's opening "
-                  "lines, the Sermon on the Mount, Augustine's restless heart, Dante's dark "
-                  "wood: the shelf that raised the men of 1776, printed on the same press. "
-                  "Chapter and verse on every sheet.")
+                  "Homer, the Gospel of Matthew, Augustine, Dante, Rembrandt and Blake. "
+                  "Poetry, scripture, prayer and art, with sources and translations close "
+                  "at hand. Contemporary broadsides and art reproductions, printed in Austin.")
+        + '''<div class="canon-teaser"><img src="/media/canon/room.webp" width="1672" height="941" alt="An imagined reading room with books and a sheet on an oak desk in morning light." loading="lazy"><div><p class="kicker">A new film / A room for reflection</p><h3>Words to<br>live with.</h3><p>Make room for the enduring. A quiet journey through the works in this collection.</p><a href="/canon.html">Enter the Western Canon ↗</a></div></div>'''
         + '\n<div class="wall wall--3">\n' + "\n".join(card(d) for d in canon) + "\n</div>"
     )
 
@@ -531,7 +532,7 @@ def stamp_assets() -> None:
     for rel in ("css/broadside.css", "js/bell.js", "js/cart.js",
                 "js/counter.js", "js/catalog-data.js", "js/inspect.js",
                 "css/living-press.css", "js/living-press.js",
-                "css/origin-story.css", "js/origin-story.js"):
+                "css/origin-story.css", "js/origin-story.js", "css/canon.css", "js/canon.js"):
         p = SITE / rel
         if p.exists():
             stamp = zlib.crc32(p.read_bytes(), stamp)
@@ -568,6 +569,7 @@ def main() -> None:
     n_journal = build_journal(journal)
     build_index_sections(catalog, journal)
     build_origin()
+    build_canon()
     stamp_assets()
     print(f"built {n_products} exhibit pages, {n_journal} journal entries, "
           f"catalog data + checkout prices, index + classroom refreshed")

@@ -1,0 +1,132 @@
+{
+  "images": [
+    [
+      "room",
+      "Use case: ads-marketing. Create a museum-quality cinematic photographic master image for Thomas Broadside Co. campaign Words to Live With. Horizontal 16:9 composition. An intimate, exceptionally beautiful but humble reading room, warm limestone plaster walls, a tall sash window on the right, one solid aged oak desk and a worn wooden chair, a few old books closed with unlettered spines, a single cream sheet lying flat viewed obliquely so no text is visible, a simple olive branch in a small earthenware vessel. Morning light crossing the desk and room, luminous dust almost invisible. Quiet tactile materials, cream paper, dark walnut shadows, subdued olive grey, restrained warm gold. Large calm shadow area on left for website title to be typeset separately. Architectural editorial photography, 35mm lens, physically plausible light, extraordinary tonal depth and photoreal texture. No people, no text, no symbols, no paintings, no logos, no artificial distressed overlay, no fantasy. It should feel like a place in which someone has thought deeply and is about to return."
+    ],
+    [
+      "sea",
+      "Use case: ads-marketing. A hyper-realistic cinematic photograph for a literary museum campaign evoking Homer's Odyssey and the idea of homecoming, WITHOUT depicting a purported historical event. Horizontal 16:9. View from rough limestone shore across a calm Mediterranean bay at first dawn, low headland far across the water, one ancient weathered olive branch barely edging foreground right, subtle small waves catching silver-gold light. No boats, no people, no buildings. The sea occupies center, limestone lower third, pale gold mist horizon, muted deep olive and ink-blue shadows. Elegant naturalistic large-format landscape photography with extraordinary material detail, serene and spacious, restrained contrast, no exaggerated sunset, no fantasy beams, no text, no logo. Quiet awe worthy of a museum campaign."
+    ],
+    [
+      "hill",
+      "Use case: ads-marketing. A contemplative hyper-realistic photographic landscape for a respectful campaign featuring the Beatitudes. An imagined Levantine hillside, not an asserted historical location, no reenactment. Horizontal 16:9. One beautiful ancient olive tree on gently rising pale limestone and fine dry grass, distant soft blue lake glimpsed lower left, gentle morning breeze suggested through tiny leaves, soft luminous late morning light. No people, no sacred figures, no miracles, no crosses, no churches, no text or logos. Tactile bark, silver olive leaves, cream stone, warm subdued earth, airy quiet composition. Museum-grade photographic realism, subtle filmic tonality, compassionate stillness, no commercial props or dramatic spectacle."
+    ],
+    [
+      "wood",
+      "Use case: ads-marketing. Hyper-realistic cinematic landscape for a literary museum campaign evoking the opening of Dante's Inferno, an imaginative landscape rather than a literal reconstruction. Horizontal 16:9. Ancient temperate woodland, tall rough trunks, narrow faint path curving through leaf litter, deep olive-brown shadows, one restrained pool of distant morning light through the trees at upper center-right. No people, no monsters, no supernatural effects, no text, no logos. The space feels honestly uncertain but quietly hopeful. Extraordinary natural detail and atmospheric depth, fine-art landscape photography, restrained color palette of ink black, dark moss and pale old gold. No exaggerated god rays, no horror styling."
+    ]
+  ],
+  "paths": {
+    "room": "exec-8effe497-83fe-4072-b343-57af88fca9a8.png",
+    "sea": "exec-a3036200-6fbe-4e51-bde8-f5a5ce159b60.png",
+    "hill": "exec-7cf42f5b-baaf-45f3-90e3-f7af067fd7a0.png",
+    "wood": "exec-dfc51a97-dc58-4dc0-b005-5c69e6e021df.png"
+  },
+  "motion": {
+    "room": "Almost locked camera, an imperceptibly slow cinematic push toward the desk. Leaves of the olive branch tremble slightly in a soft breeze; light holds steady, a few natural dust motes. All books, paper, furniture remain fixed and unaltered. No people appear. Natural photographic realism, patient museum film.",
+    "sea": "Locked cinematic camera. Small gentle waves roll naturally toward the limestone shore, sunlight shimmers subtly over the water. The distant coast stays fixed; olive leaves move gently in a light breeze. A quiet spacious dawn, physically realistic motion, no boats or people, no time lapse.",
+    "hill": "Locked cinematic camera holds this quiet landscape. The olive leaves and fine grasses move gently in a small breeze, tiny glints of light on the far lake. Tree and hillside stay structurally fixed, stable natural light. Reverent stillness, no people or added objects, no dramatic effects.",
+    "wood": "Extremely slow steady cinematic forward movement along the woodland path, less than one metre, slight natural parallax in nearby tree trunks. Only the tiniest leaf movement, stable morning light. Preserve the woodland and all trees, no people, animals or supernatural elements. Quiet contemplative realism."
+  },
+  "audio": [
+    {
+      "id": "room",
+      "taskId": "d2357078-af0e-4e19-b2f4-cfa40c406446",
+      "prompt": "Some words ask us to slow down. To read again. To make room."
+    },
+    {
+      "id": "sea",
+      "taskId": "e06b1bfd-def3-4806-a3ad-288de690446a",
+      "prompt": "Homer opens with a traveller, far from home. An old story, still asking for our attention."
+    },
+    {
+      "id": "hill",
+      "taskId": "ba0c5e5d-ecec-4f8e-8b53-ec498485574c",
+      "prompt": "In Matthew's Gospel, Jesus teaches: Blessed are the merciful: for they shall obtain mercy."
+    },
+    {
+      "id": "rest",
+      "taskId": "a403c1e5-8b0c-4697-9a94-9ee091a79ee1",
+      "prompt": "Augustine brings his restless heart to God. A prayer, still held on the page."
+    },
+    {
+      "id": "wood",
+      "taskId": "c7f4a146-3a1e-4cd0-b6f3-7fb0be3fa785",
+      "prompt": "Dante begins in a dark wood, with the way ahead lost."
+    },
+    {
+      "id": "art",
+      "taskId": "29ac51a6-44a3-4f59-a93c-af18feef2563",
+      "prompt": "Poetry. Scripture. Prayer. Art. Distinct works, each with its own source."
+    },
+    {
+      "id": "closing",
+      "taskId": "3481e1ff-c358-461f-b75e-328c15822289",
+      "prompt": "From our press in Austin, words to live with. Explore the Western Canon at Thomas Broadside Company."
+    },
+    {
+      "id": "music_score",
+      "taskId": "a4440bc3-0061-485d-8902-35cfd89fd514",
+      "prompt": "An original instrumental chamber score for a contemplative literary museum film. Felt piano, warm solo viola, a few low cello notes, natural intimate room resonance. Very slow, around 60 bpm. Begins with a single spacious piano phrase, strings enter gently after 15 seconds, a modest harmonic opening midway, ends in a quiet resolved breath. Understated, humane, attentive, dignified. No vocals, no choir, no organ, no recognizable hymn or existing melody, no percussion, no trailer swell. Leave wide spaces for a calm female narrator and a scripture reading. Create a full piece with a delicate beginning and ending."
+    }
+  ],
+  "video": [
+    {
+      "id": "room",
+      "taskId": "a1a71875-1219-40e8-ab2a-4154119b61a2",
+      "prompt": "Almost locked camera, an imperceptibly slow cinematic push toward the desk. Leaves of the olive branch tremble slightly in a soft breeze; light holds steady, a few natural dust motes. All books, paper, furniture remain fixed and unaltered. No people appear. Natural photographic realism, patient museum film."
+    },
+    {
+      "id": "sea",
+      "taskId": "2ece7314-dff8-482f-96c9-110cc1261f44",
+      "prompt": "Locked cinematic camera. Small gentle waves roll naturally toward the limestone shore, sunlight shimmers subtly over the water. The distant coast stays fixed; olive leaves move gently in a light breeze. A quiet spacious dawn, physically realistic motion, no boats or people, no time lapse."
+    },
+    {
+      "id": "hill",
+      "taskId": "ac5ecb58-eea1-49b4-b742-6568ac4cf6ef",
+      "prompt": "Locked cinematic camera holds this quiet landscape. The olive leaves and fine grasses move gently in a small breeze, tiny glints of light on the far lake. Tree and hillside stay structurally fixed, stable natural light. Reverent stillness, no people or added objects, no dramatic effects."
+    },
+    {
+      "id": "wood",
+      "taskId": "6c96101c-5490-4ef4-9909-2533b1fda52c",
+      "prompt": "Extremely slow steady cinematic forward movement along the woodland path, less than one metre, slight natural parallax in nearby tree trunks. Only the tiniest leaf movement, stable morning light. Preserve the woodland and all trees, no people, animals or supernatural elements. Quiet contemplative realism."
+    }
+  ],
+  "speech": [
+    [
+      "room",
+      "Some words ask us to slow down. To read again. To make room."
+    ],
+    [
+      "sea",
+      "Homer opens with a traveller, far from home. An old story, still asking for our attention."
+    ],
+    [
+      "hill",
+      "In Matthew's Gospel, Jesus teaches: Blessed are the merciful: for they shall obtain mercy."
+    ],
+    [
+      "rest",
+      "Augustine brings his restless heart to God. A prayer, still held on the page."
+    ],
+    [
+      "wood",
+      "Dante begins in a dark wood, with the way ahead lost."
+    ],
+    [
+      "art",
+      "Poetry. Scripture. Prayer. Art. Distinct works, each with its own source."
+    ],
+    [
+      "closing",
+      "From our press in Austin, words to live with. Explore the Western Canon at Thomas Broadside Company."
+    ]
+  ],
+  "voice": {
+    "name": "Miriam",
+    "model": "eleven_multilingual_v2",
+    "speed": 0.94,
+    "type": "stock synthetic modern narrator; not an impersonation"
+  }
+}

@@ -18,7 +18,8 @@
     if (!toggle || !hero) return;
     const playing = !hero.paused;
     toggle.textContent = playing ? 'Ⅱ' : '▶';
-    toggle.setAttribute('aria-label', playing ? 'Pause press motion' : 'Play press motion');
+    const label = toggle.dataset?.motionLabel || 'press motion';
+    toggle.setAttribute('aria-label', `${playing ? 'Pause' : 'Play'} ${label}`);
   };
   const play = () => {
     loadLoop();
