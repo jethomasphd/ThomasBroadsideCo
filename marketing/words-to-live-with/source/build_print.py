@@ -3,7 +3,7 @@ Uses ReportLab + fonttools/brotli; design bench only. No runtime dependencies.
 Output remains RGB: the print shop applies its chosen press/paper ICC profile.
 """
 from pathlib import Path
-import json,tempfile
+import json,tempfile,sys
 from reportlab.pdfgen import canvas
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
@@ -89,6 +89,8 @@ for s in DATA['sources']:
     c.linkURL(s['url'],(34,y,398,y+28),relative=1);y-=14
 para(c,'Source texts: public domain in the United States. Museum images: the open-access records linked above. Imagined landscapes and room: contemporary campaign artwork. Readings retain the translation named on each sheet.',34,159,364,8,13)
 text(c,'THOMAS BROADSIDE CO.',34,86,8,'Mono');text(c,'9501 N Interstate Hwy 35, Austin, TX 78753',34,70,7);text(c,'JEThomasPhD@gmail.com',34,56,7);c.showPage();c.save()
+if '--guide-only' in sys.argv:
+    print('Reading guide exported.');sys.exit(0)
 # 9 x 6 inch two-sided mailer with return address and a clear addressing panel.
 c=pdf('words-to-live-with-postcard.pdf');w,h=648,432
 page(c,w,h);image(c,K/'artwork/room.png',314,0,334,432);text(c,'THOMAS BROADSIDE CO.',32,390,8,'Mono');text(c,'THE WESTERN CANON',32,321,8,'Mono',RED);title(c,'Words to\nlive with.',32,273,57)

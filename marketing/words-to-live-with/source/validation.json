@@ -3,27 +3,32 @@
     "marketing\\words-to-live-with\\films\\make-room-30s-square.mp4": {
       "duration": "00:00:30.00",
       "dimensions": "1080x1080",
-      "bytes": 10336119
+      "bytes": 9966073
     },
     "marketing\\words-to-live-with\\films\\make-room-30s-vertical.mp4": {
       "duration": "00:00:30.00",
       "dimensions": "1080x1920",
-      "bytes": 11264822
+      "bytes": 10945824
     },
     "marketing\\words-to-live-with\\films\\words-to-live-with-15s-teaser.mp4": {
       "duration": "00:00:15.00",
       "dimensions": "1080x1920",
       "bytes": 5154968
     },
-    "marketing\\words-to-live-with\\films\\words-to-live-with-70s.mp4": {
-      "duration": "00:01:10.00",
+    "marketing\\words-to-live-with\\films\\words-to-live-with-80s.mp4": {
+      "duration": "00:01:20.00",
       "dimensions": "1920x1080",
-      "bytes": 58028156
+      "bytes": 79611910
     },
     "marketing\\words-to-live-with\\source\\clips\\hill.mp4": {
       "duration": "00:00:10.04",
       "dimensions": "1280x720",
       "bytes": 27288948
+    },
+    "marketing\\words-to-live-with\\source\\clips\\rest.mp4": {
+      "duration": "00:00:10.04",
+      "dimensions": "1280x720",
+      "bytes": 12477198
     },
     "marketing\\words-to-live-with\\source\\clips\\room.mp4": {
       "duration": "00:00:10.04",
@@ -34,6 +39,11 @@
       "duration": "00:00:10.04",
       "dimensions": "1280x720",
       "bytes": 14323473
+    },
+    "marketing\\words-to-live-with\\source\\clips\\soul.mp4": {
+      "duration": "00:00:10.04",
+      "dimensions": "1280x720",
+      "bytes": 15148780
     },
     "marketing\\words-to-live-with\\source\\clips\\wood.mp4": {
       "duration": "00:00:10.04",
@@ -50,10 +60,10 @@
       "dimensions": "1280x720",
       "bytes": 1078393
     },
-    "site\\media\\canon\\words-to-live-with-film.mp4": {
-      "duration": "00:01:10.02",
+    "site\\media\\canon\\words-to-live-with-film-v2.mp4": {
+      "duration": "00:01:20.00",
       "dimensions": "1280x720",
-      "bytes": 15331734
+      "bytes": 22012855
     }
   },
   "print": {
@@ -97,6 +107,6 @@
     }
   },
   "sources": {
-    "Matthew": "Both campaign passages matched Project Gutenberg KJV text, 2026-09-15; human catalog signature still pending."
+    "Matthew": "Both campaign passages matched Project Gutenberg KJV text, 2026-09-16; human catalog signature still pending."
   }
 }

@@ -14,7 +14,7 @@ Homer is poetry; Matthew is scripture; Augustine addresses God in prayer; Dante 
 
 | Asset | Use | Treatment |
 |---|---|---|
-| `films/words-to-live-with-70s.mp4` | Website, LinkedIn, Facebook native video, presentation | Full film, Miriam narration, original piano/viola score |
+| `films/words-to-live-with-80s.mp4` | Website, LinkedIn, Facebook native video, presentation | Full film, Miriam narration, original piano/viola score |
 | `films/make-room-30s-vertical.mp4` | Instagram/Facebook Reels and Stories | Room, sea, collection invitation; designed portrait composition |
 | `films/make-room-30s-square.mp4` | Facebook/LinkedIn feed | Square edition with Miriam narration |
 | `films/words-to-live-with-15s-teaser.mp4` | Stories, quiet display loop | Original score, no spoken narration |
@@ -33,7 +33,7 @@ Use Day 1 as the chosen public launch day, after the new `/canon` page is live. 
 
 ### Day 1 · The invitation
 
-**Channels:** LinkedIn and Facebook. **Asset:** 70-second film or `11-share.png`.
+**Channels:** LinkedIn and Facebook. **Asset:** 80-second film or `11-share.png`.
 
 Some words deserve a place in the room.
 
@@ -83,7 +83,7 @@ Matthew 16:26 asks two questions about the soul and worldly gain. The broadside 
 
 A text to read with care, and to return to.
 
-**Alt text:** Olive hillside above the full two questions of Matthew 16:26 in the Authorized Version, with the source line visible.
+**Alt text:** An open stone doorway and sunlit dry path above the full two questions of Matthew 16:26 in the Authorized Version, with the source line visible.
 
 ### Day 10 · Rest
 
@@ -93,7 +93,7 @@ Augustine’s restless heart belongs to a prayer. The opening of the Confessions
 
 Book I, in E. B. Pusey’s translation. Read the words, and the work around them.
 
-**Alt text:** A quiet imagined reading room above Augustine’s words: Thou madest us for Thyself, and our heart is restless, until it repose in Thee. Confessions, Book I, translated by E. B. Pusey.
+**Alt text:** A secluded stone courtyard with a cypress and empty bench above Augustine’s words: Thou madest us for Thyself, and our heart is restless, until it repose in Thee. Confessions, Book I, translated by E. B. Pusey.
 
 ### Day 12 · The way
 

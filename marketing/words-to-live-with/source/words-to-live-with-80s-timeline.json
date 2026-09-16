@@ -1,0 +1,47 @@
+{
+  "format": "wide",
+  "duration": 80,
+  "segments": [
+    [
+      "room",
+      0,
+      9
+    ],
+    [
+      "sea",
+      9,
+      11
+    ],
+    [
+      "hill",
+      20,
+      12
+    ],
+    [
+      "soul",
+      32,
+      10
+    ],
+    [
+      "rest",
+      42,
+      10
+    ],
+    [
+      "wood",
+      52,
+      8
+    ],
+    [
+      "art",
+      60,
+      10
+    ],
+    [
+      "closing",
+      70,
+      10
+    ]
+  ],
+  "captions_default": "off"
+}
