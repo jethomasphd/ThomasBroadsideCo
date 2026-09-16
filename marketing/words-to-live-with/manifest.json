@@ -7,6 +7,11 @@
       "sha256": "69eeae3506a51e2b5f7beb9f0cba5439f77b3709dbe00af017d43ce5b3519e98"
     },
     {
+      "path": "artwork/rest.png",
+      "bytes": 2617085,
+      "sha256": "fd4a59564c531dd1d9a6f3f51d3f9265655c84adddd10010ea3b5c7df8b2d4b5"
+    },
+    {
       "path": "artwork/room.png",
       "bytes": 1903463,
       "sha256": "4eb6b6eecd3478be34b19b2d23366ec8a1f2a8752f3c362506970c74f03ee41c"
@@ -15,6 +20,11 @@
       "path": "artwork/sea.png",
       "bytes": 2651600,
       "sha256": "a3a2c825aea8eb7ec5fcdeb0504bf602597ba748dca1a30329f2d8bb4dfc830d"
+    },
+    {
+      "path": "artwork/soul.png",
+      "bytes": 2656728,
+      "sha256": "f975ca073fc85e507bb18cc9d23ca24b3a92401f8d498e6a9c3e57a34f47fb4a"
     },
     {
       "path": "artwork/wood.png",
@@ -57,14 +67,19 @@
       "sha256": "d602b0344bf419d6eb990dc2bef248f4fb9647ef6adee019613af041202d9d5d"
     },
     {
+      "path": "audio/speech_soul.mp3",
+      "bytes": 85725,
+      "sha256": "a13cb3efd9e0394d1caf260ae3ca6737c630158eb34833f3221ba44905df5897"
+    },
+    {
       "path": "audio/speech_wood.mp3",
       "bytes": 75276,
       "sha256": "4141b5a4f019406524b529ec8081edcaba5a7762e1ea466b7e8ad28204a08e1d"
     },
     {
       "path": "CAMPAIGN.md",
-      "bytes": 10295,
-      "sha256": "fa7b87a7300cea612cf3dc900b1eedad64e1adcf63cfd41a3d45be1ab81f1f10"
+      "bytes": 10350,
+      "sha256": "794e5eed66cfe045b6ab886c78b30f887a9ed5649a61915033954c54b66345cd"
     },
     {
       "path": "email/reading-room-partners-preview.html",
@@ -109,27 +124,27 @@
     {
       "path": "email/words-to-live-with-preview.html",
       "bytes": 3648,
-      "sha256": "23939e593171c0cafd047c3cf9bfe6806de8a5a1e290ee967a8c9a2e1abdf9bc"
+      "sha256": "bb9943ead86be09da517532497e8b776293967d9825d5f5d20d3ac44e6c60541"
     },
     {
       "path": "email/words-to-live-with.eml",
       "bytes": 145941,
-      "sha256": "980c60277af2ae7a2dae3d474edc4edf450feb2dd82165aa5bc9c4227a3aa5db"
+      "sha256": "58b5f167cc6e445b5343ec2da02b2d58317af58e2c9327e4f64ac4133636970a"
     },
     {
       "path": "email/words-to-live-with.html",
       "bytes": 3679,
-      "sha256": "a7d5bc31aaa8e2e3298d43464d218b9195454eced155cc5931b0c02984b9d8bb"
+      "sha256": "eed88e1c87856b0ec14c78b51887f06f7c6bfe4f1855c714795fdb3312ad0563"
     },
     {
       "path": "email/words-to-live-with.txt",
       "bytes": 1152,
-      "sha256": "0d62aa251d586e08e8137580fac3faa30683ea2094e8fbbb68cce1856b91adc6"
+      "sha256": "cd193c2ca104f642a6409b23b4e609885d2a398b1cbecd5b1a48bea54d0e9f0a"
     },
     {
       "path": "films/make-room-30s-square.mp4",
-      "bytes": 10336119,
-      "sha256": "1612848f71b0693d4d76755ce5642e9628d968887b5a197d0ac322953cca9be5"
+      "bytes": 9966073,
+      "sha256": "00663968c0ae8722e46965819a04e1431df7296908dcdc23df90f0cfcdab3d06"
     },
     {
       "path": "films/make-room-30s-square.vtt",
@@ -138,8 +153,8 @@
     },
     {
       "path": "films/make-room-30s-vertical.mp4",
-      "bytes": 11264822,
-      "sha256": "2da27c92b12af2d67e044f486b5ee8a2e804eeeedf6fa96a704f4cb91fdac40a"
+      "bytes": 10945824,
+      "sha256": "86962fbd8b423a815956ab23a64e52fa88810fdd41321f02d3a714a40a48871d"
     },
     {
       "path": "films/make-room-30s-vertical.vtt",
@@ -152,19 +167,19 @@
       "sha256": "43a936a9a6b1a84bacadd4cbde9fa05c5fa99d0126e7dca795914fbdb18b6a56"
     },
     {
-      "path": "films/words-to-live-with-70s.mp4",
-      "bytes": 58028156,
-      "sha256": "d9d2c4ee3b25e7c5739500c3de32e29516d5cc5f28955187b8b705ab411f5740"
+      "path": "films/words-to-live-with-80s.mp4",
+      "bytes": 79611910,
+      "sha256": "bc3464a8d7428209342abeca25970282607bcb49d07ffac58dc3992e6d6dac1b"
     },
     {
-      "path": "films/words-to-live-with-70s.vtt",
-      "bytes": 774,
-      "sha256": "9df073e9b287a41ceed4d84b5afb858474dfb4e6694c59d6c8706b576f5c20ed"
+      "path": "films/words-to-live-with-80s.vtt",
+      "bytes": 879,
+      "sha256": "9a3005d0c7cc4018d71ea7eb9d212cbbec8260fb8888a9100ce8042415be1151"
     },
     {
       "path": "index.html",
       "bytes": 7912,
-      "sha256": "c673ebd3f9b312716b0d9c6a24d0df132e8d4f050a582b49dd78cc86ddb20549"
+      "sha256": "8e910b4eef4103060a748a9e01d430748cd3c60a15706000a3aa963e69861ae1"
     },
     {
       "path": "links.json",
@@ -183,23 +198,23 @@
     },
     {
       "path": "print/words-to-live-with-reading-guide.pdf",
-      "bytes": 9041587,
-      "sha256": "8c4d2f2e93ec14c20045f437db8972f350b275f1c3762cd5173d3e31d38ce004"
+      "bytes": 10892298,
+      "sha256": "aa4a82ebaad9c6999895003c2c535289baacccdf58feee4f9ace8d9cb81fb3d9"
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 6133,
-      "sha256": "32559eef773c1ed9498d079c8d89dbf91f58aa0314b1dd39d0b2e7d734a6e4f4"
+      "bytes": 7405,
+      "sha256": "c5b92f4c7a1a054c6014569661e4d4f4714702a5dd859c7f31f3ad09abbf93f9"
     },
     {
       "path": "QA.md",
-      "bytes": 2525,
-      "sha256": "2dc9d8b820676a4f577a89edcccfc91337bdc55efb71af64a5e56eef19f943ef"
+      "bytes": 2896,
+      "sha256": "8754fb38e7f0b84b9717848e8c462eb26b3ba86bc6f44cab06139feee051719e"
     },
     {
       "path": "README.md",
-      "bytes": 3744,
-      "sha256": "b0d084104e07ccb577143043be1baa2c7f68353984e1a2aa046eaac5296645c7"
+      "bytes": 5109,
+      "sha256": "fd61c01c4a57504a4abd39b4b7c4bd1cc7dbf5cc1cdb270a227e3a8bb92b6c7e"
     },
     {
       "path": "social/01-cover.png",
@@ -218,13 +233,13 @@
     },
     {
       "path": "social/04-soul.png",
-      "bytes": 190439,
-      "sha256": "f5d1e7a799c48a2faf546c6b8a777845089f1a90576b19c9b64b9e79b2400df1"
+      "bytes": 140466,
+      "sha256": "f303686237b0d33616007b6921c8d0712c85f53f80ddacc9008042c304411fa0"
     },
     {
       "path": "social/05-rest.png",
-      "bytes": 102250,
-      "sha256": "b364790b39c8b26c607b6fecda10d64964302128b993eab2b99242f742f520fb"
+      "bytes": 146746,
+      "sha256": "55b0699956c6416b0de857d3eac5ef697253422804137cb500e3d1ac2837e59c"
     },
     {
       "path": "social/06-way.png",
@@ -259,27 +274,27 @@
     {
       "path": "source/build_email.py",
       "bytes": 6599,
-      "sha256": "c5aa82516cc0c6972a8fcd0cce00efcfd982676373241e87b967dfeb0c225f96"
+      "sha256": "22bcd3646ac7389e727417404027d27c045040b655dcf278de22e21f3d1c9964"
     },
     {
       "path": "source/build_media.py",
-      "bytes": 6982,
-      "sha256": "2bc421c36ab50339beeb7ae0c02eab08799fde0f53b48047bad42969d886087d"
+      "bytes": 7776,
+      "sha256": "838c54592c9b3d32df9a08a19d7b1a04fa7ef0e9c6d6069618b35f46fa3d6e4b"
     },
     {
       "path": "source/build_print.py",
-      "bytes": 10131,
-      "sha256": "77500026fdd37fa7abb2a00e698dcf28105d6f32f38513c724dd728475d2bbf4"
+      "bytes": 10215,
+      "sha256": "4f3ea5f9f89f5ef6635e152d011f37fa74a8057f110015b863746c92bd9ca49f"
     },
     {
       "path": "source/campaign-art.html",
       "bytes": 6826,
-      "sha256": "8871daf2ed88710605a03405d6e23773555e62d69c7a4c39398cadb69ac706a7"
+      "sha256": "7ed45c604992cd3d239894332d6fcdb5431787587b65c8de62ae744e47965bbf"
     },
     {
       "path": "source/campaign.json",
-      "bytes": 6812,
-      "sha256": "0a8155d57cda54e56d85887610c57ffc87ae69566ba7efa13d3bdc66ea201017"
+      "bytes": 7418,
+      "sha256": "e1ff0a7855c3a91256ac71805267c3765ed28c509c0b6cc631bb76d5a7f75369"
     },
     {
       "path": "source/catalog-snapshot.json",
@@ -292,6 +307,11 @@
       "sha256": "ae13ca93e409376961cc521300b523712478d00800e29128edb506cc4a39eb66"
     },
     {
+      "path": "source/clips/rest.mp4",
+      "bytes": 12477198,
+      "sha256": "f0be4eaa05829b37f97e1591b56bc2deb4aa72064868c6a8479ec4758fa23be7"
+    },
+    {
       "path": "source/clips/room.mp4",
       "bytes": 3969316,
       "sha256": "61d6c11374e74cfed9585afe763740de3b32f3dacc184c0ebbc249ece6540d97"
@@ -300,6 +320,11 @@
       "path": "source/clips/sea.mp4",
       "bytes": 14323473,
       "sha256": "924774cdee386451f7d4b32738743a3163da9c35723b673f16cd6c6a42d189f1"
+    },
+    {
+      "path": "source/clips/soul.mp4",
+      "bytes": 15148780,
+      "sha256": "184c19b0bd0d0452feb432e212647724ef5ad34a7a5a3664e072eb681f7d28a7"
     },
     {
       "path": "source/clips/wood.mp4",
@@ -378,8 +403,8 @@
     },
     {
       "path": "source/generation-record.json",
-      "bytes": 9750,
-      "sha256": "bd9c11890cf2580a3bbe6b6b6da13835038a7443cb61bcaf2c1f8c9acf0d599d"
+      "bytes": 14746,
+      "sha256": "67f9608a42413e8d2377614c8578691a030e77738d6a48a39f22b3d6a5ec321a"
     },
     {
       "path": "source/make-room-30s-square-timeline.json",
@@ -463,8 +488,8 @@
     },
     {
       "path": "source/validation.json",
-      "bytes": 3182,
-      "sha256": "ace47eddd4a3b4c1497f7dfd16b4d1e77963a90e93c1289af477279496b24dd6"
+      "bytes": 3504,
+      "sha256": "0c82abe05f2909c838af966eeb4fdf87d293e38babdf9fa6c867775f9b01c830"
     },
     {
       "path": "source/verify_manifest.py",
@@ -477,9 +502,9 @@
       "sha256": "e0abec623fad0a047086c6bbbad6f883a3c3427a8ae60fbd86b868d4f4920ca7"
     },
     {
-      "path": "source/words-to-live-with-70s-timeline.json",
-      "bytes": 409,
-      "sha256": "aaed702b4269b25f766b9fd9f39533124c72ccaa3b0c3f3a1b010081fd012951"
+      "path": "source/words-to-live-with-80s-timeline.json",
+      "bytes": 455,
+      "sha256": "48d38d951cc150a9f8fe55fcf18ee8cc54c395166545c231be75a7c3f5ae088a"
     }
   ]
 }

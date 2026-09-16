@@ -65,7 +65,8 @@
       "source": "Homer · The Odyssey, Book I · trans. Samuel Butler",
       "body": "The invocation begins with a traveller and a perilous return. Our sheet holds an extract from the opening, with the translator named. Read it slowly; the wider story remains there to be entered.",
       "slug": "the-odyssey",
-      "ref": "homer"
+      "ref": "homer",
+      "image_alt": "An imagined Mediterranean shore at dawn."
     },
     {
       "id": "mercy",
@@ -77,31 +78,34 @@
       "source": "Jesus of Nazareth · Matthew 5:7 · Authorized Version",
       "body": "The Beatitudes belong to the opening of the Sermon on the Mount. This verse is one of the blessings; the broadside carries Matthew 5:3–12 together, with verse numbers beside the words.",
       "slug": "the-beatitudes",
-      "ref": "matthew"
+      "ref": "matthew",
+      "image_alt": "An imagined olive hillside overlooking a lake."
     },
     {
       "id": "the-soul",
       "no": "03",
       "theme": "The soul",
-      "image": "hill",
+      "image": "soul",
       "title": "The question remains.",
       "quote": "For what is a man profited, if he shall gain the whole world, and lose his own soul? or what shall a man give in exchange for his soul?",
       "source": "Jesus of Nazareth · Matthew 16:26 · Authorized Version",
       "body": "Two questions, kept together. The passage asks about the soul and the cost of worldly gain. Its weight belongs to the Gospel itself; the sheet gives it a place to be read and considered.",
       "slug": "what-is-a-man-profited",
-      "ref": "matthew"
+      "ref": "matthew",
+      "image_alt": "An open stone doorway leading to a sunlit, dry hillside path."
     },
     {
       "id": "rest",
       "no": "04",
       "theme": "Rest",
-      "image": "room",
+      "image": "rest",
       "title": "A prayer on the page.",
       "quote": "Thou madest us for Thyself, and our heart is restless, until it repose in Thee.",
       "source": "Augustine · Confessions, Book I · trans. E. B. Pusey",
       "body": "Augustine addresses God in the opening of the Confessions. The restless heart is held within that prayer. We preserve that address, and name the translation beneath the passage.",
       "slug": "our-heart-is-restless",
-      "ref": "augustine"
+      "ref": "augustine",
+      "image_alt": "A secluded stone courtyard with a cypress and an empty bench."
     },
     {
       "id": "the-way",
@@ -113,7 +117,8 @@
       "source": "Dante · Inferno, Canto I, lines 1–3 · trans. H. W. Longfellow",
       "body": "The Divine Comedy opens with a lost path. These three lines mark the beginning of a much larger journey. The sheet keeps Longfellow’s line breaks, and gives the source its own line.",
       "slug": "midway-upon-the-journey",
-      "ref": "dante"
+      "ref": "dante",
+      "image_alt": "An imagined woodland path in the morning light."
     }
   ],
   "products": [
@@ -141,6 +146,10 @@
       "In Matthew's Gospel, Jesus teaches: Blessed are the merciful: for they shall obtain mercy."
     ],
     [
+      "soul",
+      "Elsewhere in Matthew, a question weighs the whole world against the soul."
+    ],
+    [
       "rest",
       "Augustine brings his restless heart to God. A prayer, still held on the page."
     ],
@@ -156,5 +165,10 @@
       "closing",
       "From our press in Austin, words to live with. Explore the Western Canon at Thomas Broadside Company."
     ]
-  ]
+  ],
+  "film": {
+    "duration_seconds": 80,
+    "file": "words-to-live-with-film-v2.mp4",
+    "captions": "canon-film-v2.vtt"
+  }
 }
