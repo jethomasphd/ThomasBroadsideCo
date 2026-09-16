@@ -3,19 +3,167 @@
   "tagline": "Before it was a relic, it was news.",
   "human_review": "Prepared for Jacob E. Thomas; no human source-verification signature asserted.",
   "sources": [
-    {"id":"dunlap", "title":"The first printing, July 4–5, 1776", "institution":"Library of Congress / National Archives", "url":"https://www.loc.gov/resource/gdcwdl.wdl_02716/", "note":"The surviving printed broadside and the dispatch of copies on July 5. Historical print-run and survivor counts are intentionally omitted."},
-    {"id":"draft", "title":"Jefferson's original Rough draught", "institution":"Library of Congress, Jefferson Papers", "url":"https://www.loc.gov/exhibits/declara/declara4.html#obj3", "note":"Draft, alterations by Adams and Franklin, and congressional revisions. The approved text preceded the later engrossed parchment."},
-    {"id":"franklin", "title":"Franklin, printer and writer", "institution":"Library of Congress", "url":"https://www.loc.gov/exhibits/franklin/franklin-printer.html", "note":"Primary printed examples of Poor Richard's Almanack and Franklin's printing work."},
-    {"id":"washington", "title":"Washington's copy of the Declaration", "institution":"Library of Congress, George Washington Papers", "url":"https://www.loc.gov/exhibits/declara/declara4.html#obj4", "note":"Hancock sent the printed Declaration to Washington on July 6; Washington had it read to the troops in New York on July 9."},
-    {"id":"hamilton", "title":"The Federalist in historic newspapers", "institution":"Library of Congress", "url":"https://guides.loc.gov/federalist-essays-in-historic-newspapers", "note":"Essays by Hamilton, Madison and Jay under Publius, supporting ratification in 1787–1788; the guide indexes original newspaper printings."},
-    {"id":"printing", "title":"Printing the Declaration of Independence", "institution":"Library of Congress, Rare Book and Special Collections", "url":"https://blogs.loc.gov/bibliomania/2023/07/04/printing-the-declaration-of-independence/", "note":"The approved wording was sent to Dunlap's shop; the first printing belongs to the evening of July 4 and early July 5."},
-    {"id":"chronology", "title":"Declaring Independence: drafting the documents", "institution":"Library of Congress", "url":"https://www.loc.gov/exhibits/declara/declara3.html", "note":"The vote for independence on July 2, adoption on July 4, and the later engrossed copy ordered July 19 and signed beginning August 2."}
+    {
+      "id": "dunlap",
+      "title": "The first printing, July 4–5, 1776",
+      "institution": "Library of Congress / National Archives",
+      "url": "https://www.loc.gov/resource/gdcwdl.wdl_02716/",
+      "note": "The surviving printed broadside and the dispatch of copies on July 5. Historical print-run and survivor counts are intentionally omitted."
+    },
+    {
+      "id": "draft",
+      "title": "Jefferson's original Rough draught",
+      "institution": "Library of Congress, Jefferson Papers",
+      "url": "https://www.loc.gov/exhibits/declara/declara4.html#obj3",
+      "note": "Draft, alterations by Adams and Franklin, and congressional revisions. The approved text preceded the later engrossed parchment."
+    },
+    {
+      "id": "franklin",
+      "title": "Franklin, printer and writer",
+      "institution": "Library of Congress",
+      "url": "https://www.loc.gov/exhibits/franklin/franklin-printer.html",
+      "note": "Primary printed examples of Poor Richard's Almanack and Franklin's printing work."
+    },
+    {
+      "id": "washington",
+      "title": "Washington's copy of the Declaration",
+      "institution": "Library of Congress, George Washington Papers",
+      "url": "https://www.loc.gov/exhibits/declara/declara4.html#obj4",
+      "note": "Hancock sent the printed Declaration to Washington on July 6; Washington had it read to the troops in New York on July 9."
+    },
+    {
+      "id": "hamilton",
+      "title": "The Federalist in historic newspapers",
+      "institution": "Library of Congress",
+      "url": "https://guides.loc.gov/federalist-essays-in-historic-newspapers",
+      "note": "Essays by Hamilton, Madison and Jay under Publius, supporting ratification in 1787–1788; the guide indexes original newspaper printings."
+    },
+    {
+      "id": "printing",
+      "title": "Printing the Declaration of Independence",
+      "institution": "Library of Congress, Rare Book and Special Collections",
+      "url": "https://blogs.loc.gov/bibliomania/2023/07/04/printing-the-declaration-of-independence/",
+      "note": "The approved wording was sent to Dunlap's shop; the first printing belongs to the evening of July 4 and early July 5."
+    },
+    {
+      "id": "chronology",
+      "title": "Declaring Independence: drafting the documents",
+      "institution": "Library of Congress",
+      "url": "https://www.loc.gov/exhibits/declara/declara3.html",
+      "note": "The vote for independence on July 2, adoption on July 4, and the later engrossed copy ordered July 19 and signed beginning August 2."
+    }
   ],
   "chapters": [
-    {"id":"franklin","number":"01","eyebrow":"Benjamin Franklin / The printer's eye","date":"The craft, before the founding","title":"He knew what a page could do.","image":"franklin","alt":"Dramatic reconstruction of Benjamin Franklin studying a manuscript by a Philadelphia window.","caption":"Benjamin Franklin, imagined in June 1776. Contemporary reconstruction.","body":["Long before the Declaration, Franklin made his living in print. Almanacs, pamphlets, newspapers: useful words, carried into ordinary life.","In June 1776, he brought that practiced attention to the Declaration's draft. The surviving manuscript records changes associated with Franklin and John Adams. The words passed through more than one careful hand."],"sources":["franklin","draft"],"slug":"benjamin-franklin-after-duplessis","cta":"Bring Franklin into the room"},
-    {"id":"jefferson","number":"02","eyebrow":"Thomas Jefferson / The working draft","date":"Philadelphia / June–July 1776","title":"The words were worked on.","image":"jefferson","alt":"Dramatic reconstruction of the young Thomas Jefferson drafting at a wooden writing desk.","caption":"Thomas Jefferson drafting, imagined in June 1776. Contemporary reconstruction.","body":["Jefferson was the principal draftsman. His colleagues and Congress revised the text before its adoption on July 4. The original Rough draught is full of the marks of that work.","A source lets us see the changes. It gives us the words in context, with the distance between an early draft and the text sent into the world."],"sources":["draft","chronology"],"slug":"thomas-jefferson-after-stuart","cta":"Explore the Jefferson portrait"},
-    {"id":"dunlap","number":"03","eyebrow":"John Dunlap / The first impression","date":"Philadelphia / July 4–5, 1776","title":"A declaration needed a printer.","image":"dunlap","alt":"Reconstructed candlelit eighteenth-century shop with a printer at a wooden common press.","caption":"Dunlap's working night, imagined. The room, operator and action are reconstructed.","body":["After Congress approved the text, it went to John Dunlap's Philadelphia shop. Through the night of July 4 and into July 5, the Declaration became a printed broadside: a sheet carrying type on one side.","Copies were dispatched to assemblies, committees and military commanders. The first public Declaration was a work of printing. Its words could leave the room where they had been adopted."],"sources":["dunlap","printing"],"slug":"declaration-of-independence","cta":"Discover our Declaration"},
-    {"id":"washington","number":"04","eyebrow":"George Washington / Words made public","date":"New York / July 9, 1776","title":"The sheet became a voice.","image":"washington","alt":"Dramatic reconstruction of Washington listening beside an officer reading a broadside to troops.","caption":"A reading to Continental troops, imagined. Washington ordered the reading; the scene is reconstructed.","body":["John Hancock sent a printed copy to Washington on July 6. On July 9, Washington had the Declaration read aloud to the troops assembled in New York.","A printed document could be read by one person and heard by many. Paper carried the text; a human voice carried it farther. A fragment of Washington's copy survives in the Library of Congress."],"sources":["washington"],"slug":"george-washington-after-stuart","cta":"Explore the Washington portrait"},
-    {"id":"hamilton","number":"05","eyebrow":"Alexander Hamilton / The argument in print","date":"New York / 1787–1788","title":"The argument kept moving.","image":"hamilton","alt":"Dramatic reconstruction of Alexander Hamilton writing beside newspaper sheets in 1787.","caption":"Hamilton during the ratification debate, imagined in 1787. Contemporary reconstruction.","body":["The founding did not end in July 1776. During the debate over the Constitution, Hamilton, James Madison and John Jay wrote as Publius, arguing for ratification through print.","Their Federalist essays reached readers through New York newspapers. This was a later debate, with different authors and a different document. Print was again a way to put an argument before the public."],"sources":["hamilton"],"slug":"alexander-hamilton-after-trumbull","cta":"Explore the Hamilton portrait"}
-  ]
+    {
+      "id": "franklin",
+      "number": "01",
+      "eyebrow": "Benjamin Franklin / The printer's eye",
+      "date": "The craft, before the founding",
+      "title": "He knew what a page could do.",
+      "image": "franklin",
+      "alt": "Dramatic reconstruction of Benjamin Franklin studying a manuscript by a Philadelphia window.",
+      "caption": "Benjamin Franklin, imagined in June 1776. Contemporary reconstruction.",
+      "body": [
+        "Long before the Declaration, Franklin made his living in print. Almanacs, pamphlets, newspapers: useful words, carried into ordinary life.",
+        "In June 1776, he brought that practiced attention to the Declaration's draft. The surviving manuscript records changes associated with Franklin and John Adams. The words passed through more than one careful hand."
+      ],
+      "sources": [
+        "franklin",
+        "draft"
+      ],
+      "slug": "benjamin-franklin-after-duplessis",
+      "cta": "Bring Franklin into the room"
+    },
+    {
+      "id": "jefferson",
+      "number": "02",
+      "eyebrow": "Thomas Jefferson / The working draft",
+      "date": "Philadelphia / June–July 1776",
+      "title": "The words were worked on.",
+      "image": "jefferson",
+      "alt": "Dramatic reconstruction of the young Thomas Jefferson drafting at a wooden writing desk.",
+      "caption": "Thomas Jefferson drafting, imagined in June 1776. Contemporary reconstruction.",
+      "body": [
+        "Jefferson was the principal draftsman. His colleagues and Congress revised the text before its adoption on July 4. The original Rough draught is full of the marks of that work.",
+        "A source lets us see the changes. It gives us the words in context, with the distance between an early draft and the text sent into the world."
+      ],
+      "sources": [
+        "draft",
+        "chronology"
+      ],
+      "slug": "thomas-jefferson-after-stuart",
+      "cta": "Explore the Jefferson portrait"
+    },
+    {
+      "id": "dunlap",
+      "number": "03",
+      "eyebrow": "John Dunlap / The first impression",
+      "date": "Philadelphia / July 4–5, 1776",
+      "title": "A declaration needed a printer.",
+      "image": "dunlap",
+      "alt": "Reconstructed candlelit eighteenth-century shop with a printer at a wooden common press.",
+      "caption": "Dunlap's working night, imagined. The room, operator and action are reconstructed.",
+      "body": [
+        "After Congress approved the text, it went to John Dunlap's Philadelphia shop. Through the night of July 4 and into July 5, the Declaration became a printed broadside: a sheet carrying type on one side.",
+        "Copies were dispatched to assemblies, committees and military commanders. The first public Declaration was a work of printing. Its words could leave the room where they had been adopted."
+      ],
+      "sources": [
+        "dunlap",
+        "printing"
+      ],
+      "slug": "declaration-of-independence",
+      "cta": "Discover our Declaration"
+    },
+    {
+      "id": "washington",
+      "number": "04",
+      "eyebrow": "George Washington / Words made public",
+      "date": "New York / July 9, 1776",
+      "title": "The sheet became a voice.",
+      "image": "washington",
+      "alt": "Dramatic reconstruction of Washington listening beside an officer reading a broadside to troops.",
+      "caption": "A reading to Continental troops, imagined. Washington ordered the reading; the scene is reconstructed.",
+      "body": [
+        "John Hancock sent a printed copy to Washington on July 6. On July 9, Washington had the Declaration read aloud to the troops assembled in New York.",
+        "A printed document could be read by one person and heard by many. Paper carried the text; a human voice carried it farther. A fragment of Washington's copy survives in the Library of Congress."
+      ],
+      "sources": [
+        "washington"
+      ],
+      "slug": "george-washington-after-stuart",
+      "cta": "Explore the Washington portrait"
+    },
+    {
+      "id": "hamilton",
+      "number": "05",
+      "eyebrow": "Alexander Hamilton / The argument in print",
+      "date": "New York / 1787–1788",
+      "title": "The argument kept moving.",
+      "image": "hamilton",
+      "alt": "Dramatic reconstruction of Alexander Hamilton writing beside newspaper sheets in 1787.",
+      "caption": "Hamilton during the ratification debate, imagined in 1787. Contemporary reconstruction.",
+      "body": [
+        "The founding did not end in July 1776. During the debate over the Constitution, Hamilton, James Madison and John Jay wrote as Publius, arguing for ratification through print.",
+        "Their Federalist essays reached readers through New York newspapers. This was a later debate, with different authors and a different document. Print was again a way to put an argument before the public."
+      ],
+      "sources": [
+        "hamilton"
+      ],
+      "slug": "alexander-hamilton-after-trumbull",
+      "cta": "Explore the Hamilton portrait"
+    }
+  ],
+  "opening": {
+    "id": "opening",
+    "image": "opening",
+    "alt": "Fresh cream paper on an eighteenth-century printer’s workbench, with a type case and candle. Contemporary reconstruction.",
+    "caption": "The printer’s bench / Contemporary reconstruction of printing materials."
+  },
+  "media": {
+    "film": "the-first-impression-film-v2.mp4",
+    "captions": "origin-film-v2.vtt",
+    "loop_wide": "origin-loop-wide-v2.mp4",
+    "loop_portrait": "origin-loop-portrait-v2.mp4",
+    "share": "share-card-v2.jpg"
+  }
 }

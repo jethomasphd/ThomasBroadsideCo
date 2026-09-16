@@ -43,5 +43,56 @@
       7
     ]
   ],
+  "source_edits": {
+    "opening": {
+      "path": "source/clips/opening.mp4",
+      "sha256": "c78185984fee157401afc2f7088e7a4ba9edac4f678191ee2b8def990ff9891d",
+      "start_seconds": 0,
+      "duration_seconds": 6,
+      "repeat": false
+    },
+    "franklin": {
+      "path": "source/clips/franklin.mp4",
+      "sha256": "f757419c2041cf9965d3f6311930ca984f5e2fa09ebc1b9b29d1bae6a4c465c6",
+      "start_seconds": 0,
+      "duration_seconds": 7,
+      "repeat": false
+    },
+    "jefferson": {
+      "path": "source/clips/jefferson.mp4",
+      "sha256": "0c89028d9efeedcbb4bbe6a783ea1f06eff22774567c9947b449168ee4c95198",
+      "start_seconds": 0,
+      "duration_seconds": 7,
+      "repeat": false
+    },
+    "dunlap": {
+      "path": "source/clips/dunlap.mp4",
+      "sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60",
+      "start_seconds": 0,
+      "duration_seconds": 9,
+      "repeat": false
+    },
+    "washington": {
+      "path": "source/clips/washington.mp4",
+      "sha256": "f7df26bef29cf48cf25193b8d6acd0ad896a7537312fcdb8adb47dd7ff2f323f",
+      "start_seconds": 0,
+      "duration_seconds": 9,
+      "repeat": false
+    },
+    "hamilton": {
+      "path": "source/clips/hamilton.mp4",
+      "sha256": "09ed2429f62579938e3dbf9270329e5c7dcfce4e94f6e4d490ca509ddecbc8a0",
+      "start_seconds": 0,
+      "duration_seconds": 8,
+      "repeat": false
+    },
+    "austin": {
+      "path": "source/clips/austin.mp4",
+      "sha256": "826aa7c080a47901284e8386b709e053494d9de57b6e7f3ccd9eb98465385eb8",
+      "start_seconds": 0,
+      "duration_seconds": 12,
+      "repeat": false
+    }
+  },
   "captions_default": "off"
 }

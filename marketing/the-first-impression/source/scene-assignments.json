@@ -1,0 +1,57 @@
+{
+  "policy": "Every narrative chapter has a distinct scene. Its matching site, film and promotional materials share that scene consistently. Covers and general campaign introductions use the dedicated opening study. Original-document reproductions and catalog product art retain their separate reference/product roles.",
+  "scenes": [
+    {
+      "id": "opening",
+      "still": "artwork/opening.png",
+      "clip": "source/clips/opening.mp4",
+      "social": "social/01-cover.png"
+    },
+    {
+      "id": "franklin",
+      "still": "artwork/franklin.png",
+      "clip": "source/clips/franklin.mp4",
+      "social": "social/02-franklin.png"
+    },
+    {
+      "id": "jefferson",
+      "still": "artwork/jefferson.png",
+      "clip": "source/clips/jefferson.mp4",
+      "social": "social/03-jefferson.png"
+    },
+    {
+      "id": "dunlap",
+      "still": "artwork/dunlap.png",
+      "clip": "source/clips/dunlap.mp4",
+      "social": "social/04-dunlap.png"
+    },
+    {
+      "id": "washington",
+      "still": "artwork/washington.png",
+      "clip": "source/clips/washington.mp4",
+      "social": "social/05-washington.png"
+    },
+    {
+      "id": "hamilton",
+      "still": "artwork/hamilton.png",
+      "clip": "source/clips/hamilton.mp4",
+      "social": "social/06-hamilton.png"
+    },
+    {
+      "id": "austin",
+      "still": "source/austin.jpg",
+      "clip": "source/clips/austin.mp4",
+      "social": "social/07-austin.png"
+    }
+  ],
+  "opening_surfaces": [
+    "Website hero and film poster",
+    "Homepage origin-story teaser",
+    "All four film introductions",
+    "Social cover and LinkedIn share card",
+    "Three email headers",
+    "Field-guide cover",
+    "Postcard front",
+    "Partner-sheet campaign illustration"
+  ]
+}

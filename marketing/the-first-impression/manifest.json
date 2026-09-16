@@ -1,6 +1,7 @@
 {
   "campaign": "The First Impression",
   "created": "2026-09-15",
+  "revision": "2026-09-16 / distinct scenes",
   "files": [
     {
       "path": "artwork/dunlap.png",
@@ -27,6 +28,13 @@
       "path": "artwork/jefferson.png",
       "bytes": 1946217,
       "sha256": "a9fa2a72842d133601ce2664a78f8b626343689821c432c5888b330b1da5c28b",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "artwork/opening.png",
+      "bytes": 1908865,
+      "sha256": "749d564223be85b0991272ec4a565f2f30e5d486e4a68cc58b002c830d8b977a",
       "width": 1672,
       "height": 941
     },
@@ -84,8 +92,8 @@
     },
     {
       "path": "CAMPAIGN.md",
-      "bytes": 9519,
-      "sha256": "6b0342144b75e0ccc0625ee9e3a9973855ab2070664e6a997856fe92d7bd2c75"
+      "bytes": 9584,
+      "sha256": "f64149178779335ddb6dfe2a376761b90847cd2058cdbac56f76172760dac0ee"
     },
     {
       "path": "email/july-fourth-preview.html",
@@ -94,13 +102,13 @@
     },
     {
       "path": "email/july-fourth.eml",
-      "bytes": 170360,
-      "sha256": "7e063069d6cc2ce93f3dfc0cf7efc6b409f8cd7cae674065619319240f0c7dac"
+      "bytes": 163812,
+      "sha256": "fb23c8fd3b86deea2f4a0f53fab32ae7a38f3c1f8fe1398d0ab894604bcacacf"
     },
     {
       "path": "email/july-fourth.html",
-      "bytes": 3751,
-      "sha256": "0046c310df89fc27f83793eeffc61dab16bfeda4cec606cba2fa47a7869c9a7a"
+      "bytes": 3754,
+      "sha256": "d21e004a8989b0845d3d276a0df44fec13d27cfcc9d7b6dd122c8b350301f0b9"
     },
     {
       "path": "email/july-fourth.txt",
@@ -114,13 +122,13 @@
     },
     {
       "path": "email/origin-story.eml",
-      "bytes": 170670,
-      "sha256": "50f964e9e64bb87751ba1aefe8602451c53999912635de36e6e15f78b3933cae"
+      "bytes": 164122,
+      "sha256": "438a651aef30525da653ea017fb415b617c37bd18e18d038047de593c576823a"
     },
     {
       "path": "email/origin-story.html",
-      "bytes": 3873,
-      "sha256": "0c30013babbf015085ad348d7fc2a08b90f09cb3777ab5362233ac61a5fb60b9"
+      "bytes": 3876,
+      "sha256": "cacba242901cb99ad49f02c2bedc5b043a894539f180845da17b59bca6470877"
     },
     {
       "path": "email/origin-story.txt",
@@ -134,13 +142,13 @@
     },
     {
       "path": "email/partner-introduction.eml",
-      "bytes": 170569,
-      "sha256": "f2e68e9e6af99a93681bd1e47fa0a75a635546f152150ee077c2a453d9ccc9e3"
+      "bytes": 164021,
+      "sha256": "d2b966fc6e4d3614bab2418ff570389fb3eb874ac0f88b822485848e66553faf"
     },
     {
       "path": "email/partner-introduction.html",
-      "bytes": 3848,
-      "sha256": "6962ceaaf3897a29cb325a62dd2f4ae37f49d5d0210527bf5c311273f29c009a"
+      "bytes": 3851,
+      "sha256": "e15df1457c537109d054360ea2ef440b474e3f51a94967e97e6fedabc8eecbb4"
     },
     {
       "path": "email/partner-introduction.txt",
@@ -149,13 +157,13 @@
     },
     {
       "path": "films/the-first-impression-15s-teaser.mp4",
-      "bytes": 4429250,
-      "sha256": "29d2597efcad3481d0bf64b19a1c29f766ed1d82c44c2019bad48db9bfcbd883"
+      "bytes": 3932317,
+      "sha256": "d6b88a3b351c686f5128e2c51a47d7c5ba21745c572158ff2431d30406cad88e"
     },
     {
       "path": "films/the-first-impression-65s.mp4",
-      "bytes": 28313689,
-      "sha256": "b75f3c49905c4c7581ced27c6546feec49c124fb9556c353677c2196ce980d08"
+      "bytes": 28526591,
+      "sha256": "ce7d54104f18c95a3725c9ac1b9f7d7cf04fb05c3f66fa9bae0b8d03f84fb8b9"
     },
     {
       "path": "films/the-first-impression-65s.vtt",
@@ -164,8 +172,8 @@
     },
     {
       "path": "films/the-printers-night-30s-square.mp4",
-      "bytes": 9154760,
-      "sha256": "80664b7fe5687e49a8e731aefaf22daea39874e5ded3736bae9cc040b3e62201"
+      "bytes": 8631618,
+      "sha256": "bd462b787c5a733bb8676328423a134dde3f3726e68ef506b311f1a04d99aee6"
     },
     {
       "path": "films/the-printers-night-30s-square.vtt",
@@ -174,8 +182,8 @@
     },
     {
       "path": "films/the-printers-night-30s-vertical.mp4",
-      "bytes": 9624740,
-      "sha256": "107d7ba9cddcd89aa6db5e9bad525654d93ebc9c6bc15a36bfbd4c0d2800653c"
+      "bytes": 9119645,
+      "sha256": "6f52c6d0bb44cf1dece938f0c245bd882186622fb28ee402d2d0a494e6ad6f52"
     },
     {
       "path": "films/the-printers-night-30s-vertical.vtt",
@@ -184,8 +192,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7519,
-      "sha256": "1b7e1c943794f7dd5fee7c59c9fc242c9f20457b151b500fdd222f7161ae03fb"
+      "bytes": 7556,
+      "sha256": "10066e9572d5e0cf57c2e237193ed2a3f5c71bccbe8c744a5ebd3ee3aa26f3d0"
     },
     {
       "path": "links.json",
@@ -194,23 +202,23 @@
     },
     {
       "path": "print/the-first-impression-field-guide.pdf",
-      "bytes": 11168397,
-      "sha256": "3c93564949a52a5966587079c2c11a53d290da1f1e30a78d3942d3477a2438cd"
+      "bytes": 11759886,
+      "sha256": "940c9400d929ac220c5812544816ba5177ee03c7e1abb31620a367bd69edbc6b"
     },
     {
       "path": "print/the-first-impression-partner-sheet.pdf",
-      "bytes": 1067163,
-      "sha256": "e8f111d194a8e36659c96e162dc649552ca4f7299120a6f05c293f7fea9424a1"
+      "bytes": 1001099,
+      "sha256": "fc31303e498225d1287f3000da1df8cb671f51e19869016d725f070a3609599d"
     },
     {
       "path": "print/the-first-impression-postcard-6x9.pdf",
-      "bytes": 706098,
-      "sha256": "6f0d014208ce97ca238fe4bad38457773c44d2c8f82f73d3842526183d54bc89"
+      "bytes": 640025,
+      "sha256": "44757e43d55296a217b24967bda1296410605ea732cf89ee7672162404397204"
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 8186,
-      "sha256": "ed40953d3f20648f59cb4579f5e901b6be19854d6153103dd4cb109e12b28463"
+      "bytes": 10227,
+      "sha256": "3f0cf57a09e50e30ddbb51f69755feb51857f251aff36633fd1fab2e9ffff8bf"
     },
     {
       "path": "QA.md",
@@ -219,13 +227,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 6813,
-      "sha256": "d528770b02134f620436ecb9dafc9f764b5dc8db255331d132b51da89e2bf19a"
+      "bytes": 7825,
+      "sha256": "80252c06ba49d024ea267903e4c339f7c2eaa274c9c7f7a135399f4cfd5a5996"
     },
     {
       "path": "social/01-cover.png",
-      "bytes": 138737,
-      "sha256": "b324bf9e59d1c272d6ca33be88ef5cb32b0ff1c18bb8205832e9d9e372f08afe",
+      "bytes": 124740,
+      "sha256": "a1b601765b12faa2843d6acce0bd33c094bff924674271f42b5f6a42c9978622",
       "width": 1080,
       "height": 1350
     },
@@ -280,10 +288,15 @@
     },
     {
       "path": "social/09-linkedin-share.png",
-      "bytes": 100763,
-      "sha256": "49ac2476032000ff4e24a96bf5a85a5ba065f004f6227d03052869d22757ca1a",
+      "bytes": 97135,
+      "sha256": "060da2aeedcfa1840458b0954bd0764b34e7cb207deaa10cdc87e1fc9838ee11",
       "width": 1200,
       "height": 630
+    },
+    {
+      "path": "source/austin-edit.json",
+      "bytes": 846,
+      "sha256": "7c4c4d3e18b4a8d1b3bf6bc4b8a170dc0f8a4ae07bab799614ff8a47d229666b"
     },
     {
       "path": "source/austin.jpg",
@@ -293,29 +306,34 @@
       "height": 942
     },
     {
+      "path": "source/build_austin.py",
+      "bytes": 1694,
+      "sha256": "5f05745a3919bd85e2279cd6f5d58d57122f7af1d21a4134372fdcff80273d10"
+    },
+    {
       "path": "source/build_email.py",
-      "bytes": 6927,
-      "sha256": "da187c0ba7252eb168830007a0ea1332fa356aa8fd14a6ec2e4e6aaa97b77894"
+      "bytes": 6916,
+      "sha256": "a1dbdd144c0cfb3c0f26f574243fa959a77427be6d240ef114bc9d3407f70923"
     },
     {
       "path": "source/build_media.py",
-      "bytes": 8456,
-      "sha256": "eaa08a492df76fd544da26e918d3df2b2419673f74c9b31a2b4403917f3ea140"
+      "bytes": 9501,
+      "sha256": "bc0f00c84724759237fea5b0ca24400420d2ea5a2ff087aa7752904b85bcb961"
     },
     {
       "path": "source/build_print.py",
-      "bytes": 11689,
-      "sha256": "0dea5f97545e6dda005d516c826280b68cb0e996384ae2a3f9f714b2d308a60d"
+      "bytes": 11766,
+      "sha256": "b40b22266bce0dcad627dafc40f3502e02dc78a745e8a814db4c0ccac6b49d10"
     },
     {
       "path": "source/campaign-art.html",
-      "bytes": 7132,
-      "sha256": "70a5be2cb23b9be29b70070590af65b0df68ac6145b59a15a9fb46ac2337fbf5"
+      "bytes": 7124,
+      "sha256": "386274ab726e814bf4dd774484bb2235227ed549c0d96223187fb89a2a003cd5"
     },
     {
       "path": "source/clips/austin.mp4",
-      "bytes": 950339,
-      "sha256": "17969862f37352b8a18dd05049cff20fee3e32572ba8dcb172619c8f2458096d"
+      "bytes": 6698244,
+      "sha256": "826aa7c080a47901284e8386b709e053494d9de57b6e7f3ccd9eb98465385eb8"
     },
     {
       "path": "source/clips/dunlap.mp4",
@@ -338,6 +356,11 @@
       "sha256": "0c89028d9efeedcbb4bbe6a783ea1f06eff22774567c9947b449168ee4c95198"
     },
     {
+      "path": "source/clips/opening.mp4",
+      "bytes": 4608225,
+      "sha256": "c78185984fee157401afc2f7088e7a4ba9edac4f678191ee2b8def990ff9891d"
+    },
+    {
       "path": "source/clips/washington.mp4",
       "bytes": 6336477,
       "sha256": "f7df26bef29cf48cf25193b8d6acd0ad896a7537312fcdb8adb47dd7ff2f323f"
@@ -348,6 +371,13 @@
       "sha256": "b4681177aa77245ef184242147ab2582b196bff491aa21032986d53eda09db29",
       "width": 671,
       "height": 850
+    },
+    {
+      "path": "source/email-header.jpg",
+      "bytes": 115073,
+      "sha256": "aea615bb4e35e629b1d7a7166e7b873bd18072742961ea655ad4c2f17d4bc349",
+      "width": 1200,
+      "height": 630
     },
     {
       "path": "source/endcard-square.png",
@@ -417,13 +447,13 @@
     },
     {
       "path": "source/generation-record.json",
-      "bytes": 6843,
-      "sha256": "f964639dc894acf11361b50779ca549cd496d642802804d95b3bc99ed7ce8b64"
+      "bytes": 8288,
+      "sha256": "42fd919b4add36d9ada031a23617bf489ba3e539ee80c73b4d5f36e08322e67e"
     },
     {
       "path": "source/image-prompts.json",
-      "bytes": 7520,
-      "sha256": "ae563a7ac4f19928eb9a41a8849f1db9027b7507d03ae983422ef5cd564ee038"
+      "bytes": 9729,
+      "sha256": "b905314ab9d54c5721ca96cbec7e619b4c08c52832dfa105d7c154fe0ea26cfe"
     },
     {
       "path": "source/jefferson-draft.jpg",
@@ -468,39 +498,49 @@
       "height": 3200
     },
     {
+      "path": "source/refresh_manifest.py",
+      "bytes": 1113,
+      "sha256": "1be5d9f3cc282fc39bcc34d1094f8b09c4361edaf6e953dc5c04ee4f8a4c19ea"
+    },
+    {
       "path": "source/requirements-design.txt",
       "bytes": 49,
       "sha256": "03e49f1a4e89a9523bfb4bb80636f4f6ba674dd567a7ee48a72f788a8c5c8de0"
     },
     {
+      "path": "source/scene-assignments.json",
+      "bytes": 1746,
+      "sha256": "32b03cf7ec7acd20cf7e0fa84104d47333708dc2a553fe4e65ad79a514826c5a"
+    },
+    {
       "path": "source/story.json",
-      "bytes": 6770,
-      "sha256": "2f398bfe90ec4f8682b5f53b6ffd16a78cf25e0829d30497f119a9e146eb1a4e"
+      "bytes": 8322,
+      "sha256": "59f4cda9400575dae9e98b1437d21fbf6d099446c606c4097644233917310cbf"
     },
     {
       "path": "source/the-first-impression-15s-teaser-timeline.json",
-      "bytes": 235,
-      "sha256": "4e342f54ac5db11a0aaf08b987a5c19a4aeed925d30ca39d76d3b38f6c20609f"
+      "bytes": 711,
+      "sha256": "b103222eff7d2b4da815e62973518cfc5d2e52c31da0aa0fe6d6b8f819b1aac8"
     },
     {
       "path": "source/the-first-impression-65s-timeline.json",
-      "bytes": 478,
-      "sha256": "da34a988b6c4f2a02bed820b1e135f89ee2fbd9902730f2f8c0eeb33116a0a03"
+      "bytes": 2102,
+      "sha256": "3b05161d9892ea4bd89bbfcea84978566cee5da6ad16419e2cca5735ec15a6e0"
     },
     {
       "path": "source/the-printers-night-30s-square-timeline.json",
-      "bytes": 285,
-      "sha256": "010ee9fdf45356b6b73e9505851b248dbbce222ada5883785d8f050c192cfe32"
+      "bytes": 995,
+      "sha256": "bb4c91edc7cfc006d27010bc03711e942d8d1f23462226ce5c5d3fb27a53d2ae"
     },
     {
       "path": "source/the-printers-night-30s-vertical-timeline.json",
-      "bytes": 287,
-      "sha256": "24827334fc73a60560bcd6f4a1e7cfdaeb4e8d41cf8613b9dfb529ef525a4112"
+      "bytes": 997,
+      "sha256": "828e5d4e136bdba3a174eaaf48237ec06b407e6d8a5e010376ab2809008490da"
     },
     {
       "path": "source/video-prompts.json",
-      "bytes": 4877,
-      "sha256": "a06fe912e1f8349a98541e26647e0e61d29b87363499e8cf9d6e266083b714dc"
+      "bytes": 5643,
+      "sha256": "759c25deb209ea7c6fe9d8355e6905770e3bc22599d5f895968bc015f1646a3d"
     }
   ]
 }

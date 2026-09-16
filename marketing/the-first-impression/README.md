@@ -1,5 +1,8 @@
 # The First Impression
 
+**Distinct-scene edition · September 16, 2026.** Every chapter has its own scene. Matching website, film and promotional materials remain consistent. The introduction now has a dedicated paper-and-type study; the Austin passage uses two unrepeated shots. All four films, the website hero and poster, social cover/share artwork, three email sets and three print PDFs are updated.
+
+
 **Before it was a relic, it was news.**
 
 A complete heritage campaign for Thomas Broadside Co. Open **index.html** for the visual library. The website entry is **Origin Story**, linked from the main navigation and the homepage feature.
@@ -65,6 +68,7 @@ python marketing/the-first-impression/source/build_media.py
 python marketing/the-first-impression/source/build_print.py
 python marketing/the-first-impression/source/build_email.py
 python tools/selfcheck.py
+python marketing/the-first-impression/source/refresh_manifest.py
 python tools/test_origin_story.py
 node tools/test_living_press.cjs
 ```
@@ -73,4 +77,6 @@ The historical story is authored in `data/campaigns/the-first-impression.json`. 
 
 Editable graphics: **source/campaign-art.html?design=cover**. Other designs: franklin, jefferson, dunlap, washington, hamilton, austin, closing. Default portrait is 1080 × 1350; `format=wide` is 1200 × 630, `format=filmwide` is 1920 × 1080, `format=vertical` is 1080 × 1920, `format=square` is 1080 × 1080. Film end cards use design=closing. Export the full page at the exact dimensions after local fonts and images load. The source HTML is the editable composition; generated scenes are preserved separately.
 
-The media builder consumes the included clips and speech files and re-renders the edit on each run. It does not call Runway or spend credits. Its temporary files live under the repo's ignored work/ directory. Asset checksums and technical metadata are in **manifest.json**; refresh the manifest after editing any packaged files.
+Scene assignments are documented in **source/scene-assignments.json**. The opening image belongs to covers and introductions; it must not be substituted for a founder’s chapter. The film builder rejects duplicate clip content, duplicate chapters and clips shorter than their allotted screen time. Optional **source/build_austin.py PATH_TO_ORIGINAL_MOV_DIRECTORY** rebuilds the included Austin edit; the normal film build needs no raw MOV files.
+
+The media builder consumes the included clips and speech files and re-renders the edit on each run. It does not call Runway or spend credits. Its temporary files live under the repo's ignored work/ directory. Asset checksums and technical metadata are in **manifest.json**; run **source/refresh_manifest.py** after editing any packaged files. Email drafts embed **source/email-header.jpg**, so rebuilding them also works from the standalone kit.

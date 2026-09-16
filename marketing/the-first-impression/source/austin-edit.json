@@ -1,0 +1,19 @@
+{
+  "description": "Two unrepeated, real-time views of the actual Austin shop. No generated footage, no reversal, no speed change. Original audio omitted for the existing narration and score.",
+  "duration_seconds": 12,
+  "shots": [
+    {
+      "file": "IMG_7243.MOV",
+      "start_seconds": 0.2,
+      "duration_seconds": 5.5,
+      "sha256": "bac8ab3ab7f5fc6c7fffe957c8031dda6f8475515199766015068911092eb685"
+    },
+    {
+      "file": "IMG_7249.MOV",
+      "start_seconds": 0.2,
+      "duration_seconds": 6.5,
+      "sha256": "f554405ab0b5549ee4e90909ad13bd793e3d73c7f986a563e1968f0ad2ed22f3"
+    }
+  ],
+  "filter": "scale=1920:1080:force_original_aspect_ratio=increase,crop=1920:1080,setsar=1,fps=24,eq=contrast=1.08:brightness=-0.025:saturation=0.62:gamma=1.02,colorbalance=rs=.025:gs=.009:bs=-.02:rh=.025:bh=-.025,unsharp=5:5:0.25:3:3:0"
+}
