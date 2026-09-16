@@ -24,6 +24,16 @@
       "task_id": "4d329bdf-9651-46b9-8350-60a45bdfa04e",
       "prompt": "Single continuous photorealistic historical-reconstruction shot. Preserve the reference person's face, age, clothing, hands, room, objects and natural light. Very slow camera push, no cuts, no orbit, no new objects, no visible captions or logos, no invented legible manuscript text, no face morphing. Human motion is subtle, grounded and unhurried. Alexander Hamilton writes a few short natural quill strokes, pauses, and slightly raises his eyes toward the newspaper sheet at the side of the desk. Preserve his face and the pen grip exactly. The papers stay in place; the candle flickers gently. No dialogue, no elaborate gesturing, no page turn.",
       "kind": "video"
+    },
+    "opening": {
+      "task_id": "6502cfc0-1ed7-4e35-846a-5aa225efc8f1",
+      "prompt": "An extremely restrained cinematic camera push toward the stack of cream paper, keeping the original 16:9 composition. The candle flame flickers gently and casts a slight natural change in warm light across the tabletop. Paper stack, wood grain, metal type case, jar and cloth remain completely still and physically coherent. No hands, no people, no turning pages, no writing appearing, no new objects, no camera orbit, no changes to the paper edges. Cool window light remains steady. Quiet anticipation, close photographic realism, one uninterrupted shot. A contemporary reconstruction of eighteenth-century printing materials.",
+      "kind": "video",
+      "native_size": [
+        1280,
+        720
+      ],
+      "duration_seconds": 10.041667
     }
   },
   "audio": {
@@ -78,5 +88,21 @@
     "remaining_after_generation": 1625,
     "used": 625,
     "note": "Generation tools reported these account balances during this campaign. No purchase or subscription change was performed."
-  }
+  },
+  "revisions": [
+    {
+      "date": "2026-09-16",
+      "change": "Distinct opening scene and two unrepeated owner-supplied Austin shots. Existing narration and score retained.",
+      "image_generation": {
+        "initial": "exec-181006d9-e73c-4748-8110-de7163fe1ee9.png",
+        "final": "exec-e24d45e7-9273-4cba-aee4-6942ea151952.png",
+        "edit": "Removed the ambiguous cylindrical tool from the lower-right foreground; preserved all other materials and composition."
+      },
+      "runway_credits": {
+        "before": 1431,
+        "after": 1311,
+        "used": 120
+      }
+    }
+  ]
 }

@@ -2,7 +2,8 @@
 from pathlib import Path
 from html.parser import HTMLParser
 from urllib.parse import urlsplit, unquote
-import hashlib,json,re
+import copy,hashlib,json,re
+from build_origin import validate_scene_images
 
 ROOT=Path(__file__).resolve().parent.parent; SITE=ROOT/'site'; KIT=ROOT/'marketing/the-first-impression'
 class Page(HTMLParser):
@@ -32,6 +33,42 @@ def inspect_links(path,root):
     return p
 
 story=inspect_links(SITE/'origins.html',SITE)
+data=json.loads((ROOT/'data/campaigns/the-first-impression.json').read_text(encoding='utf-8'))
+assert data==json.loads((KIT/'source/story.json').read_text(encoding='utf-8')),'kit story snapshot is stale'
+validate_scene_images(data)
+for replacement in ['opening', 'franklin']:
+    bad=copy.deepcopy(data);bad['chapters'][2]['image']=replacement
+    try:validate_scene_images(bad)
+    except ValueError:pass
+    else:raise AssertionError('duplicate-scene guard accepted a reused image')
+assignments=json.loads((KIT/'source/scene-assignments.json').read_text(encoding='utf-8'))['scenes']
+assert {s['id'] for s in assignments}=={'opening','franklin','jefferson','dunlap','washington','hamilton','austin'}
+for field in ['still','clip']:
+    hashes=[hashlib.sha256((KIT/s[field]).read_bytes()).hexdigest() for s in assignments]
+    assert len(set(hashes))==len(hashes),f'duplicate scene content in {field}'
+website=(SITE/'origins.html').read_text(encoding='utf-8')
+art=(KIT/'source/campaign-art.html').read_text(encoding='utf-8')
+assert "cover:{n:'01',image:'opening'" in art
+assert 'poster="/media/origin/opening.jpg"' in website
+assert '/media/origin/opening.webp' in (SITE/'css/origin-story.css').read_text(encoding='utf-8')
+for chapter in data['chapters']:
+    section=re.search(r'<section[^>]+id="'+chapter['id']+r'".*?</section>',website,re.S).group()
+    assert f'/media/origin/{chapter["image"]}.webp' in section
+    assert re.search(chapter['id']+r":\{[^}]+image:'"+chapter['image']+"'",art)
+for timeline in (KIT/'source').glob('*-timeline.json'):
+    edit=json.loads(timeline.read_text(encoding='utf-8'))
+    scenes=[s[0] for s in edit['segments']]
+    assert len(scenes)==len(set(scenes)),f'repeated chapter in {timeline.name}'
+    used=[]
+    for scene,source in edit['source_edits'].items():
+        digest=hashlib.sha256((KIT/source['path']).read_bytes()).hexdigest()
+        assert digest==source['sha256'] and source['repeat'] is False
+        used.append(digest)
+    assert len(used)==len(set(used)),f'repeated source clip in {timeline.name}'
+    assert set(edit['source_edits'])==set(scenes)-{'closing'}
+assert '-stream_loop' not in (KIT/'source/build_media.py').read_text(encoding='utf-8'),'narrative shots must not loop'
+assert (KIT/'source/email-header.jpg').read_bytes()==(SITE/'media/origin'/data['media']['share']).read_bytes()
+for name in data['media'].values():assert '/media/origin/'+name in website
 assert {'franklin','jefferson','dunlap','washington','hamilton','austin','original','sources','collection'} <= set(story.ids)
 assert len(story.tracks)==1 and all('default' not in t for t in story.tracks),'captions must start off'
 assert any('controls' in v and v.get('preload')=='none' for v in story.videos),'film must wait for intent'

@@ -172,7 +172,7 @@ Use the 30-second film for Printer and Source; use the actual Declaration card f
 
 ## Accessibility / alt text
 
-01. A candlelit reconstruction of a printer at a wooden press, with the headline “Before it was a relic, it was news.”
+01. A contemporary reconstruction of fresh paper on a candlelit printer’s bench, with the headline “Before it was a relic, it was news.”
 
 02. Reconstructed Benjamin Franklin studies a manuscript. Text explains that he made his living in print before helping revise the Declaration's draft.
 
@@ -188,7 +188,7 @@ Use the 30-second film for Printer and Source; use the actual Declaration card f
 
 08. The existing Thomas Broadside Co. Declaration design on cream. Headline: “Make your own first impression.”
 
-09. Landscape reconstruction of Dunlap's shop with “Before it was a relic, it was news.” and a link to the origin story.
+09. Landscape reconstruction of fresh paper, a type case and candle on a printer’s bench with “Before it was a relic, it was news.” and a link to the origin story.
 
 For video, upload the matching VTT caption sidecar where the platform accepts it. The website's caption preference remains off until the viewer chooses it. The webpage includes the full transcript.
 

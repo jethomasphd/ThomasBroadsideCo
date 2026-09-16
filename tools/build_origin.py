@@ -5,9 +5,15 @@ from pathlib import Path
 from string import Template
 
 ROOT = Path(__file__).resolve().parent.parent
+def validate_scene_images(data):
+    scene_images = [data['opening']['image'], *(c['image'] for c in data['chapters'])]
+    if len(set(scene_images)) != len(scene_images):
+        raise ValueError('Origin opening and historical chapters must each have a distinct scene')
+
 def build_origin():
     data = json.loads((ROOT / 'data/campaigns/the-first-impression.json').read_text(encoding='utf-8'))
     esc = html.escape
+    validate_scene_images(data)
     sources = {s['id']: s for s in data['sources']}
     chapters = []
     for c in data['chapters']:
@@ -20,7 +26,7 @@ def build_origin():
     refs = ''.join(f'<li id="source-{s["id"]}"><a href="{esc(s["url"])}">{esc(s["title"])}</a><span>{esc(s["institution"])}</span><p>{esc(s["note"])}</p></li>' for s in data['sources'])
     portraits = ''.join(f'<a href="/documents/{c["slug"]}.html"><img src="/art/{c["slug"]}.jpg" width="600" height="800" loading="lazy" alt="{esc(c["id"].title())} portrait broadside from the collection"><span>{c["id"].title()} ↗</span></a>' for c in data['chapters'] if c['id'] != 'dunlap')
     template = Template((ROOT / 'tools/templates/origins.html').read_text(encoding='utf-8'))
-    (ROOT / 'site/origins.html').write_text(template.substitute(chapters='\n'.join(chapters), chapter_nav=nav, sources=refs, portraits=portraits), encoding='utf-8')
+    (ROOT / 'site/origins.html').write_text(template.substitute(chapters='\n'.join(chapters), chapter_nav=nav, sources=refs, portraits=portraits, opening_image=data['opening']['image'], share_image=data['media']['share'], **{key: data['media'][key] for key in ['film', 'captions', 'loop_wide', 'loop_portrait']}), encoding='utf-8')
     print('built The First Impression origin story')
 
 if __name__ == '__main__':

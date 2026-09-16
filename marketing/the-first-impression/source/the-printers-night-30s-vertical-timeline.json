@@ -23,5 +23,28 @@
       5
     ]
   ],
+  "source_edits": {
+    "opening": {
+      "path": "source/clips/opening.mp4",
+      "sha256": "c78185984fee157401afc2f7088e7a4ba9edac4f678191ee2b8def990ff9891d",
+      "start_seconds": 0,
+      "duration_seconds": 6,
+      "repeat": false
+    },
+    "dunlap": {
+      "path": "source/clips/dunlap.mp4",
+      "sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60",
+      "start_seconds": 0,
+      "duration_seconds": 10,
+      "repeat": false
+    },
+    "washington": {
+      "path": "source/clips/washington.mp4",
+      "sha256": "f7df26bef29cf48cf25193b8d6acd0ad896a7537312fcdb8adb47dd7ff2f323f",
+      "start_seconds": 0,
+      "duration_seconds": 9,
+      "repeat": false
+    }
+  },
   "captions_default": "off"
 }
