@@ -4,7 +4,7 @@ Open **index.html** for the three finished 75-second films, covers, captions, la
 
 The press makes words public. The words become part of a life.
 
-This edition combines 25.5 seconds of owner-supplied shop footage with the founding story and Western Canon. Elias provides a measured, stoic male voice; an original chamber score accompanies the machinery. After “just listen,” four seconds belong to the machinery alone. Three subtle book-cover overlays identify Homer, Matthew and Dante. Each shot appears once. Captions remain optional and off by default.
+This edition combines 25.5 seconds of owner-supplied shop imagery with the founding story and Western Canon. Elias provides a measured, stoic male voice; an original chamber score accompanies the machinery. The first 3.5 seconds hold on a still Heidelberg frame while the narrator begins; the same shot then plays at real speed with its original sound. After “just listen,” four seconds belong to the machinery alone. Three subtle book-cover overlays identify Homer, Matthew and Dante. Each shot appears once. Captions remain optional and off by default.
 
 ## Rebuild
 
@@ -22,4 +22,4 @@ To change the edit, update `data/campaigns/history-has-a-pulse.json` in the repo
 
 No messages or social posts have been sent. Launch destinations use the original storefront at thomasbroadside.co. Deploy the site update before releasing the campaign.
 
-Book references are editable in `source/book-covers.html?id=sea|hill|wood`, captured at 600×860 into `source/book-covers/`. These are campaign cover designs, not facsimiles or additional products. The principal brand line is “Words to live with.”
+Book references are editable in `source/book-covers.html?book=sea|hill|wood`, captured at 600×860 into `source/book-covers/`. These are campaign cover designs, not facsimiles or additional products. The principal brand line is “Words to live with.”

@@ -59,7 +59,8 @@ def mix_audio():
     fc.append(''.join(voices)+f'amix=inputs={len(voices)}:normalize=0,apad=whole_dur={LENGTH},asplit=3[voice][key1][key2]')
     for j,s in enumerate([s for s in D['scenes'] if s['kind']=='shop'],len(D['narration'])+1):
         inputs+=['-i',K/s['clip']]
-        fc.append(f'[{j}:a]atrim=0:{s["duration"]},asetpts=PTS-STARTPTS,highpass=f=90,lowpass=f=10000,loudnorm=I=-22:TP=-3:LRA=8,afade=t=in:d=0.08,afade=t=out:st={s["duration"]-.20}:d=0.20,adelay={round(s["at"]*1000)}:all=1[p{j}]')
+        hold=s.get('hold_start',0);motion=s['duration']-hold
+        fc.append(f'[{j}:a]atrim=0:{motion},asetpts=PTS-STARTPTS,highpass=f=90,lowpass=f=10000,loudnorm=I=-22:TP=-3:LRA=8,afade=t=in:d=0.08,afade=t=out:st={motion-.20}:d=0.20,adelay={round((s["at"]+hold)*1000)}:all=1[p{j}]')
         shop.append(f'[p{j}]')
     fc.append(''.join(shop)+f'amix=inputs={len(shop)}:normalize=0,apad=whole_dur={LENGTH}[shop]')
     fc += ['[music][key1]sidechaincompress=threshold=0.028:ratio=5:attack=30:release=450[mduck]', '[shop][key2]sidechaincompress=threshold=0.032:ratio=4:attack=20:release=300[pduck]', f'[voice][mduck][pduck]amix=inputs=3:normalize=0,alimiter=limit=0.89:level=false,atrim=0:{LENGTH},aformat=sample_rates=48000:channel_layouts=stereo[out]']
@@ -72,9 +73,10 @@ def render(fmt):
     for i,s in enumerate(D['scenes']):
         end=s['id']=='closing';dest=W/f'{fmt}-{i:02}.mp4'
         src=K/'source'/f'endcard-{fmt}.png' if end else K/s['clip']
-        if not end:assert duration(src)+.05>=s['source_start']+s['duration'],s['id']
+        if not end:assert duration(src)+.05>=s['source_start']+s['duration']-s.get('hold_start',0),s['id']
         ih=1080 if fmt=='vertical' and not end else h
         vf=[f'scale={w}:{ih}:force_original_aspect_ratio=increase',f'crop={w}:{ih}:(iw-ow)*{s["crop_x"]}:(ih-oh)*{s["crop_y"]}','setsar=1','fps=24']
+        if s.get('hold_start'):vf.insert(0,f'tpad=start_mode=clone:start_duration={s["hold_start"]}')
         if s['kind']=='shop':vf+=['eq=contrast=1.08:brightness=-0.025:saturation=0.62:gamma=1.02','colorbalance=rs=.025:gs=.009:bs=-.02:rh=.025:bh=-.025','unsharp=5:5:0.25:3:3:0']
         if not end:
             note={'shop':'ACTUAL SHOP FOOTAGE','history':'CONTEMPORARY RECONSTRUCTION','canon':'CONTEMPORARY VISUAL MEDITATION'}[s['kind']]
@@ -101,7 +103,7 @@ def render(fmt):
             graph=f'[0:v]{",".join(vf)}[base];[1:v]scale={cw}:{ch},fps=24,format=rgba,colorchannelmixer=aa=0.84,fade=t=in:st=0.7:d=0.7:alpha=1,fade=t=out:st={s["duration"]-.7}:d=0.6:alpha=1[book];[base][book]overlay={bx}:{by}:shortest=1:format=auto,format=yuv420p[out]'
             filters=['-filter_complex',graph,'-map','[out]']
         run(input_args+['-t',s['duration'],'-an',*filters,'-c:v','libx264','-preset','fast','-crf','19','-pix_fmt','yuv420p','-map_metadata','-1','-movflags','+faststart',dest])
-        parts.append(dest);audit.append(dict(id=s['id'],at=s['at'],duration=s['duration'],source=s.get('clip'),source_start=s['source_start'],source_sha256=s.get('sha256'),kind=s['kind']))
+        parts.append(dest);audit.append(dict(id=s['id'],at=s['at'],duration=s['duration'],hold_start=s.get('hold_start',0),source=s.get('clip'),source_start=s['source_start'],source_sha256=s.get('sha256'),kind=s['kind']))
         print(fmt,s['id'],flush=True)
     listing=W/f'{fmt}-concat.txt';listing.write_text('\n'.join(f"file '{p.as_posix()}'" for p in parts),encoding='utf-8')
     silent=W/f'{fmt}-silent.mp4';run(['-f','concat','-safe','0','-i',listing,'-c','copy',silent])
@@ -114,7 +116,7 @@ def render(fmt):
 
 mix_audio()
 for fmt in ([args.format] if args.format else ['wide','vertical','square']):render(fmt)
-cues=sorted([(0,.5,'[Press machinery]'),(D['listening_window']['start'],9.0,'[Press machinery, unaccompanied]')]+[(v['at'],v['at']+v['duration'],v['text']) for v in D['narration']])
+cues=sorted([(D['listening_window']['start'],9.0,'[Press machinery, unaccompanied]')]+[(v['at'],v['at']+v['duration'],v['text']) for v in D['narration']])
 vtt='WEBVTT\n\n'+'\n\n'.join(f'{clock(a)} --> {clock(b)}\n'+ '\n'.join(textwrap.wrap(t,64)) for a,b,t in cues)+'\n'
 srt='\n\n'.join(f'{i}\n{clock(a,True)} --> {clock(b,True)}\n'+ '\n'.join(textwrap.wrap(t,64)) for i,(a,b,t) in enumerate(cues,1))+'\n'
 (K/f'films/directors-cut-{LENGTH}s.vtt').write_text(vtt,encoding='utf-8')

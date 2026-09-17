@@ -6,8 +6,7 @@ The press makes words public. The words become part of a life.
 
 | Time | Picture | Narration begins |
 |---|---|---|
-| 0–5.5s | AUSTIN, TEXAS / History has a pulse. | History has a pulse. Just listen. |
-| 5.5–9s | THE WORKING SHOP / AUSTIN / The work continues. | Score and/or actual machinery. |
+| 0–9s | AUSTIN, TEXAS / History has a pulse. | History has a pulse. Just listen. |
 | 9–16s | PHILADELPHIA / 1776 / The first impression. | In seventeen seventy-six, the Declaration entered a print shop. The words had to reach the people. |
 | 16–22s | THE WORKING DRAFT / 1776 / The words were worked on. | The spirit of printing transforms a working draft into a printed sheet. |
 | 22–28s | WORDS MADE PUBLIC / 1776 / A voice, carried farther. | And a voice carried farther. |
@@ -57,4 +56,4 @@ Words to live with.
 
 ## Picture and sound
 
-14 unique shots; 25.5 seconds of actual shop footage. The two finishing shots use separate, nonoverlapping intervals from IMG_7241.MOV. Each other scene appears once. All formats carry the same complete narrative. Elias speaks in separately timed phrases. After “just listen,” four seconds of unaccompanied machinery precede the score. Three custom book-cover designs identify Homer, Matthew and Dante; they are contemporary campaign designs, not historical facsimiles. Actual machinery returns with each shop shot; music and machinery duck under the narrator. Captions are separate and off by default.
+13 unique shots; 25.5 seconds of actual shop imagery. The opening holds the first Heidelberg frame for 3.5 seconds before its 5.5 seconds of motion and synchronized sound begin at real speed; the finishing equipment appears once later. Each scene appears once. All formats carry the same complete narrative. Elias speaks in separately timed phrases. After “just listen,” four seconds of unaccompanied machinery precede the score. Three custom book-cover designs identify Homer, Matthew and Dante; they are contemporary campaign designs, not historical facsimiles. Actual machinery returns with each shop shot; music and machinery duck under the narrator. Captions are separate and off by default.

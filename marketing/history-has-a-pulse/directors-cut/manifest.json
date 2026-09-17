@@ -27,18 +27,18 @@
     },
     {
       "path": "artwork/poster-square.jpg",
-      "bytes": 115294,
-      "sha256": "69a6f0bb394c3832bba50c486dbb16499578249ec412915ae65c6fd55550799b"
+      "bytes": 115473,
+      "sha256": "648257a26fe7d1143412484ea38a3c936c843ae03d40ab73054900752f0a5e98"
     },
     {
       "path": "artwork/poster-vertical.jpg",
-      "bytes": 133621,
-      "sha256": "ae7f4596dc5165b4b826947f7eb65557a993e51c957d42a8f4e09b24a40f5019"
+      "bytes": 136343,
+      "sha256": "cc87df054a6ee3521e7637dbb05e3eb38846e4feffb4da36efb6afba63e6c64d"
     },
     {
       "path": "artwork/poster-wide.jpg",
-      "bytes": 196095,
-      "sha256": "ae08360a11d82d5824ce2c06242dab77e119c7369bef91d05ee884243b6d4f80"
+      "bytes": 193848,
+      "sha256": "e413bde51ae5573d3affe66855b44e85d734a9eddff9d5022c0b3a857b99f1cf"
     },
     {
       "path": "artwork/room.png",
@@ -157,13 +157,13 @@
     },
     {
       "path": "email/launch.eml",
-      "bytes": 273467,
-      "sha256": "2f39e724567037fe203bffa99dec80b02d70286ba485634227fc93909c2acbde"
+      "bytes": 270391,
+      "sha256": "4a682fe2e13c3f2e9d3eae1342554719a3350ea3f7267ee97fe87ac50ad1e0f9"
     },
     {
       "path": "email/launch.html",
-      "bytes": 2990,
-      "sha256": "1db5358d780e0b760af92040f4dd4a20128f6562aa71015d29c5a2ec9b881f87"
+      "bytes": 2996,
+      "sha256": "a4c3bf03e09f236be8092c122e385c52e955a25b723238327f98d6d79cdbf558"
     },
     {
       "path": "email/launch.txt",
@@ -172,33 +172,33 @@
     },
     {
       "path": "films/directors-cut-75s.srt",
-      "bytes": 1252,
-      "sha256": "6ad1d7dc119edae715c8297fb9973b5c48e57f57d759984926b8f4cee584d97e"
+      "bytes": 1200,
+      "sha256": "7c4f901d24ff1f9332b8e55cc370878a2b6479b0be0bde2e3415217ed4256349"
     },
     {
       "path": "films/directors-cut-75s.vtt",
-      "bytes": 1215,
-      "sha256": "872e4882802619146cbe2f044099d3c4f190a0b2ea68fe0a65da08bb73ba2461"
+      "bytes": 1166,
+      "sha256": "313649cedac7c8bbbd43d5f80c383cb76ef24b44f8eb43017b611368a9b86c74"
     },
     {
       "path": "films/history-has-a-pulse-directors-cut-75s-square.mp4",
-      "bytes": 50991550,
-      "sha256": "0ecb7517889ffe775b263ba39b586290be18b54ef3d691ea2211a7103038f5f4"
+      "bytes": 49097347,
+      "sha256": "69891fd70c00e205f64215e88076c329c4a9bece279e93678467b381e4b67e69"
     },
     {
       "path": "films/history-has-a-pulse-directors-cut-75s-vertical.mp4",
-      "bytes": 52082607,
-      "sha256": "39a6f911306773b3e679d364f3b9f15f78537c869c89f7da9811b240866989e4"
+      "bytes": 50122982,
+      "sha256": "698e8e60e9dcde8c8dfc91da8b17def3f62c40eb0dde4442c9db086c3483fa08"
     },
     {
       "path": "films/history-has-a-pulse-directors-cut-75s-wide.mp4",
-      "bytes": 79227004,
-      "sha256": "c6bba7384079eb546fa3abbc74c2d038e1c4cb0aaad844a236d149f7ca71e927"
+      "bytes": 76093066,
+      "sha256": "407e745a6c4357e327bd527cc7779280e6bab880ed52ac27e8707a843fc562c3"
     },
     {
       "path": "index.html",
       "bytes": 5449,
-      "sha256": "184b441ee0e88166dabc531e6e0dcb6ea175b1f0d8b5ddaab6ad14832c5db043"
+      "sha256": "b6ccbd4ee4dc615435b62a87ca009ec9506483e6871cb0f34db2cff122694e04"
     },
     {
       "path": "links.json",
@@ -207,18 +207,18 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 6761,
-      "sha256": "26e4d36d44aa05e3f369bc3e8a8f5d2a1abe952b5d41e38091f0f5642eb56ab4"
+      "bytes": 7129,
+      "sha256": "8bcde5ec8f3b4490ad1d6dfe87c477d553dde2305d92ff10459b70344afde403"
     },
     {
       "path": "README.md",
-      "bytes": 2144,
-      "sha256": "903acc738cf1235094e03e0dbb7589b12c832aa7e6493405305cbe213e9f6472"
+      "bytes": 2292,
+      "sha256": "610590dc542c1dc64a77aeaf2c12cebb20fe71db6f229302c812c858468971bd"
     },
     {
       "path": "SCRIPT.md",
-      "bytes": 3047,
-      "sha256": "59257a6ec46cfbca0788eb50d0b42daa8ca6d0e5cb07a88b35df2d7a3ddbe378"
+      "bytes": 3043,
+      "sha256": "4bc0f154f4339d3469a924b33b5f4e79edf2fb02a197fdd23a4a8898c137c092"
     },
     {
       "path": "source/book-covers/hill.png",
@@ -242,23 +242,18 @@
     },
     {
       "path": "source/build_campaign.py",
-      "bytes": 10395,
-      "sha256": "16e2e5f4654568c9150fa6be3fd664e5db703c5469caf8ef6f7e07c29f9186cd"
+      "bytes": 10507,
+      "sha256": "0bc635f0f9a86dfab3c7e50d5c4650ab02833ec2bf79b1f7f0372250d877e124"
     },
     {
       "path": "source/build_film.py",
-      "bytes": 10354,
-      "sha256": "b5b74c7b804dccac0402e5b1399afc9b4e859dbc70e63bc821952996cef052c8"
+      "bytes": 10538,
+      "sha256": "23479dfeab19b4025b17fd078d72f7496aff7209a59819bf4206a41c2f831126"
     },
     {
       "path": "source/clips/dunlap.mp4",
       "bytes": 7380845,
       "sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60"
-    },
-    {
-      "path": "source/clips/finishing-bed.mp4",
-      "bytes": 3391176,
-      "sha256": "c638d6522a4607c706f2a8bdbe15092f1d837e2db426a309ab722ee5691e79a4"
     },
     {
       "path": "source/clips/finishing-sheets.mp4",
@@ -317,8 +312,8 @@
     },
     {
       "path": "source/edit.json",
-      "bytes": 9792,
-      "sha256": "9596a7d5a755fd8ac2c18cd3d748d0ab4665346f03ac274e8deb284281fcab80"
+      "bytes": 9505,
+      "sha256": "c4fe0f561efa167c4c3d7e07a9ecf4c8a155493abedb100200403a3b21d282b6"
     },
     {
       "path": "source/endcard-square.png",
@@ -412,8 +407,8 @@
     },
     {
       "path": "source/qa.json",
-      "bytes": 2400,
-      "sha256": "ceb186ec8aabe68835f9dcaf624904b365fb64e648880f1dac117cb40fbaed35"
+      "bytes": 2771,
+      "sha256": "59acc2b19cb54b35caf52f41caafab89b279c62d39fcbe5c50313cd15fa22eed"
     },
     {
       "path": "source/requirements-design.txt",
@@ -422,8 +417,8 @@
     },
     {
       "path": "source/shop-selects.json",
-      "bytes": 1794,
-      "sha256": "17a0874b1af8190f7d4610e8883a2f3ddbd8c336b2c5dfc5b1a73119e7977796"
+      "bytes": 1617,
+      "sha256": "41f8022c3092a5c9a1214920c5fd57617abd63abb8febbdb5de5ada9cc9f8f9b"
     },
     {
       "path": "source/the-first-impression-generation-record.json",
@@ -447,18 +442,18 @@
     },
     {
       "path": "source/timeline-square.json",
-      "bytes": 7328,
-      "sha256": "ffaa0a74090653e929bbd79524560a9c5e04fc7ca15187abd67a8593502685ba"
+      "bytes": 7358,
+      "sha256": "89541c8c39fe5b3f7ec529a2ca90c3aecd7614cb9d144e03ca498154c3d7b835"
     },
     {
       "path": "source/timeline-vertical.json",
-      "bytes": 7330,
-      "sha256": "82070e7d31a696d326cb17e80bf790f4bc00fec2c917164700b655215c752648"
+      "bytes": 7360,
+      "sha256": "942ec0ff671eac01b481ed7637fcb8356de857bb485f71fa5b087fbb8ffcccec"
     },
     {
       "path": "source/timeline-wide.json",
-      "bytes": 7326,
-      "sha256": "e80d50593b4fea7114a1849551bc9a53b6f1c0451873f6982f397db2e550359f"
+      "bytes": 7356,
+      "sha256": "e47ebf04712136fc4b7f7388ed69847744e84c458768163334ecaf5d44f8b54a"
     },
     {
       "path": "source/words-to-live-with-generation-record.json",

@@ -13,12 +13,17 @@ D=json.loads((R/'data/campaigns/history-has-a-pulse.json').read_text(encoding='u
 class DirectorsCut(unittest.TestCase):
     def test_one_complete_distinct_edit(self):
         self.assertEqual(D,json.loads((K/'source/edit.json').read_text(encoding='utf-8')))
-        scenes=D['scenes'];self.assertEqual(len(scenes),14)
+        scenes=D['scenes'];self.assertEqual(len(scenes),13)
         self.assertEqual(len({s['id'] for s in scenes}),len(scenes))
         t=0
         for s in scenes:
             self.assertEqual(s['at'],t);t+=s['duration']
         self.assertEqual(t,75)
+        self.assertEqual(scenes[0]['id'],'press-feed')
+        self.assertEqual(scenes[0]['duration'],9)
+        self.assertEqual(scenes[0]['hold_start'],3.5)
+        self.assertEqual(scenes[0]['duration']-scenes[0]['hold_start'],5.5)
+        self.assertNotIn('finishing-bed',[s['id'] for s in scenes])
         self.assertEqual(sum(s['duration'] for s in scenes if s['kind']=='shop'),25.5)
         clips=[s for s in scenes if s['id']!='closing']
         self.assertEqual(len({s['sha256'] for s in clips}),len(clips))
@@ -62,9 +67,10 @@ class DirectorsCut(unittest.TestCase):
     def test_public_replacement_and_captions(self):
         for name in ('index.html','press.html'):
             text=(R/'site'/name).read_text(encoding='utf-8')
-            self.assertIn('Watch the director’s cut · 75 sec',text)
+            self.assertIn('Watch the film · 75 sec',text)
             self.assertIn('/media/press/'+D['media']['film'],text)
             self.assertNotIn('24 sec',text)
+            if name=='index.html':self.assertNotIn('director’s cut',text.lower())
             video=re.search(r'<video[^>]+data-src="/media/press/.*?</video>',text,re.S).group()
             self.assertIn('preload="none"',video);self.assertNotRegex(video,r'\bautoplay\b')
         for page in [R/'site/index.html',R/'site/press.html',K/'index.html',K.parent/'index.html']:

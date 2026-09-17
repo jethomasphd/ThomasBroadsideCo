@@ -6,16 +6,9 @@
     "start": 0.25,
     "duration": 5.5,
     "orientation": "landscape",
-    "note": "Owner-supplied real-time footage, no repeated source frames. Includes original stereo audio. No location metadata retained."
-  },
-  {
-    "id": "finishing-bed",
-    "original": "IMG_7241.MOV",
-    "sha256": "b5888c653792f8b89ad0a746ed3c76ea2160e1bc61670202d2ea37262a468c28",
-    "start": 0.3,
-    "duration": 3.5,
-    "orientation": "portrait",
-    "note": "Owner-supplied real-time footage, no repeated source frames. Includes original stereo audio. No location metadata retained."
+    "note": "The first frame holds for 3.5 seconds beneath the title and narrator, then 5.5 seconds play once at real speed with synchronized original stereo sound. No slow motion, interpolation, loop, reverse or synthesized machinery. Phone location metadata removed.",
+    "output_duration": 9,
+    "hold_start": 3.5
   },
   {
     "id": "press-mechanism",

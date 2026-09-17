@@ -11,7 +11,7 @@ def build_directors_cut():
     data = json.loads((ROOT / 'data/campaigns/history-has-a-pulse.json').read_text(encoding='utf-8'))
     media = data['media']
     dialog = f'''<dialog class="press-film" data-press-film aria-labelledby="film-title">
-  <div class="press-film__top"><span id="film-title">HISTORY HAS A PULSE / THE DIRECTOR’S CUT</span><button class="press-film__close" data-film-close aria-label="Close director’s cut">Close ×</button></div>
+  <div class="press-film__top"><span id="film-title">HISTORY HAS A PULSE / 75 SECONDS</span><button class="press-film__close" data-film-close aria-label="Close film">Close ×</button></div>
   <video controls playsinline preload="none" data-src="/media/press/{media['film']}" poster="/media/press/{media['poster']}" aria-label="History has a pulse: a 75-second film weaving our Austin presses, the founding story, and the Western Canon">
     <track kind="captions" src="/media/press/{media['captions']}" srclang="en" label="English">
   </video>
@@ -22,8 +22,8 @@ def build_directors_cut():
 <section class="band" id="film-notes"><div class="wrap prose">
 <p class="kicker">History has a pulse / The director’s cut</p><h2>The press makes words public.</h2>
 <p>The words become part of a life. From a Philadelphia print shop in 1776 to the presses working in Austin today, this film brings our founding story and the Western Canon into one frame.</p>
-<details><summary>Read the film transcript</summary><p><em>The film opens with the sound of a working press.</em></p>{script}</details>
-<details><summary>About the images and sound</summary><p>Twenty-five and a half seconds show our actual shop, drawn from four original recordings. The historical scenes are AI-assisted contemporary reconstructions; the Canon landscapes and reading room are visual meditations. They are not archival footage or claims about a specific biblical location.</p><p>A measured male synthetic narrator and an original AI-generated chamber score accompany the real machinery. No historical or sacred figure is given invented dialogue. The subtle covers identify the Odyssey, Matthew, and Dante through contemporary campaign designs, not historical facsimiles or separate book products. The closing images are the collection’s existing broadside designs.</p><p>Explore the history and its sources in <a href="/origins.html">The First Impression</a>, and the texts and their sources in <a href="/canon.html">Words to Live With</a>.</p></details>
+<details><summary>Read the film transcript</summary><p><em>The film opens on a still press image and narration. Real-speed press motion and sound begin after three and a half seconds.</em></p>{script}</details>
+<details><summary>About the images and sound</summary><p>Twenty-five and a half seconds show our actual shop, drawn from four original recordings. The opening holds on a Heidelberg still for three and a half seconds under the title and narrator, then that same shot and its original sound play at real speed. The historical scenes are AI-assisted contemporary reconstructions; the Canon landscapes and reading room are visual meditations. They are not archival footage or claims about a specific biblical location.</p><p>A measured male synthetic narrator and an original AI-generated chamber score accompany the real machinery. No historical or sacred figure is given invented dialogue. The subtle covers identify the Odyssey, Matthew, and Dante through contemporary campaign designs, not historical facsimiles or separate book products. The closing images are the collection’s existing broadside designs.</p><p>Explore the history and its sources in <a href="/origins.html">The First Impression</a>, and the texts and their sources in <a href="/canon.html">Words to Live With</a>.</p></details>
 </div></section>
 <!-- /GEN:DIRECTOR_NOTES -->'''
     for name in ('index.html', 'press.html'):
@@ -32,7 +32,7 @@ def build_directors_cut():
         text, n = re.subn(r'<dialog class="press-film".*?</dialog>', lambda _: dialog, text, flags=re.S)
         if n != 1:
             raise ValueError(f'{name}: expected one flagship film dialog, got {n}')
-        text = re.sub(r'(<button class="press-play" data-film-open hidden><span aria-hidden="true">▷</span>).*?(</button>)', r'\g<1>Watch the director’s cut · 75 sec\2', text)
+        text = re.sub(r'(<button class="press-play" data-film-open hidden><span aria-hidden="true">▷</span>).*?(</button>)', r'\g<1>Watch the film · 75 sec\2', text)
         if name == 'index.html':
             text = re.sub(r'(<meta property="og:image" content=").*?(">)', rf'\g<1>https://thomasbroadside.co/media/press/{media["share"]}\2', text)
         else:
