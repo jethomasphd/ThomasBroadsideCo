@@ -151,6 +151,8 @@ def rebuild():
     for cmd in (
         [sys.executable, str(tools / "build_site.py")],
         [sys.executable, str(tools / "test_canon_assets.py")],
+        [sys.executable, str(tools / "test_directors_cut.py")],
+        [sys.executable, str(tools / "test_brand_language.py")],
         [sys.executable, str(tools / "make_dashboard.py")],
         [sys.executable, str(tools / "make_job_tickets.py"), "--sample"],
     ):

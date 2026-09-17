@@ -1,0 +1,4 @@
+imageio-ffmpeg>=0.6,<0.7
+Pillow>=11,<13
+fonttools>=4.59,<5
+brotli>=1,<2

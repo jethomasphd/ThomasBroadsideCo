@@ -1,0 +1,114 @@
+[
+  {
+    "campaign": "the-first-impression",
+    "id": "dunlap",
+    "title": "The first printing, July 4–5, 1776",
+    "institution": "Library of Congress / National Archives",
+    "url": "https://www.loc.gov/resource/gdcwdl.wdl_02716/",
+    "note": "The surviving printed broadside and the dispatch of copies on July 5. Historical print-run and survivor counts are intentionally omitted."
+  },
+  {
+    "campaign": "the-first-impression",
+    "id": "draft",
+    "title": "Jefferson's original Rough draught",
+    "institution": "Library of Congress, Jefferson Papers",
+    "url": "https://www.loc.gov/exhibits/declara/declara4.html#obj3",
+    "note": "Draft, alterations by Adams and Franklin, and congressional revisions. The approved text preceded the later engrossed parchment."
+  },
+  {
+    "campaign": "the-first-impression",
+    "id": "franklin",
+    "title": "Franklin, printer and writer",
+    "institution": "Library of Congress",
+    "url": "https://www.loc.gov/exhibits/franklin/franklin-printer.html",
+    "note": "Primary printed examples of Poor Richard's Almanack and Franklin's printing work."
+  },
+  {
+    "campaign": "the-first-impression",
+    "id": "washington",
+    "title": "Washington's copy of the Declaration",
+    "institution": "Library of Congress, George Washington Papers",
+    "url": "https://www.loc.gov/exhibits/declara/declara4.html#obj4",
+    "note": "Hancock sent the printed Declaration to Washington on July 6; Washington had it read to the troops in New York on July 9."
+  },
+  {
+    "campaign": "the-first-impression",
+    "id": "hamilton",
+    "title": "The Federalist in historic newspapers",
+    "institution": "Library of Congress",
+    "url": "https://guides.loc.gov/federalist-essays-in-historic-newspapers",
+    "note": "Essays by Hamilton, Madison and Jay under Publius, supporting ratification in 1787–1788; the guide indexes original newspaper printings."
+  },
+  {
+    "campaign": "the-first-impression",
+    "id": "printing",
+    "title": "Printing the Declaration of Independence",
+    "institution": "Library of Congress, Rare Book and Special Collections",
+    "url": "https://blogs.loc.gov/bibliomania/2023/07/04/printing-the-declaration-of-independence/",
+    "note": "The approved wording was sent to Dunlap's shop; the first printing belongs to the evening of July 4 and early July 5."
+  },
+  {
+    "campaign": "the-first-impression",
+    "id": "chronology",
+    "title": "Declaring Independence: drafting the documents",
+    "institution": "Library of Congress",
+    "url": "https://www.loc.gov/exhibits/declara/declara3.html",
+    "note": "The vote for independence on July 2, adoption on July 4, and the later engrossed copy ordered July 19 and signed beginning August 2."
+  },
+  {
+    "campaign": "words-to-live-with",
+    "id": "homer",
+    "title": "The Odyssey, Book I",
+    "credit": "Homer / translated by Samuel Butler, 1900",
+    "url": "https://www.gutenberg.org/ebooks/1727",
+    "note": "The sheet presents an extract from the invocation, ending at “safely home”; the source sentence continues."
+  },
+  {
+    "campaign": "words-to-live-with",
+    "id": "matthew",
+    "title": "The Gospel according to St Matthew",
+    "credit": "Authorized Version (King James Version)",
+    "url": "https://www.gutenberg.org/ebooks/10",
+    "note": "Matthew 5:3–12 and 16:26. Modern-spelling KJV transcription; 1611 identifies the translation, not a facsimile of its original spelling."
+  },
+  {
+    "campaign": "words-to-live-with",
+    "id": "augustine",
+    "title": "Confessions, Book I",
+    "credit": "Augustine / translated by E. B. Pusey",
+    "url": "https://www.gutenberg.org/ebooks/3296",
+    "note": "The opening prayer addresses God. The broadside extracts the clause beginning “Thou madest us”."
+  },
+  {
+    "campaign": "words-to-live-with",
+    "id": "dante",
+    "title": "Inferno, Canto I, lines 1–3",
+    "credit": "Dante / translated by Henry Wadsworth Longfellow, 1867",
+    "url": "https://www.gutenberg.org/ebooks/1001",
+    "note": "The first tercet. Line breaks and the capital “For” follow the text file used to typeset the existing sheet."
+  },
+  {
+    "campaign": "words-to-live-with",
+    "id": "rembrandt-christ",
+    "title": "Christ Preaching (The Hundred Guilder Print)",
+    "credit": "Rembrandt van Rijn / c. 1649 / National Gallery of Art",
+    "url": "https://www.nga.gov/artworks/9969-christ-preaching-hundred-guilder-print",
+    "note": "Object 9969. Open-access image in the public domain. The work is an etching, drypoint and burin on Japan paper."
+  },
+  {
+    "campaign": "words-to-live-with",
+    "id": "rembrandt-homer",
+    "title": "Aristotle with a Bust of Homer",
+    "credit": "Rembrandt van Rijn / 1653 / The Metropolitan Museum of Art",
+    "url": "https://www.metmuseum.org/art/collection/search/437394",
+    "note": "Object 437394. Public-domain image. Aristotle rests his hand on a bust of Homer."
+  },
+  {
+    "campaign": "words-to-live-with",
+    "id": "blake",
+    "title": "The Circle of the Lustful: Paolo and Francesca",
+    "credit": "William Blake / 1827 / National Gallery of Art",
+    "url": "https://www.nga.gov/artworks/797-circle-lustful-paolo-and-francesca",
+    "note": "Object 797. Open-access image in the public domain. An engraving after Dante’s Inferno, Canto V."
+  }
+]

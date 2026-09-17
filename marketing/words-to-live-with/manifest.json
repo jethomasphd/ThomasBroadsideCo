@@ -83,18 +83,18 @@
     },
     {
       "path": "email/reading-room-partners-preview.html",
-      "bytes": 3704,
-      "sha256": "9ffa745731dfc58f686416644b872946f16c3b475155897548a8cb38b16c3235"
+      "bytes": 3695,
+      "sha256": "238aee8c4f7216d43638049d6971b376eaebd24539a99738ee09b4b1036b58e5"
     },
     {
       "path": "email/reading-room-partners.eml",
-      "bytes": 146064,
-      "sha256": "62b3721359a8ef4ce2984914c688414d7c8989b29522fd37351f2f08240a9aed"
+      "bytes": 146056,
+      "sha256": "7782468755b71461c1bc078674bdfc5aaaa6befafc0a7174240959d0d43c2ce1"
     },
     {
       "path": "email/reading-room-partners.html",
-      "bytes": 3735,
-      "sha256": "c7273461b4413a833548e8293c3beb8286acdfc8f878ed04624e753d874d7eff"
+      "bytes": 3726,
+      "sha256": "b82c8c8283508721c9bab29a50f80319103b5191e7e379b418359558a00eafe9"
     },
     {
       "path": "email/reading-room-partners.txt",
@@ -103,18 +103,18 @@
     },
     {
       "path": "email/the-five-sheet-set-preview.html",
-      "bytes": 3674,
-      "sha256": "3a47aa5fcab05250998f0f865741b45a42e9d6c16755ab1168cc4a2ad5319454"
+      "bytes": 3665,
+      "sha256": "753ade44486beaf3ed868f9adceb66e75eeaa8d693bc405f8cbb25a5fbdf5d3a"
     },
     {
       "path": "email/the-five-sheet-set.eml",
-      "bytes": 146022,
-      "sha256": "f62d211cd891e88fe840168ceb23de67883aaa1f255f1412b9ae23d31981e30a"
+      "bytes": 146014,
+      "sha256": "0e42af6adcc67bc45f02bf1aa38e522ea85bdde853fed403e18b2f26b18d3563"
     },
     {
       "path": "email/the-five-sheet-set.html",
-      "bytes": 3705,
-      "sha256": "551e8e6e9745aacea905ab266ddfcaad97a64d9ba5b87c2fdf5ebb3375d3d37e"
+      "bytes": 3696,
+      "sha256": "68221c975d525c46128fec073dae071e821438b4f76fc18165f1023f1465d262"
     },
     {
       "path": "email/the-five-sheet-set.txt",
@@ -123,18 +123,18 @@
     },
     {
       "path": "email/words-to-live-with-preview.html",
-      "bytes": 3648,
-      "sha256": "bb9943ead86be09da517532497e8b776293967d9825d5f5d20d3ac44e6c60541"
+      "bytes": 3639,
+      "sha256": "272f2b57818abbd55f3d27ca6626c6aad3d7d39e4c5847f1025cbaecb497ae74"
     },
     {
       "path": "email/words-to-live-with.eml",
-      "bytes": 145941,
-      "sha256": "58b5f167cc6e445b5343ec2da02b2d58317af58e2c9327e4f64ac4133636970a"
+      "bytes": 145933,
+      "sha256": "e53cb81603109c1c6c08b6b2b190126b895e9b4e9a46f57e1c9b6a58150b0d27"
     },
     {
       "path": "email/words-to-live-with.html",
-      "bytes": 3679,
-      "sha256": "eed88e1c87856b0ec14c78b51887f06f7c6bfe4f1855c714795fdb3312ad0563"
+      "bytes": 3670,
+      "sha256": "5bb6c5a8d56797bd55243bb32a95f94fa23d7ccad32f5f01e75578717f3c5c5a"
     },
     {
       "path": "email/words-to-live-with.txt",
@@ -273,8 +273,8 @@
     },
     {
       "path": "source/build_email.py",
-      "bytes": 6599,
-      "sha256": "22bcd3646ac7389e727417404027d27c045040b655dcf278de22e21f3d1c9964"
+      "bytes": 6591,
+      "sha256": "ce8c2a6e9f27de42d6b14edec2d81b7983114c6f3211e465b747ad1be3b0cfdd"
     },
     {
       "path": "source/build_media.py",
@@ -506,5 +506,6 @@
       "bytes": 455,
       "sha256": "48d38d951cc150a9f8fe55fcf18ee8cc54c395166545c231be75a7c3f5ae088a"
     }
-  ]
+  ],
+  "updated": "2026-09-17"
 }
