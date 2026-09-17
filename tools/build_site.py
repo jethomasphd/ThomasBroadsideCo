@@ -438,7 +438,7 @@ def build_journal(journal: dict) -> int:
   </div>
 </main>
 <footer class="colophon"><div class="wrap">
-  <p class="motto">Build something that lasts</p>
+  <p class="motto">Words to live with</p>
   <p class="fine">Austin: Printed by Thomas Graphics Inc.</p>
 </div></footer>
 <div class="toast" data-toast></div>

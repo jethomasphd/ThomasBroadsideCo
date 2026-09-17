@@ -1,6 +1,6 @@
 {
   "format": "wide",
-  "duration": 60,
+  "duration": 75,
   "shop_seconds": 25.5,
   "captions_default": "off",
   "shots": [
@@ -14,17 +14,8 @@
       "kind": "shop"
     },
     {
-      "id": "dunlap",
-      "at": 5.5,
-      "duration": 5,
-      "source": "source/clips/dunlap.mp4",
-      "source_start": 1,
-      "source_sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60",
-      "kind": "history"
-    },
-    {
       "id": "finishing-bed",
-      "at": 10.5,
+      "at": 5.5,
       "duration": 3.5,
       "source": "source/clips/finishing-bed.mp4",
       "source_start": 0,
@@ -32,9 +23,18 @@
       "kind": "shop"
     },
     {
+      "id": "dunlap",
+      "at": 9.0,
+      "duration": 7,
+      "source": "source/clips/dunlap.mp4",
+      "source_start": 1,
+      "source_sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60",
+      "kind": "history"
+    },
+    {
       "id": "jefferson",
-      "at": 14.0,
-      "duration": 3,
+      "at": 16.0,
+      "duration": 6,
       "source": "source/clips/jefferson.mp4",
       "source_start": 1,
       "source_sha256": "0c89028d9efeedcbb4bbe6a783ea1f06eff22774567c9947b449168ee4c95198",
@@ -42,8 +42,8 @@
     },
     {
       "id": "washington",
-      "at": 17.0,
-      "duration": 3,
+      "at": 22.0,
+      "duration": 6,
       "source": "source/clips/washington.mp4",
       "source_start": 1,
       "source_sha256": "f7df26bef29cf48cf25193b8d6acd0ad896a7537312fcdb8adb47dd7ff2f323f",
@@ -51,7 +51,7 @@
     },
     {
       "id": "press-mechanism",
-      "at": 20.0,
+      "at": 28.0,
       "duration": 5.5,
       "source": "source/clips/press-mechanism.mp4",
       "source_start": 0,
@@ -60,8 +60,8 @@
     },
     {
       "id": "sea",
-      "at": 25.5,
-      "duration": 3.5,
+      "at": 33.5,
+      "duration": 4.5,
       "source": "source/clips/sea.mp4",
       "source_start": 1,
       "source_sha256": "924774cdee386451f7d4b32738743a3163da9c35723b673f16cd6c6a42d189f1",
@@ -69,8 +69,8 @@
     },
     {
       "id": "hill",
-      "at": 29.0,
-      "duration": 4,
+      "at": 38.0,
+      "duration": 4.5,
       "source": "source/clips/hill.mp4",
       "source_start": 1,
       "source_sha256": "ae13ca93e409376961cc521300b523712478d00800e29128edb506cc4a39eb66",
@@ -78,8 +78,8 @@
     },
     {
       "id": "wood",
-      "at": 33.0,
-      "duration": 3,
+      "at": 42.5,
+      "duration": 4.5,
       "source": "source/clips/wood.mp4",
       "source_start": 1,
       "source_sha256": "636875e9bb4e83d8846709bf7675e6e20800af4cc6ec585ef84f8928eaaebaab",
@@ -87,7 +87,7 @@
     },
     {
       "id": "finishing-sheets",
-      "at": 36.0,
+      "at": 47.0,
       "duration": 4,
       "source": "source/clips/finishing-sheets.mp4",
       "source_start": 0,
@@ -96,8 +96,8 @@
     },
     {
       "id": "inked-type",
-      "at": 40.0,
-      "duration": 3.5,
+      "at": 51.0,
+      "duration": 4,
       "source": "source/clips/inked-type.mp4",
       "source_start": 1,
       "source_sha256": "34dc7beefbc72c671516d780acc1ec9138390882084bf14f02d06eee650890e3",
@@ -105,7 +105,7 @@
     },
     {
       "id": "press-delivery",
-      "at": 43.5,
+      "at": 55.0,
       "duration": 7,
       "source": "source/clips/press-delivery.mp4",
       "source_start": 0,
@@ -114,8 +114,8 @@
     },
     {
       "id": "room",
-      "at": 50.5,
-      "duration": 4.5,
+      "at": 62.0,
+      "duration": 7,
       "source": "source/clips/room.mp4",
       "source_start": 1,
       "source_sha256": "61d6c11374e74cfed9585afe763740de3b32f3dacc184c0ebbc249ece6540d97",
@@ -123,8 +123,8 @@
     },
     {
       "id": "closing",
-      "at": 55.0,
-      "duration": 5,
+      "at": 69.0,
+      "duration": 6,
       "source": null,
       "source_start": 0,
       "source_sha256": null,
@@ -134,91 +134,154 @@
   "narration": [
     {
       "id": "pulse",
-      "text": "History has a pulse. Listen.",
-      "at": 1.8,
-      "tempo": 0.82,
-      "duration": 2.0388256097560977,
+      "text": "History has a pulse.",
+      "at": 0.55,
+      "tempo": 1,
+      "duration": 1.996916,
       "file": "audio/pulse.mp3"
+    },
+    {
+      "id": "listen",
+      "text": "Just listen.",
+      "at": 3.6,
+      "tempo": 1,
+      "duration": 1.346757,
+      "file": "audio/listen.mp3"
     },
     {
       "id": "founding",
       "text": "In seventeen seventy-six, the Declaration entered a print shop. The words had to reach the people.",
-      "at": 6.1,
-      "tempo": 0.82,
-      "duration": 6.682815853658537,
+      "at": 9.3,
+      "tempo": 1,
+      "duration": 9.102222,
       "file": "audio/founding.mp3"
     },
     {
       "id": "public",
-      "text": "A working draft. A printed sheet. A voice, carried farther.",
-      "at": 14.5,
-      "tempo": 0.82,
-      "duration": 4.247552439024391,
+      "text": "The spirit of printing transforms a working draft into a printed sheet.",
+      "at": 19.1,
+      "tempo": 1,
+      "duration": 5.897868,
       "file": "audio/public.mp3"
     },
     {
+      "id": "farther",
+      "text": "And a voice carried farther.",
+      "at": 25.6,
+      "tempo": 1,
+      "duration": 2.832834,
+      "file": "audio/farther.mp3"
+    },
+    {
       "id": "inheritance",
-      "text": "The inheritance reaches beyond the founding.",
-      "at": 21.3,
-      "tempo": 0.82,
-      "duration": 2.775068292682927,
+      "text": "The inheritance of printing reaches beyond the founding of America.",
+      "at": 28.9,
+      "tempo": 1,
+      "duration": 5.526349,
       "file": "audio/inheritance.mp3"
     },
     {
       "id": "wisdom",
       "text": "The search for wisdom.",
-      "at": 25.8,
-      "tempo": 0.86,
-      "duration": 1.997996511627907,
+      "at": 35.1,
+      "tempo": 1,
+      "duration": 1.996916,
       "file": "audio/wisdom.mp3"
     },
     {
       "id": "mercy",
       "text": "The call to mercy.",
-      "at": 29.4,
-      "tempo": 0.86,
-      "duration": 1.889996511627907,
+      "at": 38.7,
+      "tempo": 1,
+      "duration": 2.136236,
       "file": "audio/mercy.mp3"
     },
     {
       "id": "courage",
       "text": "The courage to find our way.",
-      "at": 33.2,
-      "tempo": 0.86,
-      "duration": 2.321995348837209,
+      "at": 43.2,
+      "tempo": 1,
+      "duration": 2.693515,
       "file": "audio/courage.mp3"
     },
     {
       "id": "austin",
       "text": "Here in Austin, we give enduring words a place on the page.",
-      "at": 36.5,
-      "tempo": 0.82,
-      "duration": 3.907748780487805,
+      "at": 47.2,
+      "tempo": 1,
+      "duration": 5.851429,
       "file": "audio/austin.mp3"
     },
     {
       "id": "craft",
       "text": "Ink. Paper. A working press. A tradition, carried forward.",
-      "at": 44.1,
-      "tempo": 0.82,
-      "duration": 6.003207317073171,
+      "at": 55.2,
+      "tempo": 1,
+      "duration": 6.826667,
       "file": "audio/craft.mp3"
     },
     {
-      "id": "invitation",
-      "text": "Read the words. Keep the source. Make room for the enduring.",
-      "at": 51,
-      "tempo": 0.82,
-      "duration": 3.9643829268292685,
-      "file": "audio/invitation.mp3"
+      "id": "read",
+      "text": "Read the words.",
+      "at": 62.7,
+      "tempo": 1,
+      "duration": 1.671837,
+      "file": "audio/read.mp3"
     },
     {
-      "id": "closing",
-      "text": "Thomas Broadside Company. Build something that lasts.",
-      "at": 55.6,
-      "tempo": 0.82,
-      "duration": 4.1342841463414635,
-      "file": "audio/closing.mp3"
+      "id": "keep",
+      "text": "Keep the source.",
+      "at": 65.1,
+      "tempo": 1,
+      "duration": 1.578957,
+      "file": "audio/keep.mp3"
+    },
+    {
+      "id": "enduring",
+      "text": "Make room for the enduring.",
+      "at": 67.1,
+      "tempo": 1,
+      "duration": 2.600635,
+      "file": "audio/enduring.mp3"
+    },
+    {
+      "id": "company",
+      "text": "Thomas Broadside Company.",
+      "at": 70.1,
+      "tempo": 1,
+      "duration": 2.600635,
+      "file": "audio/company.mp3"
+    },
+    {
+      "id": "motto",
+      "text": "Words to live with.",
+      "at": 72.9,
+      "tempo": 1,
+      "duration": 2.043356,
+      "file": "audio/motto.mp3"
     }
-  ]
+  ],
+  "book_covers": {
+    "sea": {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "edition": "Samuel Butler translation, 1900"
+    },
+    "hill": {
+      "title": "The Holy Bible",
+      "work": "The Gospel according to Matthew",
+      "edition": "Authorized Version, 1611"
+    },
+    "wood": {
+      "title": "The Divine Comedy",
+      "work": "Inferno",
+      "author": "Dante Alighieri",
+      "edition": "Henry Wadsworth Longfellow translation, 1867"
+    }
+  },
+  "listening_window": {
+    "start": 4.946757,
+    "end": 9.0,
+    "description": "Actual press and finishing sound alone; no music or voice."
+  }
 }

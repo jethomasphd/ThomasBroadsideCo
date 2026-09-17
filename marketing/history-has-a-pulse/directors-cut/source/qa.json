@@ -2,9 +2,9 @@
   "date": "2026-09-17",
   "media": [
     {
-      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-60s-wide.mp4",
-      "bytes": 60143299,
-      "duration": 60.0,
+      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-75s-wide.mp4",
+      "bytes": 79227004,
+      "duration": 75.0,
       "size": [
         1920,
         1080
@@ -14,14 +14,14 @@
       "fast_start": true,
       "full_decode": "passed",
       "embedded_subtitles": false,
-      "integrated_lufs": -18.78,
-      "true_peak_dbtp": -4.25,
-      "sha256": "2d877c39dadc3e60f2b65fba25a3664d4d21095e31781c68f0afd17d20cddbad"
+      "integrated_lufs": -18.4,
+      "true_peak_dbtp": -4.03,
+      "sha256": "c6bba7384079eb546fa3abbc74c2d038e1c4cb0aaad844a236d149f7ca71e927"
     },
     {
-      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-60s-vertical.mp4",
-      "bytes": 40228464,
-      "duration": 60.0,
+      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-75s-vertical.mp4",
+      "bytes": 52082607,
+      "duration": 75.0,
       "size": [
         1080,
         1920
@@ -31,14 +31,14 @@
       "fast_start": true,
       "full_decode": "passed",
       "embedded_subtitles": false,
-      "integrated_lufs": -18.78,
-      "true_peak_dbtp": -4.25,
-      "sha256": "117009be353e959f66b372c5f3c8963c4a9f6ae015e7857218199a39c94c2830"
+      "integrated_lufs": -18.4,
+      "true_peak_dbtp": -4.03,
+      "sha256": "39a6f911306773b3e679d364f3b9f15f78537c869c89f7da9811b240866989e4"
     },
     {
-      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-60s-square.mp4",
-      "bytes": 39038131,
-      "duration": 60.0,
+      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-75s-square.mp4",
+      "bytes": 50991550,
+      "duration": 75.0,
       "size": [
         1080,
         1080
@@ -48,14 +48,14 @@
       "fast_start": true,
       "full_decode": "passed",
       "embedded_subtitles": false,
-      "integrated_lufs": -18.78,
-      "true_peak_dbtp": -4.25,
-      "sha256": "268e981ea613892b6bb3e7a2068437cfca82a2e07d3557ba6663e22126fca102"
+      "integrated_lufs": -18.4,
+      "true_peak_dbtp": -4.03,
+      "sha256": "0ecb7517889ffe775b263ba39b586290be18b54ef3d691ea2211a7103038f5f4"
     },
     {
-      "file": "site/media/press/history-has-a-pulse-directors-cut-60s.mp4",
-      "bytes": 15904274,
-      "duration": 60.01,
+      "file": "site/media/press/history-has-a-pulse-directors-cut-75s.mp4",
+      "bytes": 20027505,
+      "duration": 75.01,
       "size": [
         1280,
         720
@@ -65,9 +65,9 @@
       "fast_start": true,
       "full_decode": "passed",
       "embedded_subtitles": false,
-      "integrated_lufs": -18.83,
-      "true_peak_dbtp": -4.42,
-      "sha256": "274f2b333cfc86747d9fd2eb996bd29a5045b7dd610a80a3342f0318c682bdc6"
+      "integrated_lufs": -18.45,
+      "true_peak_dbtp": -4.02,
+      "sha256": "b5a4937f14ebd3d9e2f2b0da01c0174d3364b134efd14934f89d6469bc49d89a"
     }
   ],
   "picture_review": "Scene contact sheets reviewed for all formats; opening and ending title cards reviewed at output size; type motion sampled at 1, 2.75 and 4.45 seconds.",

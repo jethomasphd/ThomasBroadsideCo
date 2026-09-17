@@ -2,7 +2,7 @@
 
 Thomas Broadside Co. / The living press campaign / September 2026
 
-The active film has been replaced by the 60-second director’s cut. See [the new release guide](directors-cut/CAMPAIGN.md) for complete launch copy, descriptions, captions and email. The static artwork and print pieces below remain available.
+The active film has been replaced by the 75-second director’s cut. See [the new release guide](directors-cut/CAMPAIGN.md) for complete launch copy, descriptions, captions and email. The static artwork and print pieces below remain available.
 
 ## The idea
 
@@ -23,9 +23,9 @@ Open `index.html` for the visual asset library. Finished exports are in
 
 | Use | File | Next step |
 |---|---|---|
-| Director’s cut / LinkedIn | `directors-cut/films/history-has-a-pulse-directors-cut-60s-wide.mp4` | Native video upload; use caption 01 or 04 |
-| Instagram/Facebook Reels | `directors-cut/films/history-has-a-pulse-directors-cut-60s-vertical.mp4` | Native upload; use caption 02 |
-| Square feed video | `directors-cut/films/history-has-a-pulse-directors-cut-60s-square.mp4` | Native upload; use caption 03 |
+| Director’s cut / LinkedIn | `directors-cut/films/history-has-a-pulse-directors-cut-75s-wide.mp4` | Native video upload; use caption 01 or 04 |
+| Instagram/Facebook Reels | `directors-cut/films/history-has-a-pulse-directors-cut-75s-vertical.mp4` | Native upload; use caption 02 |
+| Square feed video | `directors-cut/films/history-has-a-pulse-directors-cut-75s-square.mp4` | Native upload; use caption 03 |
 | Meta feed, 4:5 | `social/pulse-feed.png`, `social/product-feed.png` | Shop introduction, then product follow-up |
 | Stories / Reels cover, 9:16 | `social/pulse-story.png`, `social/product-story.png` | Add a native link sticker to the product page |
 | Square posts / carousel | `social/pulse-square.png`, `social/product-square.png` | Pair in that order; use caption 05 |
@@ -75,7 +75,7 @@ Asset: portrait director’s cut. Destination: `ig-organic`. Use the film descri
 Before a broadside reaches a wall, it belongs to a trade.
 
 This is the shop behind our paper: Thomas Graphics in Austin, Texas.
-Take one minute with the shop, the founding story, and the Western Canon. Then discover the words you want to live with.
+Take seventy-five seconds with the shop, the founding story, and the Western Canon. Then discover the words you want to live with.
 
 Asset: square director’s cut. Destination: `fb-organic`. Use the film description in `directors-cut/CAMPAIGN.md`.
 
@@ -189,7 +189,7 @@ Which words belong in your room?
 The Declaration. The Preamble. The Bill of Rights. Start with the collection,
 then choose a broadside you want to return to.
 
-Thomas Broadside Co. / Build something that lasts.
+Thomas Broadside Co. / Words to live with.
 
 Asset: product-square. Destination: `fb-organic`.
 Alt: The Declaration of Independence broadside on a cream field.

@@ -1,6 +1,6 @@
 # Production record / The director’s cut
 
-Produced September 17, 2026. This edition replaces the original generic shop film with one coherent 60-second narrative. Source of truth: `data/campaigns/history-has-a-pulse.json` in the repository; portable snapshot: `source/edit.json`. The script and human-readable picture ledger are in `SCRIPT.md`.
+Produced September 17, 2026. This edition replaces the original generic shop film with one coherent 75-second narrative. Source of truth: `data/campaigns/history-has-a-pulse.json` in the repository; portable snapshot: `source/edit.json`. The script and human-readable picture ledger are in `SCRIPT.md`.
 
 ## Editorial frame
 
@@ -28,18 +28,20 @@ The inherited Canon generation record and provenance are included with `words-to
 
 ## Voice, score and actual machinery
 
-Eleanor is a Runway preset synthetic voice, different from Benjamin in The First Impression. The new voice does not impersonate any historical figure. The exact eleven selected narration cues, source audio files, start times and tempos are in the edit. The original combined Canon take was superseded by three separately timed phrases to match their images; that unused generation remains documented but is not included as an active audio source.
+Elias is Runway’s older male preset voice, delivered calmly and deliberately through `eleven_multilingual_v2` at speed 0.85. It does not impersonate a historical figure. Sixteen separately generated cues retain their natural generated timing; the edit adds explicit gaps between the opening and closing phrases rather than relying on punctuation alone. The exact text, task IDs, files and timings are preserved in the generation record and edit.
 
-The original AI-generated chamber score was commissioned through Runway. It is not a pre-existing commercial recording or period music. Its first 52 seconds are joined to its final nine seconds with a one-second crossfade, preserving a resolving ending in the one-minute cut. Music enters after the opening machinery. Real shop audio returns with the shop shots. Voice-driven compression lowers both accompanying beds while the narrator speaks. The production script includes every mix setting. Generative services used 147 Runway credits for this edition; no subscription change or top-up was made.
+After “just listen,” 4.05 seconds of real machinery play without narration or music (4.947–9.000 seconds). The original AI-generated chamber score enters at 9 seconds. It is an original contemporary composition, not period music. Its first 67 seconds join its final nine seconds with a one-second crossfade. Voice-driven compression lowers accompaniment during speech. The original 147-credit production and prompts remain recorded; the narration revision used sixteen new speech tasks without a subscription change or top-up.
+
+Three restrained cover overlays identify *The Odyssey* (Samuel Butler, 1900), the Gospel according to Matthew (Authorized Version, 1611), and Dante’s *Inferno* (Henry Wadsworth Longfellow, 1867), matching the catalog’s source editions. These are newly typeset campaign reference covers, not photographs of historical bindings, facsimiles, or additional products for sale. Their editable HTML, local fonts and three PNG exports are included. They fade gently into the corresponding sea, hillside and woodland scenes and out before the following shot.
 
 ## Formats and accessibility
 
-Landscape: 1920×1080. Portrait: 1080×1920, with individually framed square moving images inside the editorial layout. Square: 1080×1080. All are H.264/AAC, 24fps, exactly 60 seconds, with fast-start metadata. The web film is a smaller 1280×720 encode. No captions are burned into the image; the small curatorial labels identify the scene and its nature. VTT and SRT files are optional; supplied players default to off.
+Landscape: 1920×1080. Portrait: 1080×1920, with individually framed square moving images inside the editorial layout. Square: 1080×1080. All are H.264/AAC, 24fps, exactly 75 seconds, with fast-start metadata. The web film is a smaller 1280×720 encode. No captions are burned into the image; the small curatorial labels identify the scene and its nature. VTT and SRT files are optional; supplied players default to off.
 
 The portrait and square framing is deliberate, not an automated center crop of the finished landscape film. Product artwork is copied unchanged from the catalog. Local Libre Caslon and IBM Plex Mono fonts and their licenses are included. The closing composition remains editable HTML; committed full-size PNGs support reproducible rendering.
 
 ## Verification and rebuild
 
-`source/timeline-wide.json`, `timeline-vertical.json` and `timeline-square.json` preserve rendered order and source hashes. `manifest.json` inventories distributable files. The repository regression check validates a single 60-second edit, the 25.5-second shop total, unique scenes and nonoverlapping original intervals, cross-format consistency, source hashes, website targets and captions off. Picture review uses scene contact sheets in all formats; the media check fully decodes all deliverables and measures the mix. See `source/qa.json` for measured results.
+`source/timeline-wide.json`, `timeline-vertical.json` and `timeline-square.json` preserve rendered order and source hashes. `manifest.json` inventories distributable files. The repository regression check validates a single 75-second edit, the 25.5-second shop total, unique scenes and nonoverlapping original intervals, cross-format consistency, source hashes, website targets and captions off. Picture review uses scene contact sheets in all formats; the media check fully decodes all deliverables and measures the mix. See `source/qa.json` for measured results.
 
 Rebuild instructions are in `README.md`. Re-rendering uses the included files and makes no new AI calls. This package contains no credentials or expiring service URLs. The parent kit’s print pieces and static artwork remain compatible; its active film library and email links now use this director’s cut.

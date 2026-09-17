@@ -10,9 +10,13 @@
 <script>
 const p=new URLSearchParams(location.search), mode=p.get('mode')||'pulse',format=p.get('format')||'portrait',title=p.get('title'),sub=p.get('sub');
 const box=document.getElementById('art');box.className=`art ${mode} ${format}`;
+if(p.get('export')==='1'){
+ const size={portrait:[1080,1350],vertical:[1080,1920],square:[1080,1080],landscape:[1200,627]}[format];
+ box.style.width=size[0]+'px';box.style.height=size[1]+'px';
+}
 const brand='<div class="brand"><b>★</b>Thomas Broadside Co.</div>';
 if(mode==='overlay')box.innerHTML=`<div class="content">${brand}<div class="captionbox"><h1 class="headline"></h1><p class="kicker"></p></div></div>`;
 else if(mode==='pulse')box.innerHTML=`<img class="photo" src="../artwork/press-portrait-enhanced.png" alt=""><div class="shade"></div><div class="content">${brand}<div class="kicker">Austin, Texas / A working print shop</div><h1 class="headline">History has<br>a <em>pulse.</em></h1><p class="intro">Founding documents.<br>A family press.<br>Something worth keeping.</p><div class="bottom"><span>PRINTED HERE.<br>MADE TO BE KEPT.</span><span>thomasbroadside.co ↗</span></div></div>`;
-else box.innerHTML=`<img class="sheet" src="catalog-art/declaration-of-independence.jpg" alt="Declaration of Independence broadside"><div class="content">${brand}<div class="copy"><h1 class="headline">Give history<br>a place<br>on your wall.</h1><p class="kicker">The Declaration of Independence</p><p class="intro">Set in Caslon. Printed in Austin.<br>Discover the numbered edition<br>and the founding documents collection.</p><div class="cta">Find your broadside ↗</div></div><div class="bottom"><span>BUILD SOMETHING THAT LASTS</span><span>thomasbroadside.co</span></div></div>`;
+else box.innerHTML=`<img class="sheet" src="catalog-art/declaration-of-independence.jpg" alt="Declaration of Independence broadside"><div class="content">${brand}<div class="copy"><h1 class="headline">Give history<br>a place<br>on your wall.</h1><p class="kicker">The Declaration of Independence</p><p class="intro">Set in Caslon. Printed in Austin.<br>Discover the numbered edition<br>and the founding documents collection.</p><div class="cta">Find your broadside ↗</div></div><div class="bottom"><span>WORDS TO LIVE WITH</span><span>thomasbroadside.co</span></div></div>`;
 if(title)box.querySelector('.headline').textContent=title;if(sub)box.querySelector('.kicker').textContent=sub;
 </script></html>

@@ -1,86 +1,107 @@
 {
   "narration": {
-    "voice": "Eleanor",
+    "voice": "Elias",
     "model": "eleven_multilingual_v2",
-    "speed": 0.94,
+    "speed": 0.85,
+    "revision": "2026-09-17 / male stoic narration / explicit silence intervals",
     "lines": [
       {
         "id": "pulse",
-        "text": "History has a pulse. Listen.",
-        "task_id": "d9685a5c-ff5f-4c57-ab5c-c954e242adcf",
-        "source_duration": 1.671837
+        "text": "History has a pulse.",
+        "task_id": "ada5ed07-8a24-42df-a1da-9f118f1c8d47",
+        "duration": 1.996916
+      },
+      {
+        "id": "listen",
+        "text": "Just listen.",
+        "task_id": "9b3a48fe-55cb-4048-929e-2fc66f3855f1",
+        "duration": 1.346757
       },
       {
         "id": "founding",
         "text": "In seventeen seventy-six, the Declaration entered a print shop. The words had to reach the people.",
-        "task_id": "bd68ec1c-544e-499e-b233-f7ef649ad8ab",
-        "source_duration": 5.479909
+        "task_id": "64364c11-b108-4073-909c-915a77d3ac62",
+        "duration": 9.102222
       },
       {
         "id": "public",
-        "text": "A working draft. A printed sheet. A voice, carried farther.",
-        "task_id": "9155f913-19c0-4e0a-8e98-ef1b7f96e4fa",
-        "source_duration": 3.482993
+        "text": "The spirit of printing transforms a working draft into a printed sheet.",
+        "task_id": "2159d96a-ae30-4719-8090-11bb30c9dfb6",
+        "duration": 5.897868
+      },
+      {
+        "id": "farther",
+        "text": "And a voice carried farther.",
+        "task_id": "ce0962c8-cc7c-4dc8-ab46-2dc5b4e910d9",
+        "duration": 2.832834
       },
       {
         "id": "inheritance",
-        "text": "The inheritance reaches beyond the founding.",
-        "task_id": "28783e27-9972-452c-ad30-d63ae3f5a4f9",
-        "source_duration": 2.275556
-      },
-      {
-        "id": "canon",
-        "text": "The search for wisdom. The call to mercy. The courage to find our way.",
-        "task_id": "0992ac3b-bc7d-4e81-a4bc-ba2f5201eb75",
-        "source_duration": 4.551111
-      },
-      {
-        "id": "austin",
-        "text": "Here in Austin, we give enduring words a place on the page.",
-        "task_id": "e7141cd1-ac1e-4973-b09c-49058aaf86d3",
-        "source_duration": 3.204354
-      },
-      {
-        "id": "craft",
-        "text": "Ink. Paper. A working press. A tradition, carried forward.",
-        "task_id": "42bba4a3-925d-487e-8e36-bcf6d44c480f",
-        "source_duration": 4.92263
-      },
-      {
-        "id": "invitation",
-        "text": "Read the words. Keep the source. Make room for the enduring.",
-        "task_id": "e90035fd-8622-48be-beec-b21cd33fc671",
-        "source_duration": 3.250794
-      },
-      {
-        "id": "closing",
-        "text": "Thomas Broadside Company. Build something that lasts.",
-        "task_id": "3ea1efc4-da9e-44aa-8482-fa48389ccdca",
-        "source_duration": 3.390113
+        "text": "The inheritance of printing reaches beyond the founding of America.",
+        "task_id": "54085c7a-4fa1-4725-95f4-6a3301ce5818",
+        "duration": 5.526349
       },
       {
         "id": "wisdom",
         "text": "The search for wisdom.",
-        "task_id": "d3035168-8ea5-4c27-a023-0520b59daefe",
-        "source_duration": 1.718277,
-        "generation_speed": 0.82
+        "task_id": "5734d110-c919-4e3a-bc1c-f99b666981ad",
+        "duration": 1.996916
       },
       {
         "id": "mercy",
         "text": "The call to mercy.",
-        "task_id": "e9bf81d7-d2ee-42cb-b3cf-73879a37c822",
-        "source_duration": 1.625397,
-        "generation_speed": 0.82
+        "task_id": "0a54bfe6-9da8-449e-b24e-4dca51dde4b7",
+        "duration": 2.136236
       },
       {
         "id": "courage",
         "text": "The courage to find our way.",
-        "task_id": "f4532cd1-117d-433f-8f04-9bb038332e5b",
-        "source_duration": 1.996916,
-        "generation_speed": 0.82
+        "task_id": "85a14be6-a34c-4c3f-8f50-afb03bc5b2b7",
+        "duration": 2.693515
+      },
+      {
+        "id": "austin",
+        "text": "Here in Austin, we give enduring words a place on the page.",
+        "task_id": "1e368380-6162-4a1a-9483-d3ade387cfb8",
+        "duration": 5.851429
+      },
+      {
+        "id": "craft",
+        "text": "Ink. Paper. A working press. A tradition, carried forward.",
+        "task_id": "7dbb6e78-48f4-4d8a-9184-29da10403753",
+        "duration": 6.826667
+      },
+      {
+        "id": "read",
+        "text": "Read the words.",
+        "task_id": "6e41fdd5-e089-47db-8193-22537d54cfac",
+        "duration": 1.671837
+      },
+      {
+        "id": "keep",
+        "text": "Keep the source.",
+        "task_id": "0dc28ecf-cb01-4ee2-8d84-97b3d0c38cb7",
+        "duration": 1.578957
+      },
+      {
+        "id": "enduring",
+        "text": "Make room for the enduring.",
+        "task_id": "d072d854-d6b6-4829-aac6-2d0a149848f2",
+        "duration": 2.600635
+      },
+      {
+        "id": "company",
+        "text": "Thomas Broadside Company.",
+        "task_id": "6299b67b-fdf9-47ee-9729-92bf51832bdc",
+        "duration": 2.600635
+      },
+      {
+        "id": "motto",
+        "text": "Words to live with.",
+        "task_id": "c77c70b1-cf0f-4114-8fe7-8dd37f10a0d3",
+        "duration": 2.043356
       }
-    ],
-    "unused_take": "canon: replaced by three individually timed phrases, so mercy and courage each accompany their own scene."
+    ]
   },
   "music": {
     "prompt": "Instrumental chamber score for a sixty-second museum-quality film about a working family print shop, revolutionary-era printing, and enduring literature and sacred texts. No vocals, no choir, no recognizable melody, no anthem, no trailer percussion. An intimate organic pulse around 72 BPM: low warm cello and double bass, sparse felt piano, delicate viola, faint wooden percussion as tactile as a printer's bench. Begin with generous space so real mechanical press sounds can be heard; introduce a repeating two-note cello figure, gradually open into a luminous string harmony, settle into reflective stillness for a landscape passage, then quietly gather warmth and resolve. Understated, tender and purposeful, no bombast, no sentimentality, no synthetic risers, no electronic drums. Contemporary original composition, not purported period music or church performance. Keep a simple melodic line and plenty of midrange space for a calm female narrator. Shape the first minute as a complete arc: sparse 0â€“8, gentle movement 8â€“24, contemplative breadth 24â€“36, warm lift 36â€“52, a soft resolved chord by 58â€“60. A longer graceful continuation is fine.",
@@ -99,5 +120,6 @@
     "starting": 1311,
     "after_generation": 1164,
     "used": 147
-  }
+  },
+  "revision_note": "Prior narration is superseded; original records remain in git history. Music and type imagery are retained."
 }

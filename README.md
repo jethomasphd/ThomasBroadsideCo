@@ -92,4 +92,4 @@ they leave the working tree; git history keeps the record.
 in London in the 1720s and the face of the first printed Declaration,
 with IBM Plex Mono for figures.*
 
-**BUILD SOMETHING THAT LASTS**
+**WORDS TO LIVE WITH**

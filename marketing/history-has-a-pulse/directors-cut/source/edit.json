@@ -1,8 +1,8 @@
 {
   "title": "History has a pulse.",
   "edition": "The director’s cut",
-  "duration": 60,
-  "narrator": "Eleanor",
+  "duration": 75,
+  "narrator": "Elias",
   "concept": "The press makes words public. The words become part of a life.",
   "shop_seconds": 25.5,
   "scenes": [
@@ -20,21 +20,8 @@
       "sha256": "5b74a5b656def21eb518c60c64f788c2232ab0c28ccb417faf347c5fa9f71af6"
     },
     {
-      "id": "dunlap",
-      "at": 5.5,
-      "duration": 5,
-      "source_start": 1,
-      "kind": "history",
-      "label": "PHILADELPHIA / 1776",
-      "title": "The first impression.",
-      "crop_x": 0.62,
-      "crop_y": 0.5,
-      "clip": "source/clips/dunlap.mp4",
-      "sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60"
-    },
-    {
       "id": "finishing-bed",
-      "at": 10.5,
+      "at": 5.5,
       "duration": 3.5,
       "source_start": 0,
       "kind": "shop",
@@ -46,9 +33,22 @@
       "sha256": "c638d6522a4607c706f2a8bdbe15092f1d837e2db426a309ab722ee5691e79a4"
     },
     {
+      "id": "dunlap",
+      "at": 9.0,
+      "duration": 7,
+      "source_start": 1,
+      "kind": "history",
+      "label": "PHILADELPHIA / 1776",
+      "title": "The first impression.",
+      "crop_x": 0.62,
+      "crop_y": 0.5,
+      "clip": "source/clips/dunlap.mp4",
+      "sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60"
+    },
+    {
       "id": "jefferson",
-      "at": 14.0,
-      "duration": 3,
+      "at": 16.0,
+      "duration": 6,
       "source_start": 1,
       "kind": "history",
       "label": "THE WORKING DRAFT / 1776",
@@ -60,8 +60,8 @@
     },
     {
       "id": "washington",
-      "at": 17.0,
-      "duration": 3,
+      "at": 22.0,
+      "duration": 6,
       "source_start": 1,
       "kind": "history",
       "label": "WORDS MADE PUBLIC / 1776",
@@ -73,7 +73,7 @@
     },
     {
       "id": "press-mechanism",
-      "at": 20.0,
+      "at": 28.0,
       "duration": 5.5,
       "source_start": 0,
       "kind": "shop",
@@ -86,8 +86,8 @@
     },
     {
       "id": "sea",
-      "at": 25.5,
-      "duration": 3.5,
+      "at": 33.5,
+      "duration": 4.5,
       "source_start": 1,
       "kind": "canon",
       "label": "HOMER / THE ODYSSEY",
@@ -95,12 +95,13 @@
       "crop_x": 0.54,
       "crop_y": 0.5,
       "clip": "source/clips/sea.mp4",
-      "sha256": "924774cdee386451f7d4b32738743a3163da9c35723b673f16cd6c6a42d189f1"
+      "sha256": "924774cdee386451f7d4b32738743a3163da9c35723b673f16cd6c6a42d189f1",
+      "book_cover": "source/book-covers/sea.png"
     },
     {
       "id": "hill",
-      "at": 29.0,
-      "duration": 4,
+      "at": 38.0,
+      "duration": 4.5,
       "source_start": 1,
       "kind": "canon",
       "label": "MATTHEW 5 / THE BEATITUDES",
@@ -108,12 +109,13 @@
       "crop_x": 0.55,
       "crop_y": 0.5,
       "clip": "source/clips/hill.mp4",
-      "sha256": "ae13ca93e409376961cc521300b523712478d00800e29128edb506cc4a39eb66"
+      "sha256": "ae13ca93e409376961cc521300b523712478d00800e29128edb506cc4a39eb66",
+      "book_cover": "source/book-covers/hill.png"
     },
     {
       "id": "wood",
-      "at": 33.0,
-      "duration": 3,
+      "at": 42.5,
+      "duration": 4.5,
       "source_start": 1,
       "kind": "canon",
       "label": "DANTE / INFERNO",
@@ -121,11 +123,12 @@
       "crop_x": 0.5,
       "crop_y": 0.5,
       "clip": "source/clips/wood.mp4",
-      "sha256": "636875e9bb4e83d8846709bf7675e6e20800af4cc6ec585ef84f8928eaaebaab"
+      "sha256": "636875e9bb4e83d8846709bf7675e6e20800af4cc6ec585ef84f8928eaaebaab",
+      "book_cover": "source/book-covers/wood.png"
     },
     {
       "id": "finishing-sheets",
-      "at": 36.0,
+      "at": 47.0,
       "duration": 4,
       "source_start": 0,
       "kind": "shop",
@@ -138,8 +141,8 @@
     },
     {
       "id": "inked-type",
-      "at": 40.0,
-      "duration": 3.5,
+      "at": 51.0,
+      "duration": 4,
       "source_start": 1,
       "kind": "history",
       "label": "INK & TYPE / AN IMAGINED PRINTER’S BENCH",
@@ -151,7 +154,7 @@
     },
     {
       "id": "press-delivery",
-      "at": 43.5,
+      "at": 55.0,
       "duration": 7,
       "source_start": 0,
       "kind": "shop",
@@ -164,8 +167,8 @@
     },
     {
       "id": "room",
-      "at": 50.5,
-      "duration": 4.5,
+      "at": 62.0,
+      "duration": 7,
       "source_start": 1,
       "kind": "canon",
       "label": "WORDS TO LIVE WITH",
@@ -177,12 +180,12 @@
     },
     {
       "id": "closing",
-      "at": 55.0,
-      "duration": 5,
+      "at": 69.0,
+      "duration": 6,
       "source_start": 0,
       "kind": "product",
       "label": "THOMAS BROADSIDE CO.",
-      "title": "Build something that lasts.",
+      "title": "Words to live with.",
       "crop_x": 0.5,
       "crop_y": 0.5
     }
@@ -190,99 +193,163 @@
   "narration": [
     {
       "id": "pulse",
-      "text": "History has a pulse. Listen.",
-      "at": 1.8,
-      "tempo": 0.82,
-      "duration": 2.0388256097560977,
+      "text": "History has a pulse.",
+      "at": 0.55,
+      "tempo": 1,
+      "duration": 1.996916,
       "file": "audio/pulse.mp3"
+    },
+    {
+      "id": "listen",
+      "text": "Just listen.",
+      "at": 3.6,
+      "tempo": 1,
+      "duration": 1.346757,
+      "file": "audio/listen.mp3"
     },
     {
       "id": "founding",
       "text": "In seventeen seventy-six, the Declaration entered a print shop. The words had to reach the people.",
-      "at": 6.1,
-      "tempo": 0.82,
-      "duration": 6.682815853658537,
+      "at": 9.3,
+      "tempo": 1,
+      "duration": 9.102222,
       "file": "audio/founding.mp3"
     },
     {
       "id": "public",
-      "text": "A working draft. A printed sheet. A voice, carried farther.",
-      "at": 14.5,
-      "tempo": 0.82,
-      "duration": 4.247552439024391,
+      "text": "The spirit of printing transforms a working draft into a printed sheet.",
+      "at": 19.1,
+      "tempo": 1,
+      "duration": 5.897868,
       "file": "audio/public.mp3"
     },
     {
+      "id": "farther",
+      "text": "And a voice carried farther.",
+      "at": 25.6,
+      "tempo": 1,
+      "duration": 2.832834,
+      "file": "audio/farther.mp3"
+    },
+    {
       "id": "inheritance",
-      "text": "The inheritance reaches beyond the founding.",
-      "at": 21.3,
-      "tempo": 0.82,
-      "duration": 2.775068292682927,
+      "text": "The inheritance of printing reaches beyond the founding of America.",
+      "at": 28.9,
+      "tempo": 1,
+      "duration": 5.526349,
       "file": "audio/inheritance.mp3"
     },
     {
       "id": "wisdom",
       "text": "The search for wisdom.",
-      "at": 25.8,
-      "tempo": 0.86,
-      "duration": 1.997996511627907,
+      "at": 35.1,
+      "tempo": 1,
+      "duration": 1.996916,
       "file": "audio/wisdom.mp3"
     },
     {
       "id": "mercy",
       "text": "The call to mercy.",
-      "at": 29.4,
-      "tempo": 0.86,
-      "duration": 1.889996511627907,
+      "at": 38.7,
+      "tempo": 1,
+      "duration": 2.136236,
       "file": "audio/mercy.mp3"
     },
     {
       "id": "courage",
       "text": "The courage to find our way.",
-      "at": 33.2,
-      "tempo": 0.86,
-      "duration": 2.321995348837209,
+      "at": 43.2,
+      "tempo": 1,
+      "duration": 2.693515,
       "file": "audio/courage.mp3"
     },
     {
       "id": "austin",
       "text": "Here in Austin, we give enduring words a place on the page.",
-      "at": 36.5,
-      "tempo": 0.82,
-      "duration": 3.907748780487805,
+      "at": 47.2,
+      "tempo": 1,
+      "duration": 5.851429,
       "file": "audio/austin.mp3"
     },
     {
       "id": "craft",
       "text": "Ink. Paper. A working press. A tradition, carried forward.",
-      "at": 44.1,
-      "tempo": 0.82,
-      "duration": 6.003207317073171,
+      "at": 55.2,
+      "tempo": 1,
+      "duration": 6.826667,
       "file": "audio/craft.mp3"
     },
     {
-      "id": "invitation",
-      "text": "Read the words. Keep the source. Make room for the enduring.",
-      "at": 51,
-      "tempo": 0.82,
-      "duration": 3.9643829268292685,
-      "file": "audio/invitation.mp3"
+      "id": "read",
+      "text": "Read the words.",
+      "at": 62.7,
+      "tempo": 1,
+      "duration": 1.671837,
+      "file": "audio/read.mp3"
     },
     {
-      "id": "closing",
-      "text": "Thomas Broadside Company. Build something that lasts.",
-      "at": 55.6,
-      "tempo": 0.82,
-      "duration": 4.1342841463414635,
-      "file": "audio/closing.mp3"
+      "id": "keep",
+      "text": "Keep the source.",
+      "at": 65.1,
+      "tempo": 1,
+      "duration": 1.578957,
+      "file": "audio/keep.mp3"
+    },
+    {
+      "id": "enduring",
+      "text": "Make room for the enduring.",
+      "at": 67.1,
+      "tempo": 1,
+      "duration": 2.600635,
+      "file": "audio/enduring.mp3"
+    },
+    {
+      "id": "company",
+      "text": "Thomas Broadside Company.",
+      "at": 70.1,
+      "tempo": 1,
+      "duration": 2.600635,
+      "file": "audio/company.mp3"
+    },
+    {
+      "id": "motto",
+      "text": "Words to live with.",
+      "at": 72.9,
+      "tempo": 1,
+      "duration": 2.043356,
+      "file": "audio/motto.mp3"
     }
   ],
   "media": {
-    "film": "history-has-a-pulse-directors-cut-60s.mp4",
-    "captions": "directors-cut-60s.vtt",
-    "poster": "directors-cut-poster.jpg",
-    "share": "directors-cut-share.jpg"
+    "film": "history-has-a-pulse-directors-cut-75s.mp4",
+    "captions": "directors-cut-75s.vtt",
+    "poster": "directors-cut-poster-v2.jpg",
+    "share": "directors-cut-share-v2.jpg"
   },
   "captions_default": "off",
-  "historical_context": "Historical scenes are contemporary reconstructions; Canon landscapes are visual meditations, not claimed locations or reenactments. The shop footage records the actual Austin presses and finishing equipment. Narration and score are contemporary. Product images are unchanged catalog designs."
+  "historical_context": "Historical scenes are contemporary reconstructions; Canon landscapes are visual meditations, not claimed locations or reenactments. The shop footage records the actual Austin presses and finishing equipment. Narration and score are contemporary. Product images are unchanged catalog designs.",
+  "listening_window": {
+    "start": 4.946757,
+    "end": 9.0,
+    "description": "Actual press and finishing sound alone; no music or voice."
+  },
+  "motto": "Words to live with.",
+  "book_covers": {
+    "sea": {
+      "title": "The Odyssey",
+      "author": "Homer",
+      "edition": "Samuel Butler translation, 1900"
+    },
+    "hill": {
+      "title": "The Holy Bible",
+      "work": "The Gospel according to Matthew",
+      "edition": "Authorized Version, 1611"
+    },
+    "wood": {
+      "title": "The Divine Comedy",
+      "work": "Inferno",
+      "author": "Dante Alighieri",
+      "edition": "Henry Wadsworth Longfellow translation, 1867"
+    }
+  }
 }

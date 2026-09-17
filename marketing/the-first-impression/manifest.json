@@ -97,18 +97,18 @@
     },
     {
       "path": "email/july-fourth-preview.html",
-      "bytes": 3728,
-      "sha256": "2d7b240c63c98e5b4b3cde1db62d199665b9a8bdd3e3cba6a417da49b2acf9b1"
+      "bytes": 3719,
+      "sha256": "f7cedeb693482da8e8ba6e559601e388bfab32a0a1fce873fb74173d207281c1"
     },
     {
       "path": "email/july-fourth.eml",
-      "bytes": 163812,
-      "sha256": "fb23c8fd3b86deea2f4a0f53fab32ae7a38f3c1f8fe1398d0ab894604bcacacf"
+      "bytes": 163804,
+      "sha256": "3a8f020116b385adc8ca4c2515cb1831f3758d2de7ad8acd788dcfcce564b1a8"
     },
     {
       "path": "email/july-fourth.html",
-      "bytes": 3754,
-      "sha256": "d21e004a8989b0845d3d276a0df44fec13d27cfcc9d7b6dd122c8b350301f0b9"
+      "bytes": 3745,
+      "sha256": "62dce73a0d031bdd8ab578daab9b4c4ac0b534fdd2f6105eaf68ad7267648b46"
     },
     {
       "path": "email/july-fourth.txt",
@@ -117,18 +117,18 @@
     },
     {
       "path": "email/origin-story-preview.html",
-      "bytes": 3850,
-      "sha256": "7bf6a476c62e499713786ff3d137840894d11b531f3b545f0d9f4b5be71caffb"
+      "bytes": 3841,
+      "sha256": "1790d238539fe86c160b9b6ac9b2b9b77eb36db350c786b1a2d648d611974f1a"
     },
     {
       "path": "email/origin-story.eml",
-      "bytes": 164122,
-      "sha256": "438a651aef30525da653ea017fb415b617c37bd18e18d038047de593c576823a"
+      "bytes": 164114,
+      "sha256": "be5d60ef6e42aaf472b13ea1635ff16c706dd7e19f90835e33ec77af2a8ea0d4"
     },
     {
       "path": "email/origin-story.html",
-      "bytes": 3876,
-      "sha256": "cacba242901cb99ad49f02c2bedc5b043a894539f180845da17b59bca6470877"
+      "bytes": 3867,
+      "sha256": "a695c2ff881002fda10ae5971fcfcd492ec5d6601c752735b34e81c00e33efd9"
     },
     {
       "path": "email/origin-story.txt",
@@ -137,18 +137,18 @@
     },
     {
       "path": "email/partner-introduction-preview.html",
-      "bytes": 3825,
-      "sha256": "f3e49f7388579121642b13ebe227aa6489347b6a1be85942e3b734f2f274c09d"
+      "bytes": 3816,
+      "sha256": "0080aeb19ccdf6ee342f0eb1be5ddedb0a519a557790ed6867633428f10ba70b"
     },
     {
       "path": "email/partner-introduction.eml",
-      "bytes": 164021,
-      "sha256": "d2b966fc6e4d3614bab2418ff570389fb3eb874ac0f88b822485848e66553faf"
+      "bytes": 164013,
+      "sha256": "e507cc2e57eddcf96c87d2d38335f61413cae0f48c452b22bd6fe7fd63e9bad8"
     },
     {
       "path": "email/partner-introduction.html",
-      "bytes": 3851,
-      "sha256": "e15df1457c537109d054360ea2ef440b474e3f51a94967e97e6fedabc8eecbb4"
+      "bytes": 3842,
+      "sha256": "7c446f857b1797462b449de80abe7340780716acbcf84fe5a80a8ae5c64a85dc"
     },
     {
       "path": "email/partner-introduction.txt",
@@ -192,8 +192,8 @@
     },
     {
       "path": "index.html",
-      "bytes": 7556,
-      "sha256": "10066e9572d5e0cf57c2e237193ed2a3f5c71bccbe8c744a5ebd3ee3aa26f3d0"
+      "bytes": 7548,
+      "sha256": "01077d274ddc7d5bd18bb71042e40172dea489edcf92c36eb92d20da43835ca4"
     },
     {
       "path": "links.json",
@@ -312,8 +312,8 @@
     },
     {
       "path": "source/build_email.py",
-      "bytes": 6916,
-      "sha256": "a1dbdd144c0cfb3c0f26f574243fa959a77427be6d240ef114bc9d3407f70923"
+      "bytes": 6908,
+      "sha256": "bce199af46c13f671cbfea9ed9ef3b80ca6c9bc5f96d678aca7c9bca13669cb8"
     },
     {
       "path": "source/build_media.py",
@@ -542,5 +542,6 @@
       "bytes": 5643,
       "sha256": "759c25deb209ea7c6fe9d8355e6905770e3bc22599d5f895968bc015f1646a3d"
     }
-  ]
+  ],
+  "updated": "2026-09-17"
 }

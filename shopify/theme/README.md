@@ -8,7 +8,7 @@ When the storefront moves:
 1. Duplicate the destination theme. Copy `sections/tb-living-press.liquid` and
    everything in `assets/` into that theme's matching directories.
 2. Upload `site/media/press/press-loop-wide.mp4`, `press-loop-portrait.mp4`, and
-   `history-has-a-pulse-film.mp4` to Shopify Files.
+   `history-has-a-pulse-directors-cut-75s.mp4` to Shopify Files.
 3. In the theme editor add **Thomas / Living press** near the top of the home
    page. Pick the Declaration product and the three uploaded videos.
 4. The bundled poster and fonts work immediately. Select an optional poster

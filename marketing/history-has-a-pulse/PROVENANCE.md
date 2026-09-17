@@ -1,6 +1,6 @@
 # Current film edition
 
-The active film is now the 60-second **director’s cut**, with real shop footage, historical reconstructions, Canon landscapes, Eleanor’s narration and an original score. See [its production record](directors-cut/PROVENANCE.md) for the current edit, source selection and audio. The notes below preserve the original edition’s provenance; its 24/15-second films have been retired. Its static artwork, print assets and web loops remain in use.
+The active film is now the 75-second **director’s cut**, with real shop footage, historical reconstructions, Canon landscapes, Elias’s narration and an original score. See [its production record](directors-cut/PROVENANCE.md) for the current edit, source selection and audio. The notes below preserve the original edition’s provenance; its 24/15-second films have been retired. Its static artwork, print assets and web loops remain in use.
 
 # Production provenance / Original September 15 edition
 
@@ -48,9 +48,9 @@ python tools/selfcheck.py
 node tools/test_living_press.cjs
 ```
 
-The media builder uses `work/media/` inside the repo (git-ignored). It consumes the committed end-card PNGs and the enhanced portrait. Re-render the editable `source/campaign-art.html` in a browser at the exact format sizes before changing those end cards. The social editor and visual library include local copies of their fonts and the unchanged Declaration artwork, so both open directly from the downloaded kit. Python builders run from a repository checkout to preserve their connection to the canonical catalog and storefront assets.
+The media builder now delegates to `directors-cut/source/build_film.py`, which consumes the included footage, sound and current closing cards. The original silent film end cards have been retired. The social editor and visual library include local copies of their fonts and the unchanged Declaration artwork, so both open directly from the downloaded kit. Python builders run from a repository checkout to preserve their connection to the canonical catalog and storefront assets.
 
-Social format queries: `?mode=pulse&format=portrait` (1080 x 1350); `format=vertical` (1080 x 1920); `format=square` (1080 x 1080); `format=landscape` (1200 x 627). Change `mode=product` for the Declaration composition. Wide film end card uses landscape at 1920 x 1080. Capture the entire page, not a cropped viewport.
+Social format queries: `?mode=pulse&format=portrait` (1080 x 1350); `format=vertical` (1080 x 1920); `format=square` (1080 x 1080); `format=landscape` (1200 x 627). Change `mode=product` for the Declaration composition. Add `export=1` to fix the artboard at the corresponding dimensions, then capture its exact rectangle from a full-page browser render. Current film closing cards have their own editable source in `directors-cut/source/endcard.html`.
 
 ## Sources and ownership
 

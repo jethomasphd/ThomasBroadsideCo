@@ -3,7 +3,7 @@
   "repository": "jethomasphd/ThomasBroadsideCo",
   "created": "2026-09-17",
   "updated": "2026-09-17",
-  "active_film": "60-second director\u2019s cut",
+  "active_film": "75-second director\u2019s cut / Elias",
   "files": [
     {
       "path": "artwork/dunlap.png",
@@ -62,53 +62,78 @@
     },
     {
       "path": "audio/austin.mp3",
-      "bytes": 52288,
-      "sha256": "7e6e6e87601f57ef584881e5aaae31ab4e9c4994824c4fd3ac34a0891f216719"
+      "bytes": 94502,
+      "sha256": "fbad91bf45537f8a6429a5a4977b90315cf9f5199108ac455472679daf00ed7c"
     },
     {
-      "path": "audio/closing.mp3",
-      "bytes": 55214,
-      "sha256": "e65851c3513b328fa3af09bcc81a3efbe67d67f3200b89b108ec552d3914dcb6"
+      "path": "audio/company.mp3",
+      "bytes": 42675,
+      "sha256": "649c3b0bd7a446ea4e3dbd9b7b00a05894a41f63aa96490ce582c2bf3e7f813d"
     },
     {
       "path": "audio/courage.mp3",
-      "bytes": 33062,
-      "sha256": "d268c55f0ed85d659c21bd6c7a5a6e5ded87cb1cd9f885b5a73f6308bad95855"
+      "bytes": 44347,
+      "sha256": "26d1e5d80830b06c52735ccb88d89990573582dac201a887da4b810b7790821e"
     },
     {
       "path": "audio/craft.mp3",
-      "bytes": 79874,
-      "sha256": "7fbff85484050961ba2e6c7e2bd8481ece4975ab67ed88dbf0ec064757ebf90b"
+      "bytes": 110385,
+      "sha256": "861b069b37eb574b9422db03a7f7cd7141c06a976f4d5dda06b35a32e69f2a44"
+    },
+    {
+      "path": "audio/enduring.mp3",
+      "bytes": 42675,
+      "sha256": "4bec5339a0caf81ad5fbadf14d4cd74987b13d795017649a94e00feaaf4a9191"
+    },
+    {
+      "path": "audio/farther.mp3",
+      "bytes": 46437,
+      "sha256": "9ff9799da10e5a378c738da0ef876596d1cd5766a84fe6ba1da0691537ba3b93"
     },
     {
       "path": "audio/founding.mp3",
-      "bytes": 88651,
-      "sha256": "1e341d5b2148041603866e85355af5d4a94fbe63ce4f20845f35e506c3104707"
+      "bytes": 146747,
+      "sha256": "538a216ac89242343603e8637afa473cf711d346192171b898bcbfd0e5ca0638"
     },
     {
       "path": "audio/inheritance.mp3",
-      "bytes": 37660,
-      "sha256": "fd1f0a10e964cd0288bb7be9d1ac1e717111b6305bd877973bd77d193f8a3649"
+      "bytes": 89487,
+      "sha256": "7c7e4277b4d2e868b20cdfab84b3689c4ea4179880e172ef2ca0fb9ee62f22bc"
     },
     {
-      "path": "audio/invitation.mp3",
-      "bytes": 53124,
-      "sha256": "e3d8dbba796b2836cfb69e06c7aff057bd0e6969bc9d8d75d57f1fa6eaeb5b25"
+      "path": "audio/keep.mp3",
+      "bytes": 26375,
+      "sha256": "e38458795608ebaba715061b1cfa9c297bfcc2028ca6714140e8a9db86d697b6"
+    },
+    {
+      "path": "audio/listen.mp3",
+      "bytes": 22613,
+      "sha256": "9f1678f7872b94742d4c33b047eec61084b2001ac6b44bc081d334cf5bdd8be8"
     },
     {
       "path": "audio/mercy.mp3",
-      "bytes": 27211,
-      "sha256": "04d9d96c3aaeacb4abf0f93a5a2b374acba1c4a1fde7f85a766a4a2a4a4a2166"
+      "bytes": 35152,
+      "sha256": "dd86dfdae46de95b48547549d635beeadfd445e0eb1ff7ec86b1cd4bead2674b"
+    },
+    {
+      "path": "audio/motto.mp3",
+      "bytes": 33898,
+      "sha256": "41fbd8e271f3ee8091133aa938bc829cb51f4a7c8652bbab984c105abe4b9468"
     },
     {
       "path": "audio/public.mp3",
-      "bytes": 56886,
-      "sha256": "bbda2793a5a6c2e23966983e6e86e3dbee29d12551717415b80322daa5c1c96e"
+      "bytes": 95338,
+      "sha256": "e1682eaefce8af4fcaf47a0e1591adc12656daade48a6cf7dc5a5e1fbe61c359"
     },
     {
       "path": "audio/pulse.mp3",
+      "bytes": 33062,
+      "sha256": "59b11fd92f91da7e0e351daf0f5be6de253981bd900abf946c10dcd85905f4ce"
+    },
+    {
+      "path": "audio/read.mp3",
       "bytes": 27629,
-      "sha256": "ddda85d99f3766d60a4e33a379b68fb8a76b3591febc192f9e1f9fc5e77bce0f"
+      "sha256": "87f96f72f3ec3598dcc1eef1dad70264c441b66ffe54a5a1056ff652d953490e"
     },
     {
       "path": "audio/score.mp3",
@@ -117,63 +142,63 @@
     },
     {
       "path": "audio/wisdom.mp3",
-      "bytes": 28465,
-      "sha256": "21c10f01141510dcf7a4d9ce29582ca4b199ac207d440e9f74f5cbe91a843785"
+      "bytes": 33062,
+      "sha256": "38f58286fe62d3c35b6bf90a15b6d49690562d646b3f6eef439ee52800e61a29"
     },
     {
       "path": "CAMPAIGN.md",
-      "bytes": 4188,
-      "sha256": "d7f76b78d42e18bda8899045db92d9218b5a07ce978e0f3f1475f589af857e85"
+      "bytes": 4266,
+      "sha256": "cb4ae50444a04667970ccc35bec4d7a7331fe8ded7e7bad1afa86bef4251f29f"
     },
     {
       "path": "email/launch-preview.html",
-      "bytes": 2963,
-      "sha256": "ca7c94b88c7512d03f7a3fc2a8e507042fe92fb014f9e1a02e07b924f54a4357"
+      "bytes": 2950,
+      "sha256": "77a19daed779e621b28ca78ea1eeae4f6701b1187c82e7f63332a75e83e5ac9a"
     },
     {
       "path": "email/launch.eml",
-      "bytes": 273492,
-      "sha256": "a1325010ab190303cb5061b5a94de7a405c393d1bc74ba1a3f1213f0a7062497"
+      "bytes": 273467,
+      "sha256": "2f39e724567037fe203bffa99dec80b02d70286ba485634227fc93909c2acbde"
     },
     {
       "path": "email/launch.html",
-      "bytes": 3000,
-      "sha256": "ae922f115ace7c6b9fea3d92b5b36d36c8c3a5b56c39d8a91e2d1bbdd76eb839"
+      "bytes": 2990,
+      "sha256": "1db5358d780e0b760af92040f4dd4a20128f6562aa71015d29c5a2ec9b881f87"
     },
     {
       "path": "email/launch.txt",
-      "bytes": 809,
-      "sha256": "25aa75995faeb007b77a3b02636b49954139b8b3d921b55b8d211314c37b5586"
+      "bytes": 804,
+      "sha256": "21635211c87cdfb1812da60d04eee5bde0fa0d4f2f89d434874af4405417e593"
     },
     {
-      "path": "films/directors-cut-60s.srt",
-      "bytes": 954,
-      "sha256": "addff9e16a387783c305922570c932c8668ba4c228ee14fb8d768ab34924f865"
+      "path": "films/directors-cut-75s.srt",
+      "bytes": 1252,
+      "sha256": "6ad1d7dc119edae715c8297fb9973b5c48e57f57d759984926b8f4cee584d97e"
     },
     {
-      "path": "films/directors-cut-60s.vtt",
-      "bytes": 935,
-      "sha256": "a7aab299801105de862aa4c66730e68e90627233f10ffa39c7ac67563a954b33"
+      "path": "films/directors-cut-75s.vtt",
+      "bytes": 1215,
+      "sha256": "872e4882802619146cbe2f044099d3c4f190a0b2ea68fe0a65da08bb73ba2461"
     },
     {
-      "path": "films/history-has-a-pulse-directors-cut-60s-square.mp4",
-      "bytes": 39038131,
-      "sha256": "268e981ea613892b6bb3e7a2068437cfca82a2e07d3557ba6663e22126fca102"
+      "path": "films/history-has-a-pulse-directors-cut-75s-square.mp4",
+      "bytes": 50991550,
+      "sha256": "0ecb7517889ffe775b263ba39b586290be18b54ef3d691ea2211a7103038f5f4"
     },
     {
-      "path": "films/history-has-a-pulse-directors-cut-60s-vertical.mp4",
-      "bytes": 40228464,
-      "sha256": "117009be353e959f66b372c5f3c8963c4a9f6ae015e7857218199a39c94c2830"
+      "path": "films/history-has-a-pulse-directors-cut-75s-vertical.mp4",
+      "bytes": 52082607,
+      "sha256": "39a6f911306773b3e679d364f3b9f15f78537c869c89f7da9811b240866989e4"
     },
     {
-      "path": "films/history-has-a-pulse-directors-cut-60s-wide.mp4",
-      "bytes": 60143299,
-      "sha256": "2d877c39dadc3e60f2b65fba25a3664d4d21095e31781c68f0afd17d20cddbad"
+      "path": "films/history-has-a-pulse-directors-cut-75s-wide.mp4",
+      "bytes": 79227004,
+      "sha256": "c6bba7384079eb546fa3abbc74c2d038e1c4cb0aaad844a236d149f7ca71e927"
     },
     {
       "path": "index.html",
-      "bytes": 5447,
-      "sha256": "542b029009f853c923f457c3ebe665e177b0343af8633b3789f0614e9fa07327"
+      "bytes": 5449,
+      "sha256": "184b441ee0e88166dabc531e6e0dcb6ea175b1f0d8b5ddaab6ad14832c5db043"
     },
     {
       "path": "links.json",
@@ -182,28 +207,48 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 6272,
-      "sha256": "65aabad28eda02f6959a48a85bfc458fd13882dbad0196efb0cc0690b85aab82"
+      "bytes": 6761,
+      "sha256": "26e4d36d44aa05e3f369bc3e8a8f5d2a1abe952b5d41e38091f0f5642eb56ab4"
     },
     {
       "path": "README.md",
-      "bytes": 1739,
-      "sha256": "543c55faa670e7281d2c2172beb2847475fdec6fc022726329e40ea6cccdc529"
+      "bytes": 2144,
+      "sha256": "903acc738cf1235094e03e0dbb7589b12c832aa7e6493405305cbe213e9f6472"
     },
     {
       "path": "SCRIPT.md",
-      "bytes": 2793,
-      "sha256": "3af535a60c05abb16f37efeaea9d127d5eedbdfccfda3b17ff1bf6d2a5f448d1"
+      "bytes": 3047,
+      "sha256": "59257a6ec46cfbca0788eb50d0b42daa8ca6d0e5cb07a88b35df2d7a3ddbe378"
+    },
+    {
+      "path": "source/book-covers/hill.png",
+      "bytes": 39438,
+      "sha256": "34fed8e2268870e149f80be5cb586543a7bcfcb26c245faccfa46eb66d8a43f5"
+    },
+    {
+      "path": "source/book-covers/sea.png",
+      "bytes": 28928,
+      "sha256": "174f71ab45dd47736e526aa9a9ede6a68f471ce2d97ddfd4a195b3c21f07f122"
+    },
+    {
+      "path": "source/book-covers/wood.png",
+      "bytes": 31019,
+      "sha256": "84d15acbd2dc4ee0b2de21deae96d4d15912f6c0dde6dd1869ec31d85a72e32c"
+    },
+    {
+      "path": "source/book-covers.html",
+      "bytes": 2676,
+      "sha256": "fc2ff8e289ec4b000026517824f8f09d21009ad4b636b9a14847cc803e7c5574"
     },
     {
       "path": "source/build_campaign.py",
-      "bytes": 10221,
-      "sha256": "760a1873e73fec784f6239b3cc177084b5d07633b8f816b1e5b52275f45ec6dc"
+      "bytes": 10395,
+      "sha256": "16e2e5f4654568c9150fa6be3fd664e5db703c5469caf8ef6f7e07c29f9186cd"
     },
     {
       "path": "source/build_film.py",
-      "bytes": 9437,
-      "sha256": "9ff2621a21c5044552ee8a38fa149cfa5b9ab087fd05acb043bdc03a3273c273"
+      "bytes": 10354,
+      "sha256": "b5b74c7b804dccac0402e5b1399afc9b4e859dbc70e63bc821952996cef052c8"
     },
     {
       "path": "source/clips/dunlap.mp4",
@@ -272,28 +317,28 @@
     },
     {
       "path": "source/edit.json",
-      "bytes": 8325,
-      "sha256": "9f489393044a655f46594a66c8abb4e5eb3d8871f71af0b3392a22e7ee74410b"
+      "bytes": 9792,
+      "sha256": "9596a7d5a755fd8ac2c18cd3d748d0ab4665346f03ac274e8deb284281fcab80"
     },
     {
       "path": "source/endcard-square.png",
-      "bytes": 70205,
-      "sha256": "99667f16d6061ab8bf43a6efc7e10a6c76c19365b70d7615136aa427c02a9352"
+      "bytes": 66185,
+      "sha256": "22d21c08fe983eba1b2c0cc46845e2fc4dff89ede01b35ce431873bc38dbb7f1"
     },
     {
       "path": "source/endcard-vertical.png",
-      "bytes": 101114,
-      "sha256": "0bfa0f36e3359259f13ee0b806c5de1301def407822a122414909b1393c9e28f"
+      "bytes": 94678,
+      "sha256": "03a6064baeba696fff7008f1530c6a53881f9f8c5686f2a9792e67a0ab56dcac"
     },
     {
       "path": "source/endcard-wide.png",
-      "bytes": 94268,
-      "sha256": "d8b858bece4f9080ecbd7311836285e2902d8445b1bf41ce99730c3987c50925"
+      "bytes": 88111,
+      "sha256": "7d925f129e35314e87244d56a3ff7b2cd88e8bed7949d629fd29952cd56790e1"
     },
     {
       "path": "source/endcard.html",
-      "bytes": 3861,
-      "sha256": "9a3260d42c9520b1acae18b4f3caa6873f754e74d979113fc250a268c468f0ee"
+      "bytes": 3853,
+      "sha256": "254b62af0ec1d890b572a9d2fd3a714be8840bcaee34ac9ce089809ec0395365"
     },
     {
       "path": "source/fonts/IBMPlexMono-400.woff2",
@@ -342,8 +387,8 @@
     },
     {
       "path": "source/generation-record.json",
-      "bytes": 6709,
-      "sha256": "03ecd266ec5fb2a40987183642b8174bc3b1947bce7106f3a68c042bed604667"
+      "bytes": 7183,
+      "sha256": "40f1f4a48a7fb7a46f39252e39809cd7e5a3264ef4d446fff24bca3a025655e9"
     },
     {
       "path": "source/historical-sources.json",
@@ -367,8 +412,8 @@
     },
     {
       "path": "source/qa.json",
-      "bytes": 2403,
-      "sha256": "21d0fb0d0665215d8ed688863689fa836884f84f6d7abc6dfe9b61afab8ab571"
+      "bytes": 2400,
+      "sha256": "ceb186ec8aabe68835f9dcaf624904b365fb64e648880f1dac117cb40fbaed35"
     },
     {
       "path": "source/requirements-design.txt",
@@ -402,18 +447,18 @@
     },
     {
       "path": "source/timeline-square.json",
-      "bytes": 6043,
-      "sha256": "aba78a6859982226526add0325840b0ee108e89a5eec9f5169912e8b99070b79"
+      "bytes": 7328,
+      "sha256": "ffaa0a74090653e929bbd79524560a9c5e04fc7ca15187abd67a8593502685ba"
     },
     {
       "path": "source/timeline-vertical.json",
-      "bytes": 6045,
-      "sha256": "118350ec87a2982e3a26af3f0945b054032780197225e4bbcaae8c56515d794d"
+      "bytes": 7330,
+      "sha256": "82070e7d31a696d326cb17e80bf790f4bc00fec2c917164700b655215c752648"
     },
     {
       "path": "source/timeline-wide.json",
-      "bytes": 6041,
-      "sha256": "2b1c905bd5196e6b95c37d695506366daf75597e8c6722d5da8d32fae101435d"
+      "bytes": 7326,
+      "sha256": "e80d50593b4fea7114a1849551bc9a53b6f1c0451873f6982f397db2e550359f"
     },
     {
       "path": "source/words-to-live-with-generation-record.json",

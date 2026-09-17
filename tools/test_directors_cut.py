@@ -18,7 +18,7 @@ class DirectorsCut(unittest.TestCase):
         t=0
         for s in scenes:
             self.assertEqual(s['at'],t);t+=s['duration']
-        self.assertEqual(t,60)
+        self.assertEqual(t,75)
         self.assertEqual(sum(s['duration'] for s in scenes if s['kind']=='shop'),25.5)
         clips=[s for s in scenes if s['id']!='closing']
         self.assertEqual(len({s['sha256'] for s in clips}),len(clips))
@@ -34,24 +34,35 @@ class DirectorsCut(unittest.TestCase):
     def test_format_and_audio_consistency(self):
         for fmt in ('wide','vertical','square'):
             timeline=json.loads((K/f'source/timeline-{fmt}.json').read_text(encoding='utf-8'))
-            self.assertEqual(timeline['duration'],60)
+            self.assertEqual(timeline['duration'],75)
             self.assertEqual(timeline['narration'],D['narration'])
             self.assertEqual(timeline['captions_default'],'off')
             self.assertEqual([s['id'] for s in timeline['shots']],[s['id'] for s in D['scenes']])
-            self.assertTrue((K/f'films/history-has-a-pulse-directors-cut-60s-{fmt}.mp4').exists())
+            self.assertTrue((K/f'films/history-has-a-pulse-directors-cut-75s-{fmt}.mp4').exists())
         previous_end=0
         for v in D['narration']:
             self.assertGreaterEqual(v['at'],previous_end)
-            previous_end=v['at']+v['duration'];self.assertLessEqual(previous_end,60)
+            previous_end=v['at']+v['duration'];self.assertLessEqual(previous_end,75)
             self.assertTrue((K/v['file']).exists())
         for cue,scene in [('wisdom','sea'),('mercy','hill'),('courage','wood')]:
             v=next(v for v in D['narration'] if v['id']==cue);s=next(s for s in D['scenes'] if s['id']==scene)
             self.assertGreaterEqual(v['at'],s['at']);self.assertLessEqual(v['at']+v['duration'],s['at']+s['duration'])
 
+    def test_measured_voice_and_book_references(self):
+        self.assertEqual(D['narrator'], 'Elias')
+        self.assertEqual(D['motto'], 'Words to live with.')
+        self.assertGreaterEqual(D['listening_window']['end']-D['listening_window']['start'], 4)
+        cues={v['id']:v for v in D['narration']}
+        for a,b in [('pulse','listen'),('read','keep'),('keep','enduring')]:
+            self.assertGreaterEqual(cues[b]['at']-(cues[a]['at']+cues[a]['duration']), .4)
+        covers=[s['book_cover'] for s in D['scenes'] if s.get('book_cover')]
+        self.assertEqual(len(set(covers)),3)
+        for file in covers:self.assertTrue((K/file).exists())
+
     def test_public_replacement_and_captions(self):
         for name in ('index.html','press.html'):
             text=(R/'site'/name).read_text(encoding='utf-8')
-            self.assertIn('Watch the director’s cut · 60 sec',text)
+            self.assertIn('Watch the director’s cut · 75 sec',text)
             self.assertIn('/media/press/'+D['media']['film'],text)
             self.assertNotIn('24 sec',text)
             video=re.search(r'<video[^>]+data-src="/media/press/.*?</video>',text,re.S).group()
@@ -71,7 +82,7 @@ class DirectorsCut(unittest.TestCase):
         self.assertIn('/media/press/history-has-a-pulse-film.mp4 /media/press/'+D['media']['film']+' 301',redirects)
         for field in ('film','captions','poster','share'):self.assertTrue((R/'site/media/press'/D['media'][field]).exists())
         self.assertLess((R/'site/media/press'/D['media']['film']).stat().st_size,25*1024*1024)
-        self.assertIn('60 seconds:',(R/'tools/templates/product.html').read_text(encoding='utf-8'))
+        self.assertIn('75 seconds:',(R/'tools/templates/product.html').read_text(encoding='utf-8'))
 
 
 if __name__=='__main__':unittest.main()
