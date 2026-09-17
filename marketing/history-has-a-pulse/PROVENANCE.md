@@ -1,4 +1,8 @@
-# Production provenance
+# Current film edition
+
+The active film is now the 60-second **director’s cut**, with real shop footage, historical reconstructions, Canon landscapes, Eleanor’s narration and an original score. See [its production record](directors-cut/PROVENANCE.md) for the current edit, source selection and audio. The notes below preserve the original edition’s provenance; its 24/15-second films have been retired. Its static artwork, print assets and web loops remain in use.
+
+# Production provenance / Original September 15 edition
 
 ## Source selection
 
@@ -39,7 +43,7 @@ From a checkout of the repo, install the optional **design-bench** dependencies 
 ```sh
 python marketing/history-has-a-pulse/source/build_print.py
 python marketing/history-has-a-pulse/source/build_email.py
-python marketing/history-has-a-pulse/source/build_media.py --source-dir /path/to/original-clips
+python marketing/history-has-a-pulse/source/build_media.py
 python tools/selfcheck.py
 node tools/test_living_press.cjs
 ```

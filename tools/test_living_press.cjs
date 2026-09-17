@@ -21,6 +21,7 @@ function setup({reduced=false,saveData=false,mobile=false,blocked=false}={}) {
  s.toggle.listeners.click();assert.equal(s.hero.paused,true);s.view(false);s.view(true);assert.equal(s.hero.paused,true,'manual pause survives visibility changes');
  s.toggle.listeners.click();assert.equal(s.hero.paused,false);s.open.listeners.click();assert.equal(s.dialog.open,true);assert.equal(s.hero.paused,true);assert.equal(s.film.src,'film.mp4');
  s.close.listeners.click();assert.equal(s.dialog.open,false);assert.equal(s.film.paused,true);assert.equal(s.open.focused,true);
+ s.open.listeners.click();s.open.focused=false;s.dialog.listeners.click({target:{closest(){return {href:'/#documents'};}}});assert.equal(s.dialog.open,false,'collection and transcript links close the modal');assert.equal(s.film.paused,true);assert.equal(s.open.focused,false,'navigation does not restore focus to the film trigger');
  s=setup({reduced:true});assert.equal(s.hero.src,'','reduced motion prevents fetch');s.toggle.listeners.click();assert.equal(s.hero.paused,false,'explicit play remains possible');
  s=setup({saveData:true});assert.equal(s.hero.src,'','data saving prevents fetch');
  s=setup({mobile:true});assert.equal(s.hero.src,'portrait.mp4');s.view(false);assert.equal(s.hero.paused,true);s.view(true);assert.equal(s.hero.paused,false);

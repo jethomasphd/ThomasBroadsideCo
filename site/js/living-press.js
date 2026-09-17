@@ -59,7 +59,11 @@
       });
     });
     dialog.querySelector('[data-film-close]').addEventListener('click', () => dialog.close());
-    dialog.addEventListener('click', event => { if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); } });
+    dialog.addEventListener('click', event => {
+      // A same-page collection or transcript link must leave the modal as it navigates.
+      if (event.target.closest?.('a[href]')) { returnFocus = null; dialog.close(); return; }
+      if (event.target === dialog) { const r = dialog.getBoundingClientRect(); if (event.clientX < r.left || event.clientX > r.right || event.clientY < r.top || event.clientY > r.bottom) dialog.close(); }
+    });
     dialog.addEventListener('close', () => { film.pause(); returnFocus?.focus(); });
   }
 })();

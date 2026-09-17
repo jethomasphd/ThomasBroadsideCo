@@ -2,6 +2,8 @@
 
 Thomas Broadside Co. / The living press campaign / September 2026
 
+The active film has been replaced by the 60-second director’s cut. See [the new release guide](directors-cut/CAMPAIGN.md) for complete launch copy, descriptions, captions and email. The static artwork and print pieces below remain available.
+
 ## The idea
 
 The Declaration is the product. The press is the proof. Austin is the place.
@@ -21,9 +23,9 @@ Open `index.html` for the visual asset library. Finished exports are in
 
 | Use | File | Next step |
 |---|---|---|
-| Main shop film / LinkedIn | `films/history-has-a-pulse-wide-24s.mp4` | Native video upload; use caption 01 or 04 |
-| Instagram/Facebook Reels | `films/history-has-a-pulse-vertical-15s.mp4` | Native upload; use caption 02 |
-| Square feed video | `films/history-has-a-pulse-square-15s.mp4` | Native upload; use caption 03 |
+| Director’s cut / LinkedIn | `directors-cut/films/history-has-a-pulse-directors-cut-60s-wide.mp4` | Native video upload; use caption 01 or 04 |
+| Instagram/Facebook Reels | `directors-cut/films/history-has-a-pulse-directors-cut-60s-vertical.mp4` | Native upload; use caption 02 |
+| Square feed video | `directors-cut/films/history-has-a-pulse-directors-cut-60s-square.mp4` | Native upload; use caption 03 |
 | Meta feed, 4:5 | `social/pulse-feed.png`, `social/product-feed.png` | Shop introduction, then product follow-up |
 | Stories / Reels cover, 9:16 | `social/pulse-story.png`, `social/product-story.png` | Add a native link sticker to the product page |
 | Square posts / carousel | `social/pulse-square.png`, `social/product-square.png` | Pair in that order; use caption 05 |
@@ -54,9 +56,7 @@ first impression. Set in Caslon. Printed here.
 
 Step inside the shop, then find your broadside.
 
-Asset: wide film. Destination: `linkedin-organic`. Alt: A Heidelberg press feeds
-paper, delivery and finishing equipment move, and the Declaration broadside
-appears on a cream end card. The film includes natural machinery sound.
+Asset: landscape director’s cut. Destination: `linkedin-organic`. Description: Real Austin presses interwoven with historical reconstructions, Canon landscapes, a reading room, and three catalog broadsides. Narration, original score and real machinery. See the director’s cut guide for the full accessible description.
 
 ### 02 / The motion hook / Meta organic Reel
 
@@ -68,18 +68,16 @@ in our profile.
 
 #printmaking #austin #broadside
 
-Asset: vertical film. Destination: `ig-organic`. Alt: Press delivery, finishing
-rollers, and the Heidelberg feeder in motion; a Declaration broadside end card.
+Asset: portrait director’s cut. Destination: `ig-organic`. Use the film description in `directors-cut/CAMPAIGN.md`.
 
 ### 03 / The work / Facebook organic
 
 Before a broadside reaches a wall, it belongs to a trade.
 
 This is the shop behind our paper: Thomas Graphics in Austin, Texas.
-Take fifteen seconds on the floor. Then discover the words you want to live with.
+Take one minute with the shop, the founding story, and the Western Canon. Then discover the words you want to live with.
 
-Asset: square film. Destination: `fb-organic`. Alt: A working printing press and
-finishing equipment, followed by the Declaration of Independence design.
+Asset: square director’s cut. Destination: `fb-organic`. Use the film description in `directors-cut/CAMPAIGN.md`.
 
 ### 04 / The founder's network / LinkedIn organic
 

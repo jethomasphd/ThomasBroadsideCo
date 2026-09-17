@@ -18,6 +18,7 @@ from pathlib import Path
 from string import Template
 from build_origin import build_origin
 from build_canon import build_canon
+from build_directors_cut import build_directors_cut
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
@@ -570,6 +571,7 @@ def main() -> None:
     build_index_sections(catalog, journal)
     build_origin()
     build_canon()
+    build_directors_cut()
     stamp_assets()
     print(f"built {n_products} exhibit pages, {n_journal} journal entries, "
           f"catalog data + checkout prices, index + classroom refreshed")

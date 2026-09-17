@@ -1,0 +1,103 @@
+{
+  "narration": {
+    "voice": "Eleanor",
+    "model": "eleven_multilingual_v2",
+    "speed": 0.94,
+    "lines": [
+      {
+        "id": "pulse",
+        "text": "History has a pulse. Listen.",
+        "task_id": "d9685a5c-ff5f-4c57-ab5c-c954e242adcf",
+        "source_duration": 1.671837
+      },
+      {
+        "id": "founding",
+        "text": "In seventeen seventy-six, the Declaration entered a print shop. The words had to reach the people.",
+        "task_id": "bd68ec1c-544e-499e-b233-f7ef649ad8ab",
+        "source_duration": 5.479909
+      },
+      {
+        "id": "public",
+        "text": "A working draft. A printed sheet. A voice, carried farther.",
+        "task_id": "9155f913-19c0-4e0a-8e98-ef1b7f96e4fa",
+        "source_duration": 3.482993
+      },
+      {
+        "id": "inheritance",
+        "text": "The inheritance reaches beyond the founding.",
+        "task_id": "28783e27-9972-452c-ad30-d63ae3f5a4f9",
+        "source_duration": 2.275556
+      },
+      {
+        "id": "canon",
+        "text": "The search for wisdom. The call to mercy. The courage to find our way.",
+        "task_id": "0992ac3b-bc7d-4e81-a4bc-ba2f5201eb75",
+        "source_duration": 4.551111
+      },
+      {
+        "id": "austin",
+        "text": "Here in Austin, we give enduring words a place on the page.",
+        "task_id": "e7141cd1-ac1e-4973-b09c-49058aaf86d3",
+        "source_duration": 3.204354
+      },
+      {
+        "id": "craft",
+        "text": "Ink. Paper. A working press. A tradition, carried forward.",
+        "task_id": "42bba4a3-925d-487e-8e36-bcf6d44c480f",
+        "source_duration": 4.92263
+      },
+      {
+        "id": "invitation",
+        "text": "Read the words. Keep the source. Make room for the enduring.",
+        "task_id": "e90035fd-8622-48be-beec-b21cd33fc671",
+        "source_duration": 3.250794
+      },
+      {
+        "id": "closing",
+        "text": "Thomas Broadside Company. Build something that lasts.",
+        "task_id": "3ea1efc4-da9e-44aa-8482-fa48389ccdca",
+        "source_duration": 3.390113
+      },
+      {
+        "id": "wisdom",
+        "text": "The search for wisdom.",
+        "task_id": "d3035168-8ea5-4c27-a023-0520b59daefe",
+        "source_duration": 1.718277,
+        "generation_speed": 0.82
+      },
+      {
+        "id": "mercy",
+        "text": "The call to mercy.",
+        "task_id": "e9bf81d7-d2ee-42cb-b3cf-73879a37c822",
+        "source_duration": 1.625397,
+        "generation_speed": 0.82
+      },
+      {
+        "id": "courage",
+        "text": "The courage to find our way.",
+        "task_id": "f4532cd1-117d-433f-8f04-9bb038332e5b",
+        "source_duration": 1.996916,
+        "generation_speed": 0.82
+      }
+    ],
+    "unused_take": "canon: replaced by three individually timed phrases, so mercy and courage each accompany their own scene."
+  },
+  "music": {
+    "prompt": "Instrumental chamber score for a sixty-second museum-quality film about a working family print shop, revolutionary-era printing, and enduring literature and sacred texts. No vocals, no choir, no recognizable melody, no anthem, no trailer percussion. An intimate organic pulse around 72 BPM: low warm cello and double bass, sparse felt piano, delicate viola, faint wooden percussion as tactile as a printer's bench. Begin with generous space so real mechanical press sounds can be heard; introduce a repeating two-note cello figure, gradually open into a luminous string harmony, settle into reflective stillness for a landscape passage, then quietly gather warmth and resolve. Understated, tender and purposeful, no bombast, no sentimentality, no synthetic risers, no electronic drums. Contemporary original composition, not purported period music or church performance. Keep a simple melodic line and plenty of midrange space for a calm female narrator. Shape the first minute as a complete arc: sparse 0â€“8, gentle movement 8â€“24, contemplative breadth 24â€“36, warm lift 36â€“52, a soft resolved chord by 58â€“60. A longer graceful continuation is fine.",
+    "task_id": "be5a0d9f-0546-49e0-b8c0-08b5c8ff2e17"
+  },
+  "image": {
+    "prompt": "Use case: historical-scene. Create one new hyperrealistic 16:9 macro photograph for a museum-quality film about the continuity of printing. The attached image is a STYLE AND PERIOD REFERENCE ONLY, not an edit target. This must be a completely different close camera angle: low, almost level with the surface of an eighteenth-century printer's locked metal type forme resting on a worn dark oak press bed. The tiny raised metal letter faces have a beautifully restrained sheen of black ink. We see tactile type shoulders, uneven dark patina, thin edges of rectangular metal sorts, a wooden chase edge, and the corner of one cream rag-paper sheet softly out of focus beyond. Very shallow realistic depth of field: the focus is on a small abstract line of inked metal, letter faces reversed and too oblique and shallow in focus to read. Warm raking candlelight from outside the frame at right, cool dawn fill from a distant window, matching the reference's walnut, brass warmth and ink-black shadows. 85mm macro editorial photography, physically plausible scale and materials, soft natural shadows, no exaggerated shine, fine grain, exquisite tactile realism. No people, no faces, no hands, no ink roller or modern tools, no extra machinery, no text overlays or legible words, no claim of showing an actual surviving historical object. A contemporary reconstruction of eighteenth-century printing materials. The cinematic purpose is to cut from this close inked type to real modern printing machinery. This is a new close view, not the original room or a crop of it.",
+    "generated_file": "exec-52c1ee6a-8cc5-463c-8731-19c768c26ff3.png",
+    "tool": "built-in imagegen"
+  },
+  "motion": {
+    "prompt": "An exquisitely restrained macro camera glide, only a few centimeters, along the inked faces of the locked metal printing type in the starting image. All letter shapes, metal sorts, wood structure and paper remain perfectly rigid and unchanged. Warm candlelight fluctuates almost imperceptibly across the black ink; cool window light stays steady. Maintain the close shallow depth of field, fine material texture and precise focus on the central metal type. No hands, no people, no sliding type, no appearing text, no new tools, no mechanical action, no flying dust, no orbit. The impression is tactile and photographic, a quiet contemporary reconstruction of eighteenth-century printing materials. One uninterrupted shot.",
+    "task_id": "28ec9b34-c4e9-4f2c-b566-2bffe9daca01"
+  },
+  "credits": {
+    "starting": 1311,
+    "after_generation": 1164,
+    "used": 147
+  }
+}

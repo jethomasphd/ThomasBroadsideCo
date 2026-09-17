@@ -1,0 +1,76 @@
+{
+  "date": "2026-09-17",
+  "media": [
+    {
+      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-60s-wide.mp4",
+      "bytes": 60143299,
+      "duration": 60.0,
+      "size": [
+        1920,
+        1080
+      ],
+      "fps": 24.0,
+      "codec": "H.264/AAC",
+      "fast_start": true,
+      "full_decode": "passed",
+      "embedded_subtitles": false,
+      "integrated_lufs": -18.78,
+      "true_peak_dbtp": -4.25,
+      "sha256": "2d877c39dadc3e60f2b65fba25a3664d4d21095e31781c68f0afd17d20cddbad"
+    },
+    {
+      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-60s-vertical.mp4",
+      "bytes": 40228464,
+      "duration": 60.0,
+      "size": [
+        1080,
+        1920
+      ],
+      "fps": 24.0,
+      "codec": "H.264/AAC",
+      "fast_start": true,
+      "full_decode": "passed",
+      "embedded_subtitles": false,
+      "integrated_lufs": -18.78,
+      "true_peak_dbtp": -4.25,
+      "sha256": "117009be353e959f66b372c5f3c8963c4a9f6ae015e7857218199a39c94c2830"
+    },
+    {
+      "file": "marketing/history-has-a-pulse/directors-cut/films/history-has-a-pulse-directors-cut-60s-square.mp4",
+      "bytes": 39038131,
+      "duration": 60.0,
+      "size": [
+        1080,
+        1080
+      ],
+      "fps": 24.0,
+      "codec": "H.264/AAC",
+      "fast_start": true,
+      "full_decode": "passed",
+      "embedded_subtitles": false,
+      "integrated_lufs": -18.78,
+      "true_peak_dbtp": -4.25,
+      "sha256": "268e981ea613892b6bb3e7a2068437cfca82a2e07d3557ba6663e22126fca102"
+    },
+    {
+      "file": "site/media/press/history-has-a-pulse-directors-cut-60s.mp4",
+      "bytes": 15904274,
+      "duration": 60.01,
+      "size": [
+        1280,
+        720
+      ],
+      "fps": 24.0,
+      "codec": "H.264/AAC",
+      "fast_start": true,
+      "full_decode": "passed",
+      "embedded_subtitles": false,
+      "integrated_lufs": -18.83,
+      "true_peak_dbtp": -4.42,
+      "sha256": "274f2b333cfc86747d9fd2eb996bd29a5045b7dd610a80a3342f0318c682bdc6"
+    }
+  ],
+  "picture_review": "Scene contact sheets reviewed for all formats; opening and ending title cards reviewed at output size; type motion sampled at 1, 2.75 and 4.45 seconds.",
+  "audio_review": "Full stream decode, loudness and peak measurement, narration cue boundaries and Canon scene alignment checked.",
+  "caption_default": "off"
+}

@@ -1,0 +1,224 @@
+{
+  "format": "square",
+  "duration": 60,
+  "shop_seconds": 25.5,
+  "captions_default": "off",
+  "shots": [
+    {
+      "id": "press-feed",
+      "at": 0,
+      "duration": 5.5,
+      "source": "source/clips/press-feed.mp4",
+      "source_start": 0,
+      "source_sha256": "5b74a5b656def21eb518c60c64f788c2232ab0c28ccb417faf347c5fa9f71af6",
+      "kind": "shop"
+    },
+    {
+      "id": "dunlap",
+      "at": 5.5,
+      "duration": 5,
+      "source": "source/clips/dunlap.mp4",
+      "source_start": 1,
+      "source_sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60",
+      "kind": "history"
+    },
+    {
+      "id": "finishing-bed",
+      "at": 10.5,
+      "duration": 3.5,
+      "source": "source/clips/finishing-bed.mp4",
+      "source_start": 0,
+      "source_sha256": "c638d6522a4607c706f2a8bdbe15092f1d837e2db426a309ab722ee5691e79a4",
+      "kind": "shop"
+    },
+    {
+      "id": "jefferson",
+      "at": 14.0,
+      "duration": 3,
+      "source": "source/clips/jefferson.mp4",
+      "source_start": 1,
+      "source_sha256": "0c89028d9efeedcbb4bbe6a783ea1f06eff22774567c9947b449168ee4c95198",
+      "kind": "history"
+    },
+    {
+      "id": "washington",
+      "at": 17.0,
+      "duration": 3,
+      "source": "source/clips/washington.mp4",
+      "source_start": 1,
+      "source_sha256": "f7df26bef29cf48cf25193b8d6acd0ad896a7537312fcdb8adb47dd7ff2f323f",
+      "kind": "history"
+    },
+    {
+      "id": "press-mechanism",
+      "at": 20.0,
+      "duration": 5.5,
+      "source": "source/clips/press-mechanism.mp4",
+      "source_start": 0,
+      "source_sha256": "244e28405137e8919ff35fedd6915942b799533ed1433750f69d63d844826aa7",
+      "kind": "shop"
+    },
+    {
+      "id": "sea",
+      "at": 25.5,
+      "duration": 3.5,
+      "source": "source/clips/sea.mp4",
+      "source_start": 1,
+      "source_sha256": "924774cdee386451f7d4b32738743a3163da9c35723b673f16cd6c6a42d189f1",
+      "kind": "canon"
+    },
+    {
+      "id": "hill",
+      "at": 29.0,
+      "duration": 4,
+      "source": "source/clips/hill.mp4",
+      "source_start": 1,
+      "source_sha256": "ae13ca93e409376961cc521300b523712478d00800e29128edb506cc4a39eb66",
+      "kind": "canon"
+    },
+    {
+      "id": "wood",
+      "at": 33.0,
+      "duration": 3,
+      "source": "source/clips/wood.mp4",
+      "source_start": 1,
+      "source_sha256": "636875e9bb4e83d8846709bf7675e6e20800af4cc6ec585ef84f8928eaaebaab",
+      "kind": "canon"
+    },
+    {
+      "id": "finishing-sheets",
+      "at": 36.0,
+      "duration": 4,
+      "source": "source/clips/finishing-sheets.mp4",
+      "source_start": 0,
+      "source_sha256": "baf83f6feb9356bc47a64e6dab906ee7614cd25e87b2948a4c3c906f868cec32",
+      "kind": "shop"
+    },
+    {
+      "id": "inked-type",
+      "at": 40.0,
+      "duration": 3.5,
+      "source": "source/clips/inked-type.mp4",
+      "source_start": 1,
+      "source_sha256": "34dc7beefbc72c671516d780acc1ec9138390882084bf14f02d06eee650890e3",
+      "kind": "history"
+    },
+    {
+      "id": "press-delivery",
+      "at": 43.5,
+      "duration": 7,
+      "source": "source/clips/press-delivery.mp4",
+      "source_start": 0,
+      "source_sha256": "17b2ac55e56d3931fd8bf4481ee9df9730f28519d04dfb43ffb14e786e4dedc8",
+      "kind": "shop"
+    },
+    {
+      "id": "room",
+      "at": 50.5,
+      "duration": 4.5,
+      "source": "source/clips/room.mp4",
+      "source_start": 1,
+      "source_sha256": "61d6c11374e74cfed9585afe763740de3b32f3dacc184c0ebbc249ece6540d97",
+      "kind": "canon"
+    },
+    {
+      "id": "closing",
+      "at": 55.0,
+      "duration": 5,
+      "source": null,
+      "source_start": 0,
+      "source_sha256": null,
+      "kind": "product"
+    }
+  ],
+  "narration": [
+    {
+      "id": "pulse",
+      "text": "History has a pulse. Listen.",
+      "at": 1.8,
+      "tempo": 0.82,
+      "duration": 2.0388256097560977,
+      "file": "audio/pulse.mp3"
+    },
+    {
+      "id": "founding",
+      "text": "In seventeen seventy-six, the Declaration entered a print shop. The words had to reach the people.",
+      "at": 6.1,
+      "tempo": 0.82,
+      "duration": 6.682815853658537,
+      "file": "audio/founding.mp3"
+    },
+    {
+      "id": "public",
+      "text": "A working draft. A printed sheet. A voice, carried farther.",
+      "at": 14.5,
+      "tempo": 0.82,
+      "duration": 4.247552439024391,
+      "file": "audio/public.mp3"
+    },
+    {
+      "id": "inheritance",
+      "text": "The inheritance reaches beyond the founding.",
+      "at": 21.3,
+      "tempo": 0.82,
+      "duration": 2.775068292682927,
+      "file": "audio/inheritance.mp3"
+    },
+    {
+      "id": "wisdom",
+      "text": "The search for wisdom.",
+      "at": 25.8,
+      "tempo": 0.86,
+      "duration": 1.997996511627907,
+      "file": "audio/wisdom.mp3"
+    },
+    {
+      "id": "mercy",
+      "text": "The call to mercy.",
+      "at": 29.4,
+      "tempo": 0.86,
+      "duration": 1.889996511627907,
+      "file": "audio/mercy.mp3"
+    },
+    {
+      "id": "courage",
+      "text": "The courage to find our way.",
+      "at": 33.2,
+      "tempo": 0.86,
+      "duration": 2.321995348837209,
+      "file": "audio/courage.mp3"
+    },
+    {
+      "id": "austin",
+      "text": "Here in Austin, we give enduring words a place on the page.",
+      "at": 36.5,
+      "tempo": 0.82,
+      "duration": 3.907748780487805,
+      "file": "audio/austin.mp3"
+    },
+    {
+      "id": "craft",
+      "text": "Ink. Paper. A working press. A tradition, carried forward.",
+      "at": 44.1,
+      "tempo": 0.82,
+      "duration": 6.003207317073171,
+      "file": "audio/craft.mp3"
+    },
+    {
+      "id": "invitation",
+      "text": "Read the words. Keep the source. Make room for the enduring.",
+      "at": 51,
+      "tempo": 0.82,
+      "duration": 3.9643829268292685,
+      "file": "audio/invitation.mp3"
+    },
+    {
+      "id": "closing",
+      "text": "Thomas Broadside Company. Build something that lasts.",
+      "at": 55.6,
+      "tempo": 0.82,
+      "duration": 4.1342841463414635,
+      "file": "audio/closing.mp3"
+    }
+  ]
+}

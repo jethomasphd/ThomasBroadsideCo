@@ -30,343 +30,656 @@
       "sha256": "c9e024843311113cc1389e84632752c71bde197fa0e78ab93f37e590b1f996c0"
     }
   ],
-  "assets": [
+  "updated": "2026-09-17",
+  "active_film": "60-second director\u2019s cut",
+  "files": [
     {
-      "file": "artwork/letter-preview.png",
+      "path": "artwork/letter-preview.png",
       "bytes": 84439,
-      "sha256": "2765814d41a493ce26cc4e06aeb583134211ae3f08089e7a73fbc024b3229cfe",
-      "pixels": [
-        756,
-        972
-      ]
+      "sha256": "2765814d41a493ce26cc4e06aeb583134211ae3f08089e7a73fbc024b3229cfe"
     },
     {
-      "file": "artwork/lookbook-preview.png",
+      "path": "artwork/lookbook-preview.png",
       "bytes": 207900,
-      "sha256": "f7e8ac16c7db099ec3e5b0505f40b587e45bc34389094164c8eda6a31af60066",
-      "pixels": [
-        497,
-        756
-      ]
+      "sha256": "f7e8ac16c7db099ec3e5b0505f40b587e45bc34389094164c8eda6a31af60066"
     },
     {
-      "file": "artwork/postcard-preview.png",
+      "path": "artwork/postcard-preview.png",
       "bytes": 209355,
-      "sha256": "e6f3a05b2a675549628cd46f7e64089056542a06ab244e1039e845226dc5d2ce",
-      "pixels": [
-        800,
-        540
-      ]
+      "sha256": "e6f3a05b2a675549628cd46f7e64089056542a06ab244e1039e845226dc5d2ce"
     },
     {
-      "file": "artwork/press-portrait-enhanced.png",
+      "path": "artwork/press-portrait-enhanced.png",
       "bytes": 2344210,
-      "sha256": "4eac1b61af9a1b3a2d9c72d5e0cc39eb329c72d52ab83add5faba9d90f6b7118",
-      "pixels": [
-        1672,
-        941
-      ]
+      "sha256": "4eac1b61af9a1b3a2d9c72d5e0cc39eb329c72d52ab83add5faba9d90f6b7118"
     },
     {
-      "file": "CAMPAIGN.md",
-      "bytes": 11174,
-      "sha256": "b88fd35318a56a755c27387a87d13bc6adb4afc99b14fb577953566d407e5bf2"
+      "path": "CAMPAIGN.md",
+      "bytes": 11558,
+      "sha256": "c541589b642c4785f557ecf675f28a1d3b54fa4b2a570f4bd0e6850658c2b207"
     },
     {
-      "file": "email/bill-of-rights-day-preview.html",
-      "bytes": 3567,
-      "sha256": "e16a4430f9c29e17d53230360bd27ea8f25ace56e988db60f8ed2a46bd30a5a5"
+      "path": "directors-cut/artwork/dunlap.png",
+      "bytes": 1944709,
+      "sha256": "8a76419f9b25465122418020ac905a2cf8b7f8903a3f99a8eee1f96b6e3d98e1"
     },
     {
-      "file": "email/bill-of-rights-day.eml",
-      "bytes": 5684,
-      "sha256": "5e56f6edab18c7a96173c325b583e63792db85639a279662d9cfde00044f803b"
+      "path": "directors-cut/artwork/hill.png",
+      "bytes": 3069670,
+      "sha256": "69eeae3506a51e2b5f7beb9f0cba5439f77b3709dbe00af017d43ce5b3519e98"
     },
     {
-      "file": "email/bill-of-rights-day.html",
-      "bytes": 3592,
-      "sha256": "888bf5bfa4766363fab686270e174f2591ba6eaf47b3bc8d46365b5ed39f0190"
+      "path": "directors-cut/artwork/inked-type.png",
+      "bytes": 1750411,
+      "sha256": "6afc3c9fd523694eb61937742ec7c9539066e3e89af0c9f55eac87c907efc6eb"
     },
     {
-      "file": "email/bill-of-rights-day.txt",
-      "bytes": 1001,
-      "sha256": "f9ed7e60b7c79f255ccf14503b1652aaba55407e50db9936c88eef2ec19224b3"
+      "path": "directors-cut/artwork/jefferson.png",
+      "bytes": 1946217,
+      "sha256": "a9fa2a72842d133601ce2664a78f8b626343689821c432c5888b330b1da5c28b"
     },
     {
-      "file": "email/constitution-day-preview.html",
-      "bytes": 3682,
-      "sha256": "203bbdc4f7cf65239a98459b4c9c69328714d546ccb0c53f2a38f49c68b9e9b5"
+      "path": "directors-cut/artwork/poster-square.jpg",
+      "bytes": 115294,
+      "sha256": "69a6f0bb394c3832bba50c486dbb16499578249ec412915ae65c6fd55550799b"
     },
     {
-      "file": "email/constitution-day.eml",
-      "bytes": 5825,
-      "sha256": "6056bbcd5e35ee2b7787ee6dcb301461f7edee4a63d899d11e4708bc6992c867"
+      "path": "directors-cut/artwork/poster-vertical.jpg",
+      "bytes": 133621,
+      "sha256": "ae7f4596dc5165b4b826947f7eb65557a993e51c957d42a8f4e09b24a40f5019"
     },
     {
-      "file": "email/constitution-day.html",
-      "bytes": 3707,
-      "sha256": "0f8a553b881f4ebe2607e94de5905374294937763432e67657da4015b14bdf6d"
+      "path": "directors-cut/artwork/poster-wide.jpg",
+      "bytes": 196095,
+      "sha256": "ae08360a11d82d5824ce2c06242dab77e119c7369bef91d05ee884243b6d4f80"
     },
     {
-      "file": "email/constitution-day.txt",
-      "bytes": 1041,
-      "sha256": "f7cda1c64d14c23927a0cf3c9d3672ad92c7e9e672f3f11b4ab4315f5e9273f2"
+      "path": "directors-cut/artwork/room.png",
+      "bytes": 1903463,
+      "sha256": "4eb6b6eecd3478be34b19b2d23366ec8a1f2a8752f3c362506970c74f03ee41c"
     },
     {
-      "file": "films/history-has-a-pulse-square-15s.mp4",
-      "bytes": 3448961,
-      "sha256": "7129f315a2756a822fbb04a71c4dc43000305762409a70576a72c0244c10bf26",
-      "duration": "00:00:15.02",
-      "audio": "AAC stereo"
+      "path": "directors-cut/artwork/sea.png",
+      "bytes": 2651600,
+      "sha256": "a3a2c825aea8eb7ec5fcdeb0504bf602597ba748dca1a30329f2d8bb4dfc830d"
     },
     {
-      "file": "films/history-has-a-pulse-vertical-15s.mp4",
-      "bytes": 4994248,
-      "sha256": "64a567e12f87e745988edc6ebcedf94cea5a7397530529990caf770e2d7a0b36",
-      "duration": "00:00:15.02",
-      "audio": "AAC stereo"
+      "path": "directors-cut/artwork/washington.png",
+      "bytes": 2033781,
+      "sha256": "141843a02af8832f36b5d6b1a00e41cf00e2db6a5d55f503efdfec52e40a6071"
     },
     {
-      "file": "films/history-has-a-pulse-wide-24s.mp4",
-      "bytes": 7483649,
-      "sha256": "6633c7866a4ecef6ef3c21a8b58e6001a607c86abad4f83aa12694fe056dfb9c",
-      "duration": "00:00:24.02",
-      "audio": "AAC stereo"
+      "path": "directors-cut/artwork/wood.png",
+      "bytes": 2844689,
+      "sha256": "b54ae5843dea4a28af05119b772b157a3c447bba2902412c676bb71d558bf3c6"
     },
     {
-      "file": "films/press-rhythm.mp3",
-      "bytes": 577875,
-      "sha256": "2fc76b239c5bab0d2b245a9878f3411c34e40839d6389de11c962bf91400af36"
+      "path": "directors-cut/audio/austin.mp3",
+      "bytes": 52288,
+      "sha256": "7e6e6e87601f57ef584881e5aaae31ab4e9c4994824c4fd3ac34a0891f216719"
     },
     {
-      "file": "films/shop-film.vtt",
-      "bytes": 450,
-      "sha256": "50709ce9b948343d4c763049374ff01d0b6a10a9fbc41197c7cf2f2ff865a48d"
+      "path": "directors-cut/audio/closing.mp3",
+      "bytes": 55214,
+      "sha256": "e65851c3513b328fa3af09bcc81a3efbe67d67f3200b89b108ec552d3914dcb6"
     },
     {
-      "file": "films/social-film.vtt",
-      "bytes": 383,
-      "sha256": "bebc5d34de2dbf3771e315a773eefb35d1e87d3d209b1e01a496294a88bcedc9"
+      "path": "directors-cut/audio/courage.mp3",
+      "bytes": 33062,
+      "sha256": "d268c55f0ed85d659c21bd6c7a5a6e5ded87cb1cd9f885b5a73f6308bad95855"
     },
     {
-      "file": "index.html",
-      "bytes": 11141,
-      "sha256": "7961039f0881f10173f59306e04663a4191ea842609337719a66a4b049d19b6b"
+      "path": "directors-cut/audio/craft.mp3",
+      "bytes": 79874,
+      "sha256": "7fbff85484050961ba2e6c7e2bd8481ece4975ab67ed88dbf0ec064757ebf90b"
     },
     {
-      "file": "links.json",
-      "bytes": 1493,
-      "sha256": "97df05d19aadeb76f874bc584b49d752e9d028e359ef9f5f2ef81dc9f2d07263"
+      "path": "directors-cut/audio/founding.mp3",
+      "bytes": 88651,
+      "sha256": "1e341d5b2148041603866e85355af5d4a94fbe63ce4f20845f35e506c3104707"
     },
     {
-      "file": "print/business-introduction-letter.pdf",
-      "bytes": 422264,
-      "sha256": "dab163e3975a495a0d8c34486b6ea3165570b5b450c659a6eda0a420073ffb73",
-      "pages": 1,
-      "trim_inches": [
-        8.5,
-        11.0
-      ]
+      "path": "directors-cut/audio/inheritance.mp3",
+      "bytes": 37660,
+      "sha256": "fd1f0a10e964cd0288bb7be9d1ac1e717111b6305bd877973bd77d193f8a3649"
     },
     {
-      "file": "print/collectors-lookbook.pdf",
-      "bytes": 6007506,
-      "sha256": "c7ce9b524ca808f8e774f5e72a3f36453b1b71011cc2b27102584ff26f35d4a3",
-      "pages": 8,
-      "trim_inches": [
-        5.5,
-        8.5
-      ]
+      "path": "directors-cut/audio/invitation.mp3",
+      "bytes": 53124,
+      "sha256": "e3d8dbba796b2836cfb69e06c7aff057bd0e6969bc9d8d75d57f1fa6eaeb5b25"
     },
     {
-      "file": "print/postcard-6x9.pdf",
-      "bytes": 4059420,
-      "sha256": "35fa150a50ebf1c7ccdb32dbfecf5d70c31493e5f2f38f50bae556c8eeb2613f",
-      "pages": 2,
-      "trim_inches": [
-        9.0,
-        6.0
-      ]
+      "path": "directors-cut/audio/mercy.mp3",
+      "bytes": 27211,
+      "sha256": "04d9d96c3aaeacb4abf0f93a5a2b374acba1c4a1fde7f85a766a4a2a4a4a2166"
     },
     {
-      "file": "PROVENANCE.md",
-      "bytes": 5748,
-      "sha256": "fd8c1fa10a647f8b0a0d4174b982783a8ee3fa7900437e2d2fc9c7b0cf9130c5"
+      "path": "directors-cut/audio/public.mp3",
+      "bytes": 56886,
+      "sha256": "bbda2793a5a6c2e23966983e6e86e3dbee29d12551717415b80322daa5c1c96e"
     },
     {
-      "file": "README.md",
-      "bytes": 369,
-      "sha256": "c3edcf8f127f614f5f7e860e875d73f7637c85ef3ad37b01caa025236585d092"
+      "path": "directors-cut/audio/pulse.mp3",
+      "bytes": 27629,
+      "sha256": "ddda85d99f3766d60a4e33a379b68fb8a76b3591febc192f9e1f9fc5e77bce0f"
     },
     {
-      "file": "social/product-feed.png",
-      "bytes": 77079,
-      "sha256": "059c8f5379c9457e2387e9776fd55d2ee34a17e2175628fe679caea723b230c8",
-      "pixels": [
-        1080,
-        1350
-      ]
+      "path": "directors-cut/audio/score.mp3",
+      "bytes": 2106658,
+      "sha256": "8f2cde5e9d7bc11f31d8bf6e531f54ec1bc4daa52f4f0a06d2027309c82c2118"
     },
     {
-      "file": "social/product-linkedin.png",
-      "bytes": 57873,
-      "sha256": "cae5296865f3323a597ef6109734380400d1bcc1a2b9f77583c0501795a83619",
-      "pixels": [
-        1200,
-        627
-      ]
+      "path": "directors-cut/audio/wisdom.mp3",
+      "bytes": 28465,
+      "sha256": "21c10f01141510dcf7a4d9ce29582ca4b199ac207d440e9f74f5cbe91a843785"
     },
     {
-      "file": "social/product-square.png",
-      "bytes": 71034,
-      "sha256": "516f9f9b3aadec6018eefc1c34a5772c5e3c9568f332c4316761578d59bb0d99",
-      "pixels": [
-        1080,
-        1080
-      ]
+      "path": "directors-cut/CAMPAIGN.md",
+      "bytes": 4188,
+      "sha256": "d7f76b78d42e18bda8899045db92d9218b5a07ce978e0f3f1475f589af857e85"
     },
     {
-      "file": "social/product-story.png",
-      "bytes": 82461,
-      "sha256": "5f7a79e6e8d6023a65f152b23b3e473698538a8aa411b17ef1eabd9e7add3d18",
-      "pixels": [
-        1080,
-        1920
-      ]
+      "path": "directors-cut/email/launch-preview.html",
+      "bytes": 2963,
+      "sha256": "ca7c94b88c7512d03f7a3fc2a8e507042fe92fb014f9e1a02e07b924f54a4357"
     },
     {
-      "file": "social/pulse-feed.png",
-      "bytes": 110155,
-      "sha256": "845aa3bccff4c359975093bc86ab510ac21b9454c7904d2156204dc2bc6229c9",
-      "pixels": [
-        1080,
-        1350
-      ]
+      "path": "directors-cut/email/launch.eml",
+      "bytes": 273492,
+      "sha256": "a1325010ab190303cb5061b5a94de7a405c393d1bc74ba1a3f1213f0a7062497"
     },
     {
-      "file": "social/pulse-linkedin.png",
-      "bytes": 86501,
-      "sha256": "4c72a5a45e6c823bf4f5c99abef777d27f5f53a564e673a5a4a32ec92f587430",
-      "pixels": [
-        1200,
-        627
-      ]
+      "path": "directors-cut/email/launch.html",
+      "bytes": 3000,
+      "sha256": "ae922f115ace7c6b9fea3d92b5b36d36c8c3a5b56c39d8a91e2d1bbdd76eb839"
     },
     {
-      "file": "social/pulse-square.png",
-      "bytes": 102082,
-      "sha256": "18e430866b81d09af346460f482dd9a162273325634361972e0a6a16618d2280",
-      "pixels": [
-        1080,
-        1080
-      ]
+      "path": "directors-cut/email/launch.txt",
+      "bytes": 809,
+      "sha256": "25aa75995faeb007b77a3b02636b49954139b8b3d921b55b8d211314c37b5586"
     },
     {
-      "file": "social/pulse-story.png",
-      "bytes": 125313,
-      "sha256": "2df193f84c9227d5d924042ca241639a0940aa06f72323eb71622d8fc14bb34d",
-      "pixels": [
-        1080,
-        1920
-      ]
+      "path": "directors-cut/films/directors-cut-60s.srt",
+      "bytes": 954,
+      "sha256": "addff9e16a387783c305922570c932c8668ba4c228ee14fb8d768ab34924f865"
     },
     {
-      "file": "source/build_email.py",
-      "bytes": 5369,
-      "sha256": "fdbf29cb82f3afc16d5929be065afd5e48f754c6c4fb090c870a70fc36a62c67"
+      "path": "directors-cut/films/directors-cut-60s.vtt",
+      "bytes": 935,
+      "sha256": "a7aab299801105de862aa4c66730e68e90627233f10ffa39c7ac67563a954b33"
     },
     {
-      "file": "source/build_media.py",
-      "bytes": 5880,
-      "sha256": "cd5d3236f28f91eb98cf8ee4ecb2eecbfe816b0c3c0d83ce7758ca6daa68de82"
+      "path": "directors-cut/films/history-has-a-pulse-directors-cut-60s-square.mp4",
+      "bytes": 39038131,
+      "sha256": "268e981ea613892b6bb3e7a2068437cfca82a2e07d3557ba6663e22126fca102"
     },
     {
-      "file": "source/build_print.py",
-      "bytes": 9195,
-      "sha256": "402e280337417eca82a303aa6a637a139d08915f3a0ceab6af6a4eb2529c588c"
+      "path": "directors-cut/films/history-has-a-pulse-directors-cut-60s-vertical.mp4",
+      "bytes": 40228464,
+      "sha256": "117009be353e959f66b372c5f3c8963c4a9f6ae015e7857218199a39c94c2830"
     },
     {
-      "file": "source/campaign-art.html",
-      "bytes": 5653,
-      "sha256": "a7d17fb6f5a78ef870ca2b9313c648d1cccad481d53e5029634b056c524b38ae"
+      "path": "directors-cut/films/history-has-a-pulse-directors-cut-60s-wide.mp4",
+      "bytes": 60143299,
+      "sha256": "2d877c39dadc3e60f2b65fba25a3664d4d21095e31781c68f0afd17d20cddbad"
     },
     {
-      "file": "source/catalog-art/declaration-of-independence.jpg",
-      "bytes": 307005,
-      "sha256": "95035a8a68f51a330ea36b6f240aa36a65df87397cdcfbf9b486c8c8ccaa0b47",
-      "pixels": [
-        1950,
-        2600
-      ]
+      "path": "directors-cut/index.html",
+      "bytes": 5447,
+      "sha256": "542b029009f853c923f457c3ebe665e177b0343af8633b3789f0614e9fa07327"
     },
     {
-      "file": "source/endcards/endcard-square.png",
-      "bytes": 71034,
-      "sha256": "516f9f9b3aadec6018eefc1c34a5772c5e3c9568f332c4316761578d59bb0d99",
-      "pixels": [
-        1080,
-        1080
-      ]
+      "path": "directors-cut/links.json",
+      "bytes": 574,
+      "sha256": "3987e6c5eed43a4028e15d82b189c3b3f2d8082d256e1c6413b507455420e6db"
     },
     {
-      "file": "source/endcards/endcard-vertical.png",
-      "bytes": 82461,
-      "sha256": "5f7a79e6e8d6023a65f152b23b3e473698538a8aa411b17ef1eabd9e7add3d18",
-      "pixels": [
-        1080,
-        1920
-      ]
+      "path": "directors-cut/manifest.json",
+      "bytes": 13878,
+      "sha256": "44f9a321a636697112651825e5373b07c83a14c747aca4e64c61c46b536a2363"
     },
     {
-      "file": "source/endcards/endcard-wide.png",
-      "bytes": 86720,
-      "sha256": "63dfc94a7fb0e2dc49c0342399ad49698878befd7cb985da1060282f4d8f0f2d",
-      "pixels": [
-        1920,
-        1080
-      ]
+      "path": "directors-cut/PROVENANCE.md",
+      "bytes": 6272,
+      "sha256": "65aabad28eda02f6959a48a85bfc458fd13882dbad0196efb0cc0690b85aab82"
     },
     {
-      "file": "source/fonts/IBMPlexMono-400.woff2",
+      "path": "directors-cut/README.md",
+      "bytes": 1739,
+      "sha256": "543c55faa670e7281d2c2172beb2847475fdec6fc022726329e40ea6cccdc529"
+    },
+    {
+      "path": "directors-cut/SCRIPT.md",
+      "bytes": 2793,
+      "sha256": "3af535a60c05abb16f37efeaea9d127d5eedbdfccfda3b17ff1bf6d2a5f448d1"
+    },
+    {
+      "path": "directors-cut/source/build_campaign.py",
+      "bytes": 10221,
+      "sha256": "760a1873e73fec784f6239b3cc177084b5d07633b8f816b1e5b52275f45ec6dc"
+    },
+    {
+      "path": "directors-cut/source/build_film.py",
+      "bytes": 9437,
+      "sha256": "9ff2621a21c5044552ee8a38fa149cfa5b9ab087fd05acb043bdc03a3273c273"
+    },
+    {
+      "path": "directors-cut/source/clips/dunlap.mp4",
+      "bytes": 7380845,
+      "sha256": "8b8dc467406f097b6ff0b03a95df3eb832a9ecc7c601986fac6042c748485a60"
+    },
+    {
+      "path": "directors-cut/source/clips/finishing-bed.mp4",
+      "bytes": 3391176,
+      "sha256": "c638d6522a4607c706f2a8bdbe15092f1d837e2db426a309ab722ee5691e79a4"
+    },
+    {
+      "path": "directors-cut/source/clips/finishing-sheets.mp4",
+      "bytes": 3958275,
+      "sha256": "baf83f6feb9356bc47a64e6dab906ee7614cd25e87b2948a4c3c906f868cec32"
+    },
+    {
+      "path": "directors-cut/source/clips/hill.mp4",
+      "bytes": 27288948,
+      "sha256": "ae13ca93e409376961cc521300b523712478d00800e29128edb506cc4a39eb66"
+    },
+    {
+      "path": "directors-cut/source/clips/inked-type.mp4",
+      "bytes": 4153111,
+      "sha256": "34dc7beefbc72c671516d780acc1ec9138390882084bf14f02d06eee650890e3"
+    },
+    {
+      "path": "directors-cut/source/clips/jefferson.mp4",
+      "bytes": 6498447,
+      "sha256": "0c89028d9efeedcbb4bbe6a783ea1f06eff22774567c9947b449168ee4c95198"
+    },
+    {
+      "path": "directors-cut/source/clips/press-delivery.mp4",
+      "bytes": 6116011,
+      "sha256": "17b2ac55e56d3931fd8bf4481ee9df9730f28519d04dfb43ffb14e786e4dedc8"
+    },
+    {
+      "path": "directors-cut/source/clips/press-feed.mp4",
+      "bytes": 3530331,
+      "sha256": "5b74a5b656def21eb518c60c64f788c2232ab0c28ccb417faf347c5fa9f71af6"
+    },
+    {
+      "path": "directors-cut/source/clips/press-mechanism.mp4",
+      "bytes": 5218394,
+      "sha256": "244e28405137e8919ff35fedd6915942b799533ed1433750f69d63d844826aa7"
+    },
+    {
+      "path": "directors-cut/source/clips/room.mp4",
+      "bytes": 3969316,
+      "sha256": "61d6c11374e74cfed9585afe763740de3b32f3dacc184c0ebbc249ece6540d97"
+    },
+    {
+      "path": "directors-cut/source/clips/sea.mp4",
+      "bytes": 14323473,
+      "sha256": "924774cdee386451f7d4b32738743a3163da9c35723b673f16cd6c6a42d189f1"
+    },
+    {
+      "path": "directors-cut/source/clips/washington.mp4",
+      "bytes": 6336477,
+      "sha256": "f7df26bef29cf48cf25193b8d6acd0ad896a7537312fcdb8adb47dd7ff2f323f"
+    },
+    {
+      "path": "directors-cut/source/clips/wood.mp4",
+      "bytes": 21532414,
+      "sha256": "636875e9bb4e83d8846709bf7675e6e20800af4cc6ec585ef84f8928eaaebaab"
+    },
+    {
+      "path": "directors-cut/source/edit.json",
+      "bytes": 8325,
+      "sha256": "9f489393044a655f46594a66c8abb4e5eb3d8871f71af0b3392a22e7ee74410b"
+    },
+    {
+      "path": "directors-cut/source/endcard-square.png",
+      "bytes": 70205,
+      "sha256": "99667f16d6061ab8bf43a6efc7e10a6c76c19365b70d7615136aa427c02a9352"
+    },
+    {
+      "path": "directors-cut/source/endcard-vertical.png",
+      "bytes": 101114,
+      "sha256": "0bfa0f36e3359259f13ee0b806c5de1301def407822a122414909b1393c9e28f"
+    },
+    {
+      "path": "directors-cut/source/endcard-wide.png",
+      "bytes": 94268,
+      "sha256": "d8b858bece4f9080ecbd7311836285e2902d8445b1bf41ce99730c3987c50925"
+    },
+    {
+      "path": "directors-cut/source/endcard.html",
+      "bytes": 3861,
+      "sha256": "9a3260d42c9520b1acae18b4f3caa6873f754e74d979113fc250a268c468f0ee"
+    },
+    {
+      "path": "directors-cut/source/fonts/IBMPlexMono-400.woff2",
       "bytes": 14708,
       "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
     },
     {
-      "file": "source/fonts/IBMPlexMono-OFL.txt",
+      "path": "directors-cut/source/fonts/IBMPlexMono-500.woff2",
+      "bytes": 14888,
+      "sha256": "01d285447409c8a588692162439a038b8cbd7871309ee20267b0d2d91c6e8e22"
+    },
+    {
+      "path": "directors-cut/source/fonts/IBMPlexMono-OFL.txt",
       "bytes": 4362,
       "sha256": "d741e57d5f865e294df801f96b7b5161a88b211df65887e4358d271c9fc5fb4f"
     },
     {
-      "file": "source/fonts/LibreCaslonDisplay-400.woff2",
+      "path": "directors-cut/source/fonts/LibreCaslonDisplay-400.woff2",
       "bytes": 24236,
       "sha256": "84267e937417f10dff37df818c5ef7f1e9f2e6a703e03c2dd286d3320af53269"
     },
     {
-      "file": "source/fonts/LibreCaslonDisplay-OFL.txt",
+      "path": "directors-cut/source/fonts/LibreCaslonDisplay-OFL.txt",
       "bytes": 4402,
       "sha256": "78c9f56e0d8a7ad7b9d26842a8eae728337a8671d8ddc6e889fa10645935dc7b"
     },
     {
-      "file": "source/fonts/LibreCaslonText-400.woff2",
+      "path": "directors-cut/source/fonts/LibreCaslonText-400.woff2",
       "bytes": 24972,
       "sha256": "29310efc1007f608549e29ff78fa5ce8dffe0c1aa82c21b082d1de9dfc7334f0"
     },
     {
-      "file": "source/fonts/LibreCaslonText-OFL.txt",
+      "path": "directors-cut/source/fonts/LibreCaslonText-400i.woff2",
+      "bytes": 28020,
+      "sha256": "20eac03c053229ce982a337fce41f12e42e18d33c4e29d8e89188ef4fa970425"
+    },
+    {
+      "path": "directors-cut/source/fonts/LibreCaslonText-700.woff2",
+      "bytes": 25260,
+      "sha256": "2819c345e64c715cc4235a5e9c3576351d28b4c0bbbeb934fcbd50ceab0406a0"
+    },
+    {
+      "path": "directors-cut/source/fonts/LibreCaslonText-OFL.txt",
       "bytes": 4403,
       "sha256": "92483eac22aa610aeb83ee246c22a1040f8ce4bdd7e68273fd89a2b06ba04338"
     },
     {
-      "file": "source/press-reference.jpg",
-      "bytes": 76249,
-      "sha256": "667c7a6c9ebc376f085bcb7f54457fa795ea411cf1170ab74798db6d1beffdd2",
-      "pixels": [
-        1920,
-        1080
-      ]
+      "path": "directors-cut/source/generation-record.json",
+      "bytes": 6709,
+      "sha256": "03ecd266ec5fb2a40987183642b8174bc3b1947bce7106f3a68c042bed604667"
     },
     {
-      "file": "source/requirements-design.txt",
+      "path": "directors-cut/source/historical-sources.json",
+      "bytes": 5326,
+      "sha256": "d2bd7cdc188ebd1f2c5eec8a3c1e606de1b2cc495ff2e1e81cc5b2cba088b77c"
+    },
+    {
+      "path": "directors-cut/source/products/declaration-of-independence.jpg",
+      "bytes": 307005,
+      "sha256": "95035a8a68f51a330ea36b6f240aa36a65df87397cdcfbf9b486c8c8ccaa0b47"
+    },
+    {
+      "path": "directors-cut/source/products/the-beatitudes.jpg",
+      "bytes": 462828,
+      "sha256": "f2202436c8ff1521385bf93016d478ec339b18bcf28008f7ee9b5cd5ee2cca8c"
+    },
+    {
+      "path": "directors-cut/source/products/the-odyssey.jpg",
+      "bytes": 299464,
+      "sha256": "5ea69126ad593e4bda9d50b1f858a8b153710b13ce173ffb871ef22509a974fa"
+    },
+    {
+      "path": "directors-cut/source/qa.json",
+      "bytes": 2403,
+      "sha256": "21d0fb0d0665215d8ed688863689fa836884f84f6d7abc6dfe9b61afab8ab571"
+    },
+    {
+      "path": "directors-cut/source/requirements-design.txt",
+      "bytes": 72,
+      "sha256": "bbb3dc0c934f63f0c3474d21fc0bfa69d148501bd17fdf9bc7744b4e0b6e5276"
+    },
+    {
+      "path": "directors-cut/source/shop-selects.json",
+      "bytes": 1794,
+      "sha256": "17a0874b1af8190f7d4610e8883a2f3ddbd8c336b2c5dfc5b1a73119e7977796"
+    },
+    {
+      "path": "directors-cut/source/the-first-impression-generation-record.json",
+      "bytes": 8288,
+      "sha256": "42fd919b4add36d9ada031a23617bf489ba3e539ee80c73b4d5f36e08322e67e"
+    },
+    {
+      "path": "directors-cut/source/the-first-impression-image-prompts.json",
+      "bytes": 9729,
+      "sha256": "b905314ab9d54c5721ca96cbec7e619b4c08c52832dfa105d7c154fe0ea26cfe"
+    },
+    {
+      "path": "directors-cut/source/the-first-impression-provenance.md",
+      "bytes": 10227,
+      "sha256": "3f0cf57a09e50e30ddbb51f69755feb51857f251aff36633fd1fab2e9ffff8bf"
+    },
+    {
+      "path": "directors-cut/source/the-first-impression-video-prompts.json",
+      "bytes": 5643,
+      "sha256": "759c25deb209ea7c6fe9d8355e6905770e3bc22599d5f895968bc015f1646a3d"
+    },
+    {
+      "path": "directors-cut/source/timeline-square.json",
+      "bytes": 6043,
+      "sha256": "aba78a6859982226526add0325840b0ee108e89a5eec9f5169912e8b99070b79"
+    },
+    {
+      "path": "directors-cut/source/timeline-vertical.json",
+      "bytes": 6045,
+      "sha256": "118350ec87a2982e3a26af3f0945b054032780197225e4bbcaae8c56515d794d"
+    },
+    {
+      "path": "directors-cut/source/timeline-wide.json",
+      "bytes": 6041,
+      "sha256": "2b1c905bd5196e6b95c37d695506366daf75597e8c6722d5da8d32fae101435d"
+    },
+    {
+      "path": "directors-cut/source/words-to-live-with-generation-record.json",
+      "bytes": 14746,
+      "sha256": "67f9608a42413e8d2377614c8578691a030e77738d6a48a39f22b3d6a5ec321a"
+    },
+    {
+      "path": "directors-cut/source/words-to-live-with-provenance.md",
+      "bytes": 7405,
+      "sha256": "c5b92f4c7a1a054c6014569661e4d4f4714702a5dd859c7f31f3ad09abbf93f9"
+    },
+    {
+      "path": "email/bill-of-rights-day-preview.html",
+      "bytes": 3592,
+      "sha256": "2f1863b9085e64203e94ef8939d02f4666fce415ff80e866825bdc57c338a8f1"
+    },
+    {
+      "path": "email/bill-of-rights-day.eml",
+      "bytes": 5733,
+      "sha256": "482a9a2a74d44ce9697c4f6831645b1dbf40ffb4a733293a1ef6fdc1e8b027f1"
+    },
+    {
+      "path": "email/bill-of-rights-day.html",
+      "bytes": 3615,
+      "sha256": "74c8a8d9ddaaeec8754e67c8650109855afa7116c225902daecae7ab055bd1a5"
+    },
+    {
+      "path": "email/bill-of-rights-day.txt",
+      "bytes": 1008,
+      "sha256": "2c90b7995a1fd1c10a6d8b0925bd946840226e61c4d8846d154b4608927d3ab4"
+    },
+    {
+      "path": "email/constitution-day-preview.html",
+      "bytes": 3763,
+      "sha256": "4e5f6a8ad251a5fe299f0d5bf94c3b8ade44dcae5599a7b4d6152e2ec1daddcf"
+    },
+    {
+      "path": "email/constitution-day.eml",
+      "bytes": 5992,
+      "sha256": "800fc2c915698c83eabd9d4581fd7ab854ac5e9ea426e8920c6a9f943d4ab375"
+    },
+    {
+      "path": "email/constitution-day.html",
+      "bytes": 3786,
+      "sha256": "43097b9fe9f433e0e515b498495544ce6213daef90056afdbbfa5921bf125479"
+    },
+    {
+      "path": "email/constitution-day.txt",
+      "bytes": 1104,
+      "sha256": "c3dd38b62ef2e4ba2caf0ee75965690358e65333dd485984511e288a43874b30"
+    },
+    {
+      "path": "films/press-rhythm.mp3",
+      "bytes": 577875,
+      "sha256": "2fc76b239c5bab0d2b245a9878f3411c34e40839d6389de11c962bf91400af36"
+    },
+    {
+      "path": "index.html",
+      "bytes": 11637,
+      "sha256": "479aad2c259b3deb2478c93b179639caa12757bf76b1228e559f2c761000ac79"
+    },
+    {
+      "path": "links.json",
+      "bytes": 1493,
+      "sha256": "97df05d19aadeb76f874bc584b49d752e9d028e359ef9f5f2ef81dc9f2d07263"
+    },
+    {
+      "path": "print/business-introduction-letter.pdf",
+      "bytes": 422264,
+      "sha256": "dab163e3975a495a0d8c34486b6ea3165570b5b450c659a6eda0a420073ffb73"
+    },
+    {
+      "path": "print/collectors-lookbook.pdf",
+      "bytes": 6007506,
+      "sha256": "c7ce9b524ca808f8e774f5e72a3f36453b1b71011cc2b27102584ff26f35d4a3"
+    },
+    {
+      "path": "print/postcard-6x9.pdf",
+      "bytes": 4059420,
+      "sha256": "35fa150a50ebf1c7ccdb32dbfecf5d70c31493e5f2f38f50bae556c8eeb2613f"
+    },
+    {
+      "path": "PROVENANCE.md",
+      "bytes": 6215,
+      "sha256": "4c9d590458c4b8d91befdfd62a42c03150c54075167d547227e46f0cce38af73"
+    },
+    {
+      "path": "README.md",
+      "bytes": 727,
+      "sha256": "86b435e192941b39cb90d73f21d140ed144d7f92c9708a48c95411314b1d8c52"
+    },
+    {
+      "path": "social/product-feed.png",
+      "bytes": 77079,
+      "sha256": "059c8f5379c9457e2387e9776fd55d2ee34a17e2175628fe679caea723b230c8"
+    },
+    {
+      "path": "social/product-linkedin.png",
+      "bytes": 57873,
+      "sha256": "cae5296865f3323a597ef6109734380400d1bcc1a2b9f77583c0501795a83619"
+    },
+    {
+      "path": "social/product-square.png",
+      "bytes": 71034,
+      "sha256": "516f9f9b3aadec6018eefc1c34a5772c5e3c9568f332c4316761578d59bb0d99"
+    },
+    {
+      "path": "social/product-story.png",
+      "bytes": 82461,
+      "sha256": "5f7a79e6e8d6023a65f152b23b3e473698538a8aa411b17ef1eabd9e7add3d18"
+    },
+    {
+      "path": "social/pulse-feed.png",
+      "bytes": 110155,
+      "sha256": "845aa3bccff4c359975093bc86ab510ac21b9454c7904d2156204dc2bc6229c9"
+    },
+    {
+      "path": "social/pulse-linkedin.png",
+      "bytes": 86501,
+      "sha256": "4c72a5a45e6c823bf4f5c99abef777d27f5f53a564e673a5a4a32ec92f587430"
+    },
+    {
+      "path": "social/pulse-square.png",
+      "bytes": 102082,
+      "sha256": "18e430866b81d09af346460f482dd9a162273325634361972e0a6a16618d2280"
+    },
+    {
+      "path": "social/pulse-story.png",
+      "bytes": 125313,
+      "sha256": "2df193f84c9227d5d924042ca241639a0940aa06f72323eb71622d8fc14bb34d"
+    },
+    {
+      "path": "source/build_email.py",
+      "bytes": 5478,
+      "sha256": "c95258ed57afee2f6480057e97115c761982e137b8401abbdb50f95e153ada3e"
+    },
+    {
+      "path": "source/build_media.py",
+      "bytes": 413,
+      "sha256": "7635a164d242c24626efe2cc9ecc43eb29130e9fca373de2a3a9c7b37cb4ab94"
+    },
+    {
+      "path": "source/build_print.py",
+      "bytes": 9195,
+      "sha256": "402e280337417eca82a303aa6a637a139d08915f3a0ceab6af6a4eb2529c588c"
+    },
+    {
+      "path": "source/campaign-art.html",
+      "bytes": 5653,
+      "sha256": "a7d17fb6f5a78ef870ca2b9313c648d1cccad481d53e5029634b056c524b38ae"
+    },
+    {
+      "path": "source/catalog-art/declaration-of-independence.jpg",
+      "bytes": 307005,
+      "sha256": "95035a8a68f51a330ea36b6f240aa36a65df87397cdcfbf9b486c8c8ccaa0b47"
+    },
+    {
+      "path": "source/endcards/endcard-square.png",
+      "bytes": 71034,
+      "sha256": "516f9f9b3aadec6018eefc1c34a5772c5e3c9568f332c4316761578d59bb0d99"
+    },
+    {
+      "path": "source/endcards/endcard-vertical.png",
+      "bytes": 82461,
+      "sha256": "5f7a79e6e8d6023a65f152b23b3e473698538a8aa411b17ef1eabd9e7add3d18"
+    },
+    {
+      "path": "source/endcards/endcard-wide.png",
+      "bytes": 86720,
+      "sha256": "63dfc94a7fb0e2dc49c0342399ad49698878befd7cb985da1060282f4d8f0f2d"
+    },
+    {
+      "path": "source/fonts/IBMPlexMono-400.woff2",
+      "bytes": 14708,
+      "sha256": "08949f728dc52d528e69b1667d15c89a5686a4ee9a296ff90983985f99c380f7"
+    },
+    {
+      "path": "source/fonts/IBMPlexMono-OFL.txt",
+      "bytes": 4362,
+      "sha256": "d741e57d5f865e294df801f96b7b5161a88b211df65887e4358d271c9fc5fb4f"
+    },
+    {
+      "path": "source/fonts/LibreCaslonDisplay-400.woff2",
+      "bytes": 24236,
+      "sha256": "84267e937417f10dff37df818c5ef7f1e9f2e6a703e03c2dd286d3320af53269"
+    },
+    {
+      "path": "source/fonts/LibreCaslonDisplay-OFL.txt",
+      "bytes": 4402,
+      "sha256": "78c9f56e0d8a7ad7b9d26842a8eae728337a8671d8ddc6e889fa10645935dc7b"
+    },
+    {
+      "path": "source/fonts/LibreCaslonText-400.woff2",
+      "bytes": 24972,
+      "sha256": "29310efc1007f608549e29ff78fa5ce8dffe0c1aa82c21b082d1de9dfc7334f0"
+    },
+    {
+      "path": "source/fonts/LibreCaslonText-OFL.txt",
+      "bytes": 4403,
+      "sha256": "92483eac22aa610aeb83ee246c22a1040f8ce4bdd7e68273fd89a2b06ba04338"
+    },
+    {
+      "path": "source/press-reference.jpg",
+      "bytes": 76249,
+      "sha256": "667c7a6c9ebc376f085bcb7f54457fa795ea411cf1170ab74798db6d1beffdd2"
+    },
+    {
+      "path": "source/requirements-design.txt",
       "bytes": 60,
       "sha256": "3c1e7dc61b3590a34228fb4a270f7d5b1033d7fc32949404eca06281da481f8c"
     }
