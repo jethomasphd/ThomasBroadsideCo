@@ -1,0 +1,17 @@
+THE CHRISTMAS DOOR
+Thomas Broadside Co.  /  Christmas 2026
+
+Open index.html for the campaign desk. All media files are local and ready to use.
+
+FIRST RELEASE
+1. Confirm that thomasbroadside.co/Christmas and its quote request work on a phone. Use the links in launch/tracked-links.txt for each placement.
+2. Share film/the-christmas-door-landscape.mp4 on the website or Facebook. The 27-second H.264 film is 1920 × 1080 with stereo AAC and includes its own score. A poster and optional descriptive WebVTT captions are in the film folder.
+3. Use the separately composed 1080 × 1920 film for Reels or Stories. The five 1080 × 1350 feed images form an ordered carousel. Use story-quote.jpg as a standalone Story with the quote-link sticker. Ready-to-paste copy and image descriptions are in launch/captions-and-alt-text.txt.
+4. Import launch/launch-email.html as a custom HTML Klaviyo template, or use the body from launch-email.txt. Set its subject and preheader from the text file. Keep the list’s working unsubscribe footer and send a test through the intended account before scheduling.
+5. Print launch/shop-counter-letter.pdf at actual size on US Letter and display it at the shop. Its QR code carries a separate print campaign tag.
+
+CAMPAIGN MEASUREMENT
+All published links use utm_campaign=christmas_door_2026. In the site’s analytics, compare landing visits by source, medium, and content. In the quote inbox or form, use the captured source where available to connect enquiries with placements.
+
+PRINT & PHOTOGRAPHY
+The garage scenes are design visualizations. Actual door measurements, the proof, and the shop’s quote determine the customer’s order. Campaign materials carry no price or delivery promise.
